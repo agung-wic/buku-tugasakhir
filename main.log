@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.5.20)  10 JUN 2021 16:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.5.20)  10 JUN 2021 17:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -737,7 +737,7 @@ l.152   \cleardoublepage
 
 ] (./bab/2-tinjauan-pustaka.tex
 Bab 2.
-<gambar/roketluarangkasa.jpg, id=260, 642.4pt x 513.92pt>
+<gambar/roketluarangkasa.jpg, id=262, 642.4pt x 513.92pt>
 File: gambar/roketluarangkasa.jpg Graphic file (type jpg)
 <use gambar/roketluarangkasa.jpg>
 Package pdftex.def Info: gambar/roketluarangkasa.jpg  used on input line 16.
@@ -761,12 +761,17 @@ l.37
 
 ] (./bab/3-desain-implementasi.tex
 Bab 3.
+<gambar/blok-diagram.png, id=288, 422.57875pt x 161.60374pt>
+File: gambar/blok-diagram.png Graphic file (type png)
+<use gambar/blok-diagram.png>
+Package pdftex.def Info: gambar/blok-diagram.png  used on input line 16.
+(pdftex.def)             Requested size: 211.28885pt x 80.80167pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 4479) has occurred while \output is active []
 
  [9
 
-]
+ <./gambar/blok-diagram.png>]
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2019/09/10 1.8c listings language file
 )
@@ -777,15 +782,15 @@ File: lstlang1.sty 2019/09/10 1.8c listings language file
 File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 23.
+nput line 33.
 LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 
-23.
+33.
 
 (/usr/share/texmf/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 24.
+(Font)              <8> on input line 34.
  [10]
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2019/09/10 1.8c listings language file
@@ -824,7 +829,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--12
 ] [20
 
 ] (./lainnya/biografi-penulis.tex
-<gambar/elon.jpg, id=364, 578.16pt x 867.24pt>
+<gambar/elon.jpg, id=369, 578.16pt x 867.24pt>
 File: gambar/elon.jpg Graphic file (type jpg)
 <use gambar/elon.jpg>
 Package pdftex.def Info: gambar/elon.jpg  used on input line 14.
@@ -843,10 +848,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 181.
  ) 
 Here is how much of TeX's memory you used:
- 11407 strings out of 481239
- 172375 string characters out of 5920377
- 756198 words of memory out of 5000000
- 26276 multiletter control sequences out of 15000+600000
+ 11415 strings out of 481239
+ 172553 string characters out of 5920377
+ 755084 words of memory out of 5000000
+ 26282 multiletter control sequences out of 15000+600000
  600606 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,13n,64p,1105b,1369s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -863,10 +868,10 @@ pe1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr
 ublic/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/
 share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/publ
 ic/lm/lmtt8.pfb>
-Output written on main.pdf (40 pages, 788884 bytes).
+Output written on main.pdf (40 pages, 795554 bytes).
 PDF statistics:
- 449 PDF objects out of 1000 (max. 8388607)
- 383 compressed objects within 4 object streams
- 98 named destinations out of 1000 (max. 500000)
- 245 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 454 PDF objects out of 1000 (max. 8388607)
+ 386 compressed objects within 4 object streams
+ 99 named destinations out of 1000 (max. 500000)
+ 250 words of extra memory for PDF output out of 10000 (max. 10000000)
 
