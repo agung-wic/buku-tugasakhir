@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.5.20)  10 JUN 2021 22:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.5.20)  11 JUN 2021 15:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -737,7 +737,7 @@ l.152   \cleardoublepage
 
 ] (./bab/2-tinjauan-pustaka.tex
 Bab 2.
-<gambar/roketluarangkasa.jpg, id=269, 642.4pt x 513.92pt>
+<gambar/roketluarangkasa.jpg, id=271, 642.4pt x 513.92pt>
 File: gambar/roketluarangkasa.jpg Graphic file (type jpg)
 <use gambar/roketluarangkasa.jpg>
 Package pdftex.def Info: gambar/roketluarangkasa.jpg  used on input line 16.
@@ -761,7 +761,7 @@ l.37
 
 ] (./bab/3-desain-implementasi.tex
 Bab 3.
-<gambar/blok-diagram.png, id=295, 573.14125pt x 151.56625pt>
+<gambar/blok-diagram.png, id=297, 573.14125pt x 151.56625pt>
 File: gambar/blok-diagram.png Graphic file (type png)
 <use gambar/blok-diagram.png>
 Package pdftex.def Info: gambar/blok-diagram.png  used on input line 15.
@@ -772,11 +772,16 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [9
 
  <./gambar/blok-diagram.png>]
-<gambar/caltech.png, id=303, 756.8275pt x 127.47626pt>
+<gambar/caltech.png, id=305, 756.8275pt x 127.47626pt>
 File: gambar/caltech.png Graphic file (type png)
 <use gambar/caltech.png>
 Package pdftex.def Info: gambar/caltech.png  used on input line 28.
 (pdftex.def)             Requested size: 264.89359pt x 44.61736pt.
+<gambar/youtube-dataset.png, id=307, 1367.1075pt x 771.88374pt>
+File: gambar/youtube-dataset.png Graphic file (type png)
+<use gambar/youtube-dataset.png>
+Package pdftex.def Info: gambar/youtube-dataset.png  used on input line 37.
+(pdftex.def)             Requested size: 205.05728pt x 115.77756pt.
  [10 <./gambar/caltech.png>]
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2019/09/10 1.8c listings language file
@@ -788,20 +793,20 @@ File: lstlang1.sty 2019/09/10 1.8c listings language file
 File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 46.
+nput line 54.
 LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 
-46.
+54.
 
 (/usr/share/texmf/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 47.
-
+(Font)              <8> on input line 55.
+ [11 <./gambar/youtube-dataset.png>]
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2019/09/10 1.8c listings language file
 )
-(./program/bilangan-prima.py [11])) [12] (./bab/4-pengujian-analisis.tex
+(./program/bilangan-prima.py)) [12] (./bab/4-pengujian-analisis.tex
 Bab 4.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -834,7 +839,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--12
 ] [20
 
 ] (./lainnya/biografi-penulis.tex
-<gambar/elon.jpg, id=381, 578.16pt x 867.24pt>
+<gambar/elon.jpg, id=386, 578.16pt x 867.24pt>
 File: gambar/elon.jpg Graphic file (type jpg)
 <use gambar/elon.jpg>
 Package pdftex.def Info: gambar/elon.jpg  used on input line 14.
@@ -853,13 +858,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 181.
  ) 
 Here is how much of TeX's memory you used:
- 11429 strings out of 481239
- 172777 string characters out of 5920377
- 766585 words of memory out of 5000000
- 26291 multiletter control sequences out of 15000+600000
+ 11437 strings out of 481239
+ 172976 string characters out of 5920377
+ 756432 words of memory out of 5000000
+ 26297 multiletter control sequences out of 15000+600000
  604832 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,13n,64p,1105b,2099s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,13n,64p,1105b,1369s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rmtt.enc}{/usr/share/texmf/fonts/enc/
 dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/sha
 re/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/
@@ -873,10 +878,10 @@ pe1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr
 ublic/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/
 share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/publ
 ic/lm/lmtt8.pfb>
-Output written on main.pdf (40 pages, 983325 bytes).
+Output written on main.pdf (40 pages, 3187038 bytes).
 PDF statistics:
- 467 PDF objects out of 1000 (max. 8388607)
- 397 compressed objects within 4 object streams
- 103 named destinations out of 1000 (max. 500000)
- 263 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 472 PDF objects out of 1000 (max. 8388607)
+ 400 compressed objects within 4 object streams
+ 104 named destinations out of 1000 (max. 500000)
+ 268 words of extra memory for PDF output out of 10000 (max. 10000000)
 
