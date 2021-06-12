@@ -19,12 +19,14 @@
 \contentsline {chapter}{\numberline {3}DESAIN DAN IMPLEMENTASI}{9}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Deskripsi Sistem}{9}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Pengumpulan \textit {Dataset} Gambar}{10}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Implementasi Alat }{10}{section.3.3}%
-\contentsline {chapter}{\numberline {4}PENGUJIAN DAN ANALISIS}{13}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Skenario Pengujian}{13}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Evaluasi Pengujian}{14}{section.4.2}%
-\contentsline {chapter}{\numberline {5}PENUTUP}{17}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Kesimpulan}{17}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Saran}{17}{section.5.2}%
-\contentsline {chapter}{DAFTAR PUSTAKA}{19}{Item.19}%
-\contentsline {chapter}{BIOGRAFI PENULIS}{21}{chapter*.4}%
+\contentsline {section}{\numberline {3.3}Pemisahan Data}{11}{section.3.3}%
+\contentsline {section}{\numberline {3.4}\textit {Pre-Processing}}{12}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Implementasi Alat }{12}{section.3.5}%
+\contentsline {chapter}{\numberline {4}PENGUJIAN DAN ANALISIS}{15}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Skenario Pengujian}{15}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Evaluasi Pengujian}{16}{section.4.2}%
+\contentsline {chapter}{\numberline {5}PENUTUP}{19}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Kesimpulan}{19}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Saran}{19}{section.5.2}%
+\contentsline {chapter}{DAFTAR PUSTAKA}{21}{Item.23}%
+\contentsline {chapter}{BIOGRAFI PENULIS}{23}{chapter*.4}%
