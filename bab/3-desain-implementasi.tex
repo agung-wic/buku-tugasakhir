@@ -68,8 +68,21 @@ Dalam \textit{machine learning} pemisahan data ke beberapa \textit{subset} merup
 \section{\textit{Pre-Processing}}
 \label{sec:preprocessing}
 
-Pada tahap ini, gambar-gambar dari \textit{dataset} akan mengalami proses penyesuaian sebelum masuk ke proses \textit{data training}. Setiap gambar yang akan dijadikan bahan pembelajarnan model harus memiliki dimensi dan kedalaman yang sama.
+Pada tahap ini, gambar-gambar dari \textit{dataset} akan mengalami proses penyesuaian sebelum masuk ke proses \textit{data training}. Setiap gambar yang akan dijadikan bahan pembelajarnan model harus memiliki dimensi dan kedalaman yang sama. Tujuan dari \textit{pre processing} adalah perbaikan data gambar dengan menekan distorsi yang tidak diinginkan atau meningkatkan beberapa fitur gambar yang relevan untuk pemrosesan lebih lanjut. Gambar \ref{fig:preprocessing} merupakan tahapan dari \textit{pre-processing} gambar \textit{dataset} yang dilakukan.
 
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{gambar/flowchart-preprocessing.png}
+	\caption{Diagram Alir \textit{Pre Processing}}
+	\label{fig:preprocessing}
+\end{figure}
+
+Berikut merupakan penjelasan mengenai tahapan \textit{pre-processing} yang dilakukan pada tugas akhir kali ini:
+\begin{enumerate}
+	\item \textit{Image resizing}\\
+	
+	\item \textit{Image Augmentation}\\
+\end{enumerate}
 
 
 \section{Implementasi Alat
