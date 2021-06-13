@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.6.12)  12 JUN 2021 17:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.6.12)  12 JUN 2021 20:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1181,11 +1181,11 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 181.
 Here is how much of TeX's memory you used:
  11014 strings out of 492982
  153178 string characters out of 6134896
- 405845 words of memory out of 5000000
+ 407905 words of memory out of 5000000
  14211 multiletter control sequences out of 15000+600000
  76134 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,13n,60p,1105b,2018s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,13n,60p,1105b,2016s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rmtt.enc}{/usr/share/texmf/fonts/enc/
 dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/sha
 re/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/
@@ -1199,7 +1199,7 @@ pe1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr
 ublic/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/
 share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/publ
 ic/lm/lmtt8.pfb>
-Output written on main.pdf (48 pages, 3207057 bytes).
+Output written on main.pdf (48 pages, 3206994 bytes).
 PDF statistics:
  528 PDF objects out of 1000 (max. 8388607)
  445 compressed objects within 5 object streams
