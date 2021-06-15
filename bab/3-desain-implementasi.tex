@@ -121,41 +121,67 @@ Seperti yang ditampilkan pada Gambar \ref{fig:mask-rcnn-arch}, pada proses \text
 
 \textit{Backbone} adalah \textit{deep neural network} yang memiliki struktur seperti FPN (\textit{Feature Pyramid Network}). \textit{Backbone} terdiri dari \textit{bottom-up pathway}, \textit{up-bottom pathway} dan \textit{lateral connection}. \textit{Bottom-up pathway} dapat berupa berbagai jenis \textit{Convolutional Network}, biasanya berupa \textit{ResNet} atau \textit{VGG}, yang mengekstrak fitur dari \textit{raw images}. \textit{Up-bottom pathway} menghasilkan \textit{Feature Map Pyramid} yang ukurannya mirip dengan \textit{bottom-up pathway}. \textit{Lateral connection} adalah operasi konvolusi dan penjumlahan antara dua \textit{pathway} dengan tingkat yang sesuai. FPN mempunyai kinerja yang lebih baik dari ConvNet tunggal lainnya terutama karena FPN dapat mempertahankan fitur semantik yang sangat baik pada berbagai skala resolusi.
 
+
+
 \section{\textit{Training Data}
 	\label{sec:trainingdata}}
+
+Proses \textit{training data} dilakukan setelah pembuatan model telah selesai dan \textit{dataset} sudah melalui proses \textit{pre-processing}. Pada saat pertama kali menjalankan proses \textit{training}, bobot awal diambil dari \textit{pre-trained weight} yang sudah tersedia pada \textit{mask r-cnn}. Hal ini bisa dilakukan dengan menerapkan metode \textit{transfer learning}. \textit{Transfer learning} sendiri adalah teknik yang
+sangat efisien untuk melakukan proses \textit{training} atau \textit{retrain} pada \textit{neural network}. Penggunaan \textit{transfer learning} mempunyai keuntungan diantara lain proses \textit{training} pada data baru memakan waktu yang lebih cepat daripada memulai dari awal serta masalah dapat dipecahkan dengan menggunakan training data
+yang lebih sedikit daripada membangun model dari awal.
+
+Ada beberapa hal yang perlu diperhatikan dalam melakukan pengaturan saat akan menjalankan proses \textit{training} antara lain :
+\begin{enumerate}
+	\item \textit{Iteration} adalah banyaknya proses yang dilakukan untuk melakukan \textit{forward} dan \textit{backward pass}. \textit{forward pass} adalah proses dimana \textit{output value} dari \textit{neural network} didapatkan setelah \textit{input value} dari \textit{input-neuron} telah selesai diproses. Sedangkan \textit{backward pass} adalah proses mengkalkulasikan bobot dari \textit{neural network} mulai dari \textit{output neuron} ke \textit{input neuron} untuk mendapatkan \textit{loss} dari setiap \textit{neuron}. Pada \textit{mask r-cnn iteration} bisa desebut juga dengan \textit{step\_per\_epoch} sesuai dengan yang tercantunm pada \textit{file} pengaturan \textit{mask r-cnn}. 
+	
+	\item \textit{Epoch}, ketika seluruh dataset sudah melalui proses \textit{training} pada \textit{neural network} sampai dikembalikan ke awal untuk sekali putaran. Sebagia contoh apabila kita menggunakan \textit{iteration} sebanyak 10 kali, maka satu \textit{epoch} sebanyak 10 \textit{iteration} dan kelipatannya. Pada tugas akhir kali ini penulis menggunakan \textit{epoch} sebanyak 100.
+\end{enumerate}   
 
 \section{\textit{Validating Data}
 	\label{sec:validatingdata}}
 
+Setelah proses \textit{training} dilakukan, perlu dilakukan apakah model yang dibuat sudah memiliki tingkat akurasi sesuai yang kita inginkan dengang menggunakan teknik validasi.Pada proses inilah, \textit{dataset} yang telah dipisahkan pada proses sebelumnya akan berperan. Evaluasi memungkinkan pengujian model terhadap data yang belum pernah dilihat dan digunakan untuk pelatihan dan dimaksudkan untuk mewakili bagaimana model dapat menyelesaikan permasalahan tersebut. Tahapan pada validasi akan membantu untuk menemukan parameter terbaik untuk model prediktif dan mencegah dari \textit{overfitting}.
+
+Pada tugas akhir kali ini, digunakan salah satu jenis teknik validasi menggunakan \textit{Cross Validation}. Pada \textit{Cross Validation} data akan dibagi menjadi K lipatan, dimana setiap lipatan akan diambil satu data sebagai \textit{validation data} dan sisanya akan digunakan untuk \textit{training data}. Pemilihan \textit{validation data} dilakukan secara menyilang, dengan ketentuan apabila \textit{training} terjadi pada iterasi ke \textit{k} maka data yang dipilih untuk validasi adalah data \textit{k} juga. Gambar \ref{fig:cross-validation} merupakan visualisasi dari \textit{K Fold Cross Validation}.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.4]{gambar/cross-validation.png}
+	\caption{Visualisasi \textit{K Fold Cross Validation}}
+	\label{fig:cross-validation}
+\end{figure} 
+
 \section{\textit{Testing Data}
 	\label{sec:testingdata}}
 
-\section{Implementasi Alat
-\label{sec:implementasi alat}}
+\textit{Testing data} merupakan tahap akhir dalam algoritma \textit{machine learning} secara umum. Pada tahap ini model akan diuji untuk didapatkan keakuratan untuk mendeteksi objek. Data uju yang digunakan pada tugas akhir kali ini adalah data yang berbentuk video. Jadi diperlukan \textit{pre-processing} yang berbeda dengan \textit{training data} dan \textit{validation data}. Data video akan dipecah atau dipotong-potong menjadi format gambar dengan ketentuan 30 \textit{frame per second}. Ketika \textit{data test} sudah dikonversi menjadi bentuk gambar, maka proses deteksi bisa dilakukan. Gambar hasil deteksi berupa gambar asli yang sudah ditambah dengan \textit{bounding box, classification, mask}. Lalu gambar-gambar tersebut disatukan lagi menjadi format video dengan ketentuan sama seperti saat pemotongan menjadi format gambar, yaitu 30 \textit{frame per second}. 
 
-Alat diimplementasikan dengan \lipsum[1]
-
-% Contoh pembuatan potongan kode
-\begin{lstlisting}[
-  language=C++,
-  caption={Program halo dunia.},
-  label={lst:halodunia}
-]
-#include <iostream>
-
-int main() {
-    std::cout << "Halo Dunia!";
-    return 0;
-}
-\end{lstlisting}
-
-\lipsum[2-3]
-
-% Contoh input potongan kode dari file
-\lstinputlisting[
-  language=Python,
-  caption={Program perhitungan bilangan prima.},
-  label={lst:bilanganprima}
-]{program/bilangan-prima.py}
-
-\lipsum[4]
+%\section{Implementasi Alat
+%\label{sec:implementasi alat}}
+%
+%Alat diimplementasikan dengan \lipsum[1]
+%
+%% Contoh pembuatan potongan kode
+%\begin{lstlisting}[
+%  language=C++,
+%  caption={Program halo dunia.},
+%  label={lst:halodunia}
+%]
+%#include <iostream>
+%
+%int main() {
+%    std::cout << "Halo Dunia!";
+%    return 0;
+%}
+%\end{lstlisting}
+%
+%\lipsum[2-3]
+%
+%% Contoh input potongan kode dari file
+%\lstinputlisting[
+%  language=Python,
+%  caption={Program perhitungan bilangan prima.},
+%  label={lst:bilanganprima}
+%]{program/bilangan-prima.py}
+%
+%\lipsum[4]

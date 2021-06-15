@@ -24,13 +24,12 @@
 \contentsline {section}{\numberline {3.5}Membangun Model Mask R-CNN }{15}{section.3.5}%
 \contentsline {section}{\numberline {3.6}\textit {Training Data} }{16}{section.3.6}%
 \contentsline {section}{\numberline {3.7}\textit {Validating Data} }{17}{section.3.7}%
-\contentsline {section}{\numberline {3.8}\textit {Testing Data} }{17}{section.3.8}%
-\contentsline {section}{\numberline {3.9}Implementasi Alat }{17}{section.3.9}%
-\contentsline {chapter}{\numberline {4}PENGUJIAN DAN ANALISIS}{19}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Skenario Pengujian}{19}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Evaluasi Pengujian}{20}{section.4.2}%
-\contentsline {chapter}{\numberline {5}PENUTUP}{23}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Kesimpulan}{23}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Saran}{23}{section.5.2}%
-\contentsline {chapter}{DAFTAR PUSTAKA}{25}{Item.23}%
-\contentsline {chapter}{BIOGRAFI PENULIS}{27}{chapter*.4}%
+\contentsline {section}{\numberline {3.8}\textit {Testing Data} }{18}{section.3.8}%
+\contentsline {chapter}{\numberline {4}PENGUJIAN DAN ANALISIS}{21}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Skenario Pengujian}{21}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Evaluasi Pengujian}{22}{section.4.2}%
+\contentsline {chapter}{\numberline {5}PENUTUP}{25}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Kesimpulan}{25}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Saran}{25}{section.5.2}%
+\contentsline {chapter}{DAFTAR PUSTAKA}{27}{Item.25}%
+\contentsline {chapter}{BIOGRAFI PENULIS}{29}{chapter*.4}%
