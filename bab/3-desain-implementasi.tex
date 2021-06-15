@@ -108,6 +108,19 @@ Berikut merupakan penjelasan mengenai tahapan \textit{pre-processing} yang dilak
 \section{Membangun Model Mask R-CNN
 \label{sec:membangunmodelmaskrcnn}}
 
+Mask R-CNN merupakah salah satu metode \textit{deep lerning} yang dikembangkan dari Faster R-CNN dengan menambahkan satu cabang di tahap akhir untuk menghasilkan \textit{mask} dari objek yang dideteksi. Pengembangan tersebut dilakukan untuk memecahkan masalah \textit{instance segmentation} yang terjadi dalam \textit{machine learning} dan pengolahan citra. Dengan kata lain, \textit{mask r-cnn}, dapat memisahkan objek yang berbeda walaupun dalam satu kelas yang sama pada gambar atau video. Selain memberikan hasil berupa \textit{bounding box} dan klasifikasi objek seperti kebanyakan algoritma \textit{object detection} lainnya, \textit{mask r-cnn} juga memberikan \textit{mask} dimana hal ini sangat bermanfaat pada segmentasi objek.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.4]{gambar/mask-rcnn-arch.png}
+	\caption{Blok Diagram Alur Mask R-CNN}
+	\label{fig:mask-rcnn-arch}
+\end{figure} 
+
+Seperti yang ditampilkan pada Gambar \ref{fig:mask-rcnn-arch}, pada proses \textit{training} menggunakan \textit{mask r-cnn} dibagi menjadi 2 tahapan. Tahap pertama adalah tahap untuk menghasilkan proposal tentang area di mana mungkin ada objek berdasarkan gambar \textit{input}. Lalu tahap kedua adalah tahap untuk memprediksi kelas objek, memperbaiki \textit{bounding box} dan menghasilkan \textit{mask} di tingkat piksel objek berdasarkan proposal tahap pertama. Kedua tahap terhubung ke struktur \textit{backbone}.
+
+\textit{Backbone} adalah \textit{deep neural network} yang memiliki struktur seperti FPN (\textit{Feature Pyramid Network}). \textit{Backbone} terdiri dari \textit{bottom-up pathway}, \textit{up-bottom pathway} dan \textit{lateral connection}. \textit{Bottom-up pathway} dapat berupa berbagai jenis \textit{Convolutional Network}, biasanya berupa \textit{ResNet} atau \textit{VGG}, yang mengekstrak fitur dari \textit{raw images}. \textit{Up-bottom pathway} menghasilkan \textit{Feature Map Pyramid} yang ukurannya mirip dengan \textit{bottom-up pathway}. \textit{Lateral connection} adalah operasi konvolusi dan penjumlahan antara dua \textit{pathway} dengan tingkat yang sesuai. FPN mempunyai kinerja yang lebih baik dari ConvNet tunggal lainnya terutama karena FPN dapat mempertahankan fitur semantik yang sangat baik pada berbagai skala resolusi.
+
 \section{\textit{Training Data}
 	\label{sec:trainingdata}}
 

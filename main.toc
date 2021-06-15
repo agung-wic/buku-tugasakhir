@@ -22,7 +22,10 @@
 \contentsline {section}{\numberline {3.3}Pemisahan Data}{11}{section.3.3}%
 \contentsline {section}{\numberline {3.4}\textit {Pre-Processing}}{12}{section.3.4}%
 \contentsline {section}{\numberline {3.5}Membangun Model Mask R-CNN }{15}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Implementasi Alat }{15}{section.3.6}%
+\contentsline {section}{\numberline {3.6}\textit {Training Data} }{16}{section.3.6}%
+\contentsline {section}{\numberline {3.7}\textit {Validating Data} }{17}{section.3.7}%
+\contentsline {section}{\numberline {3.8}\textit {Testing Data} }{17}{section.3.8}%
+\contentsline {section}{\numberline {3.9}Implementasi Alat }{17}{section.3.9}%
 \contentsline {chapter}{\numberline {4}PENGUJIAN DAN ANALISIS}{19}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Skenario Pengujian}{19}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Evaluasi Pengujian}{20}{section.4.2}%
