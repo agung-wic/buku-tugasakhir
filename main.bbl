@@ -1,4 +1,4 @@
-\begin{thebibliography}{4}
+\begin{thebibliography}{8}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -23,10 +23,40 @@ Hongbo Gao, Guanya Shi, Guotao Xie, and Bo~Cheng.
   15:\penalty0 172988141881716, 11 2018.
 \newblock \doi{10.1177/1729881418817162}.
 
+\bibitem[Ferracuti et~al.(2019)Ferracuti, Norscini, Frontoni, Gabellini,
+  Paolanti, and Placidi]{concept-cnn}
+N.~Ferracuti, Claudia Norscini, Emanuele Frontoni, P.~Gabellini, Marina
+  Paolanti, and Valerio Placidi.
+\newblock A business application of rtls technology in intelligent retail
+  environment: Defining the shopper's preferred path and its segmentation.
+\newblock \emph{Journal of Retailing and Consumer Services}, 47:\penalty0
+  184--194, 03 2019.
+\newblock \doi{10.1016/j.jretconser.2018.11.005}.
+
+\bibitem[art(2021)]{artificialintellingece}
+Artificial intelligence (ai), 2021.
+\newblock URL
+  \url{https://www.investopedia.com/terms/a/artificial-intelligence-ai.asp}.
+
 \bibitem[Sah(2020)]{machinelearning1}
 Shagan Sah.
 \newblock Machine learning: A review of learning types.
 \newblock 07 2020.
 \newblock \doi{10.20944/preprints202007.0230.v1}.
+
+\bibitem[Mathew et~al.(2021)Mathew, Arul, and Sivakumari]{dl}
+Amitha Mathew, Amudha Arul, and S.~Sivakumari.
+\newblock \emph{Deep Learning Techniques: An Overview}, pages 599--608.
+\newblock 01 2021.
+\newblock ISBN 978-981-15-3382-2.
+\newblock \doi{10.1007/978-981-15-3383-9_54}.
+
+\bibitem[Ghosh et~al.(2020)Ghosh, Sufian, Sultana, Chakrabarti, and De]{cnn}
+Anirudha Ghosh, A.~Sufian, Farhana Sultana, Amlan Chakrabarti, and Debashis De.
+\newblock \emph{Fundamental Concepts of Convolutional Neural Network}, pages
+  519--567.
+\newblock 01 2020.
+\newblock ISBN 978-3-030-32643-2.
+\newblock \doi{10.1007/978-3-030-32644-9_36}.
 
 \end{thebibliography}
