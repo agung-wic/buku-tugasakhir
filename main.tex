@@ -1,6 +1,6 @@
 % Judul dokumen
 \title{Buku Tugas Akhir ITS}
-\author{Musk, Elon Reeve}
+\author{Wicaksono, Agung}
 
 % Pengaturan ukuran teks dan bentuk halaman dua sisi
 \documentclass[10pt,twoside]{report}
@@ -37,6 +37,7 @@
 \usepackage{longtable}
 \usepackage{tabularx}
 \usepackage{wrapfig}
+\usepackage[pageref]{backref}
 
 % Definisi untuk "Hati ini sengaja dikosongkan"
 \patchcmd{\cleardoublepage}{\hbox{}}{
@@ -44,6 +45,22 @@
   \vspace*{\fill}
   \begin{center}\textit{[Halaman ini sengaja dikosongkan]}\end{center}
   \vfill}{}{}
+
+% Untuk citation
+\newcommand{\tab}[1]{\hspace{.2\textwidth}\rlap{#1}}
+\renewcommand*{\backreflastsep}{, }
+\renewcommand*{\backreftwosep}{, }
+\renewcommand*{\backref}[1]{}
+\renewcommand*{\backrefalt}[4]{
+	\ifcase #1
+	No citations.
+	\or
+	(Dikutip pada halaman #2).
+	\else
+	(Dikutip pada halaman #2).
+	\fi
+}
+
 
 % Pengaturan penomoran halaman
 \usepackage{fancyhdr}
