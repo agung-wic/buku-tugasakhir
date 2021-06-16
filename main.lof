@@ -6,14 +6,14 @@
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Gambaran \textit {Reinforcement Learning}\citep {reinforcement}}}{7}{figure.2.3}
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Gambaran Konsep Arsitektur CNN \citep {concept-cnn}}}{8}{figure.2.4}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Blok Diagram Metodologi}}{9}{figure.3.1}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Contoh Gambar dari Caltech Pedestrian Database}}{10}{figure.3.2}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Contoh Pembuatan \textit {dataset} dari \textit {Screenshot Youtube}}}{11}{figure.3.3}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Visualisasi Pembagian Data}}{11}{figure.3.4}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Diagram Alir \textit {Pre Processing}}}{13}{figure.3.5}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Contoh \textit {Image Resizing}}}{14}{figure.3.6}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Contoh \textit {Image Augmentation}}}{15}{figure.3.7}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Blok Diagram Alur Mask R-CNN}}{16}{figure.3.8}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Visualisasi \textit {K Fold Cross Validation}}}{18}{figure.3.9}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Blok Diagram Metodologi}}{11}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Contoh Gambar dari Caltech Pedestrian Database}}{12}{figure.3.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Contoh Pembuatan \textit {dataset} dari \textit {Screenshot Youtube}}}{13}{figure.3.3}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Visualisasi Pembagian Data}}{13}{figure.3.4}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Diagram Alir \textit {Pre Processing}}}{15}{figure.3.5}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Contoh \textit {Image Resizing}}}{16}{figure.3.6}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Contoh \textit {Image Augmentation}}}{17}{figure.3.7}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Blok Diagram Alur Mask R-CNN}}{18}{figure.3.8}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Visualisasi \textit {K Fold Cross Validation}}}{20}{figure.3.9}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

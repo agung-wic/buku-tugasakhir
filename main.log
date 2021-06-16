@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.6.12)  16 JUN 2021 00:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.6.12)  16 JUN 2021 10:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -871,7 +871,7 @@ File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 LaTeX Font Info:    Font shape `OT1/lmss/bx/it' in size <12> not available
 (Font)              Font shape `OT1/lmss/bx/sl' tried instead on input line 8.
 )
-<sampul/gambar/sampul-luar.png, id=142, 421.0932pt x 597.432pt>
+<sampul/gambar/sampul-luar.png, id=150, 421.0932pt x 597.432pt>
 File: sampul/gambar/sampul-luar.png Graphic file (type png)
 <use sampul/gambar/sampul-luar.png>
 Package pdftex.def Info: sampul/gambar/sampul-luar.png  used on input line 40.
@@ -915,7 +915,7 @@ r.png>]) (./sampul/sampul-dalam.tex
 
 
 (./sampul/konten.tex)
-<sampul/gambar/sampul-dalam.png, id=152, 421.0932pt x 597.432pt>
+<sampul/gambar/sampul-dalam.png, id=160, 421.0932pt x 597.432pt>
 File: sampul/gambar/sampul-dalam.png Graphic file (type png)
 <use sampul/gambar/sampul-dalam.png>
 Package pdftex.def Info: sampul/gambar/sampul-dalam.png  used on input line 37.
@@ -1038,7 +1038,7 @@ l.22
       [5
 
 ]
-<gambar/supervised.png, id=332, 1606.0pt x 803.0pt>
+<gambar/supervised.png, id=347, 1606.0pt x 803.0pt>
 File: gambar/supervised.png Graphic file (type png)
 <use gambar/supervised.png>
 Package pdftex.def Info: gambar/supervised.png  used on input line 28.
@@ -1049,26 +1049,31 @@ been already used, duplicate ignored
                    \relax 
 l.34 
       [6 <./gambar/supervised.png (PNG copy)>]
-<gambar/unsupervised.jpg, id=340, 913.85416pt x 351.9549pt>
+<gambar/unsupervised.jpg, id=355, 913.85416pt x 351.9549pt>
 File: gambar/unsupervised.jpg Graphic file (type jpg)
 <use gambar/unsupervised.jpg>
 Package pdftex.def Info: gambar/unsupervised.jpg  used on input line 37.
 (pdftex.def)             Requested size: 182.7676pt x 70.38972pt.
-<gambar/reinforcement.png, id=343, 709.65125pt x 266.9975pt>
+<gambar/reinforcement.png, id=358, 709.65125pt x 266.9975pt>
 File: gambar/reinforcement.png Graphic file (type png)
 <use gambar/reinforcement.png>
 Package pdftex.def Info: gambar/reinforcement.png  used on input line 48.
 (pdftex.def)             Requested size: 212.897pt x 80.09985pt.
  [7 <./gambar/unsupervised.jpg> <./gambar/reinforcement.png>]
-<gambar/concept-cnn.png, id=356, 727.71875pt x 277.035pt>
+<gambar/concept-cnn.png, id=371, 727.71875pt x 277.035pt>
 File: gambar/concept-cnn.png Graphic file (type png)
 <use gambar/concept-cnn.png>
 Package pdftex.def Info: gambar/concept-cnn.png  used on input line 68.
 (pdftex.def)             Requested size: 218.3173pt x 83.11113pt.
-) [8 <./gambar/concept-cnn.png>]
-(./bab/3-desain-implementasi.tex
+ [8 <./gambar/concept-cnn.png>] [9])
+Overfull \hbox (0.13086pt too wide) in paragraph at lines 96--173
+[]\OT1/lmr/m/n/10 Penelitian ini di-la-kuk-an oleh Ane-lia Ange-lo-va dan kawan
+-kawan
+ []
+
+[10] (./bab/3-desain-implementasi.tex
 Bab 3.
-<gambar/blok-diagram.png, id=365, 573.14125pt x 151.56625pt>
+<gambar/blok-diagram.png, id=395, 573.14125pt x 151.56625pt>
 File: gambar/blok-diagram.png Graphic file (type png)
 <use gambar/blok-diagram.png>
 Package pdftex.def Info: gambar/blok-diagram.png  used on input line 15.
@@ -1076,33 +1081,33 @@ Package pdftex.def Info: gambar/blok-diagram.png  used on input line 15.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [9
+ [11
 
 
  <./gambar/blok-diagram.png>]
-<gambar/caltech.png, id=372, 756.8275pt x 127.47626pt>
+<gambar/caltech.png, id=402, 756.8275pt x 127.47626pt>
 File: gambar/caltech.png Graphic file (type png)
 <use gambar/caltech.png>
 Package pdftex.def Info: gambar/caltech.png  used on input line 28.
 (pdftex.def)             Requested size: 264.89359pt x 44.61736pt.
-<gambar/youtube-dataset.png, id=374, 1367.1075pt x 771.88374pt>
+<gambar/youtube-dataset.png, id=404, 1367.1075pt x 771.88374pt>
 File: gambar/youtube-dataset.png Graphic file (type png)
 <use gambar/youtube-dataset.png>
 Package pdftex.def Info: gambar/youtube-dataset.png  used on input line 37.
 (pdftex.def)             Requested size: 205.05728pt x 115.77756pt.
- [10 <./gambar/caltech.png>]
-<gambar/data-splitting.png, id=384, 442.65375pt x 111.41624pt>
+ [12 <./gambar/caltech.png>]
+<gambar/data-splitting.png, id=414, 442.65375pt x 111.41624pt>
 File: gambar/data-splitting.png Graphic file (type png)
 <use gambar/data-splitting.png>
 Package pdftex.def Info: gambar/data-splitting.png  used on input line 52.
 (pdftex.def)             Requested size: 221.32632pt x 55.70798pt.
- [11 <./gambar/youtube-dataset.png> <./gambar/data-splitting.png>]
+ [13 <./gambar/youtube-dataset.png> <./gambar/data-splitting.png>]
 Overfull \hbox (2.93202pt too wide) in paragraph at lines 64--66
 \OT1/lmr/m/it/10 Test Se-ts \OT1/lmr/m/n/10 me-ru-pak-an sam-pel da-ta yang di-
 gu-nak-an un-tuk meng-
  []
 
-<gambar/flowchart-preprocessing.png, id=394, 182.6825pt x 533.995pt>
+<gambar/flowchart-preprocessing.png, id=425, 182.6825pt x 533.995pt>
 File: gambar/flowchart-preprocessing.png Graphic file (type png)
 <use gambar/flowchart-preprocessing.png>
 Package pdftex.def Info: gambar/flowchart-preprocessing.png  used on input line
@@ -1114,25 +1119,25 @@ Overfull \hbox (2.47414pt too wide) in paragraph at lines 80--82
 lmr/m/it/10 pre-processing
  []
 
-[12]
-<gambar/image-resizing.png, id=401, 392.46625pt x 131.49126pt>
+[14]
+<gambar/image-resizing.png, id=432, 392.46625pt x 131.49126pt>
 File: gambar/image-resizing.png Graphic file (type png)
 <use gambar/image-resizing.png>
 Package pdftex.def Info: gambar/image-resizing.png  used on input line 89.
 (pdftex.def)             Requested size: 274.72449pt x 92.04324pt.
- [13 <./gambar/flowchart-preprocessing.png>] [14 <./gambar/image-resizing.png>]
-<gambar/image-augmentation.png, id=416, 470.75874pt x 265.99374pt>
+ [15 <./gambar/flowchart-preprocessing.png>] [16 <./gambar/image-resizing.png>]
+<gambar/image-augmentation.png, id=447, 470.75874pt x 265.99374pt>
 File: gambar/image-augmentation.png Graphic file (type png)
 <use gambar/image-augmentation.png>
 Package pdftex.def Info: gambar/image-augmentation.png  used on input line 101.
 
 (pdftex.def)             Requested size: 235.3788pt x 132.99654pt.
-<gambar/mask-rcnn-arch.png, id=417, 733.74126pt x 472.76625pt>
+<gambar/mask-rcnn-arch.png, id=448, 733.74126pt x 472.76625pt>
 File: gambar/mask-rcnn-arch.png Graphic file (type png)
 <use gambar/mask-rcnn-arch.png>
 Package pdftex.def Info: gambar/mask-rcnn-arch.png  used on input line 115.
 (pdftex.def)             Requested size: 293.4913pt x 189.10315pt.
- [15 <./gambar/image-augmentation.png>]
+ [17 <./gambar/image-augmentation.png>]
 Overfull \hbox (12.57715pt too wide) in paragraph at lines 122--123
 \OT1/lmr/m/it/10 bottom-up pa-th-way\OT1/lmr/m/n/10 , \OT1/lmr/m/it/10 up-botto
 m pa-th-way \OT1/lmr/m/n/10 dan \OT1/lmr/m/it/10 la-te-ral con-ne-ction\OT1/lmr
@@ -1142,37 +1147,38 @@ m pa-th-way \OT1/lmr/m/n/10 dan \OT1/lmr/m/it/10 la-te-ral con-ne-ction\OT1/lmr
 
 Underfull \vbox (badness 5563) has occurred while \output is active []
 
- [16 <./gambar/mask-rcnn-arch.png>] [17]
-<gambar/cross-validation.png, id=437, 457.71pt x 322.20375pt>
+ [18 <./gambar/mask-rcnn-arch.png>] [19]
+<gambar/cross-validation.png, id=468, 457.71pt x 322.20375pt>
 File: gambar/cross-validation.png Graphic file (type png)
 <use gambar/cross-validation.png>
 Package pdftex.def Info: gambar/cross-validation.png  used on input line 149.
 (pdftex.def)             Requested size: 183.08075pt x 128.87921pt.
- [18 <./gambar/cross-validation.png>]) [19]
-[20
+ [20 <./gambar/cross-validation.png>]) [21]
+[22
 
 ] (./bab/4-pengujian-analisis.tex
 Bab 4.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Overfull \hbox (7.51198pt too wide) in paragraph at lines 27--36
+ [] 
+ []
 
- [21
+[23
 
-]
-[22]) [23] [24
+] [24]) [25] [26
 
 ] (./bab/5-penutup.tex
 Bab 5.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [25
+ [27
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [26])
-[27] [28
+ [28])
+[29] [30
 
 ] (./main.bbl (./main.brf)
 \tf@brf=\write7
@@ -1216,17 +1222,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 40--40
 i .
  []
 
-[29
+[31
 
-]) [30] (./lainnya/biografi-penulis.tex
-<gambar/elon.jpg, id=506, 578.16pt x 867.24pt>
+]) [32] (./lainnya/biografi-penulis.tex
+<gambar/elon.jpg, id=540, 578.16pt x 867.24pt>
 File: gambar/elon.jpg Graphic file (type jpg)
 <use gambar/elon.jpg>
 Package pdftex.def Info: gambar/elon.jpg  used on input line 14.
 (pdftex.def)             Requested size: 87.9199pt x 131.88007pt.
-) [31
+) [33
 
- <./gambar/elon.jpg>] [32
+ <./gambar/elon.jpg>] [34
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 198.
@@ -1236,16 +1242,16 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 198.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 198.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 198.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 29E7EE27222FFE242E1AFECA24AD7027;2151.
+(rerunfilecheck)             Checksum: 1FC536E2AA810B37AC4ABF6405DA4211;2337.
 Package rerunfilecheck Info: File `main.brf' has not changed.
-(rerunfilecheck)             Checksum: 10852D3040B70A83C215D2D8B4B45615;615.
+(rerunfilecheck)             Checksum: 856B39DCA853281969F57FBC353D5958;677.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 198.
  ) 
 Here is how much of TeX's memory you used:
- 10700 strings out of 492982
- 152099 string characters out of 6134896
- 364295 words of memory out of 5000000
- 13900 multiletter control sequences out of 15000+600000
+ 10726 strings out of 492982
+ 152505 string characters out of 6134896
+ 364667 words of memory out of 5000000
+ 13914 multiletter control sequences out of 15000+600000
  60463 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,13n,43p,1269b,478s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1257,10 +1263,10 @@ xmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri
 10.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbo10.pfb></usr/share/texmf/f
 onts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt1
 0.pfb>
-Output written on main.pdf (50 pages, 3667982 bytes).
+Output written on main.pdf (52 pages, 3674618 bytes).
 PDF statistics:
- 579 PDF objects out of 1000 (max. 8388607)
- 484 compressed objects within 5 object streams
- 126 named destinations out of 1000 (max. 500000)
- 361 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 614 PDF objects out of 1000 (max. 8388607)
+ 516 compressed objects within 6 object streams
+ 138 named destinations out of 1000 (max. 500000)
+ 377 words of extra memory for PDF output out of 10000 (max. 10000000)
 

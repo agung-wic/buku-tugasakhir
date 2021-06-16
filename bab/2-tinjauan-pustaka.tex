@@ -69,3 +69,28 @@ Arsitektur \textit{deep learning} berkinerja lebih baik daripada jaringan saraf 
 	\caption{Gambaran Konsep Arsitektur CNN \citep{concept-cnn}}
 	\label{fig:concept-cnn}
 \end{figure}
+
+\textit{Convolutional Neural Network} memiliki beberapa keunggulan dibanding dengan jaringan saraf tiruan lainnya dalam konteks visi komputer, antara lain :
+
+\begin{enumerate}
+	\item Salah satu alasan utama untuk mempertimbangkan CNN dalam kasus tersebut adalah fitur pembagian bobot dari CNN, yang mengurangi jumlah parameter yang dapat dilatih dalam jaringan, yang membantu model untuk menghindari \textit{overfitting} dan juga untuk meningkatkan generalisasi.
+	\item Pada CNN, lapisan klasifikasi dan lapisan ekstraksi fitur melakukan proses \textit{learning} secara bersama-sama, yang membuat output model lebih terorganisir dan membuat output lebih bergantung pada fitur yang diekstraksi.
+	\item Implementasi pada jaringan dengan ukuran yang besar akan lebih sulit dilakukan dengan menggunakan jenis jaringan saraf lain daripada menggunakan \textit{Convolutional Neural Network}
+\end{enumerate}
+
+Convolutional Neural Network memiliki beberapa layer antara lain:
+
+\begin{enumerate}
+	\item \textit{Convolutional layer} adalah komponen terpenting dari arsitektur CNN mana pun. Ini berisi satu set kernel convolutional (juga disebut filter), yang dililitkan dengan gambar input (metrik N-dimensi) untuk menghasilkan peta fitur keluaran. Kernel dapat digambarkan sebagai kisi nilai atau angka diskrit, di mana setiap nilai dikenal sebagai bobot kernel. Selama awal proses pelatihan model CNN, semua bobot kernel ditetapkan dengan angka acak (pendekatan yang berbeda juga tersedia untuk inisialisasi bobot). Kemudian, dengan setiap periode \textit{learning}, bobot disetel dan kernel belajar mengekstrak fitur yang memberikan informasi mengenai data.
+	
+	\item \textit{Pooling layer} digunakan untuk membuat sub-sampel peta fitur (dihasilkan setelah operasi konvolusi), yaitu mengambil peta fitur berukuran lebih besar dan mengecilkannya menjadi peta fitur berukuran lebih rendah. Saat menyusutkan peta fitur, ia selalu mempertahankan fitur (atau informasi) yang paling dominan di setiap langkah \textit{pools}. Operasi \textit{pooling} dilakukan dengan menentukan ukuran \textit{pooled region} dan langkah operasi, mirip dengan operasi konvolusi. Ada berbagai jenis teknik \textit{pooling} yang digunakan dalam berbagai \textit{pooling layer} seperti \textit{max pooling, min pooling, average pooling, gated pooling, tree pooling}, dan lain-lain. \textit{Max Pooling} adalah teknik pooling yang paling populer dan banyak digunakan.
+\end{enumerate}
+
+
+\section{Penelitian Terkait}
+\label{penelitianterkait}
+
+\subsection{Real-Time Pedestrian Detection With Deep Network Cascades}
+\label{realtime pedestrian}
+
+Penelitian ini dilakukan oleh Anelia Angelova dan kawan-kawan pada tahun 2015 yang menyajikan pendekatan real-time baru untuk deteksi objek yang mengeksploitasi efisiensi \textit{cascade classifiers} dengan akurasi \textit{deep neural network} \citep{penelitianterkait1}. \textit{Deep network} telah terbukti unggul dalam tugas klasifikasi, dan kemampuannya untuk beroperasi pada \textit{raw pixel input} tanpa perlu merancang fitur khusus. Namun, \textit{deep network} terkenal lambat pada waktu inferensi. Dalam \textit{paper} tersebut, Anelia Angelova dan kawan-kawan mengusulkan pendekatan \textit{cascades deep network} dan \textit{fast features}, yang sangat cepat dan sangat akurat. Mereka menerapkannya pada permasalahan pada deteksi pejalan kaki. Algoritma mereka berjalan secara real-time pada 15 frame per detik. Pendekatan yang dihasilkan mencapai tingkat kesalahan rata-rata 26,2\% pada \textit{benchmark} deteksi Caltech Pedestrian.

@@ -1,4 +1,4 @@
-\begin{thebibliography}{8}
+\begin{thebibliography}{9}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -58,5 +58,12 @@ Anirudha Ghosh, A.~Sufian, Farhana Sultana, Amlan Chakrabarti, and Debashis De.
 \newblock 01 2020.
 \newblock ISBN 978-3-030-32643-2.
 \newblock \doi{10.1007/978-3-030-32644-9_36}.
+
+\bibitem[Angelova et~al.(2015)Angelova, Krizhevsky, Vanhoucke, Ogale, and
+  Ferguson]{penelitianterkait1}
+Anelia Angelova, Alex Krizhevsky, Vincent Vanhoucke, Abhijit Ogale, and Dave
+  Ferguson.
+\newblock Real-time pedestrian detection with deep network cascades.
+\newblock 2015.
 
 \end{thebibliography}
