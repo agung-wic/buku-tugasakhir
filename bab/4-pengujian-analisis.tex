@@ -38,29 +38,71 @@ Pada proses oengujian digunakan salah satu layanan \textit{Google} yaitu \textit
 	\end{center}
 \end{table}
 
-\section{Skenario Pengujian}
-\label{sec:skenariopengujian}
+Pengujian dilakukan dengan membagi menjadi beberapa bagian yaitu sebagai berikut
 
-Pengujian dilakukan dengan \lipsum[1-2]
+\begin{enumerate}
+	\item Pengujian jenis \textit{backbone}
+	\item Pengujian jenis teknik validasi
+\end{enumerate}
 
-\section{Evaluasi Pengujian}
-\label{sec:analisispengujian}
+\section{Pengujian Jenis \textit{Backbone}}
+\label{sec:pengujian-backbone}
 
-Dari pengujian yang \lipsum[1]
+\subsection{Resnet 50}
+\label{resnet50}
 
-% Contoh pembuatan tabel
-\begin{longtable}{|c|c|c|}
-  \caption{Hasil Pengukuran Energi dan Kecepatan}
-  \label{tb:EnergiKecepatan}\\
-  \hline
-  \rowcolor[HTML]{C0C0C0}
-  \textbf{Energi} & \textbf{Jarak Tempuh} & \textbf{Kecepatan} \\
-  \hline
-  10 J & 1000 M & 200 M/s \\
-  20 J & 2000 M & 400 M/s \\
-  30 J & 4000 M & 800 M/s \\
-  40 J & 8000 M & 1600 M/s \\
-  \hline
-\end{longtable}
+Resnet-50 merupakan salah satu \textit{Image Classification} dari CNN dengan jumlah layer sebanyak 50. Gambar \ref{fig:resnet50-arch} adalah arsitektur dari Resnet50.
 
-\lipsum[2-4]
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.3]{gambar/resnet50.png}
+	\caption{Gambaran Arsitekture ResNet50}
+	\label{fig:resnet50-arch}
+\end{figure} 
+
+Gambar \ref{fig:resnet50-hasil} merupakan hasil deteksi yang dilakukan menggunakan \textit{backbone} resnet-50.
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.15]{gambar/hasil-resnet50.png}
+	\caption{Gambaran Hasil Deteksi ResNet50}
+	\label{fig:resnet50-hasil}
+\end{figure} 
+
+
+
+
+\subsection{Resnet 101}
+\label{resnet101}
+
+Resnet-101 merupakan salah satu \textit{Image Classification} dari CNN dengan jumlah layer sebanyak 101. Gambar \ref{fig:resnet101-arch} adalah arsitektur dari Resnet-101.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.3]{gambar/resnet101.png}
+	\caption{Gambaran Arsitekture ResNet101}
+	\label{fig:resnet101-arch}
+\end{figure} 
+
+Gambar \ref{fig:resnet101-hasil} merupakan hasil deteksi yang dilakukan menggunakan \textit{backbone} resnet-101.
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.15]{gambar/hasil-resnet101.png}
+	\caption{Gambaran Hasil Deteksi ResNet101}
+	\label{fig:resnet101-hasil}
+\end{figure} 
+
+
+\subsection{MobileNet V1}
+\label{mobilenetv1}
+
+\subsection{MobileNet V2}
+\label{mobilenetv2}
+
+\section{Pengujian Jenis Teknik Validasi}
+\label{sec:pengujian-validation}
+
+\subsection{Pengujian dengan Pemisahan Data Validasi}
+\label{normal-validasi}
+
+\subsection{Pengujian dengan \textit{K Fold Cross Validation}}
+\label{cross-validasi}

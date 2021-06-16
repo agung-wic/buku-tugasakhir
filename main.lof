@@ -16,4 +16,8 @@
 \contentsline {figure}{\numberline {3.8}{\ignorespaces Blok Diagram Alur Mask R-CNN}}{18}{figure.3.8}
 \contentsline {figure}{\numberline {3.9}{\ignorespaces Visualisasi \textit {K Fold Cross Validation}}}{20}{figure.3.9}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Gambaran Arsitekture ResNet50}}{24}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Gambaran Hasil Deteksi ResNet50}}{24}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Gambaran Arsitekture ResNet101}}{25}{figure.4.3}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Gambaran Hasil Deteksi ResNet101}}{25}{figure.4.4}
 \addvspace {10\p@ }

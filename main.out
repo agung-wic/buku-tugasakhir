@@ -28,10 +28,16 @@
 \BOOKMARK [1][-]{section.3.7}{3.7 Validating Data }{chapter.3}% 28
 \BOOKMARK [1][-]{section.3.8}{3.8 Testing Data }{chapter.3}% 29
 \BOOKMARK [0][-]{chapter.4}{4 PENGUJIAN DAN ANALISIS}{}% 30
-\BOOKMARK [1][-]{section.4.1}{4.1 Skenario Pengujian}{chapter.4}% 31
-\BOOKMARK [1][-]{section.4.2}{4.2 Evaluasi Pengujian}{chapter.4}% 32
-\BOOKMARK [0][-]{chapter.5}{5 PENUTUP}{}% 33
-\BOOKMARK [1][-]{section.5.1}{5.1 Kesimpulan}{chapter.5}% 34
-\BOOKMARK [1][-]{section.5.2}{5.2 Saran}{chapter.5}% 35
-\BOOKMARK [0][-]{Item.32}{DAFTAR PUSTAKA}{}% 36
-\BOOKMARK [0][-]{chapter*.5}{BIOGRAFI PENULIS}{}% 37
+\BOOKMARK [1][-]{section.4.1}{4.1 Pengujian Jenis Backbone}{chapter.4}% 31
+\BOOKMARK [2][-]{subsection.4.1.1}{4.1.1 Resnet 50}{section.4.1}% 32
+\BOOKMARK [2][-]{subsection.4.1.2}{4.1.2 Resnet 101}{section.4.1}% 33
+\BOOKMARK [2][-]{subsection.4.1.3}{4.1.3 MobileNet V1}{section.4.1}% 34
+\BOOKMARK [2][-]{subsection.4.1.4}{4.1.4 MobileNet V2}{section.4.1}% 35
+\BOOKMARK [1][-]{section.4.2}{4.2 Pengujian Jenis Teknik Validasi}{chapter.4}% 36
+\BOOKMARK [2][-]{subsection.4.2.1}{4.2.1 Pengujian dengan Pemisahan Data Validasi}{section.4.2}% 37
+\BOOKMARK [2][-]{subsection.4.2.2}{4.2.2 Pengujian dengan K Fold Cross Validation}{section.4.2}% 38
+\BOOKMARK [0][-]{chapter.5}{5 PENUTUP}{}% 39
+\BOOKMARK [1][-]{section.5.1}{5.1 Kesimpulan}{chapter.5}% 40
+\BOOKMARK [1][-]{section.5.2}{5.2 Saran}{chapter.5}% 41
+\BOOKMARK [0][-]{Item.32}{DAFTAR PUSTAKA}{}% 42
+\BOOKMARK [0][-]{chapter*.5}{BIOGRAFI PENULIS}{}% 43
