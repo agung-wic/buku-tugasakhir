@@ -235,9 +235,26 @@ Pada \textit{output layer}, dilakukan perhitungan kesalahan prediksi yang dihasi
 	\begin{equation}
 		H(p,y) =-\sum_{i} y_i\log(p_i)
 	\end{equation}
-	\centering
-	dimana $i \in \left[1,N\right]$
+	\begin{center}
+		dimana $i \in \left[1,N\right]$
+	\end{center}
 	
+	\item \textbf{\textit{Euclidean Loss Function}}\\
+	\textit{Euclidean Loss} juga disebut \textit{mean squared loss }banyak digunakan dalam masalah regresi. \textit{Mean squared loss} antara \textit{output} yang diprediksi $p \in R^N$ dan output aktual $y \in R^N$ di setiap neuron dari lapisan \textit{output} CNN didefinisikan sebagai :
+	
+	\begin{equation}
+		H(p,y)=\frac{1}{2N} \sum_{i=1}^{N} (p_i-y_i)^2
+	\end{equation}
+	
+	\item \textit{\textbf{Hinge Loss Function}}\\
+	\textit{Hinge Loss} banyak digunakan dalam masalah klasifikasi biner. Ini digunakan dalam masalah klasifikasi berbasis "margin maksimum", terutama untuk \textit{support vector machine} (SVM). Di sini, \textit{optimizer} mencoba memaksimalkan margin antara dua kelas target. Hinge Loss Function didefinisikan sebagai:
+	
+	\begin{equation}
+		H(p,y) = \sum_{i=1}^{N} \textbf{max}(0, m-(2y_i - 1)p_i)
+	\end{equation}
+
+	Dimana $m$ adalah margin yang biasanya bernilai sama dengan 1, dan $p_i$ menunjukkan prediksi \textit{output} dan $y_i$ menunjukkan output yang diinginkan
+		
 \end{enumerate}
 
 \section{Penelitian Terkait}
