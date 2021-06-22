@@ -94,7 +94,7 @@ Sebelum kita mempelajari lebih jauh, mari kita pahami dulu format \textit{input}
 	\label{fig:rgb-gray-image}
 \end{figure}
 
-Sekarang, dalam operasi konvolusi, sebagai contoh diambil kernel 2 × 2 lalu diimplementasikan ke semua gambar 4 × 4 secara horizontal maupun vertikal dan sepanjang proses berlangsung dilakukan \textit{dot product} antara kernel dan gambar \textit{input} dengan mengalikan nilai yang sesuai dari keduanya dan dijumlahkan semua nilai untuk menghasilkan satu nilai skalar di \textit{feature map output}. Proses ini berlanjut hingga kernel tidak dapat lagi digeser lebih jauh. Untuk memahaminya secara lebih jelas, mari kita lakukan beberapa perhitungan awal yang dilakukan pada setiap langkah secara grafis seperti yang ditunjukkan pada Gambar \ref{fig:conv-step}, di mana setiap nilai kernel 2 × 2 (ditunjukkan dengan warna merah) berada dikalikan dengan wilayah berukuran sama (ditunjukkan dengan warna jingga) dalam gambar input 4 ×4 dan nilai yang dihasilkan dijumlahkan untuk mendapatkan entri yang sesuai (ditunjukkan dengan warna biru) di \textit{feature map output} pada setiap langkah konvolusi.
+Sekarang, dalam operasi konvolusi, sebagai contoh diambil kernel 2 $\times$ 2 lalu diimplementasikan ke semua gambar 4 $\times$ 4 secara horizontal maupun vertikal dan sepanjang proses berlangsung dilakukan \textit{dot product} antara kernel dan gambar \textit{input} dengan mengalikan nilai yang sesuai dari keduanya dan dijumlahkan semua nilai untuk menghasilkan satu nilai skalar di \textit{feature map output}.Proses ini berlanjut hingga kernel tidak dapat lagi digeser lebih jauh. Untuk memahaminya secara lebih jelas, mari kita lakukan beberapa perhitungan awal yang dilakukan pada setiap langkah secara grafis seperti yang ditunjukkan pada Gambar \ref{fig:conv-step}, di mana setiap nilai kernel 2 $\times$ 2 (ditunjukkan dengan warna merah) berada dikalikan dengan wilayah berukuran sama (ditunjukkan dengan warna jingga) dalam gambar input 4 $\times$ 4 dan nilai yang dihasilkan dijumlahkan untuk mendapatkan entri yang sesuai (ditunjukkan dengan warna biru) di \textit{feature map output} pada setiap langkah konvolusi.
 
 \begin{figure}[h!]
 	\centering
@@ -135,6 +135,8 @@ Keuntungan utama dari lapisan konvolusi adalah:
 
 Kelemahan utama dari \textit{pooling layer} adalah terkadang menurunkan kinerja CNN secara keseluruhan. Alasan di balik ini adalah bahwa lapisan penyatuan membantu CNN untuk menemukan apakah fitur tertentu ada dalam gambar masukan yang diberikan atau tidak tanpa memperhatikan posisi yang tepat dari fitur tersebut.
 
+Gambar \ref{fig:max-pooling} mengilustrasikan contoh yang menunjukkan beberapa langkah awal serta keluaran akhir dari operasi \textit{max-pooling}, di mana ukuran area \textit{pooling} adalah 2 $\times$ 2 (ditunjukkan dalam warna jingga, dalam \textit{feature map input}) dengan \textit{stride} sama dengan 1 dan yang sesuai dihitung nilai di \textit{feature map output}. Rumus untuk menemukan ukuran \textit{feature map output} setelah operasi \textit{pooling} seperti di bawah ini:
+
 \begin{figure}[h!]
 	\centering
 	\includegraphics[scale=0.25]{gambar/max-pooling.png}
@@ -142,7 +144,6 @@ Kelemahan utama dari \textit{pooling layer} adalah terkadang menurunkan kinerja 
 	\label{fig:max-pooling}
 \end{figure}
 
-Gambar \ref{fig:max-pooling} mengilustrasikan contoh yang menunjukkan beberapa langkah awal serta keluaran akhir dari operasi \textit{max-pooling}, di mana ukuran area \textit{pooling} adalah 2 × 2 (ditunjukkan dalam warna jingga, dalam \textit{feature map input}) dengan \textit{stride} sama dengan 1 dan yang sesuai dihitung nilai di \textit{feature map output}. Rumus untuk menemukan ukuran \textit{feature map output} setelah operasi \textit{pooling} seperti di bawah ini:
 \begin{equation}
 	h'= \left[ \frac{h-f}{s} \right]
 \end{equation}
@@ -256,6 +257,20 @@ Pada \textit{output layer}, dilakukan perhitungan kesalahan prediksi yang dihasi
 	Dimana $m$ adalah margin yang biasanya bernilai sama dengan 1, dan $p_i$ menunjukkan prediksi \textit{output} dan $y_i$ menunjukkan output yang diinginkan
 		
 \end{enumerate}
+
+\subsection{\textit{Regional-Based CNN}}
+\label{subsec:rcnn}
+
+Semenjak\textit{ Convolution Neural Network} (CNN) dengan \textit{fully connected layer} tidak mampu menangani frekuensi kemunculan dan multi objek. Salah satu cara untuk mengatasinya adalah dengan menggunakan \textit{sliding window brute force search} untuk memilih wilayah dan menerapkan model CNN pada area tersebut, tetapi masalah dari pendekatan ini adalah bahwa objek yang sama dapat direpresentasikan dalam gambar dengan ukuran dan aspek rasio yang berbeda. Dengan mempertimbangkan faktor-faktor tersebut, penerapan algoritma \textit{deep learning} (CNN) pada jumlah \textit{region proposal} yang banyak akan menyebabkan proses komputasi yang dijalankan akan menjadi sangat berat dan rumit.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.3]{gambar/rcnn.png}
+	\caption{Arsitektur R-CNN \citep{arch-rcnn}}
+	\label{fig:rcnn}
+\end{figure}
+
+Ross Girshick dan kawan-kawan pada tahun 2013 mengusulkan arsitektur baru yang disebut R-CNN seperti pada Gambar \ref{fig:rcnn} (\textit{Regional-based CNN}) untuk menghadapi tantangan deteksi objek ini \citep{rcnn}. Arsitektur R-CNN menggunakan algoritma \textit{selective search} yang menghasilkan sekitar 2000 \textit{region proposal}. \textit{Regional proposal} ini kemudian diterapkan ke arsitektur CNN untuk menghitung jumlah fitur CNN. Fitur-fitur ini kemudian diteruskan dalam model SVM untuk mengklasifikasikan objek yang ada di \textit{region proposal}. Langkah selanjutnya adalah melakukan regresi pada \textit{bounding box} untuk mengetahui lokasi objek yang ada dalam gambar dengan lebih tepat.
 
 \section{Penelitian Terkait}
 \label{penelitianterkait}

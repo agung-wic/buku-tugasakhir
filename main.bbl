@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{12}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -37,6 +37,10 @@ N.~Ferracuti, Claudia Norscini, Emanuele Frontoni, P.~Gabellini, Marina
 Sigmoid function, 2021.
 \newblock URL \url{https://en.wikipedia.org/wiki/Sigmoid_function}.
 
+\bibitem[arc(2020)]{arch-rcnn}
+R-cnn | region based cnns, 2020.
+\newblock URL \url{https://www.geeksforgeeks.org/r-cnn-region-based-cnns/}.
+
 \bibitem[art(2021)]{artificialintellingece}
 Artificial intelligence (ai), 2021.
 \newblock URL
@@ -62,6 +66,14 @@ Anirudha Ghosh, A.~Sufian, Farhana Sultana, Amlan Chakrabarti, and Debashis De.
 \newblock 01 2020.
 \newblock ISBN 978-3-030-32643-2.
 \newblock \doi{10.1007/978-3-030-32644-9_36}.
+
+\bibitem[Girshick et~al.(2016)Girshick, Donahue, Darrell, and Malik]{rcnn}
+Ross Girshick, Jeff Donahue, Trevor Darrell, and Jitendra Malik.
+\newblock Region-based convolutional networks for accurate object detection and
+  segmentation.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}, 38\penalty0 (1):\penalty0 142--158, 2016.
+\newblock \doi{10.1109/TPAMI.2015.2437384}.
 
 \bibitem[Angelova et~al.(2015)Angelova, Krizhevsky, Vanhoucke, Ogale, and
   Ferguson]{penelitianterkait1}
