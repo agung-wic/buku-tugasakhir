@@ -23,7 +23,14 @@
 \contentsline {figure}{\numberline {3.8}{\ignorespaces Blok Diagram Alur Mask R-CNN}}{28}{figure.3.8}%
 \contentsline {figure}{\numberline {3.9}{\ignorespaces Visualisasi \textit {K Fold Cross Validation}}}{30}{figure.3.9}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Grafik Perubahan \textit {Training Loss}}}{36}{figure.4.1}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Grafik Perubahan \textit {Validation Loss}}}{37}{figure.4.2}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Grafik Perubahan \textit {Validation mAP}}}{38}{figure.4.3}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Grafik Perubahan \textit {Training Loss} pada Resnet-50}}{36}{figure.4.1}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Grafik Perubahan \textit {Validation Loss} pada Resnet-50}}{37}{figure.4.2}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Grafik Perubahan \textit {Validation mAP} pada Resnet-50}}{38}{figure.4.3}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Grafik Perubahan \textit {Training Loss} pada Resnet-101}}{40}{figure.4.4}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Grafik Perubahan \textit {Validation Loss} pada Resnet-101}}{41}{figure.4.5}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Grafik Perubahan \textit {Validation mAP} pada Resnet-101}}{42}{figure.4.6}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Grafik Perubahan \textit {Training Loss} pada Mobilenet-V1}}{44}{figure.4.7}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Grafik Perubahan \textit {Validation Loss} pada Mobilenet-V1}}{45}{figure.4.8}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Grafik Perubahan \textit {Validation mAP} pada Mobilenet-V1}}{46}{figure.4.9}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Grafik Perbandingan Model dengan \textit {backbone} yang berbeda}}{47}{figure.4.10}%
 \addvspace {10\p@ }

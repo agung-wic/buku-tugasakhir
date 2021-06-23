@@ -1,10 +1,10 @@
-\backcite {supervised}{{xi}{(document)}{Doc-Start}}
-\backcite {unsupervised}{{xi}{(document)}{Doc-Start}}
-\backcite {reinforcement}{{xi}{(document)}{Doc-Start}}
-\backcite {concept-cnn}{{xi}{(document)}{Doc-Start}}
-\backcite {sigmoid}{{xi}{(document)}{Doc-Start}}
-\backcite {sigmoid}{{xi}{(document)}{Doc-Start}}
-\backcite {arch-rcnn}{{xi}{(document)}{Doc-Start}}
+\backcite {supervised}{{ix}{(document)}{Doc-Start}}
+\backcite {unsupervised}{{ix}{(document)}{Doc-Start}}
+\backcite {reinforcement}{{ix}{(document)}{Doc-Start}}
+\backcite {concept-cnn}{{ix}{(document)}{Doc-Start}}
+\backcite {sigmoid}{{ix}{(document)}{Doc-Start}}
+\backcite {sigmoid}{{ix}{(document)}{Doc-Start}}
+\backcite {arch-rcnn}{{ix}{(document)}{Doc-Start}}
 \backcite {artificialintellingece}{{5}{2.1.1}{subsection.2.1.1}}
 \backcite {machinelearning1}{{5}{2.1.2}{subsection.2.1.2}}
 \backcite {supervised}{{6}{2.1}{figure.2.1}}

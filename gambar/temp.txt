@@ -1,0 +1,54 @@
+\begin{longtable}[h!]{|l|l|}
+	\hline
+	\multicolumn{2}{|c|}{\textbf{Pengaturan Model Resnet-101}}                                                                                                                                                                         \\ \hline
+	BACKBONE                        & resnet101                                                                                                                                                                              \\ \hline
+	BACKBONE\_STRIDES               & {[}4, 8, 16, 32, 64{]}                                                                                                                                                                 \\ \hline
+	BATCH\_SIZE                     & 1                                                                                                                                                                                      \\ \hline
+	BBOX\_STD\_DEV                  & {[}0.1 0.1 0.2 0.2{]}                                                                                                                                                                  \\ \hline
+	COMPUTE\_BACKBONE\_SHAPE        & None                                                                                                                                                                                   \\ \hline
+	DETECTION\_MAX\_INSTANCES       &	 50                                                    	\\ \hline
+	IMAGE\_META\_SIZE               & 16                                                                                                                                                                                     \\ \hline
+	IMAGE\_MIN\_DIM                 & 400                                                                                                                                                                                    \\ \hline
+	IMAGE\_MIN\_SCALE               & 0                                                                                                                                                                                      \\ \hline
+	IMAGE\_RESIZE\_MODE             & square                                                                                                                                                                                 \\ \hline
+	IMAGE\_SHAPE                    & {[}512 512{]}                                                                                                                                                                             \\ \hline
+	LEARNING\_MOMENTUM              & 0.9                                                                                                                                                                                    \\ \hline
+	LEARNING\_RATE                  & 0.001                                                                                                                                                                                  \\ \hline
+	LOSS\_WEIGHTS                   & \begin{tabular}[c]{@{}l@{}}\{'rpn\_class\_loss': 1.0, \\ 'rpn\_bbox\_loss': 1.0, \\ 'mrcnn\_class\_loss': 1.0, \\ 'mrcnn\_bbox\_loss': 1.0, \\ 'mrcnn\_mask\_loss': 1.0\}\end{tabular} \\ \hline
+	MASK\_POOL\_SIZE                & 14                                                                                                                                                                                     \\ \hline
+	MASK\_SHAPE                     & {[}28, 28{]}                                                                                                                                                                           \\ \hline
+	MAX\_GT\_INSTANCES              & 50                                                                                                                                                                                     \\ \hline
+	MEAN\_PIXEL                     & {[}123.7 116.8 103.9{]}                                                                                                                                                                \\ \hline
+	MINI\_MASK\_SHAPE               & (56, 56)                                                                                                                                                                               \\ \hline
+	NAME                            & object                                                                                                                                                                                 \\ \hline
+	NUM\_CLASSES                    & 4                                                                                                                                                                                      \\ \hline
+	POOL\_SIZE                      & 7                                                                                                                                                                                      \\ \hline
+	MASK\_SHAPE                     & {[}28, 28{]}                                                                                                                                                                           \\ \hline
+	MAX\_GT\_INSTANCES              & 50                                                                                                                                                                                     \\ \hline
+	MEAN\_PIXEL                     & {[}123.7 116.8 103.9{]}                                                                                                                                                                \\ \hline
+	MINI\_MASK\_SHAPE               & (56, 56)                                                                                                                                                                               \\ \hline
+	NAME                            & object                                                                                                                                                                                 \\ \hline
+	NUM\_CLASSES                    & 4                                                                                                                                                                                      \\ \hline
+	POOL\_SIZE                      & 7                                                                                                                                                                                      \\ \hline
+	POST\_NMS\_ROIS\_INFERENCE      & 1000                                                                                                                                                                                   \\ \hline
+	POST\_NMS\_ROIS\_TRAINING       & 2000                                                                                                                                                                                   \\ \hline
+	PRE\_NMS\_LIMIT                 & 6000                                                                                                                                                                                   \\ \hline
+	ROI\_POSITIVE\_RATIO            & 0.33                                                                                                                                                                                   \\ \hline
+	RPN\_ANCHOR\_RATIOS             & {[}0.5, 1, 2{]}                                                                                                                                                                        \\ \hline
+	RPN\_ANCHOR\_SCALES             & (32, 64, 128, 256, 512)                                                                                                                                                                \\ \hline
+	RPN\_ANCHOR\_STRIDE             & 1                                                                                                                                                                                      \\ \hline
+	RPN\_BBOX\_STD\_DEV             & {[}0.1 0.1 0.2 0.2{]}                                                                                                                                                                  \\ \hline
+	RPN\_NMS\_THRESHOLD             & 0.7                                                                                                                                                                                    \\ \hline
+	RPN\_TRAIN\_ANCHORS\_PER\_IMAGE & 256                                                                                                                                                                                    \\ \hline
+	STEPS\_PER\_EPOCH               & 100                                                                                                                                                                                    \\ \hline
+	TOP\_DOWN\_PYRAMID\_SIZE        & 256                                                                                                                                                                                    \\ \hline
+	TRAIN\_BN                       & False                                                                                                                                                                                  \\ \hline
+	TRAIN\_ROIS\_PER\_IMAGE         & 200                                                                                                                                                                                    \\ \hline
+	USE\_MINI\_MASK                 & True                                                                                                                                                                                   \\ \hline
+	USE\_RPN\_ROIS                  & True                                                                                                                                                                                   \\ \hline
+	VALIDATION\_STEPS               & 30                                                                                                                                                                                     \\ \hline
+	WEIGHT\_DECAY                   & 0.0001  
+	\\ \hline 
+	\caption{Konfigurasi Model menggunakan Resnet-101 }
+	\label{tab:conf-resnet101}
+\end{longtable}
