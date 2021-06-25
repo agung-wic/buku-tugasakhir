@@ -272,6 +272,11 @@ Semenjak\textit{ Convolution Neural Network} (CNN) dengan \textit{fully connecte
 
 Ross Girshick dan kawan-kawan pada tahun 2013 mengusulkan arsitektur baru yang disebut R-CNN seperti pada Gambar \ref{fig:rcnn} (\textit{Regional-based CNN}) untuk menghadapi tantangan deteksi objek ini \citep{rcnn}. Arsitektur R-CNN menggunakan algoritma \textit{selective search} yang menghasilkan sekitar 2000 \textit{region proposal}. \textit{Regional proposal} ini kemudian diterapkan ke arsitektur CNN untuk menghitung jumlah fitur CNN. Fitur-fitur ini kemudian diteruskan dalam model SVM untuk mengklasifikasikan objek yang ada di \textit{region proposal}. Langkah selanjutnya adalah melakukan regresi pada \textit{bounding box} untuk mengetahui lokasi objek yang ada dalam gambar dengan lebih tepat.
 
+\subsection{\textit{Fast R-CNN}}
+\label{subsec:fast-rcnn}
+
+Fast R-CNN ditemukan atas metode yang telah ditemukan terlebih dahulu yaitu \textit{R-CNN} untuk mengklasifikasikan proposal objek secara efisien menggunakan \textit{deep convolutional network} \citep{fast-rcnn}. Dibandingkan dengan \textit{R-CNN}, \textit{Fast R-CNN} menggunakan beberapa inovasi untuk meningkatkan kecepatan \textit{learning} dan pengujian sekaligus meningkatkan akurasi deteksi.
+
 \section{Penelitian Terkait}
 \label{penelitianterkait}
 
