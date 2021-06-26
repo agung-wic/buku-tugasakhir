@@ -343,3 +343,80 @@ Tabel \ref{tab:train-recap} adalah tabel perbandingan dari \textit{output file s
 	\caption{Grafik Perbandingan Model dengan \textit{backbone} yang berbeda}
 	\label{fig:graph-recap}
 \end{figure}
+
+\subsection{Perbandingan Hasil Prediksi}
+\label{subsec:perbandingan-hasil-prediksi}
+
+Setelah mendapatkan hasil \textit{training} pada Tabel \ref{tab:train-recap} terdapat dua parameter yang digunakan yaitu \textit{output file size} dan \textit{mean Average Precision}. Parameter tersebut digunakan untuk melakukan justifikasi dalam pemilihan model yang terbaik. Pada parameter \textit{output file size}, model yang diinginkan adalah model dengan dengan ukuran sekecil mungkin, agar tidak menghabiskan kapasitas penyimpanan terlalu banyak. Sedangkan untuk \textit{mean Average Precision} yang diinginkan adalah model dengan \textit{meand Average Precision} yang tinggi sehingga kemam puan model tersebut untuk melakukan proses prediksi akan semakin tepat dengan kondisi yang sesuai pada dunia nyata.
+
+Setelah membandingkan parameter \textit{output file size} dan \textit{mean Average Precision}, pada tahap selanjutnya akan dilakukan proses membandingkan nilai atau hasil dari prediksi pada setiap model yang telah dibuat. Semakin tinggi \textit{mean Average Precision} dan kebenaran dalam prediksi, maka model tersebut sangat bagus dan sesuai dengan permasalahan yang ingin diselesaikan oleh model yang telah dibuat. Tujuan dari tahapan membandingkan ini adalah untuk memilih model yang terbaik dan apakah model yang telah dibuat dapat benar-benar dapat menyelesaikan permasalahan \textit{object detection and segmentation}. Sehingga, dari hasil percobaan ini dapat menentukan model terbaik yang dapat menyelesaikan permasalahan dan juga telah diuji dengan menggunakan\textit{ testing set}.
+
+\subsubsection{Hasil Pengujian dengan \textit{Backbone Resnet-50}}
+
+Pada hasil pengujian dengan menggunakan satu gambar jalan raya pada pada saat pagi hari yang ditunjukkan pada gambar \ref{fig:hasil-resnet50}, didapatkan hasil skor yaitu :
+\begin{enumerate}[nolistsep]
+	\item Pejalan kaki (\textit{score} : 0,984)
+	\item \textit{Zebracross} (\textit{score} : 0,983)
+	\item Pengendara motor (\textit{score} : 1,00)
+\end{enumerate}
+Dari hasil tersebut, \textit{Backbone Resnet-50} dapat memprediksi gambar dengan benar, serta \textit{evaluation time} dari \textit{backbone} ini sebesar 1,933 detik
+\begin{figure}[h] 
+	\centering
+	\includegraphics[scale=0.3]{gambar/fajar-frame800-resnet50.png}
+	\caption{Hasil Uji dari \textit{Backbone Resnet-50}}
+	\label{fig:hasil-resnet50}
+\end{figure}
+
+\subsubsection{Hasil Pengujian dengan \textit{Backbone Resnet-101}}
+
+Pada hasil pengujian dengan menggunakan satu gambar jalan raya pada pada saat pagi hari yang ditunjukkan pada gambar \ref{fig:hasil-resnet101}, didapatkan hasil skor yaitu :
+\begin{enumerate}[nolistsep]
+	\item Pejalan kaki (\textit{score} : 0,986)
+	\item \textit{Zebracross} (\textit{score} : 0,995)
+	\item Pengendara motor (\textit{score} : 0,999)
+\end{enumerate}
+Dari hasil tersebut, \textit{Backbone Resnet-101} dapat memprediksi gambar dengan benar, serta \textit{evaluation time} dari \textit{backbone} ini sebesar 2,599 detik
+\begin{figure}[h] 
+	\centering
+	\includegraphics[scale=0.3]{gambar/fajar-frame800-resnet101.png}
+	\caption{Hasil Uji dari \textit{Backbone Resnet-101}}
+	\label{fig:hasil-resnet101}
+\end{figure}
+
+\subsubsection{Hasil Pengujian dengan \textit{Backbone Mobilenet-V1}}
+
+Pada hasil pengujian dengan menggunakan satu gambar jalan raya pada pada saat pagi hari yang ditunjukkan pada gambar \ref{fig:hasil-mobilenetv1}, didapatkan hasil skor yaitu :
+\begin{enumerate}[nolistsep]
+	\item Pejalan kaki (tidak terdeteksi)
+	\item \textit{Zebracross} (terdeteksi 2  dengan \textit{score} : 0,942 dan 0.888)
+	\item Pengendara motor (tidak terdeteksi)
+\end{enumerate}
+Dari hasil tersebut, \textit{Backbone Mobilenet-V1} tidak dapat memprediksi gambar dengan benar, serta \textit{evaluation time} dari \textit{backbone} ini sebesar 0,652 detik
+\begin{figure}[h] 
+	\centering
+	\includegraphics[scale=0.3]{gambar/fajar-frame800-mobilenetv1.png}
+	\caption{Hasil Uji dari \textit{Backbone Mobilenet-V1}}
+	\label{fig:hasil-mobilenetv1}
+\end{figure}
+
+Setelah melakukan \textit{testing} dengan menggunakan gambar pada \textit{testing set} pada keseluruhan model, maka tabel \ref{tab:result-comparasion} menunjukkan ringkasan dari perbandingan hasil \textit{testing} yang telah dilakukan. Parameter yang akan dibandingkan yaitu \textit{evaluation time} dan besar \textit{mean Average Precision}.
+
+\begin{table}[h]
+	\centering
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{|c|l|r|r|}
+			\hline
+			\multicolumn{1}{|l|}{\textbf{No.}} & \textit{\textbf{Backbone}} & \textit{\textbf{Evaluation Time}} & \textbf{mAP} \\ \hline
+			1                                  & ResNet-50                  & 1,933 s                           & 100\%        \\ \hline
+			2                                  & ResNet-101                 & 2,599 s                             & 100\%        \\ \hline
+			3                                  & MobileNet-v1               & 0,652 s                             & 25\%          \\ \hline
+		\end{tabular}%
+	}
+	\caption{tabel Perbandingan Hasil \textit{Testing}}
+	\label{tab:result-comparasion}
+\end{table}
+
+\section{Pengujian Perbedaan Waktu}
+\label{sec:pengujian-waktu}
+
+Pengujian pada perbedaan waktu bertujuan untuk mengetahui performa dan akurasi dari setiap model yang dihasilkan dengan waktu yang berbeda-beda (pagi, siang dan malam).

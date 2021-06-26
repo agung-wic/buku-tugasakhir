@@ -22,6 +22,7 @@
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Contoh \textit {Image Augmentation}}}{27}{figure.3.7}%
 \contentsline {figure}{\numberline {3.8}{\ignorespaces Blok Diagram Alur Mask R-CNN}}{28}{figure.3.8}%
 \contentsline {figure}{\numberline {3.9}{\ignorespaces Visualisasi \textit {K Fold Cross Validation}}}{30}{figure.3.9}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Diagram Alir \textit {Testing Data}}}{31}{figure.3.10}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Grafik Perubahan \textit {Training Loss} pada Resnet-50}}{36}{figure.4.1}%
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Grafik Perubahan \textit {Validation Loss} pada Resnet-50}}{37}{figure.4.2}%
@@ -33,4 +34,7 @@
 \contentsline {figure}{\numberline {4.8}{\ignorespaces Grafik Perubahan \textit {Validation Loss} pada Mobilenet-V1}}{45}{figure.4.8}%
 \contentsline {figure}{\numberline {4.9}{\ignorespaces Grafik Perubahan \textit {Validation mAP} pada Mobilenet-V1}}{46}{figure.4.9}%
 \contentsline {figure}{\numberline {4.10}{\ignorespaces Grafik Perbandingan Model dengan \textit {backbone} yang berbeda}}{47}{figure.4.10}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Hasil Uji dari \textit {Backbone Resnet-50}}}{48}{figure.4.11}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Hasil Uji dari \textit {Backbone Resnet-101}}}{49}{figure.4.12}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Hasil Uji dari \textit {Backbone Mobilenet-V1}}}{50}{figure.4.13}%
 \addvspace {10\p@ }

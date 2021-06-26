@@ -154,8 +154,15 @@ Pada tugas akhir kali ini, digunakan salah satu jenis teknik validasi menggunaka
 \section{\textit{Testing Data}
 	\label{sec:testingdata}}
 
-\textit{Testing data} merupakan tahap akhir dalam algoritma \textit{machine learning} secara umum. Pada tahap ini model akan diuji untuk didapatkan keakuratan untuk mendeteksi objek. Data uju yang digunakan pada tugas akhir kali ini adalah data yang berbentuk video. Jadi diperlukan \textit{pre-processing} yang berbeda dengan \textit{training data} dan \textit{validation data}. Data video akan dipecah atau dipotong-potong menjadi format gambar dengan ketentuan 30 \textit{frame per second}. Ketika \textit{data test} sudah dikonversi menjadi bentuk gambar, maka proses deteksi bisa dilakukan. Gambar hasil deteksi berupa gambar asli yang sudah ditambah dengan \textit{bounding box, classification, mask}. Lalu gambar-gambar tersebut disatukan lagi menjadi format video dengan ketentuan sama seperti saat pemotongan menjadi format gambar, yaitu 30 \textit{frame per second}. 
+\textit{Testing data} merupakan tahap akhir dalam algoritma \textit{machine learning} secara umum. Pada tahap ini model akan diuji untuk didapatkan keakuratan untuk mendeteksi objek. Data uju yang digunakan pada tugas akhir kali ini adalah data yang berbentuk video. Jadi diperlukan \textit{pre-processing} yang berbeda dengan \textit{training data} dan \textit{validation data}. Data video akan dipecah atau dipotong-potong menjadi format gambar dengan ketentuan 30 \textit{frame per second}. Ketika \textit{data test} sudah dikonversi menjadi bentuk gambar, maka proses deteksi bisa dilakukan. Gambar hasil deteksi berupa gambar asli yang sudah ditambah dengan \textit{bounding box, classification, mask}. Lalu gambar-gambar tersebut disatukan lagi menjadi format video dengan ketentuan sama seperti saat pemotongan menjadi format gambar, yaitu 30 \textit{frame per second}. Gambar \ref{fig:testing} merupakan diagram alir dari proses \textit{testing} yang dilakukan pada \textit{input file} berupa video. 
 
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.4]{gambar/testing.png}
+	\caption{Diagram Alir \textit{Testing Data}}
+	\label{fig:testing}
+\end{figure} 
 %\section{Implementasi Alat
 %\label{sec:implementasi alat}}
 %
