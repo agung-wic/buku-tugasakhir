@@ -424,4 +424,24 @@ Pengujian pada perbedaan waktu bertujuan untuk mengetahui performa dan akurasi d
 \subsection{Pengujian di Pagi Hari}
 \label{subsec:pagi}
 
-Pada pengujian ini \textit{testing data} diambil dengan menggunakan kamera \textit{smartphone} yang menghasilkan video beresolusi 1280$\times$720 px berdurasi 63.43 s. Video tersebut mempunyai banyak \textit{frame} per detik sebanyak 30 fps serta total \textit{frame} yang dihasilkan sejumlah 1903 \textit{frame}. Gambar \ref{label} merupakan perbandingan hasis deteksi dan segementasi dari ketiga \textit{backbone} yang digunakan pada waktu pagi hari.
+Pada pengujian ini \textit{testing data} diambil dengan menggunakan kamera \textit{smartphone} yang menghasilkan video beresolusi 1280$\times$720 px berdurasi 63.43 s. Video tersebut mempunyai banyak \textit{frame} per detik sebanyak 30 fps serta total \textit{frame} yang dihasilkan sejumlah 1903 \textit{frame}. Gambar \ref{fig:comparasion-morning} merupakan perbandingan hasis deteksi dan segementasi dari ketiga \textit{backbone} yang digunakan pada waktu pagi hari.
+
+\begin{figure}[h]
+	\centering
+	\begin{minipage}[b]{0.3\textwidth}
+		\includegraphics[width=\textwidth]{gambar/fajar-frame800-resnet50.png}
+		\caption*{ResNet-50}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[b]{0.3\textwidth}
+		\includegraphics[width=\textwidth]{gambar/fajar-frame800-resnet101.png}
+		\caption*{ResNet-101}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[b]{0.3\textwidth}
+		\includegraphics[width=\textwidth]{gambar/fajar-frame800-mobilenetv1.png}
+		\caption*{MobileNet-v1}
+	\end{minipage}
+	\caption{{Perbandingan Hasil pada Pagi Hari}}
+	\label{fig:comparasion-morning}
+\end{figure}
