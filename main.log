@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.5.20)  28 JUN 2021 20:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.5.20)  28 JUN 2021 20:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1342,12 +1342,6 @@ put line 745.
 
 ] (./bab/5-penutup.tex
 Bab 5.
-
-Overfull \hbox (3.88187pt too wide) in paragraph at lines 13--14
-\OT1/lmr/m/n/10 tek-si-an pe-jal-an ka-ki dan ze-bra-cross de-ngan meng-gu-nak-
-an Mask
- []
-
 ) [61
 
 ] [62
@@ -1401,7 +1395,7 @@ Underfull \hbox (badness 1472) in paragraph at lines 48--48
 [63
 
 ]) [64] (./lainnya/biografi-penulis.tex
-<gambar/agung.jpg, id=1007, 578.16pt x 867.24pt>
+<gambar/agung.jpg, id=1008, 578.16pt x 867.24pt>
 File: gambar/agung.jpg Graphic file (type jpg)
 <use gambar/agung.jpg>
 Package pdftex.def Info: gambar/agung.jpg  used on input line 14.
@@ -1417,19 +1411,25 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 204.
 (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 204.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 204.
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 774D6DB2933E161743EDC8EFBA50A579;3505.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: 774D6DB2933E161743EDC8EFBA50A579;3505
+(rerunfilecheck)             After:  0F69BFB5773DD26029481BA4C3A8E5DE;3505.
 Package rerunfilecheck Info: File `main.brf' has not changed.
 (rerunfilecheck)             Checksum: C0518D9DCD91853EAB49334012CD6BFD;1217.
-
 
 LaTeX Warning: There were undefined references.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 204.
  ) 
 Here is how much of TeX's memory you used:
- 13549 strings out of 481239
- 212441 string characters out of 5920377
+ 13550 strings out of 481239
+ 212448 string characters out of 5920377
  619962 words of memory out of 5000000
  28180 multiletter control sequences out of 15000+600000
  603480 words of font info for 57 fonts, out of 8000000 for 9000
@@ -1449,10 +1449,10 @@ c/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbo10.pfb></usr/shar
 e/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public
 /lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb></usr/share/te
 xmf/fonts/type1/public/lm/lmtt10.pfb>
-Output written on main.pdf (86 pages, 11223874 bytes).
+Output written on main.pdf (86 pages, 11224087 bytes).
 PDF statistics:
- 1138 PDF objects out of 1200 (max. 8388607)
- 929 compressed objects within 10 object streams
- 271 named destinations out of 1000 (max. 500000)
+ 1139 PDF objects out of 1200 (max. 8388607)
+ 930 compressed objects within 10 object streams
+ 272 named destinations out of 1000 (max. 500000)
  639 words of extra memory for PDF output out of 10000 (max. 10000000)
 

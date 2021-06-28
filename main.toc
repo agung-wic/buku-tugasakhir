@@ -54,5 +54,5 @@
 \contentsline {chapter}{\numberline {5}PENUTUP}{61}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Kesimpulan}{61}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Saran}{61}{section.5.2}%
-\contentsline {chapter}{DAFTAR PUSTAKA}{63}{Item.58}%
+\contentsline {chapter}{DAFTAR PUSTAKA}{63}{Item.59}%
 \contentsline {chapter}{BIOGRAFI PENULIS}{65}{chapter*.55}%
