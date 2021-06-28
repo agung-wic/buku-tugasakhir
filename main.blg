@@ -1,51 +1,51 @@
-This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
-Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 The style file: unsrtnat.bst
-Database file #1: pustaka/pustaka.bib.bib
+Database file #1: pustaka/pustaka.bib
 Warning--empty journal in machinelearning1
 Warning--empty publisher in dl
 Warning--empty publisher in cnn
 Warning--empty journal in penelitianterkait1
-You've used 13 entries,
+You've used 15 entries,
             2481 wiz_defined-function locations,
-            620 strings with 6547 characters,
-and the built_in function-call counts, 4589 in all, are:
-= -- 380
+            626 strings with 6826 characters,
+and the built_in function-call counts, 5019 in all, are:
+= -- 420
 > -- 194
 < -- 4
-+ -- 84
++ -- 88
 - -- 58
-* -- 350
-:= -- 671
-add.period$ -- 42
-call.type$ -- 13
-change.case$ -- 24
-chr.to.int$ -- 13
-cite$ -- 22
-duplicate$ -- 243
-empty$ -- 467
+* -- 374
+:= -- 713
+add.period$ -- 46
+call.type$ -- 15
+change.case$ -- 28
+chr.to.int$ -- 15
+cite$ -- 26
+duplicate$ -- 271
+empty$ -- 531
 format.name$ -- 66
-if$ -- 1012
+if$ -- 1118
 int.to.chr$ -- 1
-int.to.str$ -- 14
+int.to.str$ -- 16
 missing$ -- 10
-newline$ -- 76
+newline$ -- 84
 num.names$ -- 24
-pop$ -- 143
+pop$ -- 169
 preamble$ -- 1
-purify$ -- 13
+purify$ -- 15
 quote$ -- 0
-skip$ -- 157
+skip$ -- 181
 stack$ -- 0
-substring$ -- 174
-swap$ -- 49
+substring$ -- 180
+swap$ -- 53
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 85
+type$ -- 99
 warning$ -- 4
 while$ -- 23
 width$ -- 0
-write$ -- 170
+write$ -- 190
 (There were 4 warnings)

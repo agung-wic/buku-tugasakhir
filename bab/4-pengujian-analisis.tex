@@ -430,18 +430,319 @@ Pada pengujian ini \textit{testing data} diambil dengan menggunakan kamera \text
 	\centering
 	\begin{minipage}[b]{0.3\textwidth}
 		\includegraphics[width=\textwidth]{gambar/fajar-frame800-resnet50.png}
-		\caption*{ResNet-50}
+		\caption*{(a) ResNet-50}
 	\end{minipage}
 	\hfill
 	\begin{minipage}[b]{0.3\textwidth}
 		\includegraphics[width=\textwidth]{gambar/fajar-frame800-resnet101.png}
-		\caption*{ResNet-101}
+		\caption*{(b) ResNet-101}
 	\end{minipage}
 	\hfill
 	\begin{minipage}[b]{0.3\textwidth}
 		\includegraphics[width=\textwidth]{gambar/fajar-frame800-mobilenetv1.png}
-		\caption*{MobileNet-v1}
+		\caption*{(c) MobileNet-v1}
 	\end{minipage}
 	\caption{{Perbandingan Hasil pada Pagi Hari}}
 	\label{fig:comparasion-morning}
+\end{figure}
+
+Untuk meguji performa model yang dihasilkan pada masing-masing \textit{backbone}, digunakan beberapa parameter nilai seperti \textit{precision, recall} dan \textit{F1-score} pada masing-masing kelas objek yang dideteksi. Perbandingan hasil evaluasi yang didapatkan masing-masing \textit{backbone} dapat dilihat pada Tabel \ref{tab:evaluate-morning}.
+
+Pada Resnet-50 \textit{Average Precision} untuk semua kelas yang berhasil dideteksi adalah sebesar 100\% dan \textit{Average Recall} 100\%. Sedangkan pada Resnet-101 memberikan hasil yang sama dengan Resnet-50 dengan \textit{AP} 100\% dan \textit{AR} 100\%. Namun pada Mobilenet-v1 objek yang berhasil dideteksi hanya \textit{zebracross} (ditambah dengan \textit{background}), sehingga pada objek pejalan kaki dan pengendara motor mempunyai \textit{precision} bernilai 0\% serta \textit{Recall} dan \textit{F1-score} bernilai tidak terdefinisi atau \textit{NaN}. Hal ini dikarenakan nilai \textit{True Positif} pada pejalan kaki dan pengendara motor bernilai 0 (angka 0 dibagi nilai berapun memiliki hasil tidak terdefinisi). Nilai \textit{AP} yang dihasilkan pada evaluasi Mobilenet-v1 sebesar 37.5\%.
+
+\begin{table}[!h]
+	\centering
+	\begin{minipage}[b]{\textwidth}
+		\centering
+		\begin{tabular}{|l|c|c|c|}
+			\hline
+			\multicolumn{1}{|c|}{\textbf{Kelas}} & \textit{\textbf{Precision (\%)}} & \textit{\textbf{Recall (\%)}} & \textit{\textbf{F1\_Score (\%)}} \\ \hline
+			Background                           & 100                              & 100                           & 100                              \\ \hline
+			Pedestrian                           & 100                              & 100                           & 100                              \\ \hline
+			Zebracross                           & 100                              & 100                           & 100                              \\ \hline
+			Motorbiker                           & 100                              & 100                           & 100                              \\ \hline
+		\end{tabular}
+		\caption*{(a) ResNet-50}
+	\end{minipage}
+	\vfill
+	\begin{minipage}[b]{\textwidth}
+		\centering
+		\begin{tabular}{|l|c|c|c|}
+			\hline
+			\multicolumn{1}{|c|}{\textbf{Kelas}} & \textit{\textbf{Precision (\%)}} & \textit{\textbf{Recall (\%)}} & \textit{\textbf{F1\_Score (\%)}} \\ \hline
+			Background                           & 100                              & 100                           & 100                              \\ \hline
+			Pedestrian                           & 100                              & 100                           & 100                              \\ \hline
+			Zebracross                           & 100                              & 100                           & 100                              \\ \hline
+			Motorbiker                           & 100                              & 100                           & 100                              \\ \hline
+		\end{tabular}
+		\caption*{(b) ResNet-101}
+	\end{minipage}
+	\vfill
+	\begin{minipage}[b]{\textwidth}
+		\centering
+		\begin{tabular}{|l|c|c|c|}
+			\hline
+			\multicolumn{1}{|c|}{\textbf{Kelas}} & \textit{\textbf{Precision (\%)}} & \textit{\textbf{Recall (\%)}} & \textit{\textbf{F1\_Score (\%)}} \\ \hline
+			Background                           & 50                               & 33.33                         & 40                               \\ \hline
+			Pedestrian                           & 0                                & NaN                           & NaN                              \\ \hline
+			Zebracross                           & 100                              & 50                            & 66.66                            \\ \hline
+			Motorbiker                           & 0                                & NaN                           & NaN                              \\ \hline
+		\end{tabular}
+		\caption*{(c) MobileNet-v1}
+	\end{minipage}
+	\caption{{Perbandingan Hasil Evaluasi pada Pagi Hari}}
+	\label{tab:evaluate-morning}
+\end{table}
+
+Selain menggunakan \textit{input data} berupa gambar, pada pengujian ini juga menggunakan \textit{input data} berupa \textit{file} video dengan format \textit{.mp4}. Proses \textit{testing} dibagi menjadi dua tahapan, tahap pertama memecah \textit{frame} video menjadi gambar dan melakukan prediksi serta tahap kedua menggabungkan kembali setiap \textit{frame} menjadi video. Tabel \ref{tab:video-morning} menunjukan waktu yang dibutuhkan untuk melakukan semua tahap prediksi pada \textit{file input} berbentuk video pada ketiga \textit{backbone}.
+
+\begin{table}[!h]
+	\centering{
+		\begin{tabular}{|l|c|c|c|c|}
+			\hline
+			\multicolumn{1}{|c|}{\textit{\textbf{Backbone}}} & \textit{\textbf{Tahap 1}} & \textit{\textbf{Tahap 2}} & \textit{\textbf{Total}} & \multicolumn{1}{l|}{\textit{\textbf{Output Size}}} \\ \hline
+			ResNet-50                                        & 07:54                     & 00:49                     & 08:44                   & 88.8 MB                                            \\ \hline
+			\textit{ResNet-101}                              & 07:24                     & 00:38                     & 08:03                   & 87.7 MB                                            \\ \hline
+			\textit{MobileNet-v1}                            & 06:50                     & 00:40                     & 07:31                   & 89.7 MB                                            \\ \hline
+		\end{tabular}
+	}
+	\caption{Waktu Prediksi pada \textit{File Input} Video dalam \textit{MM:SS}}
+	\label{tab:video-morning}
+\end{table}
+
+\subsection{Pengujian di Siang Hari}
+\label{subsec:siang}
+
+Pada pengujian ini \textit{testing data} diambil dari video streaming \textit{youtube}\citep{test-siang} yang memiliki resolusi 1920$\times$1080 px berdurasi 29.4 s. Video tersebut mempunyai banyak \textit{frame} per detik sebanyak 25 fps serta total \textit{frame} yang dihasilkan sejumlah 735 \textit{frame}. Gambar \ref{fig:comparasion-afternoon} merupakan perbandingan hasis deteksi dan segementasi dari ketiga \textit{backbone} yang digunakan pada waktu siang hari.
+
+\begin{figure}[!h]
+	\centering
+	\begin{minipage}[b]{0.3\textwidth}
+		\includegraphics[width=\textwidth]{gambar/siang-frame465-resnet50.png}
+		\caption*{(a) ResNet-50}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[b]{0.3\textwidth}
+		\includegraphics[width=\textwidth]{gambar/siang-frame465-resnet101.png}
+		\caption*{(b) ResNet-101}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[b]{0.3\textwidth}
+		\includegraphics[width=\textwidth]{gambar/siang-frame465-mobilenetv1.png}
+		\caption*{(c) MobileNet-v1}
+	\end{minipage}
+	\caption{{Perbandingan Hasil pada Siang Hari}}
+	\label{fig:comparasion-afternoon}
+\end{figure}
+
+Perbandingan hasil evaluasi yang didapatkan masing-masing \textit{backbone} dengan membandingkan nilai \textit{precision, recall} dan \textit{F1-score} dapat dilihat pada Tabel \ref{tab:evaluate-afternoon}.
+
+\begin{table}[!h]
+	\centering
+	\begin{minipage}[b]{\textwidth}
+		\centering
+		\begin{tabular}{|l|c|c|c|}
+			\hline
+			\multicolumn{1}{|c|}{\textbf{Kelas}} & \textit{\textbf{Precision (\%)}} & \textit{\textbf{Recall (\%)}} & \textit{\textbf{F1\_Score (\%)}} \\ \hline
+			Background                           & 50                               & 25                            & 33.33                            \\ \hline
+			Pedestrian                           & 100                              & 100                           & 100                              \\ \hline
+			Zebracross                           & 50                               & 100                           & 66.66                            \\ \hline
+			Motorbiker                           & 50                               & 66.66                         & 57.14                            \\ \hline
+		\end{tabular}
+		\caption*{(a) ResNet-50}
+	\end{minipage}
+	\vfill
+	\begin{minipage}[b]{\textwidth}
+		\centering
+		\begin{tabular}{|l|c|c|c|}
+			\hline
+			\multicolumn{1}{|c|}{\textbf{Kelas}} & \textit{\textbf{Precision (\%)}} & \textit{\textbf{Recall (\%)}} & \textit{\textbf{F1\_Score (\%)}} \\ \hline
+			Background                           & 100                              & 25                            & 40                               \\ \hline
+			Pedestrian                           & 100                              & 100                           & 100                              \\ \hline
+			Zebracross                           & 50                               & 100                           & 66.66                            \\ \hline
+			Motorbiker                           & 50                               & 100                           & 66.66                            \\ \hline
+		\end{tabular}
+		\caption*{(b) ResNet-101}
+	\end{minipage}
+	\vfill
+	\begin{minipage}[b]{\textwidth}
+		\centering
+		\begin{tabular}{|l|c|c|c|}
+			\hline
+			\multicolumn{1}{|c|}{\textbf{Kelas}} & \textit{\textbf{Precision (\%)}} & \textit{\textbf{Recall (\%)}} & \textit{\textbf{F1\_Score (\%)}} \\ \hline
+			Background                           & 50                               & 14.28                         & 22.22                            \\ \hline
+			Pedestrian                           & 0                                & NaN                           & NaN                              \\ \hline
+			Zebracross                           & 50                               & 50                            & 50                               \\ \hline
+			Motorbiker                           & 0                                & NaN                           & NaN                              \\ \hline
+		\end{tabular}
+		\caption*{(c) MobileNet-v1}
+	\end{minipage}
+	\caption{{Perbandingan Hasil Evaluasi pada Siang Hari}}
+	\label{tab:evaluate-afternoon}
+\end{table}
+
+Pada Resnet-50 \textit{Average Precision} untuk semua kelas yang berhasil dideteksi adalah sebesar 62.5\% dan \textit{Average Recall} 72.915\%. Sedangkan pada Resnet-101 memberikan hasil \textit{AP} sebesar 75\% dan \textit{AR} 81.5\%. Namun pada Mobilenet-v1 objek yang berhasil dideteksi hanya \textit{zebracross} (ditambah dengan \textit{background}) sama saat pengujian pada pagi hari. Nilai \textit{AP} yang dihasilkan pada evaluasi Mobilenet-v1 sebesar 25\%.
+
+Selain menggunakan \textit{input data} berupa gambar, pada pengujian ini juga menggunakan \textit{input data} berupa \textit{file} video dengan format \textit{.mp4}. Proses \textit{testing} dibagi menjadi dua tahapan, tahap pertama memecah \textit{frame} video menjadi gambar dan melakukan prediksi serta tahap kedua menggabungkan kembali setiap \textit{frame} menjadi video. Tabel \ref{tab:video-afternoon} menunjukan waktu total yang dibutuhkan untuk melakukan semua tahap prediksi pada \textit{file input} berbentuk video pada ketiga \textit{backbone}.
+
+\begin{table}[!h]
+	\centering{
+		\begin{tabular}{|l|c|c|c|c|}
+			\hline
+			\multicolumn{1}{|c|}{\textit{\textbf{Backbone}}} & \textit{\textbf{Tahap 1}} & \textit{\textbf{Tahap 2}} & \textit{\textbf{Total}} & \multicolumn{1}{l|}{\textit{\textbf{Output Size}}} \\ \hline
+			ResNet-50                                        & 07:21                     & 00:36                     & 07:58                   & 52.8 MB                                            \\ \hline
+			\textit{ResNet-101}                              & 05:33                     & 00:30                     & 06:03                   & 50.1 MB                                            \\ \hline
+			\textit{MobileNet-v1}                            & 04:03                     & 00:30                     & 04:33                   & 42 MB                                              \\ \hline
+		\end{tabular}
+	}
+	\caption{Waktu Prediksi pada \textit{File Input} Video dalam \textit{MM:SS}}
+	\label{tab:video-afternoon}
+\end{table}
+
+\newpage
+
+\subsection{Pengujian di Malam Hari}
+\label{subsec:malam}
+
+Pada pengujian ini \textit{testing data} diambil dari video \textit{streaming youtube} \citep{test-malam} yang memiliki resolusi 1920$\times$1080 px berdurasi 28.04 s. Video tersebut mempunyai banyak \textit{frame} per detik sebanyak 25 fps serta total \textit{frame} yang dihasilkan sejumlah 701 \textit{frame}. Gambar \ref{fig:comparasion-night} merupakan perbandingan hasis deteksi dan segementasi dari ketiga \textit{backbone} yang digunakan pada waktu siang hari.
+
+\begin{figure}[!h]
+	\centering
+	\begin{minipage}[b]{0.3\textwidth}
+		\includegraphics[width=\textwidth]{gambar/malam-frame180-resnet50.png}
+		\caption*{(a) ResNet-50}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[b]{0.3\textwidth}
+		\includegraphics[width=\textwidth]{gambar/malam-frame180-resnet101.png}
+		\caption*{(b) ResNet-101}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[b]{0.3\textwidth}
+		\includegraphics[width=\textwidth]{gambar/malam-frame180-mobilnetv1.png}
+		\caption*{(c) MobileNet-v1}
+	\end{minipage}
+	\caption{{Perbandingan Hasil pada Malam Hari}}
+	\label{fig:comparasion-night}
+\end{figure}
+
+Perbandingan hasil evaluasi yang didapatkan masing-masing \textit{backbone} dengan membandingkan nilai \textit{precision, recall} dan \textit{F1-score} dapat dilihat pada Tabel \ref{tab:evaluate-night}.
+
+\begin{table}[!h]
+	\centering
+	\begin{minipage}[b]{\textwidth}
+		\centering
+		\begin{tabular}{|l|c|c|c|}
+			\hline
+			\multicolumn{1}{|c|}{\textbf{Kelas}} & \textit{\textbf{Precision (\%)}} & \textit{\textbf{Recall (\%)}} & \textit{\textbf{F1\_Score (\%)}} \\ \hline
+			Background                           & 100                              & 25                            & 40                               \\ \hline
+			Pedestrian                           & 40                               & 100                           & 57.14                            \\ \hline
+			Zebracross                           & 100                              & 100                           & 100                              \\ \hline
+			Motorbiker                           & -                                & -                             & -                                \\ \hline
+		\end{tabular}	
+		\caption*{(a) ResNet-50}
+	\end{minipage}
+	\vfill
+	\begin{minipage}[b]{\textwidth}
+		\centering
+		\begin{tabular}{|l|c|c|c|}
+			\hline
+			\multicolumn{1}{|c|}{\textbf{Kelas}} & \textit{\textbf{Precision (\%)}} & \textit{\textbf{Recall (\%)}} & \textit{\textbf{F1\_Score (\%)}} \\ \hline
+			Background                           & 100                              & 33.33                         & 50                               \\ \hline
+			Pedestrian                           & 60                               & 100                           & 74.9                             \\ \hline
+			Zebracross                           & 100                              & 100                           & 100                              \\ \hline
+			Motorbiker                           & -                                & -                             & -                                \\ \hline
+		\end{tabular}
+		\caption*{(b) ResNet-101}
+	\end{minipage}
+	\vfill
+	\begin{minipage}[b]{\textwidth}
+		\centering
+		\begin{tabular}{|l|c|c|c|}
+			\hline
+			\multicolumn{1}{|c|}{\textbf{Kelas}} & \textit{\textbf{Precision (\%)}} & \textit{\textbf{Recall (\%)}} & \textit{\textbf{F1\_Score (\%)}} \\ \hline
+			Background                           & 50                               & 16.66                         & 25                               \\ \hline
+			Pedestrian                           & 0                                & NaN                           & NaN                              \\ \hline
+			Zebracross                           & 100                              & 50                            & 66.66                            \\ \hline
+			Motorbiker                           & -                                & -                             & -                                \\ \hline
+		\end{tabular}
+		\caption*{(c) MobileNet-v1}
+	\end{minipage}
+	\caption{{Perbandingan Hasil Evaluasi pada Malam Hari}}
+	\label{tab:evaluate-night}
+\end{table}
+
+Pada gambar yang diuji untuk malam hari hanya memiliki 3 kelas saja yaitu \textit{background}, pejalan kaki serta \textit{zebracross} tanpa adanya pengendara motor. Resnet-50 mempunyai nilai \textit{Average Precision} untuk semua kelas yang berhasil dideteksi adalah sebesar 80\% dan \textit{Average Recall} 75\%. Sedangkan pada Resnet-101 memberikan hasil \textit{AP} sebesar 86.67\% dan \textit{AR} 77.77\%. Namun pada Mobilenet-v1 objek yang berhasil dideteksi hanya \textit{zebracross} (ditambah dengan \textit{background}) sama saat pengujian pada pagi dan siang hari. Nilai \textit{AP} yang dihasilkan pada evaluasi Mobilenet-v1 sebesar 50\%.
+
+Selain menggunakan \textit{input data} berupa gambar, pada pengujian ini juga menggunakan \textit{input data} berupa \textit{file} video dengan format \textit{.mp4}. Proses \textit{testing} dibagi menjadi dua tahapan, tahap pertama memecah \textit{frame} video menjadi gambar dan melakukan prediksi serta tahap kedua menggabungkan kembali setiap \textit{frame} menjadi video. Tabel \ref{tab:video-night} menunjukan waktu yang dibutuhkan untuk melakukan semua tahap prediksi pada \textit{file input} berbentuk video pada ketiga \textit{backbone}.
+
+\begin{table}[!h]
+	\centering{
+		\begin{tabular}{|l|c|c|c|l|}
+			\hline
+			\multicolumn{1}{|c|}{\textit{\textbf{Backbone}}} & \textit{\textbf{Tahap 1}} & \textit{\textbf{Tahap 2}} & \textit{\textbf{Total}} & \textit{\textbf{Output Size}} \\ \hline
+			ResNet-50                                        & 04:49                     & 00:34                     & 05:23                   & 38.7 Mb                       \\ \hline
+			\textit{ResNet-101}                              & 04:23                     & 00:28                     & 04:51                   & 39.1 MB                       \\ \hline
+			\textit{MobileNet-v1}                            & 03:39                     & 00:28                     & 04:07                   & 36.1 MB                       \\ \hline
+		\end{tabular}
+	}
+	\caption{Waktu Prediksi pada \textit{File Input} Video dalam \textit{MM:SS}}
+	\label{tab:video-night}
+\end{table}
+
+
+\subsection{Perbandingan Hasil Evaluasi pada Perbedaan Waktu}
+\label{subsec:compare-eval}
+
+Setelah membandingkan hasil evaluasi model setiap perbedaan waktu, pada bagian ini akan dibandingkan peforma setiap model untuk keseluruhan perbedaan waktu (pagi, siang dan malam hari). 
+
+\subsubsection{ResNet-50}
+
+Pada proses evaluasi model dengan menggunakan seluruh \textit{testing data} (pagi, siang dan malam hari) didapatkan beberapa hasil skor yaitu :
+\begin{enumerate}[nolistsep]
+	\item \textit{mean Average Precision(mAP)} : 66.785\%
+	\item \textit{mean Average Recall(mAR)} : 77\%
+	\item \textit{F1-score} : 71.529\%
+\end{enumerate}
+Hasil tersebut didapatkan setelah dilakukan proses pencarian nilai \textit{Trur Positif, False Positif} dan \textit{False Negatif} seperti yang ditunjukkan pada \textit{confusion matrix} pada Gambar \ref{fig:confmatrix-resnet50}.
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.3]{gambar/confmatrix/all-resnet50-blue.png}
+	\caption{\textit{Confusion Matrix} ResNet-50}
+	\label{fig:confmatrix-resnet50}
+\end{figure}
+
+\subsubsection{ResNet-101}
+
+Pada proses evaluasi model dengan menggunakan seluruh \textit{testing data} (pagi, siang dan malam hari) didapatkan beberapa hasil skor yaitu :
+\begin{enumerate}[nolistsep]
+	\item \textit{mean Average Precision(mAP)} : 76.605\%
+	\item \textit{mean Average Recall(mAR)} : 85.375\%
+	\item \textit{F1-score} : 80.302\%
+\end{enumerate}
+Hasil tersebut didapatkan setelah dilakukan proses pencarian nilai \textit{Trur Positif, False Positif} dan \textit{False Negatif} seperti yang ditunjukkan pada \textit{confusion matrix} pada Gambar \ref{fig:confmatrix-resnet101}.
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.3]{gambar/confmatrix/all-resnet101-blue.png}
+	\caption{\textit{Confusion Matrix} ResNet-101}
+	\label{fig:confmatrix-resnet101}
+\end{figure}
+
+\subsubsection{MobileNet-v1}
+
+Pada proses evaluasi model dengan menggunakan seluruh \textit{testing data} (pagi, siang dan malam hari) didapatkan beberapa hasil skor yaitu :
+\begin{enumerate}[nolistsep]
+	\item \textit{mean Average Precision(mAP)} : 25\%
+	\item \textit{mean Average Recall(mAR)} : \textit{NaN}
+	\item \textit{F1-score} : \textit{NaN}
+\end{enumerate}
+Hasil tersebut didapatkan setelah dilakukan proses pencarian nilai \textit{Trur Positif, False Positif} dan \textit{False Negatif} seperti yang ditunjukkan pada \textit{confusion matrix} pada Gambar \ref{fig:confmatrix-mobilenetv1}.
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.3]{gambar/confmatrix/all-mobilenetv1-blue.png}
+	\caption{\textit{Confusion Matrix} MobileNet-v1}
+	\label{fig:confmatrix-mobilenetv1}
 \end{figure}
