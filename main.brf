@@ -27,5 +27,6 @@
 \backcite {mask-rcnn}{{22}{2.1.13}{subsection.2.1.13}}
 \backcite {arch-mask-rcnn}{{23}{2.14}{figure.caption.18}}
 \backcite {penelitianterkait1}{{23}{2.2.1}{subsection.2.2.1}}
-\backcite {test-siang}{{56}{4.2.2}{subsection.4.2.2}}
-\backcite {test-malam}{{59}{4.2.3}{subsection.4.2.3}}
+\backcite {pedestrian-detection}{{24}{2.2.2}{subsection.2.2.2}}
+\backcite {test-siang}{{58}{4.2.2}{subsection.4.2.2}}
+\backcite {test-malam}{{61}{4.2.3}{subsection.4.2.3}}

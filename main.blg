@@ -1,53 +1,55 @@
-This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
-Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: main.aux
 The style file: unsrtnat.bst
-Database file #1: pustaka/pustaka.bib
+Database file #1: pustaka/pustaka.bib.bib
+Warning--entry type for "pedestrian-detection" isn't style-file defined
+--line 88 of file pustaka/pustaka.bib.bib
 Warning--empty booktitle in arch-faster-rcnn
 Warning--empty booktitle in arch-mask-rcnn
 Warning--empty journal in machinelearning1
 Warning--empty publisher in dl
 Warning--empty publisher in cnn
 Warning--empty journal in penelitianterkait1
-You've used 20 entries,
+You've used 21 entries,
             2481 wiz_defined-function locations,
-            655 strings with 7721 characters,
-and the built_in function-call counts, 7131 in all, are:
-= -- 578
-> -- 327
+            658 strings with 7872 characters,
+and the built_in function-call counts, 7489 in all, are:
+= -- 599
+> -- 360
 < -- 7
-+ -- 138
-- -- 98
-* -- 546
-:= -- 1055
-add.period$ -- 65
-call.type$ -- 20
-change.case$ -- 38
-chr.to.int$ -- 20
-cite$ -- 33
-duplicate$ -- 382
-empty$ -- 719
-format.name$ -- 111
-if$ -- 1571
++ -- 150
+- -- 108
+* -- 577
+:= -- 1115
+add.period$ -- 67
+call.type$ -- 21
+change.case$ -- 40
+chr.to.int$ -- 21
+cite$ -- 34
+duplicate$ -- 396
+empty$ -- 749
+format.name$ -- 122
+if$ -- 1644
 int.to.chr$ -- 1
-int.to.str$ -- 21
+int.to.str$ -- 22
 missing$ -- 15
-newline$ -- 113
-num.names$ -- 39
-pop$ -- 218
+newline$ -- 117
+num.names$ -- 42
+pop$ -- 231
 preamble$ -- 1
-purify$ -- 20
+purify$ -- 21
 quote$ -- 0
-skip$ -- 242
+skip$ -- 252
 stack$ -- 0
-substring$ -- 232
-swap$ -- 79
+substring$ -- 234
+swap$ -- 82
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 134
+type$ -- 141
 warning$ -- 6
-while$ -- 38
+while$ -- 40
 width$ -- 0
-write$ -- 260
-(There were 6 warnings)
+write$ -- 270
+(There were 7 warnings)
