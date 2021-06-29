@@ -270,12 +270,53 @@ Semenjak\textit{ Convolution Neural Network} (CNN) dengan \textit{fully connecte
 	\label{fig:rcnn}
 \end{figure}
 
-Ross Girshick dan kawan-kawan pada tahun 2013 mengusulkan arsitektur baru yang disebut R-CNN seperti pada Gambar \ref{fig:rcnn} (\textit{Regional-based CNN}) untuk menghadapi tantangan deteksi objek ini \citep{rcnn}. Arsitektur R-CNN menggunakan algoritma \textit{selective search} yang menghasilkan sekitar 2000 \textit{region proposal}. \textit{Regional proposal} ini kemudian diterapkan ke arsitektur CNN untuk menghitung jumlah fitur CNN. Fitur-fitur ini kemudian diteruskan dalam model SVM untuk mengklasifikasikan objek yang ada di \textit{region proposal}. Langkah selanjutnya adalah melakukan regresi pada \textit{bounding box} untuk mengetahui lokasi objek yang ada dalam gambar dengan lebih tepat.
+Ross Girshick dan kawan-kawan pada tahun 2013 mengusulkan arsitektur baru yang disebut R-CNN seperti pada Gambar \ref{fig:rcnn} (\textit{Regional-based CNN}) untuk menghadapi tantangan deteksi objek ini \citep{rcnn}. Arsitektur R-CNN menggunakan algoritma \textit{selective search} yang menghasilkan sekitar 2000 \textit{region proposal}. \textit{Regional proposal} ini kemudian diterapkan ke arsitektur CNN untuk menghitung jumlah fitur CNN. Fitur-fitur ini kemudian diteruskan dalam model SVM untuk mengklasifikasikan objek yang ada di \textit{region proposal}. Langkah selanjutnya adalah melakukan regresi pada \textit{bounding box} untuk mengetahui lokasi objek yang ada dalam gambar dengan lebih tepat. 
 
 \subsection{\textit{Fast R-CNN}}
 \label{subsec:fast-rcnn}
 
-Fast R-CNN ditemukan atas metode yang telah ditemukan terlebih dahulu yaitu \textit{R-CNN} untuk mengklasifikasikan proposal objek secara efisien menggunakan \textit{deep convolutional network} \citep{fast-rcnn}. Dibandingkan dengan \textit{R-CNN}, \textit{Fast R-CNN} menggunakan beberapa inovasi untuk meningkatkan kecepatan \textit{learning} dan pengujian sekaligus meningkatkan akurasi deteksi.
+Fast R-CNN ditemukan atas metode yang telah ditemukan terlebih dahulu yaitu \textit{R-CNN} untuk mengklasifikasikan proposal objek secara efisien menggunakan \textit{deep convolutional network} \citep{fast-rcnn}. Dibandingkan dengan \textit{R-CNN}, \textit{Fast R-CNN} menggunakan beberapa inovasi untuk meningkatkan kecepatan \textit{learning} dan pengujian sekaligus meningkatkan akurasi deteksi. Fast R-CNN dapat menyelesaikan proses \textit{training} dengan jaringan VGG16 yang sangat dalam memeberikan hasil yang 9 kali lebih cepat dari R-CNN, 213 kali lebih cepat pada waktu pengujian, dan mencapai mAP yang lebih tinggi pada PASCAL VOC 2012. Dibandingkan dengan SPPnet, Fast R-CNN dapat menyelesaikan proses \textit{training} dengan VGG16 3x lebih cepat, pengujian 10x lebih cepat, dan lebih akurat.
+
+Jika pada R-CNN \textit{region proposal} akan melalui proses konvolusi di CNN, sebaliknya pada \textit{Fast R-CNN} gambar \textit{input}-lah yang akan melalui proses konvolusi di CNN seperti yang ditampilkan pada Gambar \ref{fig:fast-rcnn}. Hasil dari konvolusi pada \textit{Fast R-CNN} berupa \textit{convolutional feature map} yang akan digunakan untuk identifikasi \textit{region proposal} dan menyatukannya ke dalam bentuk persegi. Selanjutnya dengan menggunakan layer \textit{ROI Pooling} akan dibentuk kembali menjadi ukuran yang tetap sehingga dapat dimasukan ke dalam \textit{fully conneceted network}. Pada proses deteksi kelas dari \textit{region proposal} dan juga nilai offset dari \textit{bounding box} digunakan \textit{softmax layer} dari \textit{ROI feature vector} yang telah dihasilkan pada proses sebelumnya.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.3]{gambar/fast-rcnn.png}
+	\caption{Arsitektur \textit{Fast R-CNN} \citep{arch-fast-rcnn}}
+	\label{fig:fast-rcnn}
+\end{figure}
+
+Alasan \textit{Fast R-CNN} lebih cepat daripada R-CNN adalah karena kita tidak perlu memasukkan 2000 \textit{region proposal} ke \textit{convolutional neural network} setiap saat. Sebagai gantinya, operasi konvolusi dilakukan hanya sekali per gambar dan \textit{feature map} dihasilkan operasi tersebut.
+
+\subsection{\textit{Faster R-CNN}}
+\label{subsec:faster-rcnn}
+
+Pad kedua algoritma \textit{R-CNN} dan \textit{Fast R-CNN} menggunakan \textit{selective search} untuk mengetahui \textit{region proposal}. \textit{Selective search} sendiri memerlukan waktu yang cukup lama dalam penyelesain prosesnya sehingga mempengaruhi kinerja dari jaringan \citep{faster-rcnn}. Oleh karena itu, dibuatlah algoritma deteksi objek baru dengan menghilangkan algoritma \textit{selective search} dan memungkinkan jaringan mempelajari \textit{region proposal}.
+
+Mirip dengan \textit{Fast R-CNN}, gambar dijadikann sebagai input ke jaringan konvolusi yang menyediakan \textit{convolusional feature map}. Disebabkan waktu eksekusi yang lama saat menggunakan algoritma \textit{selective search} pada \textit{feature map} untuk mengidentifikasi \textit{region proposal}, \textit{Faster R-CNN} menggunakan jaringan terpisah untuk memprediksi \textit{region proposal}. Jaringan terpisah ini dinamakan dengan \textit{Region Proposal Network (RPN)}, dimana \textit{RPN} berbagi \textit{full-image convolutional features} dengan jaringan deteksi yaitu \textit{Fast R-CNN}. \textit{Region proposal} yang diprediksi kemudian dibentuk kembali menggunakan \textit{ROI pooling layer} yang kemudian digunakan untuk mengklasifikasikan gambar di dalam \textit{region proposal} dan memprediksi nilai offset untuk \textit{bounding box}. Gambar \ref{fig:arch-faster-rcnn} merupakan visualisasi dari proses deteksi objek menggunakan \textit{Faster R-CNN}. 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.15]{gambar/arch-faster-rcnn.png}
+	\caption{Gambaran Deteksi Objek pada \textit{Faster R-CNN} \citep{arch-faster-rcnn}}
+	\label{fig:faster-rcnn}
+\end{figure}
+
+\subsection{\textit{Mask R-CNN}}
+\label{subsec:mask-rcnn}
+
+Mask R-CNN adalah Convolutional Neural Network (CNN) dan segmentasi citra termutakhir untuk saat ini. Varian Deep Neural Network ini mendeteksi objek dalam gambar dan menghasilkan \textit{mask} segmentasi berkualitas tinggi untuk setiap \textit{instance} \citep{mask-rcnn}. \textit{Mask R-CNN} dibangun menggunakan\textit{ Faster R-CNN} dimana \textit{Faster R-CNN} memiliki 2 \textit{output} untuk setiap objek, label kelas dan \textit{bounding box offset}. \textit{Mask R-CNN} adalah penambahan cabang ketiga yang mengeluarkan \textit{mask} objek seperti yang tertampil pada Gambar \ref{fig:arch-mask-rcnn}. \textit{output} \textit{mask} tambahan berbeda dari \textit{output} kelas dan \textit{bounding box}, yang membutuhkan ekstraksi tata letak spasial yang jauh lebih baik dari suatu objek.
+
+\textit{Mask R-CNN} merupakan perpanjangan dari \textit{Faster R-CNN} dengan menambahkan cabang untuk memprediksi t\textit{mask} objek (\textit{Region of Interest}) secara paralel dengan cabang yang ada untuk pengenalan \textit{bounding box}. Satu keuntungan sederhana dari \textit{Mask R-CNN} dibandingkan \textit{Faster R-CNN} adalah kenyataan bahwa mudah untuk menggeneralisasi tugas lain seperti estimasi pose. Elemen kunci \textit{Mask R-CNN} adalah penyelarasan piksel-ke-piksel, yang merupakan bagian utama dari \textit{Fast/Faster R-CNN} yang hilang. \textit{Mask R-CNN} mengadopsi prosedur dua tahap yang sama dengan tahap pertama yang identik (yaitu \textit{RPN}). Pada tahap kedua, secara paralel untuk memprediksi kelas dan \textit{box offset}, Mask R-CNN juga mengeluarkan \textit{mask} biner untuk setiap \textit{RoI}. Ini berbeda dengan sistem terbaru, di mana klasifikasi bergantung pada prediksi \textit{mask}.
+
+Mask R-CNN mudah diterapkan dan dilatih karena \textit{Faster R-CNN framework}, yang memfasilitasi berbagai desain arsitektur yang fleksibel. Selain itu, cabang \textit{mask} hanya menambahkan \textit{overhead} komputasi kecil, memungkinkan sistem dan eksperimen yang cepat.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.25]{gambar/arch-mask-rcnn.png}
+	\caption{Struktur dari Arsitektur \textit{Faster R-CNN} \citep{arch-mask-rcnn}}
+	\label{fig:mask-rcnn}
+\end{figure}
 
 \section{Penelitian Terkait}
 \label{penelitianterkait}

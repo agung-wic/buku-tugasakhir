@@ -3,49 +3,51 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 The style file: unsrtnat.bst
 Database file #1: pustaka/pustaka.bib
+Warning--empty booktitle in arch-faster-rcnn
+Warning--empty booktitle in arch-mask-rcnn
 Warning--empty journal in machinelearning1
 Warning--empty publisher in dl
 Warning--empty publisher in cnn
 Warning--empty journal in penelitianterkait1
-You've used 15 entries,
+You've used 20 entries,
             2481 wiz_defined-function locations,
-            626 strings with 6826 characters,
-and the built_in function-call counts, 5019 in all, are:
-= -- 420
-> -- 194
-< -- 4
-+ -- 88
-- -- 58
-* -- 374
-:= -- 713
-add.period$ -- 46
-call.type$ -- 15
-change.case$ -- 28
-chr.to.int$ -- 15
-cite$ -- 26
-duplicate$ -- 271
-empty$ -- 531
-format.name$ -- 66
-if$ -- 1118
+            655 strings with 7721 characters,
+and the built_in function-call counts, 7131 in all, are:
+= -- 578
+> -- 327
+< -- 7
++ -- 138
+- -- 98
+* -- 546
+:= -- 1055
+add.period$ -- 65
+call.type$ -- 20
+change.case$ -- 38
+chr.to.int$ -- 20
+cite$ -- 33
+duplicate$ -- 382
+empty$ -- 719
+format.name$ -- 111
+if$ -- 1571
 int.to.chr$ -- 1
-int.to.str$ -- 16
-missing$ -- 10
-newline$ -- 84
-num.names$ -- 24
-pop$ -- 169
+int.to.str$ -- 21
+missing$ -- 15
+newline$ -- 113
+num.names$ -- 39
+pop$ -- 218
 preamble$ -- 1
-purify$ -- 15
+purify$ -- 20
 quote$ -- 0
-skip$ -- 181
+skip$ -- 242
 stack$ -- 0
-substring$ -- 180
-swap$ -- 53
-text.length$ -- 2
+substring$ -- 232
+swap$ -- 79
+text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 99
-warning$ -- 4
-while$ -- 23
+type$ -- 134
+warning$ -- 6
+while$ -- 38
 width$ -- 0
-write$ -- 190
-(There were 4 warnings)
+write$ -- 260
+(There were 6 warnings)
