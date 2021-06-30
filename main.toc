@@ -28,6 +28,7 @@
 \contentsline {section}{\numberline {2.2}Penelitian Terkait}{23}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Real-Time Pedestrian Detection With Deep Network Cascades}{23}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Pedestrian Detection: The Elephant In The Room}{24}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Fast Vehicle and Pedestrian Detection Using Improved Mask R-CNN}{25}{subsection.2.2.3}
 \contentsline {chapter}{\numberline {3}DESAIN DAN IMPLEMENTASI}{27}{chapter.3}
 \contentsline {section}{\numberline {3.1}Deskripsi Sistem}{27}{section.3.1}
 \contentsline {section}{\numberline {3.2}Pengumpulan \textit {Dataset} Gambar}{28}{section.3.2}

@@ -1,4 +1,4 @@
-\begin{thebibliography}{21}
+\begin{thebibliography}{22}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -129,6 +129,15 @@ Anelia Angelova, Alex Krizhevsky, Vincent Vanhoucke, Abhijit Ogale, and Dave
   Shao]{pedestrian-detection}
 Irtiza Hasan, Shengcai Liao, Jinpeng Li, Saad Ullah~Akram, and Ling Shao.
 \newblock Pedestrian detection: The elephant in the room, 03 2020.
+
+\bibitem[Xu et~al.(2020)Xu, Wang, Yan, Yu, Zhang, Dai, Li, and
+  Xu]{fast-vehicle}
+Chenchen Xu, Guili Wang, Songsong Yan, Jianghua Yu, Baojun Zhang, Shu Dai,
+  Yu~Li, and Lin Xu.
+\newblock Fast vehicle and pedestrian detection using improved mask r-cnn.
+\newblock \emph{Mathematical Problems in Engineering}, 2020:\penalty0 1--15, 05
+  2020.
+\newblock \doi{10.1155/2020/5761414}.
 
 \bibitem[tes(2020)]{test-siang}
 4k60 driving around downtown jakarta ~ from kota tua to blok m via thamrin \&
