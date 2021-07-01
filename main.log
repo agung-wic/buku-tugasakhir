@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.7.2)  2 JUL 2021 00:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.7.2)  2 JUL 2021 01:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1144,7 +1144,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.47 
+l.49 
       [2])pdfTeX warning (ext4): destination with the same identifier (name{pag
 e.3}) has been already used, duplicate ignored
 <to be read again> 
@@ -1591,26 +1591,26 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: gambar/siang-frame465-resnet50.png Graphic file (type png)
 <use gambar/siang-frame465-resnet50.png>
 Package pdftex.def Info: gambar/siang-frame465-resnet50.png  used on input line
- 521.
+ 523.
 (pdftex.def)             Requested size: 87.9199pt x 48.73358pt.
 <gambar/siang-frame465-resnet101.png, id=981, 930.47626pt x 521.95pt>
 File: gambar/siang-frame465-resnet101.png Graphic file (type png)
 <use gambar/siang-frame465-resnet101.png>
 Package pdftex.def Info: gambar/siang-frame465-resnet101.png  used on input lin
-e 526.
+e 528.
 (pdftex.def)             Requested size: 87.9199pt x 49.31497pt.
 <gambar/siang-frame465-mobilenetv1.png, id=982, 910.40125pt x 522.95375pt>
 File: gambar/siang-frame465-mobilenetv1.png Graphic file (type png)
 <use gambar/siang-frame465-mobilenetv1.png>
 Package pdftex.def Info: gambar/siang-frame465-mobilenetv1.png  used on input l
-ine 531.
+ine 533.
 (pdftex.def)             Requested size: 87.9199pt x 50.50302pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (0.36958pt too wide) in paragraph at lines 584--585
+Overfull \hbox (0.36958pt too wide) in paragraph at lines 586--587
 \OT1/lmr/m/n/10 ber-ha-sil di-de-tek-si ada-lah se-be-sar 62.5% dan \OT1/lmr/m/
 it/10 Ave-ra-ge Re-ca-ll \OT1/lmr/m/n/10 72.915%.
  []
@@ -1621,19 +1621,19 @@ ng> <./gambar/siang-frame465-mobilenetv1.png>] [60]
 File: gambar/malam-frame180-resnet50.png Graphic file (type png)
 <use gambar/malam-frame180-resnet50.png>
 Package pdftex.def Info: gambar/malam-frame180-resnet50.png  used on input line
- 612.
+ 614.
 (pdftex.def)             Requested size: 87.9199pt x 50.40608pt.
 <gambar/malam-frame180-resnet101.png, id=1001, 910.40125pt x 521.95pt>
 File: gambar/malam-frame180-resnet101.png Graphic file (type png)
 <use gambar/malam-frame180-resnet101.png>
 Package pdftex.def Info: gambar/malam-frame180-resnet101.png  used on input lin
-e 617.
+e 619.
 (pdftex.def)             Requested size: 87.9199pt x 50.40608pt.
 <gambar/malam-frame180-mobilnetv1.png, id=1002, 910.40125pt x 521.95pt>
 File: gambar/malam-frame180-mobilnetv1.png Graphic file (type png)
 <use gambar/malam-frame180-mobilnetv1.png>
 Package pdftex.def Info: gambar/malam-frame180-mobilnetv1.png  used on input li
-ne 622.
+ne 624.
 (pdftex.def)             Requested size: 87.9199pt x 50.40608pt.
 
 
@@ -1651,7 +1651,7 @@ Underfull \vbox (badness 1038) has occurred while \output is active []
 File: gambar/confmatrix/all-resnet50-blue.png Graphic file (type png)
 <use gambar/confmatrix/all-resnet50-blue.png>
 Package pdftex.def Info: gambar/confmatrix/all-resnet50-blue.png  used on input
- line 711.
+ line 713.
 (pdftex.def)             Requested size: 260.47513pt x 229.45901pt.
 
 [63 <./gambar/confmatrix/all-resnet50-blue.png>]
@@ -1659,7 +1659,7 @@ Package pdftex.def Info: gambar/confmatrix/all-resnet50-blue.png  used on input
 File: gambar/confmatrix/all-resnet101-blue.png Graphic file (type png)
 <use gambar/confmatrix/all-resnet101-blue.png>
 Package pdftex.def Info: gambar/confmatrix/all-resnet101-blue.png  used on inpu
-t line 728.
+t line 730.
 (pdftex.def)             Requested size: 255.05484pt x 229.45901pt.
  [64 <./gambar/confmatrix/all-resnet101-blue.png>]
 <gambar/confmatrix/all-mobilenetv1-blue.png, id=1040, 850.17625pt x 764.8575pt>
@@ -1667,7 +1667,7 @@ t line 728.
 File: gambar/confmatrix/all-mobilenetv1-blue.png Graphic file (type png)
 <use gambar/confmatrix/all-mobilenetv1-blue.png>
 Package pdftex.def Info: gambar/confmatrix/all-mobilenetv1-blue.png  used on in
-put line 745.
+put line 747.
 (pdftex.def)             Requested size: 255.05484pt x 229.45901pt.
 ) [65 <./gambar/confmatrix/all-mobilenetv1-blue.png>]
 [66
@@ -1775,7 +1775,7 @@ c/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbo10.pfb></usr/shar
 e/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public
 /lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb></usr/share/te
 xmf/fonts/type1/public/lm/lmtt10.pfb>
-Output written on main.pdf (94 pages, 11529974 bytes).
+Output written on main.pdf (94 pages, 11530041 bytes).
 PDF statistics:
  1231 PDF objects out of 1440 (max. 8388607)
  1005 compressed objects within 11 object streams
