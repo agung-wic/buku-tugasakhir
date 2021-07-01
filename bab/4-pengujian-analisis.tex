@@ -359,7 +359,7 @@ Pada hasil pengujian dengan menggunakan satu gambar jalan raya pada pada saat pa
 	\item \textit{Zebracross} (\textit{score} : 0,983)
 	\item Pengendara motor (\textit{score} : 1,00)
 \end{enumerate}
-Dari hasil tersebut, \textit{Backbone Resnet-50} dapat memprediksi gambar dengan benar, serta \textit{evaluation time} dari \textit{backbone} ini sebesar 1,933 detik
+Dari hasil tersebut, \textit{Backbone Resnet-50} dapat memprediksi gambar dengan benar, serta \textit{evaluation time} dari \textit{backbone} ini sebesar 0,76 detik
 \begin{figure}[h] 
 	\centering
 	\includegraphics[scale=0.3]{gambar/fajar-frame800-resnet50.png}
@@ -375,7 +375,7 @@ Pada hasil pengujian dengan menggunakan satu gambar jalan raya pada pada saat pa
 	\item \textit{Zebracross} (\textit{score} : 0,995)
 	\item Pengendara motor (\textit{score} : 0,999)
 \end{enumerate}
-Dari hasil tersebut, \textit{Backbone Resnet-101} dapat memprediksi gambar dengan benar, serta \textit{evaluation time} dari \textit{backbone} ini sebesar 2,599 detik
+Dari hasil tersebut, \textit{Backbone Resnet-101} dapat memprediksi gambar dengan benar, serta \textit{evaluation time} dari \textit{backbone} ini sebesar 0.961 detik
 \begin{figure}[h] 
 	\centering
 	\includegraphics[scale=0.3]{gambar/fajar-frame800-resnet101.png}
@@ -391,7 +391,7 @@ Pada hasil pengujian dengan menggunakan satu gambar jalan raya pada pada saat pa
 	\item \textit{Zebracross} (terdeteksi 2  dengan \textit{score} : 0,942 dan 0.888)
 	\item Pengendara motor (tidak terdeteksi)
 \end{enumerate}
-Dari hasil tersebut, \textit{Backbone Mobilenet-V1} tidak dapat memprediksi gambar dengan benar, serta \textit{evaluation time} dari \textit{backbone} ini sebesar 0,652 detik
+Dari hasil tersebut, \textit{Backbone Mobilenet-V1} tidak dapat memprediksi gambar dengan benar, serta \textit{evaluation time} dari \textit{backbone} ini sebesar 0.664 detik
 \begin{figure}[h] 
 	\centering
 	\includegraphics[scale=0.3]{gambar/fajar-frame800-mobilenetv1.png}
@@ -407,9 +407,9 @@ Setelah melakukan \textit{testing} dengan menggunakan gambar pada \textit{testin
 		\begin{tabular}{|c|l|r|r|}
 			\hline
 			\multicolumn{1}{|l|}{\textbf{No.}} & \textit{\textbf{Backbone}} & \textit{\textbf{Evaluation Time}} & \textbf{mAP} \\ \hline
-			1                                  & ResNet-50                  & 1,933 s                           & 100\%        \\ \hline
-			2                                  & ResNet-101                 & 2,599 s                             & 100\%        \\ \hline
-			3                                  & MobileNet-v1               & 0,652 s                             & 25\%          \\ \hline
+			1                                  & ResNet-50                  & 0,763 s                           & 100\%        \\ \hline
+			2                                  & ResNet-101                 & 0.961 s                             & 100\%        \\ \hline
+			3                                  & MobileNet-v1               & 0.664 s                             & 25\%          \\ \hline
 		\end{tabular}%
 	}
 	\caption{tabel Perbandingan Hasil \textit{Testing}}
