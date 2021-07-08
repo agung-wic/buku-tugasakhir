@@ -8,6 +8,7 @@ Pada bab ini dipaparkan hasil pengujian serta analisa dari desain sistem dan imp
 Pada proses pengujian digunakan salah satu layanan \textit{Google} yaitu \textit{Google Colaboratory} dengan spesifikasi \textit{hardware} seperti pada Tabel \ref{tab:spek-colab}. Sedangkan untuk spesifikasi \textit{hardware} komputer penulis dapat dilihat pada Tabel \ref{tab:spek-pc}.
 \begin{table}[h]
 	\begin{center}
+		\caption{Spesifikasi \textit{hardware Google Colaboratory}}
 		\begin{tabular}{ |c|c| } 
 			\hline
 			\textbf{Procesor} & Intel Xeon Processor @ 2.3 GHz\\
@@ -17,13 +18,13 @@ Pada proses pengujian digunakan salah satu layanan \textit{Google} yaitu \textit
 			\textbf{RAM} & 16 GB\\ 
 			\hline
 		\end{tabular}
-		\caption{Spesifikasi \textit{hardware Google Colaboratory}}
 		\label{tab:spek-colab}
 	\end{center}
 \end{table} 
 
 \begin{table}[h]
 	\begin{center}
+		\caption{Spesifikasi \textit{hardware} Komputer yang Digunakan}
 		\begin{tabular}{ |c|c| } 
 			\hline
 			\textbf{Procesor} & Intel(R) Core(TM) i5-10400F CPU @ 2.90GHz\\
@@ -33,7 +34,6 @@ Pada proses pengujian digunakan salah satu layanan \textit{Google} yaitu \textit
 			\textbf{RAM} & 8 GB\\ 
 			\hline
 		\end{tabular}
-		\caption{Spesifikasi \textit{hardware} Komputer yang Digunakan}
 		\label{tab:spek-pc}
 	\end{center}
 \end{table}
@@ -50,59 +50,73 @@ Pengujian pada jenis \textit{backbone} bertujuan untuk mengetahui performa dan a
 
 Tabel \ref{tab:conf-resnet50} merupakan parameter-parameter yang digunakan untuk membuat model Mask R-CNN dengan menggunakan \textit{backbone} Resnet-50.
 
+% Please add the following required packages to your document preamble:
+% \usepackage{longtable}
+% Note: It may be necessary to compile the document several times to get a multi-page table to line up properly
 \begin{longtable}[h]{|l|l|}
-		\hline
-		\multicolumn{2}{|c|}{\textbf{Pengaturan Model Resnet-50}}                                                                                                                                                                         \\ \hline
-		BACKBONE                        & resnet50                                                                                                                                                                              \\ \hline
-		BACKBONE\_STRIDES               & {[}4, 8, 16, 32, 64{]}                                                                                                                                                                 \\ \hline
-		BATCH\_SIZE                     & 1                                                                                                                                                                                      \\ \hline
-		BBOX\_STD\_DEV                  & {[}0.1 0.1 0.2 0.2{]}                                                                                                                                                                  \\ \hline
-		COMPUTE\_BACKBONE\_SHAPE        & None                                                                                                                                                                                   \\ \hline
-		DETECTION\_MAX\_INSTANCES       &	 50                                                    	\\ \hline
-		IMAGE\_META\_SIZE               & 16                                                                                                                                                                                     \\ \hline
-		IMAGE\_MIN\_DIM                 & 400                                                                                                                                                                                    \\ \hline
-		IMAGE\_MIN\_SCALE               & 0                                                                                                                                                                                      \\ \hline
-		IMAGE\_RESIZE\_MODE             & square                                                                                                                                                                                 \\ \hline
-		IMAGE\_SHAPE                    & {[}512 512{]}                                                                                                                                                                             \\ \hline
-		LEARNING\_MOMENTUM              & 0.9                                                                                                                                                                                    \\ \hline
-		LEARNING\_RATE                  & 0.001                                                                                                                                                                                  \\ \hline
-		LOSS\_WEIGHTS                   & \begin{tabular}[c]{@{}l@{}}\{'rpn\_class\_loss': 1.0, \\ 'rpn\_bbox\_loss': 1.0, \\ 'mrcnn\_class\_loss': 1.0, \\ 'mrcnn\_bbox\_loss': 1.0, \\ 'mrcnn\_mask\_loss': 1.0\}\end{tabular} \\ \hline
-		MASK\_POOL\_SIZE                & 14                                                                                                                                                                                     \\ \hline
-		MASK\_SHAPE                     & {[}28, 28{]}                                                                                                                                                                           \\ \hline
-		MAX\_GT\_INSTANCES              & 50                                                                                                                                                                                     \\ \hline
-		MEAN\_PIXEL                     & {[}123.7 116.8 103.9{]}                                                                                                                                                                \\ \hline
-		MINI\_MASK\_SHAPE               & (56, 56)                                                                                                                                                                               \\ \hline
-		NAME                            & object                                                                                                                                                                                 \\ \hline
-		NUM\_CLASSES                    & 4                                                                                                                                                                                      \\ \hline
-		POOL\_SIZE                      & 7                                                                                                                                                                                      \\ \hline
-		MASK\_SHAPE                     & {[}28, 28{]}                                                                                                                                                                           \\ \hline
-		MAX\_GT\_INSTANCES              & 50                                                                                                                                                                                     \\ \hline
-		MEAN\_PIXEL                     & {[}123.7 116.8 103.9{]}                                                                                                                                                                \\ \hline
-		MINI\_MASK\_SHAPE               & (56, 56)                                                                                                                                                                               \\ \hline
-		NAME                            & object                                                                                                                                                                                 \\ \hline
-		NUM\_CLASSES                    & 4                                                                                                                                                                                      \\ \hline
-		POOL\_SIZE                      & 7                                                                                                                                                                                      \\ \hline
-		POST\_NMS\_ROIS\_INFERENCE      & 1000                                                                                                                                                                                   \\ \hline
-		POST\_NMS\_ROIS\_TRAINING       & 2000                                                                                                                                                                                   \\ \hline
-		PRE\_NMS\_LIMIT                 & 6000                                                                                                                                                                                   \\ \hline
-		ROI\_POSITIVE\_RATIO            & 0.33                                                                                                                                                                                   \\ \hline
-		RPN\_ANCHOR\_RATIOS             & {[}0.5, 1, 2{]}                                                                                                                                                                        \\ \hline
-		RPN\_ANCHOR\_SCALES             & (32, 64, 128, 256, 512)                                                                                                                                                                \\ \hline
-		RPN\_ANCHOR\_STRIDE             & 1                                                                                                                                                                                      \\ \hline
-		RPN\_BBOX\_STD\_DEV             & {[}0.1 0.1 0.2 0.2{]}                                                                                                                                                                  \\ \hline
-		RPN\_NMS\_THRESHOLD             & 0.7                                                                                                                                                                                    \\ \hline
-		RPN\_TRAIN\_ANCHORS\_PER\_IMAGE & 256                                                                                                                                                                                    \\ \hline
-		STEPS\_PER\_EPOCH               & 100                                                                                                                                                                                    \\ \hline
-		TOP\_DOWN\_PYRAMID\_SIZE        & 256                                                                                                                                                                                    \\ \hline
-		TRAIN\_BN                       & False                                                                                                                                                                                  \\ \hline
-		TRAIN\_ROIS\_PER\_IMAGE         & 200                                                                                                                                                                                    \\ \hline
-		USE\_MINI\_MASK                 & True                                                                                                                                                                                   \\ \hline
-		USE\_RPN\_ROIS                  & True                                                                                                                                                                                   \\ \hline
-		VALIDATION\_STEPS               & 30                                                                                                                                                                                     \\ \hline
-		WEIGHT\_DECAY                   & 0.0001  
-		\\ \hline 
-	\caption{Konfigurasi Model menggunakan Resnet-50 }
-	\label{tab:conf-resnet50}
+	\caption{Konfigurasi Model menggunakan Resnet-50}
+	\label{tab:conf-resnet50}\\
+	\hline
+	\multicolumn{2}{|c|}{\textbf{Pengaturan Model Resnet-50}}                                                                                                                                                                \\ \hline
+	\endfirsthead
+	%
+	\multicolumn{2}{c}%
+	{{\tablename\ \thetable{} -- Lanjutan dari halaman sebelumnya}} \\
+	\endhead
+	%
+	\multicolumn{2}{|r|}{\textit{Dilanjutkan pada halaman berikutnya}} \\ \hline
+	\endfoot
+	%
+	\endlastfoot
+	BACKBONE                        & resnet50                                                                                                                                                                               \\ \hline
+	BACKBONE\_STRIDES               & {[}4, 8, 16, 32, 64{]}                                                                                                                                                                 \\ \hline
+	BATCH\_SIZE                     & 1                                                                                                                                                                                      \\ \hline
+	BBOX\_STD\_DEV                  & {[}0.1 0.1 0.2 0.2{]}                                                                                                                                                                  \\ \hline
+	COMPUTE\_BACKBONE\_SHAPE        & None                                                                                                                                                                                   \\ \hline
+	DETECTION\_MAX\_INSTANCES       & 50                                                                                                                                                                                     \\ \hline
+	DETECTION\_MIN\_CONFIDENCE      & 0.9                                                                                                                                                                                    \\ \hline
+	DETECTION\_NMS\_THRESHOLD       & 0.2                                                                                                                                                                                    \\ \hline
+	FPN\_CLASSIF\_FC\_LAYERS\_SIZE  & 1024                                                                                                                                                                                   \\ \hline
+	GPU\_COUNT                      & 1                                                                                                                                                                                      \\ \hline
+	GRADIENT\_CLIP\_NORM            & 5.0                                                                                                                                                                                    \\ \hline
+	IMAGES\_PER\_GPU                & 1                                                                                                                                                                                      \\ \hline
+	IMAGE\_CHANNEL\_COUNT           & 3                                                                                                                                                                                      \\ \hline
+	IMAGE\_MAX\_DIM                 & 512                                                                                                                                                                                    \\ \hline
+	IMAGE\_META\_SIZE               & 16                                                                                                                                                                                     \\ \hline
+	IMAGE\_MIN\_DIM                 & 400                                                                                                                                                                                    \\ \hline
+	IMAGE\_MIN\_SCALE               & 0                                                                                                                                                                                      \\ \hline
+	IMAGE\_RESIZE\_MODE             & square                                                                                                                                                                                 \\ \hline
+	IMAGE\_SHAPE                    & {[}512 512 3{]}                                                                                                                                                                        \\ \hline
+	LEARNING\_MOMENTUM              & 0.9                                                                                                                                                                                    \\ \hline
+	LEARNING\_RATE                  & 0.001                                                                                                                                                                                  \\ \hline
+	LOSS\_WEIGHTS                   & \begin{tabular}[c]{@{}l@{}}\{'rpn\_class\_loss': 1.0,\\  'rpn\_bbox\_loss': 1.0, \\ 'mrcnn\_class\_loss': 1.0, \\ 'mrcnn\_bbox\_loss': 1.0, \\ 'mrcnn\_mask\_loss': 1.0\}\end{tabular} \\ \hline
+	MASK\_POOL\_SIZE                & 14                                                                                                                                                                                     \\ \hline
+	MASK\_SHAPE                     & {[}28, 28{]}                                                                                                                                                                           \\ \hline
+	MAX\_GT\_INSTANCES              & 50                                                                                                                                                                                     \\ \hline
+	MEAN\_PIXEL                     & {[}123.7 116.8 103.9{]}                                                                                                                                                                \\ \hline
+	MINI\_MASK\_SHAPE               & (56, 56)                                                                                                                                                                               \\ \hline
+	NAME                            & object                                                                                                                                                                                 \\ \hline
+	NUM\_CLASSES                    & 4                                                                                                                                                                                      \\ \hline
+	POOL\_SIZE                      & 7                                                                                                                                                                                      \\ \hline
+	POST\_NMS\_ROIS\_INFERENCE      & 1000                                                                                                                                                                                   \\ \hline
+	POST\_NMS\_ROIS\_TRAINING       & 2000                                                                                                                                                                                   \\ \hline
+	PRE\_NMS\_LIMIT                 & 6000                                                                                                                                                                                   \\ \hline
+	ROI\_POSITIVE\_RATIO            & 0.33                                                                                                                                                                                   \\ \hline
+	RPN\_ANCHOR\_RATIOS             & {[}0.5, 1, 2{]}                                                                                                                                                                        \\ \hline
+	RPN\_ANCHOR\_SCALES             & (32, 64, 128, 256, 512)                                                                                                                                                                \\ \hline
+	RPN\_ANCHOR\_STRIDE             & 1                                                                                                                                                                                      \\ \hline
+	RPN\_BBOX\_STD\_DEV             & {[}0.1 0.1 0.2 0.2{]}                                                                                                                                                                  \\ \hline
+	RPN\_NMS\_THRESHOLD             & 0.7                                                                                                                                                                                    \\ \hline
+	RPN\_TRAIN\_ANCHORS\_PER\_IMAGE & 256                                                                                                                                                                                    \\ \hline
+	STEPS\_PER\_EPOCH               & 100                                                                                                                                                                                    \\ \hline
+	TOP\_DOWN\_PYRAMID\_SIZE        & 256                                                                                                                                                                                    \\ \hline
+	TRAIN\_BN                       & False                                                                                                                                                                                  \\ \hline
+	TRAIN\_ROIS\_PER\_IMAGE         & 200                                                                                                                                                                                    \\ \hline
+	USE\_MINI\_MASK                 & True                                                                                                                                                                                   \\ \hline
+	USE\_RPN\_ROIS                  & True                                                                                                                                                                                   \\ \hline
+	VALIDATION\_STEPS               & 30                                                                                                                                                                                     \\ \hline
+	WEIGHT\_DECAY                   & 0.0001
+	\\ \hline                 
 \end{longtable}
 
 Setelah dilakukan serangkaian proses training yang memakan waktu sekitar 3 jam 40 menit 24 detik didapatkan \textit{output} berupa \textit{model file}  dengan format \textit{h5} yang mempunyai ukuran 170.9 MB. \textit{Training loss} terendah yang berhasil dicapai dengan menggunakan \textit{backbone} Resnet-50 (pada \textit{epoch} ke 242) adalah 0.4061 dengan rincian \textit{training bounding box loss} sebesar 0.04083, \textit{training classification loss} sebesar 0.02268 serta \textit{training mask loss} sebesar 0.139 (dimana $L=L_{bbox}+L_{cls}+L_{mask}$). Gambar \ref{fig:resnet50-training} merupakan grafik yang menunjukkan perubahan \textit{training loss, training bounding box loss, training classification loss,} serta \textit{training mask loss} dari \textit{epoch} 1 sampai 300.
@@ -144,31 +158,47 @@ Perhitungan \textit{mAP} pada penelitian ini dilakukan setiap 5 \textit{epoch} s
 
 Tabel \ref{tab:conf-resnet101} merupakan parameter-parameter yang digunakan untuk membuat model Mask R-CNN dengan menggunakan \textit{backbone} Resnet-101.
 
-\begin{longtable}[h]{|l|l|}
+% Please add the following required packages to your document preamble:
+% \usepackage{longtable}
+% Note: It may be necessary to compile the document several times to get a multi-page table to line up properly
+\begin{longtable}{|l|l|}
+	\caption{Konfigurasi Model menggunakan Resnet-101}
+	\label{tab:conf-resnet101}\\
 	\hline
-	\multicolumn{2}{|c|}{\textbf{Pengaturan Model Resnet-101}}                                                                                                                                                                         \\ \hline
-	BACKBONE                        & resnet101                                                                                                                                                                              \\ \hline
+	\multicolumn{2}{|c|}{\textbf{Pengaturan Model Resnet-101}}                                                                                                                                                             \\ \hline
+	\endfirsthead
+	%
+	\multicolumn{2}{c}%
+	{{\tablename\ \thetable{} -- Lanjutan dari halaman sebelumnya}} \\
+	\endhead
+	%
+	\multicolumn{2}{|r|}{\textit{Dilanjutkan pada halaman berikutnya}} \\ \hline
+	\endfoot
+	%
+	\endlastfoot
+	BACKBONE                        & resnet101                                                                                                                                                                            \\ \hline
 	BACKBONE\_STRIDES               & {[}4, 8, 16, 32, 64{]}                                                                                                                                                                 \\ \hline
 	BATCH\_SIZE                     & 1                                                                                                                                                                                      \\ \hline
 	BBOX\_STD\_DEV                  & {[}0.1 0.1 0.2 0.2{]}                                                                                                                                                                  \\ \hline
 	COMPUTE\_BACKBONE\_SHAPE        & None                                                                                                                                                                                   \\ \hline
-	DETECTION\_MAX\_INSTANCES       &	 50                                                    	\\ \hline
+	DETECTION\_MAX\_INSTANCES       & 50                                                                                                                                                                                     \\ \hline
+	DETECTION\_MIN\_CONFIDENCE      & 0.9                                                                                                                                                                                    \\ \hline
+	DETECTION\_NMS\_THRESHOLD       & 0.2                                                                                                                                                                                    \\ \hline
+	FPN\_CLASSIF\_FC\_LAYERS\_SIZE  & 1024                                                                                                                                                                                   \\ \hline
+	GPU\_COUNT                      & 1                                                                                                                                                                                      \\ \hline
+	GRADIENT\_CLIP\_NORM            & 5.0                                                                                                                                                                                    \\ \hline
+	IMAGES\_PER\_GPU                & 1                                                                                                                                                                                      \\ \hline
+	IMAGE\_CHANNEL\_COUNT           & 3                                                                                                                                                                                      \\ \hline
+	IMAGE\_MAX\_DIM                 & 512                                                                                                                                                                                    \\ \hline
 	IMAGE\_META\_SIZE               & 16                                                                                                                                                                                     \\ \hline
 	IMAGE\_MIN\_DIM                 & 400                                                                                                                                                                                    \\ \hline
 	IMAGE\_MIN\_SCALE               & 0                                                                                                                                                                                      \\ \hline
 	IMAGE\_RESIZE\_MODE             & square                                                                                                                                                                                 \\ \hline
-	IMAGE\_SHAPE                    & {[}512 512{]}                                                                                                                                                                             \\ \hline
+	IMAGE\_SHAPE                    & {[}512 512 3{]}                                                                                                                                                                        \\ \hline
 	LEARNING\_MOMENTUM              & 0.9                                                                                                                                                                                    \\ \hline
 	LEARNING\_RATE                  & 0.001                                                                                                                                                                                  \\ \hline
-	LOSS\_WEIGHTS                   & \begin{tabular}[c]{@{}l@{}}\{'rpn\_class\_loss': 1.0, \\ 'rpn\_bbox\_loss': 1.0, \\ 'mrcnn\_class\_loss': 1.0, \\ 'mrcnn\_bbox\_loss': 1.0, \\ 'mrcnn\_mask\_loss': 1.0\}\end{tabular} \\ \hline
+	LOSS\_WEIGHTS                   & \begin{tabular}[c]{@{}l@{}}\{'rpn\_class\_loss': 1.0,\\  'rpn\_bbox\_loss': 1.0, \\ 'mrcnn\_class\_loss': 1.0, \\ 'mrcnn\_bbox\_loss': 1.0, \\ 'mrcnn\_mask\_loss': 1.0\}\end{tabular} \\ \hline
 	MASK\_POOL\_SIZE                & 14                                                                                                                                                                                     \\ \hline
-	MASK\_SHAPE                     & {[}28, 28{]}                                                                                                                                                                           \\ \hline
-	MAX\_GT\_INSTANCES              & 50                                                                                                                                                                                     \\ \hline
-	MEAN\_PIXEL                     & {[}123.7 116.8 103.9{]}                                                                                                                                                                \\ \hline
-	MINI\_MASK\_SHAPE               & (56, 56)                                                                                                                                                                               \\ \hline
-	NAME                            & object                                                                                                                                                                                 \\ \hline
-	NUM\_CLASSES                    & 4                                                                                                                                                                                      \\ \hline
-	POOL\_SIZE                      & 7                                                                                                                                                                                      \\ \hline
 	MASK\_SHAPE                     & {[}28, 28{]}                                                                                                                                                                           \\ \hline
 	MAX\_GT\_INSTANCES              & 50                                                                                                                                                                                     \\ \hline
 	MEAN\_PIXEL                     & {[}123.7 116.8 103.9{]}                                                                                                                                                                \\ \hline
@@ -193,10 +223,7 @@ Tabel \ref{tab:conf-resnet101} merupakan parameter-parameter yang digunakan untu
 	USE\_MINI\_MASK                 & True                                                                                                                                                                                   \\ \hline
 	USE\_RPN\_ROIS                  & True                                                                                                                                                                                   \\ \hline
 	VALIDATION\_STEPS               & 30                                                                                                                                                                                     \\ \hline
-	WEIGHT\_DECAY                   & 0.0001  
-	\\ \hline 
-	\caption{Konfigurasi Model menggunakan Resnet-101 }
-	\label{tab:conf-resnet101}
+	WEIGHT\_DECAY                   & 0.0001                                                                                                                                                                                 \\ \hline
 \end{longtable}
 
 Setelah dilakukan serangkaian proses training yang memakan waktu sekitar 4 jam 9 menit 16 detik didapatkan \textit{output} berupa \textit{model file}  dengan format \textit{h5} yang mempunyai ukuran 244 MB. \textit{Training loss} terendah yang berhasil dicapai dengan menggunakan \textit{backbone} Resnet-101 (pada \textit{epoch} ke 244) adalah 0.3933 dengan rincian \textit{training bounding box loss} sebesar 0.04164, \textit{training classification loss} sebesar 0.0247 serta \textit{training mask loss} sebesar 0.1403. Namun untuk \textit{training bounding box loss} terendah terdapat pada \textit{epoch} ke 246 dengan nilai sebesar 0.04083, \textit{training classification loss} terendah pada \textit{epoch} ke 234 dengan nilai 0.01957. Gambar \ref{fig:resnet101-training} merupakan grafik yang menunjukkan perubahan \textit{training loss, training bounding box loss, training classification loss,} serta \textit{training mask loss} dari \textit{epoch} 1 sampai 300. 
@@ -233,31 +260,48 @@ Nilai \textit{mAP} tertinggi didapatkan pada \textit{epoch} ke 215 sebesar 96.21
 
 Tabel \ref{tab:conf-mobilenet-v1} merupakan parameter-parameter yang digunakan untuk membuat model Mask R-CNN dengan menggunakan \textit{backbone} Mobilenet-V1.
 
+% Please add the following required packages to your document preamble:
+% \usepackage{longtable}
+% Note: It may be necessary to compile the document several times to get a multi-page table to line up properly
 \begin{longtable}[h]{|l|l|}
+	\caption{Konfigurasi Model menggunakan Mobilenet-V1}
+	\label{tab:conf-mobilenet-v1}\\
 	\hline
-	\multicolumn{2}{|c|}{\textbf{Pengaturan Model Mobilenet-V1}}                                                                                                                                                                         \\ \hline
-	BACKBONE                        & mobilenetv1                                                                                                                                                                              \\ \hline
-	BACKBONE\_STRIDES               & {[}2, 4, 8, 16, 32{]}                                                                                                                                                                 \\ \hline
+	\multicolumn{2}{|c|}{\textbf{Pengaturan Model Mobilenet-V1}}                                                                                                                                                             
+	\\ \hline
+	\endfirsthead
+	%
+	\multicolumn{2}{c}%
+	{{\tablename\ \thetable{} -- Lanjutan dari halaman sebelumnya}} \\
+	\endhead
+	%
+	\multicolumn{2}{|r|}{\textit{Dilanjutkan pada halaman berikutnya}} \\ \hline
+	\endfoot
+	%
+	\endlastfoot
+	BACKBONE                        & mobilenetv1                                                                                                                                                                            \\ \hline
+	BACKBONE\_STRIDES               & {[}4, 8, 16, 32, 64{]}                                                                                                                                                                 \\ \hline
 	BATCH\_SIZE                     & 1                                                                                                                                                                                      \\ \hline
 	BBOX\_STD\_DEV                  & {[}0.1 0.1 0.2 0.2{]}                                                                                                                                                                  \\ \hline
 	COMPUTE\_BACKBONE\_SHAPE        & None                                                                                                                                                                                   \\ \hline
-	DETECTION\_MAX\_INSTANCES       &	 50                                                    	\\ \hline
+	DETECTION\_MAX\_INSTANCES       & 50                                                                                                                                                                                     \\ \hline
+	DETECTION\_MIN\_CONFIDENCE      & 0.9                                                                                                                                                                                    \\ \hline
+	DETECTION\_NMS\_THRESHOLD       & 0.2                                                                                                                                                                                    \\ \hline
+	FPN\_CLASSIF\_FC\_LAYERS\_SIZE  & 1024                                                                                                                                                                                   \\ \hline
+	GPU\_COUNT                      & 1                                                                                                                                                                                      \\ \hline
+	GRADIENT\_CLIP\_NORM            & 5.0                                                                                                                                                                                    \\ \hline
+	IMAGES\_PER\_GPU                & 1                                                                                                                                                                                      \\ \hline
+	IMAGE\_CHANNEL\_COUNT           & 3                                                                                                                                                                                      \\ \hline
+	IMAGE\_MAX\_DIM                 & 512                                                                                                                                                                                    \\ \hline
 	IMAGE\_META\_SIZE               & 16                                                                                                                                                                                     \\ \hline
 	IMAGE\_MIN\_DIM                 & 400                                                                                                                                                                                    \\ \hline
 	IMAGE\_MIN\_SCALE               & 0                                                                                                                                                                                      \\ \hline
 	IMAGE\_RESIZE\_MODE             & square                                                                                                                                                                                 \\ \hline
-	IMAGE\_SHAPE                    & {[}512 512{]}                                                                                                                                                                             \\ \hline
+	IMAGE\_SHAPE                    & {[}512 512 3{]}                                                                                                                                                                        \\ \hline
 	LEARNING\_MOMENTUM              & 0.9                                                                                                                                                                                    \\ \hline
 	LEARNING\_RATE                  & 0.001                                                                                                                                                                                  \\ \hline
-	LOSS\_WEIGHTS                   & \begin{tabular}[c]{@{}l@{}}\{'rpn\_class\_loss': 1.0, \\ 'rpn\_bbox\_loss': 1.0, \\ 'mrcnn\_class\_loss': 1.0, \\ 'mrcnn\_bbox\_loss': 1.0, \\ 'mrcnn\_mask\_loss': 1.0\}\end{tabular} \\ \hline
+	LOSS\_WEIGHTS                   & \begin{tabular}[c]{@{}l@{}}\{'rpn\_class\_loss': 1.0,\\  'rpn\_bbox\_loss': 1.0, \\ 'mrcnn\_class\_loss': 1.0, \\ 'mrcnn\_bbox\_loss': 1.0, \\ 'mrcnn\_mask\_loss': 1.0\}\end{tabular} \\ \hline
 	MASK\_POOL\_SIZE                & 14                                                                                                                                                                                     \\ \hline
-	MASK\_SHAPE                     & {[}28, 28{]}                                                                                                                                                                           \\ \hline
-	MAX\_GT\_INSTANCES              & 50                                                                                                                                                                                     \\ \hline
-	MEAN\_PIXEL                     & {[}123.7 116.8 103.9{]}                                                                                                                                                                \\ \hline
-	MINI\_MASK\_SHAPE               & (56, 56)                                                                                                                                                                               \\ \hline
-	NAME                            & object                                                                                                                                                                                 \\ \hline
-	NUM\_CLASSES                    & 4                                                                                                                                                                                      \\ \hline
-	POOL\_SIZE                      & 7                                                                                                                                                                                      \\ \hline
 	MASK\_SHAPE                     & {[}28, 28{]}                                                                                                                                                                           \\ \hline
 	MAX\_GT\_INSTANCES              & 50                                                                                                                                                                                     \\ \hline
 	MEAN\_PIXEL                     & {[}123.7 116.8 103.9{]}                                                                                                                                                                \\ \hline
@@ -282,13 +326,8 @@ Tabel \ref{tab:conf-mobilenet-v1} merupakan parameter-parameter yang digunakan u
 	USE\_MINI\_MASK                 & True                                                                                                                                                                                   \\ \hline
 	USE\_RPN\_ROIS                  & True                                                                                                                                                                                   \\ \hline
 	VALIDATION\_STEPS               & 30                                                                                                                                                                                     \\ \hline
-	WEIGHT\_DECAY                   & 0.0001  
-	\\ \hline 
-	\caption{Konfigurasi Model menggunakan Mobilenet-V1 }
-	\label{tab:conf-mobilenet-v1}
+	WEIGHT\_DECAY                   & 0.0001                                                                                                                                                                                 \\ \hline
 \end{longtable}
-
-\newpage
 
 Setelah dilakukan serangkaian proses training yang memakan waktu sekitar 3 jam 18 menit 44 detik didapatkan \textit{output} berupa \textit{model file}  dengan format \textit{h5} yang mempunyai ukuran 83.3 MB. \textit{Training loss} terendah yang berhasil dicapai dengan menggunakan \textit{backbone} Mobilenet-V1 (pada \textit{epoch} ke 46) adalah 1.604 dengan rincian \textit{training bounding box loss} sebesar 0.2322, \textit{training classification loss} sebesar 0.07858 serta \textit{training mask loss} sebesar 0.6729. Namun untuk \textit{training bounding box loss} terendah terdapat pada \textit{epoch} ke 48 dengan nilai sebesar 0.2239, \textit{training classification loss} terendah pada \textit{epoch} ke 61 dengan nilai 0.06219 serta \textit{training mask loss} terendah pada \textit{epoch} ke 61 sebesar 0.5701. Gambar \ref{fig:mobilenet-training} merupakan grafik yang menunjukkan perubahan \textit{training loss, training bounding box loss, training classification loss,} serta \textit{training mask loss} dari \textit{epoch} 1 sampai 300. 
 
@@ -324,6 +363,7 @@ Tabel \ref{tab:train-recap} adalah tabel perbandingan dari \textit{output file s
 
 \begin{table}[h]
 	\centering
+	\caption{Tabel Perbandingan Model dengan \textit{backbone} yang berbeda}
 	\begin{tabular}{|c|l|l|l|}
 		\hline
 		\textbf{No.} & \multicolumn{1}{c|}{\textit{\textbf{Backbone}}} & \multicolumn{1}{c|}{\textit{\textbf{Output File Size}}} & \multicolumn{1}{c|}{\textbf{mAP}} \\ \hline
@@ -331,7 +371,6 @@ Tabel \ref{tab:train-recap} adalah tabel perbandingan dari \textit{output file s
 		2            & Resnet-101                                      & 244 MB                                                  & 96.21\%                           \\ \hline
 		3            & Mobilenet-V1                                    & 83.3 MB                                                 & 26.04\%                           \\ \hline
 	\end{tabular}
-	\caption{Tabel Perbandingan Model dengan \textit{backbone} yang berbeda}
 	\label{tab:train-recap}
 \end{table}
 
@@ -403,6 +442,7 @@ Setelah melakukan \textit{testing} dengan menggunakan gambar pada \textit{testin
 
 \begin{table}[h]
 	\centering
+	\caption{tabel Perbandingan Hasil \textit{Testing}}
 	\resizebox{\textwidth}{!}{%
 		\begin{tabular}{|c|l|r|r|}
 			\hline
@@ -412,7 +452,6 @@ Setelah melakukan \textit{testing} dengan menggunakan gambar pada \textit{testin
 			3                                  & MobileNet-v1               & 0.664 s                             & 25\%          \\ \hline
 		\end{tabular}%
 	}
-	\caption{tabel Perbandingan Hasil \textit{Testing}}
 	\label{tab:result-comparasion}
 \end{table}
 
@@ -452,21 +491,10 @@ Pada Resnet-50 \textit{Average Precision} untuk semua kelas yang berhasil didete
 
 \begin{table}[!h]
 	\centering
+	\caption{{Perbandingan Hasil Evaluasi pada Pagi Hari}}
 	\begin{minipage}[b]{\textwidth}
 		\centering
-		\begin{tabular}{|l|c|c|c|}
-			\hline
-			\multicolumn{1}{|c|}{\textbf{Kelas}} & \textit{\textbf{Precision (\%)}} & \textit{\textbf{Recall (\%)}} & \textit{\textbf{F1\_Score (\%)}} \\ \hline
-			Background                           & 100                              & 100                           & 100                              \\ \hline
-			Pedestrian                           & 100                              & 100                           & 100                              \\ \hline
-			Zebracross                           & 100                              & 100                           & 100                              \\ \hline
-			Motorbiker                           & 100                              & 100                           & 100                              \\ \hline
-		\end{tabular}
 		\caption*{(a) ResNet-50}
-	\end{minipage}
-	\vfill
-	\begin{minipage}[b]{\textwidth}
-		\centering
 		\begin{tabular}{|l|c|c|c|}
 			\hline
 			\multicolumn{1}{|c|}{\textbf{Kelas}} & \textit{\textbf{Precision (\%)}} & \textit{\textbf{Recall (\%)}} & \textit{\textbf{F1\_Score (\%)}} \\ \hline
@@ -475,11 +503,24 @@ Pada Resnet-50 \textit{Average Precision} untuk semua kelas yang berhasil didete
 			Zebracross                           & 100                              & 100                           & 100                              \\ \hline
 			Motorbiker                           & 100                              & 100                           & 100                              \\ \hline
 		\end{tabular}
-		\caption*{(b) ResNet-101}
 	\end{minipage}
 	\vfill
 	\begin{minipage}[b]{\textwidth}
 		\centering
+		\caption*{(b) ResNet-101}
+		\begin{tabular}{|l|c|c|c|}
+			\hline
+			\multicolumn{1}{|c|}{\textbf{Kelas}} & \textit{\textbf{Precision (\%)}} & \textit{\textbf{Recall (\%)}} & \textit{\textbf{F1\_Score (\%)}} \\ \hline
+			Background                           & 100                              & 100                           & 100                              \\ \hline
+			Pedestrian                           & 100                              & 100                           & 100                              \\ \hline
+			Zebracross                           & 100                              & 100                           & 100                              \\ \hline
+			Motorbiker                           & 100                              & 100                           & 100                              \\ \hline
+		\end{tabular}
+	\end{minipage}
+	\vfill
+	\begin{minipage}[b]{\textwidth}
+		\centering
+		\caption*{(c) MobileNet-v1}
 		\begin{tabular}{|l|c|c|c|}
 			\hline
 			\multicolumn{1}{|c|}{\textbf{Kelas}} & \textit{\textbf{Precision (\%)}} & \textit{\textbf{Recall (\%)}} & \textit{\textbf{F1\_Score (\%)}} \\ \hline
@@ -488,9 +529,7 @@ Pada Resnet-50 \textit{Average Precision} untuk semua kelas yang berhasil didete
 			Zebracross                           & 100                              & 50                            & 66.66                            \\ \hline
 			Motorbiker                           & 0                                & NaN                           & NaN                              \\ \hline
 		\end{tabular}
-		\caption*{(c) MobileNet-v1}
 	\end{minipage}
-	\caption{{Perbandingan Hasil Evaluasi pada Pagi Hari}}
 	\label{tab:evaluate-morning}
 \end{table}
 
@@ -498,6 +537,7 @@ Selain menggunakan \textit{input data} berupa gambar, pada pengujian ini juga me
 
 \begin{table}[!h]
 	\centering{
+		\caption{Waktu Prediksi pada \textit{File Input} Video dalam \textit{MM:SS}}
 		\begin{tabular}{|l|c|c|c|c|}
 			\hline
 			\multicolumn{1}{|c|}{\textit{\textbf{Backbone}}} & \textit{\textbf{Tahap 1}} & \textit{\textbf{Tahap 2}} & \textit{\textbf{Total}} & \multicolumn{1}{l|}{\textit{\textbf{Output Size}}} 
@@ -508,7 +548,6 @@ Selain menggunakan \textit{input data} berupa gambar, pada pengujian ini juga me
 			\textit{MobileNet-v1}                            & 06:50                     & 00:40                     & 07:31                   & 89.7 MB                                            \\ \hline
 		\end{tabular}
 	}
-	\caption{Waktu Prediksi pada \textit{File Input} Video dalam \textit{MM:SS}}
 	\label{tab:video-morning}
 \end{table}
 
@@ -541,8 +580,10 @@ Perbandingan hasil evaluasi yang didapatkan masing-masing \textit{backbone} deng
 
 \begin{table}[!h]
 	\centering
+	\caption{{Perbandingan Hasil Evaluasi pada Siang Hari}}
 	\begin{minipage}[b]{\textwidth}
 		\centering
+		\caption*{(a) ResNet-50}
 		\begin{tabular}{|l|c|c|c|}
 			\hline
 			\multicolumn{1}{|c|}{\textbf{Kelas}} & \textit{\textbf{Precision (\%)}} & \textit{\textbf{Recall (\%)}} & \textit{\textbf{F1\_Score (\%)}} \\ \hline
@@ -551,11 +592,11 @@ Perbandingan hasil evaluasi yang didapatkan masing-masing \textit{backbone} deng
 			Zebracross                           & 50                               & 100                           & 66.66                            \\ \hline
 			Motorbiker                           & 50                               & 66.66                         & 57.14                            \\ \hline
 		\end{tabular}
-		\caption*{(a) ResNet-50}
 	\end{minipage}
 	\vfill
 	\begin{minipage}[b]{\textwidth}
 		\centering
+		\caption*{(b) ResNet-101}
 		\begin{tabular}{|l|c|c|c|}
 			\hline
 			\multicolumn{1}{|c|}{\textbf{Kelas}} & \textit{\textbf{Precision (\%)}} & \textit{\textbf{Recall (\%)}} & \textit{\textbf{F1\_Score (\%)}} \\ \hline
@@ -564,11 +605,11 @@ Perbandingan hasil evaluasi yang didapatkan masing-masing \textit{backbone} deng
 			Zebracross                           & 50                               & 100                           & 66.66                            \\ \hline
 			Motorbiker                           & 50                               & 100                           & 66.66                            \\ \hline
 		\end{tabular}
-		\caption*{(b) ResNet-101}
 	\end{minipage}
 	\vfill
 	\begin{minipage}[b]{\textwidth}
 		\centering
+		\caption*{(c) MobileNet-v1}
 		\begin{tabular}{|l|c|c|c|}
 			\hline
 			\multicolumn{1}{|c|}{\textbf{Kelas}} & \textit{\textbf{Precision (\%)}} & \textit{\textbf{Recall (\%)}} & \textit{\textbf{F1\_Score (\%)}} \\ \hline
@@ -577,9 +618,7 @@ Perbandingan hasil evaluasi yang didapatkan masing-masing \textit{backbone} deng
 			Zebracross                           & 50                               & 50                            & 50                               \\ \hline
 			Motorbiker                           & 0                                & NaN                           & NaN                              \\ \hline
 		\end{tabular}
-		\caption*{(c) MobileNet-v1}
 	\end{minipage}
-	\caption{{Perbandingan Hasil Evaluasi pada Siang Hari}}
 	\label{tab:evaluate-afternoon}
 \end{table}
 
@@ -589,6 +628,7 @@ Selain menggunakan \textit{input data} berupa gambar, pada pengujian ini juga me
 
 \begin{table}[!h]
 	\centering{
+		\caption{Waktu Prediksi pada \textit{File Input} Video dalam \textit{MM:SS}}
 		\begin{tabular}{|l|c|c|c|c|}
 			\hline
 			\multicolumn{1}{|c|}{\textit{\textbf{Backbone}}} & \textit{\textbf{Tahap 1}} & \textit{\textbf{Tahap 2}} & \textit{\textbf{Total}} & \multicolumn{1}{l|}{\textit{\textbf{Output Size}}} \\ \hline
@@ -597,7 +637,6 @@ Selain menggunakan \textit{input data} berupa gambar, pada pengujian ini juga me
 			\textit{MobileNet-v1}                            & 04:03                     & 00:30                     & 04:33                   & 42 MB                                              \\ \hline
 		\end{tabular}
 	}
-	\caption{Waktu Prediksi pada \textit{File Input} Video dalam \textit{MM:SS}}
 	\label{tab:video-afternoon}
 \end{table}
 
@@ -632,8 +671,10 @@ Perbandingan hasil evaluasi yang didapatkan masing-masing \textit{backbone} deng
 
 \begin{table}[!h]
 	\centering
+	\caption{{Perbandingan Hasil Evaluasi pada Malam Hari}}
 	\begin{minipage}[b]{\textwidth}
 		\centering
+		\caption*{(a) ResNet-50}
 		\begin{tabular}{|l|c|c|c|}
 			\hline
 			\multicolumn{1}{|c|}{\textbf{Kelas}} & \textit{\textbf{Precision (\%)}} & \textit{\textbf{Recall (\%)}} & \textit{\textbf{F1\_Score (\%)}} \\ \hline
@@ -642,11 +683,12 @@ Perbandingan hasil evaluasi yang didapatkan masing-masing \textit{backbone} deng
 			Zebracross                           & 100                              & 100                           & 100                              \\ \hline
 			Motorbiker                           & -                                & -                             & -                                \\ \hline
 		\end{tabular}	
-		\caption*{(a) ResNet-50}
+		
 	\end{minipage}
 	\vfill
 	\begin{minipage}[b]{\textwidth}
 		\centering
+		\caption*{(b) ResNet-101}
 		\begin{tabular}{|l|c|c|c|}
 			\hline
 			\multicolumn{1}{|c|}{\textbf{Kelas}} & \textit{\textbf{Precision (\%)}} & \textit{\textbf{Recall (\%)}} & \textit{\textbf{F1\_Score (\%)}} \\ \hline
@@ -655,11 +697,12 @@ Perbandingan hasil evaluasi yang didapatkan masing-masing \textit{backbone} deng
 			Zebracross                           & 100                              & 100                           & 100                              \\ \hline
 			Motorbiker                           & -                                & -                             & -                                \\ \hline
 		\end{tabular}
-		\caption*{(b) ResNet-101}
+		
 	\end{minipage}
 	\vfill
 	\begin{minipage}[b]{\textwidth}
 		\centering
+		\caption*{(c) MobileNet-v1}
 		\begin{tabular}{|l|c|c|c|}
 			\hline
 			\multicolumn{1}{|c|}{\textbf{Kelas}} & \textit{\textbf{Precision (\%)}} & \textit{\textbf{Recall (\%)}} & \textit{\textbf{F1\_Score (\%)}} \\ \hline
@@ -668,9 +711,9 @@ Perbandingan hasil evaluasi yang didapatkan masing-masing \textit{backbone} deng
 			Zebracross                           & 100                              & 50                            & 66.66                            \\ \hline
 			Motorbiker                           & -                                & -                             & -                                \\ \hline
 		\end{tabular}
-		\caption*{(c) MobileNet-v1}
+		
 	\end{minipage}
-	\caption{{Perbandingan Hasil Evaluasi pada Malam Hari}}
+	
 	\label{tab:evaluate-night}
 \end{table}
 
@@ -680,6 +723,7 @@ Selain menggunakan \textit{input data} berupa gambar, pada pengujian ini juga me
 
 \begin{table}[!h]
 	\centering{
+		\caption{Waktu Prediksi pada \textit{File Input} Video dalam \textit{MM:SS}}
 		\begin{tabular}{|l|c|c|c|l|}
 			\hline
 			\multicolumn{1}{|c|}{\textit{\textbf{Backbone}}} & \textit{\textbf{Tahap 1}} & \textit{\textbf{Tahap 2}} & \textit{\textbf{Total}} & \textit{\textbf{Output Size}} \\ \hline
@@ -688,7 +732,6 @@ Selain menggunakan \textit{input data} berupa gambar, pada pengujian ini juga me
 			\textit{MobileNet-v1}                            & 03:39                     & 00:28                     & 04:07                   & 36.1 MB                       \\ \hline
 		\end{tabular}
 	}
-	\caption{Waktu Prediksi pada \textit{File Input} Video dalam \textit{MM:SS}}
 	\label{tab:video-night}
 \end{table}
 

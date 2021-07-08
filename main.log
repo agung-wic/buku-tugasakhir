@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.7.2)  2 JUL 2021 01:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.7.2)  8 JUL 2021 20:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1384,53 +1384,63 @@ Package pdftex.def Info: gambar/testing.png  used on input line 162.
 (./bab/4-pengujian-analisis.tex
 Bab 4.
 
-Overfull \hbox (7.51198pt too wide) in paragraph at lines 27--36
+Overfull \hbox (7.51198pt too wide) in paragraph at lines 28--38
  [] 
  []
 
 [39
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 69.
- (/usr/share/texmf/tex/latex/lm/omslmr.fd
+Overfull \hbox (11.22108pt too wide) in alignment at lines 56--61
+ [] [] 
+ []
+
+
+Overfull \hbox (11.22108pt too wide) in alignment at lines 61--65
+ [] [] 
+ []
+
+
+Overfull \hbox (11.22108pt too wide) in alignment at lines 65--68
+ [] [] 
+ []
+
+
+Overfull \hbox (11.22108pt too wide) in alignment at lines 68--70
+ [] [] 
+ []
+
+
+Overfull \hbox (11.22108pt too wide) in alignment at lines 70--90
+ [] [] 
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 92.
+(/usr/share/texmf/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 69.
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 92.
 
-Overfull \hbox (11.22108pt too wide) in alignment at lines 53--74
+Overfull \hbox (11.22108pt too wide) in alignment at lines 90--110
  [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 74
- []
-
-
-Overfull \hbox (11.22108pt too wide) in alignment at lines 74--94
+Overfull \hbox (11.22108pt too wide) in alignment at lines 110--120
  [] [] 
  []
 
-
-Overfull \hbox (11.22108pt too wide) in alignment at lines 94--106
- [] [] 
- []
-
-[40]
-<gambar/resnet50-training.png, id=846, 728.7225pt x 532.99126pt>
+[40] [41]
+<gambar/resnet50-training.png, id=851, 728.7225pt x 532.99126pt>
 File: gambar/resnet50-training.png Graphic file (type png)
 <use gambar/resnet50-training.png>
-Package pdftex.def Info: gambar/resnet50-training.png  used on input line 112.
+Package pdftex.def Info: gambar/resnet50-training.png  used on input line 126.
 (pdftex.def)             Requested size: 262.33989pt x 191.87671pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[41]
 <gambar/resnet50-val.png, id=853, 733.74126pt x 532.99126pt>
 File: gambar/resnet50-val.png Graphic file (type png)
 <use gambar/resnet50-val.png>
-Package pdftex.def Info: gambar/resnet50-val.png  used on input line 121.
+Package pdftex.def Info: gambar/resnet50-val.png  used on input line 135.
 (pdftex.def)             Requested size: 264.14665pt x 191.87671pt.
 
 
@@ -1440,28 +1450,44 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <gambar/resnet50-map.png, id=860, 342.27875pt x 251.94125pt>
 File: gambar/resnet50-map.png Graphic file (type png)
 <use gambar/resnet50-map.png>
-Package pdftex.def Info: gambar/resnet50-map.png  used on input line 135.
+Package pdftex.def Info: gambar/resnet50-map.png  used on input line 149.
 (pdftex.def)             Requested size: 136.90906pt x 100.7747pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [43 <./gambar/resnet50-val.png>]
-Overfull \hbox (11.22108pt too wide) in alignment at lines 147--168
+Overfull \hbox (11.22108pt too wide) in alignment at lines 164--169
  [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 168
+Overfull \hbox (11.22108pt too wide) in alignment at lines 169--173
+ [] [] 
  []
 
 
-Overfull \hbox (11.22108pt too wide) in alignment at lines 168--188
+Overfull \hbox (11.22108pt too wide) in alignment at lines 173--176
+ [] [] 
+ []
+
+
+Overfull \hbox (11.22108pt too wide) in alignment at lines 176--178
+ [] [] 
+ []
+
+
+Overfull \hbox (11.22108pt too wide) in alignment at lines 178--198
+ [] [] 
+ []
+
+
+Overfull \hbox (11.22108pt too wide) in alignment at lines 198--218
  [] [] 
  []
 
 [44 <./gambar/resnet50-map.png>]
-Overfull \hbox (11.22108pt too wide) in alignment at lines 188--200
+Overfull \hbox (11.22108pt too wide) in alignment at lines 218--227
  [] [] 
  []
 
@@ -1469,71 +1495,87 @@ Overfull \hbox (11.22108pt too wide) in alignment at lines 188--200
 <gambar/resnet101-training.png, id=879, 713.66624pt x 538.01pt>
 File: gambar/resnet101-training.png Graphic file (type png)
 <use gambar/resnet101-training.png>
-Package pdftex.def Info: gambar/resnet101-training.png  used on input line 206.
+Package pdftex.def Info: gambar/resnet101-training.png  used on input line 233.
 
 (pdftex.def)             Requested size: 256.91965pt x 193.68344pt.
  [46 <./gambar/resnet101-training.png>]
 <gambar/resnet101-val.png, id=886, 733.74126pt x 532.99126pt>
 File: gambar/resnet101-val.png Graphic file (type png)
 <use gambar/resnet101-val.png>
-Package pdftex.def Info: gambar/resnet101-val.png  used on input line 215.
+Package pdftex.def Info: gambar/resnet101-val.png  used on input line 242.
 (pdftex.def)             Requested size: 264.14665pt x 191.87671pt.
 <gambar/resnet101-map.png, id=888, 342.27875pt x 251.94125pt>
 File: gambar/resnet101-map.png Graphic file (type png)
 <use gambar/resnet101-map.png>
-Package pdftex.def Info: gambar/resnet101-map.png  used on input line 224.
+Package pdftex.def Info: gambar/resnet101-map.png  used on input line 251.
 (pdftex.def)             Requested size: 136.90906pt x 100.7747pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [47 <./gambar/resnet101-val.png>]
-Overfull \hbox (11.22108pt too wide) in alignment at lines 236--257
+Overfull \hbox (11.22108pt too wide) in alignment at lines 266--272
  [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 257
+Overfull \hbox (11.22108pt too wide) in alignment at lines 272--276
+ [] [] 
  []
 
 
-Overfull \hbox (11.22108pt too wide) in alignment at lines 257--277
+Overfull \hbox (11.22108pt too wide) in alignment at lines 276--279
+ [] [] 
+ []
+
+
+Overfull \hbox (11.22108pt too wide) in alignment at lines 279--281
+ [] [] 
+ []
+
+
+Overfull \hbox (11.22108pt too wide) in alignment at lines 281--301
+ [] [] 
+ []
+
+
+Overfull \hbox (11.22108pt too wide) in alignment at lines 301--321
  [] [] 
  []
 
 [48 <./gambar/resnet101-map.png>]
-Overfull \hbox (11.22108pt too wide) in alignment at lines 277--289
+Overfull \hbox (11.22108pt too wide) in alignment at lines 321--330
  [] [] 
  []
 
 [49]
 
 LaTeX Warning: Reference `fig:mobilenet-training' on page 50 undefined on input
- line 293.
+ line 332.
 
 <gambar/mobilenetv1-train.png, id=905, 733.74126pt x 538.01pt>
 File: gambar/mobilenetv1-train.png Graphic file (type png)
 <use gambar/mobilenetv1-train.png>
-Package pdftex.def Info: gambar/mobilenetv1-train.png  used on input line 297.
+Package pdftex.def Info: gambar/mobilenetv1-train.png  used on input line 336.
 (pdftex.def)             Requested size: 264.14665pt x 193.68344pt.
 [50 <./gambar/mobilenetv1-train.png>]
 <gambar/mobilenetv1-val.png, id=912, 743.77875pt x 532.99126pt>
 File: gambar/mobilenetv1-val.png Graphic file (type png)
 <use gambar/mobilenetv1-val.png>
-Package pdftex.def Info: gambar/mobilenetv1-val.png  used on input line 307.
+Package pdftex.def Info: gambar/mobilenetv1-val.png  used on input line 346.
 (pdftex.def)             Requested size: 267.76015pt x 191.87671pt.
  [51 <./gambar/mobilenetv1-val.png>]
 <gambar/mobilenetv1-map.png, id=919, 352.31625pt x 251.94125pt>
 File: gambar/mobilenetv1-map.png Graphic file (type png)
 <use gambar/mobilenetv1-map.png>
-Package pdftex.def Info: gambar/mobilenetv1-map.png  used on input line 318.
+Package pdftex.def Info: gambar/mobilenetv1-map.png  used on input line 357.
 (pdftex.def)             Requested size: 140.924pt x 100.7747pt.
 
 [52 <./gambar/mobilenetv1-map.png>]
 <gambar/graph-recap.png, id=927, 384.43625pt x 263.98625pt>
 File: gambar/graph-recap.png Graphic file (type png)
 <use gambar/graph-recap.png>
-Package pdftex.def Info: gambar/graph-recap.png  used on input line 342.
+Package pdftex.def Info: gambar/graph-recap.png  used on input line 381.
 (pdftex.def)             Requested size: 288.32648pt x 197.9892pt.
 
 Underfull \vbox (badness 3407) has occurred while \output is active []
@@ -1543,7 +1585,7 @@ Underfull \vbox (badness 3407) has occurred while \output is active []
 File: gambar/fajar-frame800-resnet50.png Graphic file (type png)
 <use gambar/fajar-frame800-resnet50.png>
 Package pdftex.def Info: gambar/fajar-frame800-resnet50.png  used on input line
- 365.
+ 404.
 (pdftex.def)             Requested size: 273.12248pt x 157.18846pt.
 
 Underfull \vbox (badness 6252) has occurred while \output is active []
@@ -1553,34 +1595,42 @@ Underfull \vbox (badness 6252) has occurred while \output is active []
 File: gambar/fajar-frame800-resnet101.png Graphic file (type png)
 <use gambar/fajar-frame800-resnet101.png>
 Package pdftex.def Info: gambar/fajar-frame800-resnet101.png  used on input lin
-e 381.
+e 420.
 (pdftex.def)             Requested size: 273.12248pt x 157.18846pt.
 <gambar/fajar-frame800-mobilenetv1.png, id=948, 910.40125pt x 523.9575pt>
 File: gambar/fajar-frame800-mobilenetv1.png Graphic file (type png)
 <use gambar/fajar-frame800-mobilenetv1.png>
 Package pdftex.def Info: gambar/fajar-frame800-mobilenetv1.png  used on input l
-ine 397.
+ine 436.
 (pdftex.def)             Requested size: 273.12248pt x 157.18846pt.
  [55 <./gambar/fajar-frame800-resnet101.png>]
 [56 <./gambar/fajar-frame800-mobilenetv1.png>]
 File: gambar/fajar-frame800-resnet50.png Graphic file (type png)
 <use gambar/fajar-frame800-resnet50.png>
 Package pdftex.def Info: gambar/fajar-frame800-resnet50.png  used on input line
- 432.
+ 471.
 (pdftex.def)             Requested size: 87.9199pt x 50.59995pt.
 File: gambar/fajar-frame800-resnet101.png Graphic file (type png)
 <use gambar/fajar-frame800-resnet101.png>
 Package pdftex.def Info: gambar/fajar-frame800-resnet101.png  used on input lin
-e 437.
+e 476.
 (pdftex.def)             Requested size: 87.9199pt x 50.59995pt.
 File: gambar/fajar-frame800-mobilenetv1.png Graphic file (type png)
 <use gambar/fajar-frame800-mobilenetv1.png>
 Package pdftex.def Info: gambar/fajar-frame800-mobilenetv1.png  used on input l
-ine 442.
+ine 481.
 (pdftex.def)             Requested size: 87.9199pt x 50.59995pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package caption Warning: \label without proper reference on input line 551.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `tab:video-morning' on page 57 undefined on input line
+ 536.
 
 [57]
 
@@ -1591,29 +1641,37 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: gambar/siang-frame465-resnet50.png Graphic file (type png)
 <use gambar/siang-frame465-resnet50.png>
 Package pdftex.def Info: gambar/siang-frame465-resnet50.png  used on input line
- 523.
+ 562.
 (pdftex.def)             Requested size: 87.9199pt x 48.73358pt.
 <gambar/siang-frame465-resnet101.png, id=981, 930.47626pt x 521.95pt>
 File: gambar/siang-frame465-resnet101.png Graphic file (type png)
 <use gambar/siang-frame465-resnet101.png>
 Package pdftex.def Info: gambar/siang-frame465-resnet101.png  used on input lin
-e 528.
+e 567.
 (pdftex.def)             Requested size: 87.9199pt x 49.31497pt.
 <gambar/siang-frame465-mobilenetv1.png, id=982, 910.40125pt x 522.95375pt>
 File: gambar/siang-frame465-mobilenetv1.png Graphic file (type png)
 <use gambar/siang-frame465-mobilenetv1.png>
 Package pdftex.def Info: gambar/siang-frame465-mobilenetv1.png  used on input l
-ine 533.
+ine 572.
 (pdftex.def)             Requested size: 87.9199pt x 50.50302pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (0.36958pt too wide) in paragraph at lines 586--587
+Overfull \hbox (0.36958pt too wide) in paragraph at lines 625--626
 \OT1/lmr/m/n/10 ber-ha-sil di-de-tek-si ada-lah se-be-sar 62.5% dan \OT1/lmr/m/
 it/10 Ave-ra-ge Re-ca-ll \OT1/lmr/m/n/10 72.915%.
  []
+
+
+Package caption Warning: \label without proper reference on input line 640.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `tab:video-afternoon' on page 59 undefined on input li
+ne 627.
 
 [59 <./gambar/siang-frame465-resnet50.png> <./gambar/siang-frame465-resnet101.p
 ng> <./gambar/siang-frame465-mobilenetv1.png>] [60]
@@ -1621,23 +1679,31 @@ ng> <./gambar/siang-frame465-mobilenetv1.png>] [60]
 File: gambar/malam-frame180-resnet50.png Graphic file (type png)
 <use gambar/malam-frame180-resnet50.png>
 Package pdftex.def Info: gambar/malam-frame180-resnet50.png  used on input line
- 614.
+ 653.
 (pdftex.def)             Requested size: 87.9199pt x 50.40608pt.
 <gambar/malam-frame180-resnet101.png, id=1001, 910.40125pt x 521.95pt>
 File: gambar/malam-frame180-resnet101.png Graphic file (type png)
 <use gambar/malam-frame180-resnet101.png>
 Package pdftex.def Info: gambar/malam-frame180-resnet101.png  used on input lin
-e 619.
+e 658.
 (pdftex.def)             Requested size: 87.9199pt x 50.40608pt.
 <gambar/malam-frame180-mobilnetv1.png, id=1002, 910.40125pt x 521.95pt>
 File: gambar/malam-frame180-mobilnetv1.png Graphic file (type png)
 <use gambar/malam-frame180-mobilnetv1.png>
 Package pdftex.def Info: gambar/malam-frame180-mobilnetv1.png  used on input li
-ne 624.
+ne 663.
 (pdftex.def)             Requested size: 87.9199pt x 50.40608pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package caption Warning: \label without proper reference on input line 735.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `tab:video-night' on page 61 undefined on input line 7
+22.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1651,7 +1717,7 @@ Underfull \vbox (badness 1038) has occurred while \output is active []
 File: gambar/confmatrix/all-resnet50-blue.png Graphic file (type png)
 <use gambar/confmatrix/all-resnet50-blue.png>
 Package pdftex.def Info: gambar/confmatrix/all-resnet50-blue.png  used on input
- line 713.
+ line 756.
 (pdftex.def)             Requested size: 260.47513pt x 229.45901pt.
 
 [63 <./gambar/confmatrix/all-resnet50-blue.png>]
@@ -1659,7 +1725,7 @@ Package pdftex.def Info: gambar/confmatrix/all-resnet50-blue.png  used on input
 File: gambar/confmatrix/all-resnet101-blue.png Graphic file (type png)
 <use gambar/confmatrix/all-resnet101-blue.png>
 Package pdftex.def Info: gambar/confmatrix/all-resnet101-blue.png  used on inpu
-t line 730.
+t line 773.
 (pdftex.def)             Requested size: 255.05484pt x 229.45901pt.
  [64 <./gambar/confmatrix/all-resnet101-blue.png>]
 <gambar/confmatrix/all-mobilenetv1-blue.png, id=1040, 850.17625pt x 764.8575pt>
@@ -1667,7 +1733,7 @@ t line 730.
 File: gambar/confmatrix/all-mobilenetv1-blue.png Graphic file (type png)
 <use gambar/confmatrix/all-mobilenetv1-blue.png>
 Package pdftex.def Info: gambar/confmatrix/all-mobilenetv1-blue.png  used on in
-put line 747.
+put line 790.
 (pdftex.def)             Requested size: 255.05484pt x 229.45901pt.
 ) [65 <./gambar/confmatrix/all-mobilenetv1-blue.png>]
 [66
@@ -1756,7 +1822,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 204.
 Here is how much of TeX's memory you used:
  13083 strings out of 494342
  191987 string characters out of 6168656
- 408531 words of memory out of 5000000
+ 409540 words of memory out of 5000000
  15948 multiletter control sequences out of 15000+600000
  74782 words of font info for 47 fonts, out of 8000000 for 9000
  309 hyphenation exceptions out of 8191
@@ -1775,7 +1841,7 @@ c/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbo10.pfb></usr/shar
 e/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public
 /lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb></usr/share/te
 xmf/fonts/type1/public/lm/lmtt10.pfb>
-Output written on main.pdf (94 pages, 11530041 bytes).
+Output written on main.pdf (94 pages, 11531719 bytes).
 PDF statistics:
  1231 PDF objects out of 1440 (max. 8388607)
  1005 compressed objects within 11 object streams
