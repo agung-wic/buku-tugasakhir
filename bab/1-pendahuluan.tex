@@ -8,20 +8,16 @@ Penelitian ini di latar belakangi oleh berbagai kondisi yang menjadi acuan. Sela
 \section{Latar Belakang}
 \label{sec:latarbelakang}
 
-Mobil merupakan salah satu jenis kendaraan bermotor yang banyak terdapat di Indonesia. Pada tahun 2018 Badan Pusat Statistik mencatat terdapat 16.440.987 mobil penumpang yang berada di Indonesia. Dengan bertambahnya jumlah mobil di Indonesia dari tahun ke tahun, meningkatkan juga jumlah kecelakaan mobil. Fitur keselamatan dan keamanan pada mobil sangat penting bagi para pengendara dan penumpang, sehingga para produsen mobil berusaha meningkatkan teknologi keselamatan dan keamanan pada mobil buatannya. Sebagai contoh beberapa fitur keselamatan dan keamanan yang
-terdapat pada mobil antara lain, adaptive cruise control, hill strat assist, blind spot monitoring, electronic stability control dan lain sebagainya.
+Mobil merupakan salah satu jenis kendaraan bermotor yang banyak terdapat di Indonesia. Pada tahun 2019 Badan Pusat Statistik mencatat terdapat 15.592.419 mobil penumpang yang berada di Indonesia. Dengan bertambahnya jumlah mobil di Indonesia dari tahun ke tahun, meningkatkan juga jumlah kecelakaan mobil. Fitur keselamatan dan keamanan pada mobil sangat penting bagi para pengendara dan penumpang, sehingga para produsen mobil berusaha meningkatkan teknologi keselamatan dan keamanan pada mobil buatannya. Sebagai contoh beberapa fitur keselamatan dan keamanan yang terdapat pada mobil antara lain, \textit{adaptive cruise control}, \textit{hill strat assist}, \textit{blind spot monitoring}, \textit{electronic stability control} dan lain sebagainya.
 
-Menurut data dari WHO, terdapat 270.000 pejalan kaki meninggal dunia setiap tahun atau sekitar 22\% dari seluruh korban meniggal akibat kecelakan di jalan. Melihat kegiatan para pejalan kaki yang jarang berada di badan jalan, angka tersebut tentu cukup tinggi. Para pejalan kaki hanya menggunakan badan jalan ketika hendak menyebrang jalan lewat zebracross. Kelalaian dari pejalan kaki maupun pengendara mobil merupakan faktor utama mengapa angka kematian pejalan kaki cukup tinggi. Salah satu contoh kelalaian pejalan kaki adalah pada saat menyebrang jalan tidak memperhatikan kendaraan yang akan lewat dan atau melihat rambu serta lampu lalu lintas. Di sisi pengendara mobil, kelelahan,
-kurangnya fokus saat berkendara dan tidak memperhatikan rambu maupun marka dapat berakibat fatal
-baik kepada pejalan kaki dan pengendara lain.
+Menurut data dari WHO, terdapat 270.000 pejalan kaki meninggal dunia setiap tahun atau sekitar 22\% dari seluruh korban meniggal akibat kecelakan di jalan\cite{who}. Sedangkan untuk di Indonesia sendiri, mengutip dari laman \textit{Global Road Safety Facility}, presentase kematian pejalan kaki akibat kecelakaan lalu lintas sebesar 38\% dari total 31.282 kematian di jalan raya yang dilaporkan pada tahun 2016 \cite{grsf}. Melihat kegiatan para pejalan kaki yang jarang berada di badan jalan, angka tersebut tentu cukup tinggi. Para pejalan kaki hanya menggunakan badan jalan ketika hendak menyebrang jalan lewat zebracross. Kelalaian dari pejalan kaki maupun pengendara mobil merupakan faktor utama mengapa angka kematian pejalan kaki cukup tinggi. Salah satu contoh kelalaian pejalan kaki adalah pada saat menyebrang jalan tidak memperhatikan kendaraan yang akan lewat dan atau mengabaikan rambu serta lampu lalu lintas. Di sisi pengendara mobil, kelelahan, kurangnya fokus saat berkendara dan tidak memperhatikan rambu maupun marka dapat berakibat fatal baik kepada pejalan kaki dan pengendara lain.
 
-Teknologi artificial intelligent sudah banyak disematkan pada mobil pada masa kini, dibuktikan
-dengan adanya teknologi adaptive cruise control, hill start assist dan lain sebagainya. Artificial intelligent khususnya deep learning tentu dapat digunakan untuk deteksi pejalan kaki di zebracross guna mengurangi jumlah korban akibat kecelakaan. Deteksi pejalan kaki dapat digabungkan dengan buzzer dan atau LED sebagai komponen output untuk mengingatkan kepada pengendara bahwa ada pejalan kaki yang sedang menyebrangi jalan serta mengembalikan fokus untuk berkendara.
+Teknologi \textit{artificial intelligent} tentu dapat digunakan untuk mengatasi masalah yang sudah disebutkan pada penjelasaan sebelumnya. Melihat penerapan \textit{artificial intelligent} pada teknologi keselamatan pengendara mobil seperti \textit{adaptive cruise control}, \textit{hill start assist} dan lain sebagainya. Bagian dari a\textit{rtificial intelligent} yang sangat cocok untuk masalah seperti ini adalah \textit{deep learning} dengan memanfaatkan pengolahan citra pada data berbentuk gambar tentu dapat digunakan untuk deteksi pejalan kaki di zebracross guna mengurangi jumlah korban akibat kecelakaan. Deteksi pejalan kaki ini kedepannya dapat digabungkan dengan \textit{buzzer} dan atau LED sebagai komponen \textit{output} untuk mengingatkan kepada pengendara bahwa ada pejalan kaki yang sedang menyebrangi jalan serta mengembalikan fokus untuk berkendara.
 
 \section{Permasalahan}
 \label{sec:permasalahan}
 
-Cukup tingginya angka kematian pejalan kaki akibat kecelakaan lalu lintas dan belum adanya deteksi pejalan kaki di zebracross untuk peringatan dini kepada pengendara mobil. Oleh karena itu, diperlukan sebuah sistem yang mampu mendeteksi adanya pejalan kaki yang berada disekitar jalan raya untuk selanjutnya dapat digunakan sebagai peringatan kepada pengendara mobil.
+Berdasarkan data yang telah dipaparkan pada latar belakang, cukup tingginya angka kematian pejalan kaki akibat kecelakaan lalu lintas dikarenakan belum adanya deteksi pejalan kaki di zebracross untuk peringatan dini kepada pengendara mobil. Oleh karena itu, diperlukan sebuah sistem yang mampu mendeteksi adanya pejalan kaki yang berada disekitar jalan raya untuk selanjutnya dapat digunakan sebagai peringatan kepada pengendara mobil.
 
 \section{Tujuan}
 \label{sec:Tujuan}
@@ -38,7 +34,7 @@ Batasan masalah yang timbul dari permasalahan Tugas Akhir ini adalah:
 \begin{enumerate}[nolistsep]
 
   \item Menggunakan Mask R-CNN untuk pendeteksian pejalan kaki dan zebracross
-  \item File Input berupa video dengan format MP4 dengan 30 fps. 
+  \item File Input berupa video dengan format MP4 yang diambil dari sudut pandang pengendara mobil. 
 
 \end{enumerate}
 

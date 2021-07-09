@@ -1,49 +1,51 @@
 \babel@toc {indonesian}{}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Gambaran \textit {Supervised Learning}\citep {supervised}\relax }}{6}{figure.caption.5}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Gambaran \textit {Unsupervised Learning}\citep {unsupervised}\relax }}{7}{figure.caption.6}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Gambaran \textit {Reinforcement Learning}\citep {reinforcement}\relax }}{7}{figure.caption.7}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Gambaran Konsep Arsitektur CNN \citep {concept-cnn}\relax }}{8}{figure.caption.8}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Contoh Gambar RGB dan Grayscale\relax }}{10}{figure.caption.9}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Gambaran Operasi Konvolusi pada \textit {Convolution Layer}\relax }}{11}{figure.caption.10}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Gambaran Operasi Konvolusi pada \textit {Convolution Layer} menggunakan \textit {Zero Padding}\relax }}{12}{figure.caption.11}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Gambaran Proses \textit {Max Pooling}\relax }}{14}{figure.caption.12}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Grafik Fungsi Aktivasi Sigmoid \citep {sigmoid}\relax }}{15}{figure.caption.13}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Grafik Fungsi Aktivasi Tanh \citep {sigmoid}\relax }}{16}{figure.caption.14}
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Arsitektur R-CNN \citep {arch-rcnn}\relax }}{19}{figure.caption.15}
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Arsitektur \textit {Fast R-CNN} \citep {arch-fast-rcnn}\relax }}{21}{figure.caption.16}
-\contentsline {figure}{\numberline {2.13}{\ignorespaces Gambaran Deteksi Objek pada \textit {Faster R-CNN} \citep {arch-faster-rcnn}\relax }}{22}{figure.caption.17}
-\contentsline {figure}{\numberline {2.14}{\ignorespaces Struktur dari Arsitektur \textit {Faster R-CNN} \citep {arch-mask-rcnn}\relax }}{23}{figure.caption.18}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Gambaran \textit {Supervised Learning}\citep {supervised}\relax }}{9}{figure.caption.5}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Gambaran \textit {Unsupervised Learning}\citep {unsupervised}\relax }}{10}{figure.caption.6}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Gambaran \textit {Reinforcement Learning}\citep {reinforcement}\relax }}{10}{figure.caption.7}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Gambaran Konsep Arsitektur CNN \citep {concept-cnn}\relax }}{11}{figure.caption.8}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Contoh Gambar RGB dan Grayscale\relax }}{13}{figure.caption.9}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Gambaran Operasi Konvolusi pada \textit {Convolution Layer}\relax }}{14}{figure.caption.10}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Gambaran Operasi Konvolusi pada \textit {Convolution Layer} menggunakan \textit {Zero Padding}\relax }}{15}{figure.caption.11}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Gambaran Proses \textit {Max Pooling}\relax }}{17}{figure.caption.12}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Grafik Fungsi Aktivasi Sigmoid \citep {sigmoid}\relax }}{18}{figure.caption.13}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Grafik Fungsi Aktivasi Tanh \citep {sigmoid}\relax }}{19}{figure.caption.14}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Arsitektur R-CNN \citep {arch-rcnn}\relax }}{22}{figure.caption.15}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Arsitektur \textit {Fast R-CNN} \citep {arch-fast-rcnn}\relax }}{23}{figure.caption.16}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Gambaran Deteksi Objek pada \textit {Faster R-CNN} \citep {arch-faster-rcnn}\relax }}{24}{figure.caption.17}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Struktur dari Arsitektur \textit {Faster R-CNN} \citep {arch-mask-rcnn}\relax }}{26}{figure.caption.18}
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Arsitektur ResNet-50 \citep {resnet50-arch}\relax }}{27}{figure.caption.19}
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Arsitektur ResNet-101 \citep {resnet101-arch}\relax }}{27}{figure.caption.20}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Blok Diagram Metodologi\relax }}{27}{figure.caption.19}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Contoh Gambar dari Caltech Pedestrian Database\relax }}{28}{figure.caption.20}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Contoh Pembuatan \textit {dataset} dari \textit {Screenshot Youtube}\relax }}{29}{figure.caption.21}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Visualisasi Pembagian Data\relax }}{29}{figure.caption.22}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Diagram Alir \textit {Pre Processing}\relax }}{31}{figure.caption.23}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Contoh \textit {Image Resizing}\relax }}{32}{figure.caption.24}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Contoh \textit {Image Augmentation}\relax }}{33}{figure.caption.25}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Blok Diagram Alur Mask R-CNN\relax }}{34}{figure.caption.26}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Visualisasi \textit {K Fold Cross Validation}\relax }}{36}{figure.caption.27}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Diagram Alir \textit {Testing Data}\relax }}{37}{figure.caption.28}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Blok Diagram Metodologi\relax }}{29}{figure.caption.21}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Contoh Gambar dari Caltech Pedestrian Database\relax }}{30}{figure.caption.22}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Contoh Pembuatan \textit {dataset} dari \textit {Screenshot Youtube}\relax }}{31}{figure.caption.23}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Visualisasi Pembagian Data\relax }}{31}{figure.caption.24}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Diagram Alir \textit {Pre Processing}\relax }}{33}{figure.caption.25}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Contoh \textit {Image Resizing}\relax }}{34}{figure.caption.26}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Contoh \textit {Image Augmentation}\relax }}{35}{figure.caption.27}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Blok Diagram Alur Mask R-CNN\relax }}{36}{figure.caption.28}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Visualisasi \textit {K Fold Cross Validation}\relax }}{38}{figure.caption.29}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Diagram Alir \textit {Testing Data}\relax }}{39}{figure.caption.30}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Grafik Perubahan \textit {Training Loss} pada Resnet-50\relax }}{42}{figure.caption.31}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Grafik Perubahan \textit {Validation Loss} pada Resnet-50\relax }}{43}{figure.caption.32}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Grafik Perubahan \textit {Validation mAP} pada Resnet-50\relax }}{44}{figure.caption.33}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Grafik Perubahan \textit {Training Loss} pada Resnet-101\relax }}{46}{figure.caption.34}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Grafik Perubahan \textit {Validation Loss} pada Resnet-101\relax }}{47}{figure.caption.35}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Grafik Perubahan \textit {Validation mAP} pada Resnet-101\relax }}{48}{figure.caption.36}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Grafik Perubahan \textit {Training Loss} pada Mobilenet-V1\relax }}{50}{figure.caption.37}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Grafik Perubahan \textit {Validation Loss} pada Mobilenet-V1\relax }}{51}{figure.caption.38}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Grafik Perubahan \textit {Validation mAP} pada Mobilenet-V1\relax }}{52}{figure.caption.39}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Grafik Perbandingan Model dengan \textit {backbone} yang berbeda\relax }}{53}{figure.caption.41}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Hasil Uji dari \textit {Backbone Resnet-50}\relax }}{54}{figure.caption.42}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Hasil Uji dari \textit {Backbone Resnet-101}\relax }}{55}{figure.caption.43}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Hasil Uji dari \textit {Backbone Mobilenet-V1}\relax }}{56}{figure.caption.44}
-\contentsline {figure}{\numberline {4.14}{\ignorespaces {Perbandingan Hasil pada Pagi Hari}\relax }}{57}{figure.caption.46}
-\contentsline {figure}{\numberline {4.15}{\ignorespaces {Perbandingan Hasil pada Siang Hari}\relax }}{59}{figure.caption.49}
-\contentsline {figure}{\numberline {4.16}{\ignorespaces {Perbandingan Hasil pada Malam Hari}\relax }}{61}{figure.caption.52}
-\contentsline {figure}{\numberline {4.17}{\ignorespaces \textit {Confusion Matrix} ResNet-50\relax }}{63}{figure.caption.55}
-\contentsline {figure}{\numberline {4.18}{\ignorespaces \textit {Confusion Matrix} ResNet-101\relax }}{64}{figure.caption.56}
-\contentsline {figure}{\numberline {4.19}{\ignorespaces \textit {Confusion Matrix} MobileNet-v1\relax }}{65}{figure.caption.57}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Grafik Perubahan \textit {Training Loss} pada Resnet-50\relax }}{44}{figure.caption.33}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Grafik Perubahan \textit {Validation Loss} pada Resnet-50\relax }}{45}{figure.caption.34}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Grafik Perubahan \textit {Validation mAP} pada Resnet-50\relax }}{46}{figure.caption.35}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Grafik Perubahan \textit {Training Loss} pada Resnet-101\relax }}{48}{figure.caption.36}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Grafik Perubahan \textit {Validation Loss} pada Resnet-101\relax }}{49}{figure.caption.37}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Grafik Perubahan \textit {Validation mAP} pada Resnet-101\relax }}{50}{figure.caption.38}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Grafik Perubahan \textit {Training Loss} pada Mobilenet-V1\relax }}{52}{figure.caption.39}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Grafik Perubahan \textit {Validation Loss} pada Mobilenet-V1\relax }}{53}{figure.caption.40}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Grafik Perubahan \textit {Validation mAP} pada Mobilenet-V1\relax }}{54}{figure.caption.41}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Grafik Perbandingan Model dengan \textit {backbone} yang berbeda\relax }}{55}{figure.caption.43}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Hasil Uji dari \textit {Backbone Resnet-50}\relax }}{56}{figure.caption.44}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Hasil Uji dari \textit {Backbone Resnet-101}\relax }}{57}{figure.caption.45}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Hasil Uji dari \textit {Backbone Mobilenet-V1}\relax }}{58}{figure.caption.46}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces {Perbandingan Hasil pada Pagi Hari}\relax }}{59}{figure.caption.48}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces {Perbandingan Hasil pada Siang Hari}\relax }}{61}{figure.caption.51}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces {Perbandingan Hasil pada Malam Hari}\relax }}{63}{figure.caption.54}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces \textit {Confusion Matrix} ResNet-50\relax }}{66}{figure.caption.57}
+\contentsline {figure}{\numberline {4.18}{\ignorespaces \textit {Confusion Matrix} ResNet-101\relax }}{67}{figure.caption.58}
+\contentsline {figure}{\numberline {4.19}{\ignorespaces \textit {Confusion Matrix} MobileNet-v1\relax }}{68}{figure.caption.59}
 \addvspace {10\p@ }

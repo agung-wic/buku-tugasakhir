@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.7.2)  8 JUL 2021 20:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.7.2)  9 JUL 2021 13:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -985,7 +985,7 @@ File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 LaTeX Font Info:    Font shape `OT1/lmss/bx/it' in size <12> not available
 (Font)              Font shape `OT1/lmss/bx/sl' tried instead on input line 8.
 )
-<sampul/gambar/sampul-luar.png, id=224, 421.0932pt x 597.432pt>
+<sampul/gambar/sampul-luar.png, id=248, 421.0932pt x 597.432pt>
 File: sampul/gambar/sampul-luar.png Graphic file (type png)
 <use sampul/gambar/sampul-luar.png>
 Package pdftex.def Info: sampul/gambar/sampul-luar.png  used on input line 40.
@@ -1029,7 +1029,7 @@ r.png>]) (./sampul/sampul-dalam.tex
 
 
 (./sampul/konten.tex)
-<sampul/gambar/sampul-dalam.png, id=234, 421.0932pt x 597.432pt>
+<sampul/gambar/sampul-dalam.png, id=258, 421.0932pt x 597.432pt>
 File: sampul/gambar/sampul-dalam.png Graphic file (type png)
 <use sampul/gambar/sampul-dalam.png>
 Package pdftex.def Info: sampul/gambar/sampul-dalam.png  used on input line 37.
@@ -1080,7 +1080,7 @@ Package hyperref Warning: No destination for bookmark of \addcontentsline,
 ] (./abstrak/abstrak-en.tex) [3] [4
 
 ] (./lainnya/kata-pengantar.tex
-Overfull \hbox (0.9641pt too wide) in paragraph at lines 18--19
+Overfull \hbox (0.9641pt too wide) in paragraph at lines 16--17
 []\OT1/lmr/m/n/10 Bapak-ibu do-sen pe-nga-jar De-par-te-men Tek-nik Kom-pu-ter,
  atas
  []
@@ -1089,15 +1089,11 @@ Overfull \hbox (0.9641pt too wide) in paragraph at lines 18--19
 
 ] (./main.toc [7
 
-]
-Underfull \vbox (badness 1205) has occurred while \output is active []
-
- [8])
+] [8])
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
-
-[9] [10
+ [9] [10
 
 ] (./main.lof
 Underfull \vbox (badness 2626) has occurred while \output is active []
@@ -1133,9 +1129,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.18 T
-      eknologi artificial intelligent sudah banyak disematkan pada mobil pad...
-[1
+l.14 
+      [1
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1144,21 +1139,29 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.49 
-      [2])pdfTeX warning (ext4): destination with the same identifier (name{pag
-e.3}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.175   \cleardoublepage
-                         [3]pdfTeX warning (ext4): destination with the same id
-entifier (name{page.4}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.175   \cleardoublepage
-                         [4
+l.36   \item M
+              enggunakan Mask R-CNN untuk pendeteksian pejalan kaki dan zebr...
+[2]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-] (./bab/2-tinjauan-pustaka.tex
+pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.71 
+      [3])pdfTeX warning (ext4): destination with the same identifier (name{pag
+e.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.175   \cleardoublepage
+                         [4] (./bab/2-tinjauan-pustaka.tex
 Bab 2.
+
+Overfull \hbox (0.13086pt too wide) in paragraph at lines 14--15
+[]\OT1/lmr/m/n/10 Penelitian ini di-la-kuk-an oleh Ane-lia Ange-lo-va dan kawan
+-kawan
+ []
+
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1166,142 +1169,177 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.22 
+l.20 
       [5
 
+
 ]
-<gambar/supervised.png, id=549, 1606.0pt x 803.0pt>
-File: gambar/supervised.png Graphic file (type png)
-<use gambar/supervised.png>
-Package pdftex.def Info: gambar/supervised.png  used on input line 28.
-(pdftex.def)             Requested size: 160.6094pt x 80.3047pt.
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.6}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.34 
-      [6 <./gambar/supervised.png (PNG copy)>]
-<gambar/unsupervised.jpg, id=558, 913.85416pt x 351.9549pt>
+l.27 
+      [6]
+Overfull \hbox (0.95673pt too wide) in paragraph at lines 28--28
+|[]\OT1/lmr/bx/n/12 MASK R-CNN for Pe-des-tri-an Cross-walk De-
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8]
+<gambar/supervised.png, id=611, 1606.0pt x 803.0pt>
+File: gambar/supervised.png Graphic file (type png)
+<use gambar/supervised.png>
+Package pdftex.def Info: gambar/supervised.png  used on input line 53.
+(pdftex.def)             Requested size: 160.6094pt x 80.3047pt.
+<gambar/unsupervised.jpg, id=615, 913.85416pt x 351.9549pt>
 File: gambar/unsupervised.jpg Graphic file (type jpg)
 <use gambar/unsupervised.jpg>
-Package pdftex.def Info: gambar/unsupervised.jpg  used on input line 37.
+Package pdftex.def Info: gambar/unsupervised.jpg  used on input line 62.
 (pdftex.def)             Requested size: 182.7676pt x 70.38972pt.
-<gambar/reinforcement.png, id=562, 709.65125pt x 266.9975pt>
+<gambar/reinforcement.png, id=619, 709.65125pt x 266.9975pt>
 File: gambar/reinforcement.png Graphic file (type png)
 <use gambar/reinforcement.png>
-Package pdftex.def Info: gambar/reinforcement.png  used on input line 48.
+Package pdftex.def Info: gambar/reinforcement.png  used on input line 73.
 (pdftex.def)             Requested size: 212.897pt x 80.09985pt.
- [7 <./gambar/unsupervised.jpg> <./gambar/reinforcement.png>]
-<gambar/concept-cnn.png, id=575, 727.71875pt x 277.035pt>
+
+[9 <./gambar/supervised.png (PNG copy)>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [10 <./gambar/unsupervised.jpg> <./gambar/reinforcement.png>]
+<gambar/concept-cnn.png, id=639, 727.71875pt x 277.035pt>
 File: gambar/concept-cnn.png Graphic file (type png)
 <use gambar/concept-cnn.png>
-Package pdftex.def Info: gambar/concept-cnn.png  used on input line 68.
+Package pdftex.def Info: gambar/concept-cnn.png  used on input line 93.
 (pdftex.def)             Requested size: 218.3173pt x 83.11113pt.
- [8 <./gambar/concept-cnn.png>] [9]
-<gambar/rgb-gray-image.png, id=592, 696.6025pt x 402.50375pt>
+ [11 <./gambar/concept-cnn.png>]
+<gambar/rgb-gray-image.png, id=651, 696.6025pt x 402.50375pt>
 File: gambar/rgb-gray-image.png Graphic file (type png)
 <use gambar/rgb-gray-image.png>
-Package pdftex.def Info: gambar/rgb-gray-image.png  used on input line 92.
+Package pdftex.def Info: gambar/rgb-gray-image.png  used on input line 117.
 (pdftex.def)             Requested size: 208.98236pt x 120.75204pt.
-<gambar/langkah-konvolusi.png, id=594, 522.95375pt x 793.96625pt>
+ [12]
+<gambar/langkah-konvolusi.png, id=659, 522.95375pt x 793.96625pt>
 File: gambar/langkah-konvolusi.png Graphic file (type png)
 <use gambar/langkah-konvolusi.png>
-Package pdftex.def Info: gambar/langkah-konvolusi.png  used on input line 101.
+Package pdftex.def Info: gambar/langkah-konvolusi.png  used on input line 126.
 (pdftex.def)             Requested size: 120.27682pt x 182.6084pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-Underfull \vbox (badness 1648) has occurred while \output is active []
-
- [10 <./gambar/rgb-gray-image.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [11 <./gambar/langkah-konvolusi.png>]
-<gambar/conv-step-padd.png, id=612, 603.25375pt x 1115.16624pt>
+[13 <./gambar/rgb-gray-image.png>]
+<gambar/conv-step-padd.png, id=667, 603.25375pt x 1115.16624pt>
 File: gambar/conv-step-padd.png Graphic file (type png)
 <use gambar/conv-step-padd.png>
-Package pdftex.def Info: gambar/conv-step-padd.png  used on input line 120.
+Package pdftex.def Info: gambar/conv-step-padd.png  used on input line 145.
 (pdftex.def)             Requested size: 150.81306pt x 278.79088pt.
- [12 <./gambar/conv-step-padd.png>] [13]
-<gambar/max-pooling.png, id=626, 402.50375pt x 834.11626pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[14 <./gambar/langkah-konvolusi.png>] [15 <./gambar/conv-step-padd.png>]
+<gambar/max-pooling.png, id=686, 402.50375pt x 834.11626pt>
 File: gambar/max-pooling.png Graphic file (type png)
 <use gambar/max-pooling.png>
-Package pdftex.def Info: gambar/max-pooling.png  used on input line 142.
+Package pdftex.def Info: gambar/max-pooling.png  used on input line 167.
 (pdftex.def)             Requested size: 100.62569pt x 208.52855pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [14 <./gambar/max-pooling.png>]
-<gambar/sigmoid.png, id=636, 1204.5pt x 803.0pt>
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 6173) has occurred while \output is active []
+
+ [16]
+[17 <./gambar/max-pooling.png>]
+<gambar/sigmoid.png, id=701, 1204.5pt x 803.0pt>
 File: gambar/sigmoid.png Graphic file (type png)
 <use gambar/sigmoid.png>
-Package pdftex.def Info: gambar/sigmoid.png  used on input line 172.
+Package pdftex.def Info: gambar/sigmoid.png  used on input line 197.
 (pdftex.def)             Requested size: 180.6672pt x 120.4448pt.
-
-Underfull \vbox (badness 1112) has occurred while \output is active []
-
- [15 <./gambar/sigmoid.png>]
-<gambar/tanh.jpg, id=649, 648.4225pt x 431.6125pt>
+<gambar/tanh.jpg, id=705, 648.4225pt x 431.6125pt>
 File: gambar/tanh.jpg Graphic file (type jpg)
 <use gambar/tanh.jpg>
-Package pdftex.def Info: gambar/tanh.jpg  used on input line 187.
+Package pdftex.def Info: gambar/tanh.jpg  used on input line 212.
 (pdftex.def)             Requested size: 162.10522pt x 107.90285pt.
- [16 <./gambar/tanh.jpg>] [17] [18]
-<gambar/rcnn.png, id=677, 785.93625pt x 189.70876pt>
-File: gambar/rcnn.png Graphic file (type png)
-<use gambar/rcnn.png>
-Package pdftex.def Info: gambar/rcnn.png  used on input line 268.
-(pdftex.def)             Requested size: 235.78268pt x 56.91306pt.
- [19 <./gambar/rcnn.png>]
-<gambar/fast-rcnn.png, id=691, 702.625pt x 285.065pt>
-File: gambar/fast-rcnn.png Graphic file (type png)
-<use gambar/fast-rcnn.png>
-Package pdftex.def Info: gambar/fast-rcnn.png  used on input line 284.
-(pdftex.def)             Requested size: 210.78912pt x 85.52016pt.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
+[18 <./gambar/sigmoid.png>] [19 <./gambar/tanh.jpg>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [20]
+Overfull \hbox (2.21642pt too wide) in paragraph at lines 289--290
+[]\OT1/lmr/m/n/10 Semenjak \OT1/lmr/m/it/10 Con-vo-lu-tion Ne-u-ral Ne-twork \O
+T1/lmr/m/n/10 (CNN) de-ngan \OT1/lmr/m/it/10 fu-lly con-
+ []
 
-LaTeX Warning: Reference `fig:arch-faster-rcnn' on page 21 undefined on input l
-ine 296.
+[21]
+<gambar/rcnn.png, id=742, 785.93625pt x 189.70876pt>
+File: gambar/rcnn.png Graphic file (type png)
+<use gambar/rcnn.png>
+Package pdftex.def Info: gambar/rcnn.png  used on input line 293.
+(pdftex.def)             Requested size: 235.78268pt x 56.91306pt.
+ [22 <./gambar/rcnn.png>]
+<gambar/fast-rcnn.png, id=756, 702.625pt x 285.065pt>
+File: gambar/fast-rcnn.png Graphic file (type png)
+<use gambar/fast-rcnn.png>
+Package pdftex.def Info: gambar/fast-rcnn.png  used on input line 309.
+(pdftex.def)             Requested size: 210.78912pt x 85.52016pt.
 
-<gambar/arch-faster-rcnn.png, id=701, 853.1875pt x 861.2175pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [23 <./gambar/fast-rcnn.png (PNG copy)>]
+
+LaTeX Warning: Reference `fig:arch-faster-rcnn' on page 24 undefined on input l
+ine 321.
+
+<gambar/arch-faster-rcnn.png, id=765, 853.1875pt x 861.2175pt>
 File: gambar/arch-faster-rcnn.png Graphic file (type png)
 <use gambar/arch-faster-rcnn.png>
-Package pdftex.def Info: gambar/arch-faster-rcnn.png  used on input line 300.
+Package pdftex.def Info: gambar/arch-faster-rcnn.png  used on input line 325.
 (pdftex.def)             Requested size: 127.9726pt x 129.17705pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: Reference `fig:arch-mask-rcnn' on page 21 undefined on input lin
-e 308.
+LaTeX Warning: Reference `fig:arch-mask-rcnn' on page 24 undefined on input lin
+e 333.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [21 <./gambar/fast-rcnn.png (PNG copy)>] [22 <./gambar/arch-faster-rcnn.png>]
-<gambar/arch-mask-rcnn.png, id=716, 725.71124pt x 629.35126pt>
+ [24 <./gambar/arch-faster-rcnn.png>]
+<gambar/arch-mask-rcnn.png, id=776, 725.71124pt x 629.35126pt>
 File: gambar/arch-mask-rcnn.png Graphic file (type png)
 <use gambar/arch-mask-rcnn.png>
-Package pdftex.def Info: gambar/arch-mask-rcnn.png  used on input line 316.
+Package pdftex.def Info: gambar/arch-mask-rcnn.png  used on input line 341.
 (pdftex.def)             Requested size: 181.42737pt x 157.33742pt.
- [23 <./gambar/arch-mask-rcnn.png>]
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [24])
-[25] [26
+ [25]
+<gambar/resnet50-arch.png, id=785, 853.1875pt x 321.2pt>
+File: gambar/resnet50-arch.png Graphic file (type png)
+<use gambar/resnet50-arch.png>
+Package pdftex.def Info: gambar/resnet50-arch.png  used on input line 367.
+(pdftex.def)             Requested size: 213.29636pt x 80.2998pt.
 
-] (./bab/3-desain-implementasi.tex
+[26 <./gambar/arch-mask-rcnn.png>]
+<gambar/resnet101-arch.png, id=796, 853.1875pt x 279.0425pt>
+File: gambar/resnet101-arch.png Graphic file (type png)
+<use gambar/resnet101-arch.png>
+Package pdftex.def Info: gambar/resnet101-arch.png  used on input line 378.
+(pdftex.def)             Requested size: 213.29636pt x 69.76045pt.
+ [27 <./gambar/resnet50-arch.png> <./gambar/resnet101-arch.png>]) [28] (./bab/3
+-desain-implementasi.tex
 Bab 3.
-<gambar/blok-diagram.png, id=744, 573.14125pt x 151.56625pt>
+<gambar/blok-diagram.png, id=812, 573.14125pt x 151.56625pt>
 File: gambar/blok-diagram.png Graphic file (type png)
 <use gambar/blok-diagram.png>
 Package pdftex.def Info: gambar/blok-diagram.png  used on input line 15.
@@ -1309,76 +1347,84 @@ Package pdftex.def Info: gambar/blok-diagram.png  used on input line 15.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [27
+ [29
+
 
  <./gambar/blok-diagram.png>]
-<gambar/caltech.png, id=751, 756.8275pt x 127.47626pt>
+<gambar/caltech.png, id=820, 756.8275pt x 127.47626pt>
 File: gambar/caltech.png Graphic file (type png)
 <use gambar/caltech.png>
 Package pdftex.def Info: gambar/caltech.png  used on input line 28.
 (pdftex.def)             Requested size: 264.89359pt x 44.61736pt.
-<gambar/youtube-dataset.png, id=753, 1367.1075pt x 771.88374pt>
+<gambar/youtube-dataset.png, id=822, 1367.1075pt x 771.88374pt>
 File: gambar/youtube-dataset.png Graphic file (type png)
 <use gambar/youtube-dataset.png>
 Package pdftex.def Info: gambar/youtube-dataset.png  used on input line 37.
 (pdftex.def)             Requested size: 205.05728pt x 115.77756pt.
- [28 <./gambar/caltech.png>]
-<gambar/data-splitting.png, id=764, 442.65375pt x 111.41624pt>
+ [30 <./gambar/caltech.png>]
+<gambar/data-splitting.png, id=832, 442.65375pt x 111.41624pt>
 File: gambar/data-splitting.png Graphic file (type png)
 <use gambar/data-splitting.png>
 Package pdftex.def Info: gambar/data-splitting.png  used on input line 52.
 (pdftex.def)             Requested size: 221.32632pt x 55.70798pt.
- [29 <./gambar/youtube-dataset.png> <./gambar/data-splitting.png>]
+ [31 <./gambar/youtube-dataset.png> <./gambar/data-splitting.png>]
 Overfull \hbox (2.93202pt too wide) in paragraph at lines 64--66
 \OT1/lmr/m/it/10 Test Se-ts \OT1/lmr/m/n/10 me-ru-pak-an sam-pel da-ta yang di-
 gu-nak-an un-tuk meng-
  []
 
-<gambar/flowchart-preprocessing.png, id=775, 182.6825pt x 533.995pt>
+<gambar/flowchart-preprocessing.png, id=842, 182.6825pt x 533.995pt>
 File: gambar/flowchart-preprocessing.png Graphic file (type png)
 <use gambar/flowchart-preprocessing.png>
 Package pdftex.def Info: gambar/flowchart-preprocessing.png  used on input line
  75.
 (pdftex.def)             Requested size: 91.34102pt x 266.99684pt.
 
-Overfull \hbox (8.08144pt too wide) in paragraph at lines 80--82
+Overfull \hbox (2.47414pt too wide) in paragraph at lines 80--82
 []\OT1/lmr/m/n/10 Berikut me-ru-pak-an pen-je-las-an meng-e-nai ta-hap-an \OT1/
 lmr/m/it/10 pre-processing
  []
 
-[30]
-<gambar/image-resizing.png, id=782, 392.46625pt x 131.49126pt>
+[32]
+<gambar/image-resizing.png, id=849, 392.46625pt x 131.49126pt>
 File: gambar/image-resizing.png Graphic file (type png)
 <use gambar/image-resizing.png>
 Package pdftex.def Info: gambar/image-resizing.png  used on input line 89.
 (pdftex.def)             Requested size: 274.72449pt x 92.04324pt.
- [31 <./gambar/flowchart-preprocessing.png>]
-<gambar/image-augmentation.png, id=790, 470.75874pt x 265.99374pt>
+ [33 <./gambar/flowchart-preprocessing.png>]
+<gambar/image-augmentation.png, id=857, 470.75874pt x 265.99374pt>
 File: gambar/image-augmentation.png Graphic file (type png)
 <use gambar/image-augmentation.png>
 Package pdftex.def Info: gambar/image-augmentation.png  used on input line 101.
 
 (pdftex.def)             Requested size: 235.3788pt x 132.99654pt.
- [32 <./gambar/image-resizing.png>]
-<gambar/mask-rcnn-arch.png, id=797, 733.74126pt x 472.76625pt>
+ [34 <./gambar/image-resizing.png>]
+<gambar/mask-rcnn-arch.png, id=864, 733.74126pt x 472.76625pt>
 File: gambar/mask-rcnn-arch.png Graphic file (type png)
 <use gambar/mask-rcnn-arch.png>
 Package pdftex.def Info: gambar/mask-rcnn-arch.png  used on input line 115.
 (pdftex.def)             Requested size: 293.4913pt x 189.10315pt.
- [33 <./gambar/image-augmentation.png>] [34 <./gambar/mask-rcnn-arch.png>]
-[35]
-<gambar/cross-validation.png, id=817, 457.71pt x 322.20375pt>
+
+Overfull \hbox (12.57715pt too wide) in paragraph at lines 122--123
+\OT1/lmr/m/it/10 bottom-up pa-th-way\OT1/lmr/m/n/10 , \OT1/lmr/m/it/10 up-botto
+m pa-th-way \OT1/lmr/m/n/10 dan \OT1/lmr/m/it/10 la-te-ral con-ne-ction\OT1/lmr
+/m/n/10 . \OT1/lmr/m/it/10 Bottom-
+ []
+
+[35 <./gambar/image-augmentation.png>] [36 <./gambar/mask-rcnn-arch.png>]
+[37]
+<gambar/cross-validation.png, id=884, 457.71pt x 322.20375pt>
 File: gambar/cross-validation.png Graphic file (type png)
 <use gambar/cross-validation.png>
 Package pdftex.def Info: gambar/cross-validation.png  used on input line 149.
 (pdftex.def)             Requested size: 183.08075pt x 128.87921pt.
- [36 <./gambar/cross-validation.png>]
-<gambar/testing.png, id=824, 182.6825pt x 624.3325pt>
+ [38 <./gambar/cross-validation.png>]
+<gambar/testing.png, id=892, 182.6825pt x 624.3325pt>
 File: gambar/testing.png Graphic file (type png)
 <use gambar/testing.png>
 Package pdftex.def Info: gambar/testing.png  used on input line 162.
 (pdftex.def)             Requested size: 73.07169pt x 249.72858pt.
-) [37 <./gambar/testing.png>] [38
+) [39 <./gambar/testing.png>] [40
 
 ]
 (./bab/4-pengujian-analisis.tex
@@ -1388,7 +1434,7 @@ Overfull \hbox (7.51198pt too wide) in paragraph at lines 28--38
  [] 
  []
 
-[39
+[41
 
 ]
 Overfull \hbox (11.22108pt too wide) in alignment at lines 56--61
@@ -1431,13 +1477,13 @@ Overfull \hbox (11.22108pt too wide) in alignment at lines 110--120
  [] [] 
  []
 
-[40] [41]
-<gambar/resnet50-training.png, id=851, 728.7225pt x 532.99126pt>
+[42] [43]
+<gambar/resnet50-training.png, id=919, 728.7225pt x 532.99126pt>
 File: gambar/resnet50-training.png Graphic file (type png)
 <use gambar/resnet50-training.png>
 Package pdftex.def Info: gambar/resnet50-training.png  used on input line 126.
 (pdftex.def)             Requested size: 262.33989pt x 191.87671pt.
-<gambar/resnet50-val.png, id=853, 733.74126pt x 532.99126pt>
+<gambar/resnet50-val.png, id=921, 733.74126pt x 532.99126pt>
 File: gambar/resnet50-val.png Graphic file (type png)
 <use gambar/resnet50-val.png>
 Package pdftex.def Info: gambar/resnet50-val.png  used on input line 135.
@@ -1446,8 +1492,8 @@ Package pdftex.def Info: gambar/resnet50-val.png  used on input line 135.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[42 <./gambar/resnet50-training.png>]
-<gambar/resnet50-map.png, id=860, 342.27875pt x 251.94125pt>
+[44 <./gambar/resnet50-training.png>]
+<gambar/resnet50-map.png, id=928, 342.27875pt x 251.94125pt>
 File: gambar/resnet50-map.png Graphic file (type png)
 <use gambar/resnet50-map.png>
 Package pdftex.def Info: gambar/resnet50-map.png  used on input line 149.
@@ -1456,7 +1502,7 @@ Package pdftex.def Info: gambar/resnet50-map.png  used on input line 149.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[43 <./gambar/resnet50-val.png>]
+[45 <./gambar/resnet50-val.png>]
 Overfull \hbox (11.22108pt too wide) in alignment at lines 164--169
  [] [] 
  []
@@ -1486,25 +1532,25 @@ Overfull \hbox (11.22108pt too wide) in alignment at lines 198--218
  [] [] 
  []
 
-[44 <./gambar/resnet50-map.png>]
+[46 <./gambar/resnet50-map.png>]
 Overfull \hbox (11.22108pt too wide) in alignment at lines 218--227
  [] [] 
  []
 
-[45]
-<gambar/resnet101-training.png, id=879, 713.66624pt x 538.01pt>
+[47]
+<gambar/resnet101-training.png, id=947, 713.66624pt x 538.01pt>
 File: gambar/resnet101-training.png Graphic file (type png)
 <use gambar/resnet101-training.png>
 Package pdftex.def Info: gambar/resnet101-training.png  used on input line 233.
 
 (pdftex.def)             Requested size: 256.91965pt x 193.68344pt.
- [46 <./gambar/resnet101-training.png>]
-<gambar/resnet101-val.png, id=886, 733.74126pt x 532.99126pt>
+ [48 <./gambar/resnet101-training.png>]
+<gambar/resnet101-val.png, id=954, 733.74126pt x 532.99126pt>
 File: gambar/resnet101-val.png Graphic file (type png)
 <use gambar/resnet101-val.png>
 Package pdftex.def Info: gambar/resnet101-val.png  used on input line 242.
 (pdftex.def)             Requested size: 264.14665pt x 191.87671pt.
-<gambar/resnet101-map.png, id=888, 342.27875pt x 251.94125pt>
+<gambar/resnet101-map.png, id=956, 342.27875pt x 251.94125pt>
 File: gambar/resnet101-map.png Graphic file (type png)
 <use gambar/resnet101-map.png>
 Package pdftex.def Info: gambar/resnet101-map.png  used on input line 251.
@@ -1513,7 +1559,7 @@ Package pdftex.def Info: gambar/resnet101-map.png  used on input line 251.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[47 <./gambar/resnet101-val.png>]
+[49 <./gambar/resnet101-val.png>]
 Overfull \hbox (11.22108pt too wide) in alignment at lines 266--272
  [] [] 
  []
@@ -1543,36 +1589,36 @@ Overfull \hbox (11.22108pt too wide) in alignment at lines 301--321
  [] [] 
  []
 
-[48 <./gambar/resnet101-map.png>]
+[50 <./gambar/resnet101-map.png>]
 Overfull \hbox (11.22108pt too wide) in alignment at lines 321--330
  [] [] 
  []
 
-[49]
+[51]
 
-LaTeX Warning: Reference `fig:mobilenet-training' on page 50 undefined on input
+LaTeX Warning: Reference `fig:mobilenet-training' on page 52 undefined on input
  line 332.
 
-<gambar/mobilenetv1-train.png, id=905, 733.74126pt x 538.01pt>
+<gambar/mobilenetv1-train.png, id=972, 733.74126pt x 538.01pt>
 File: gambar/mobilenetv1-train.png Graphic file (type png)
 <use gambar/mobilenetv1-train.png>
 Package pdftex.def Info: gambar/mobilenetv1-train.png  used on input line 336.
 (pdftex.def)             Requested size: 264.14665pt x 193.68344pt.
-[50 <./gambar/mobilenetv1-train.png>]
-<gambar/mobilenetv1-val.png, id=912, 743.77875pt x 532.99126pt>
+[52 <./gambar/mobilenetv1-train.png>]
+<gambar/mobilenetv1-val.png, id=979, 743.77875pt x 532.99126pt>
 File: gambar/mobilenetv1-val.png Graphic file (type png)
 <use gambar/mobilenetv1-val.png>
 Package pdftex.def Info: gambar/mobilenetv1-val.png  used on input line 346.
 (pdftex.def)             Requested size: 267.76015pt x 191.87671pt.
- [51 <./gambar/mobilenetv1-val.png>]
-<gambar/mobilenetv1-map.png, id=919, 352.31625pt x 251.94125pt>
+ [53 <./gambar/mobilenetv1-val.png>]
+<gambar/mobilenetv1-map.png, id=987, 352.31625pt x 251.94125pt>
 File: gambar/mobilenetv1-map.png Graphic file (type png)
 <use gambar/mobilenetv1-map.png>
 Package pdftex.def Info: gambar/mobilenetv1-map.png  used on input line 357.
 (pdftex.def)             Requested size: 140.924pt x 100.7747pt.
 
-[52 <./gambar/mobilenetv1-map.png>]
-<gambar/graph-recap.png, id=927, 384.43625pt x 263.98625pt>
+[54 <./gambar/mobilenetv1-map.png>]
+<gambar/graph-recap.png, id=995, 384.43625pt x 263.98625pt>
 File: gambar/graph-recap.png Graphic file (type png)
 <use gambar/graph-recap.png>
 Package pdftex.def Info: gambar/graph-recap.png  used on input line 381.
@@ -1580,8 +1626,8 @@ Package pdftex.def Info: gambar/graph-recap.png  used on input line 381.
 
 Underfull \vbox (badness 3407) has occurred while \output is active []
 
- [53 <./gambar/graph-recap.png>]
-<gambar/fajar-frame800-resnet50.png, id=936, 910.40125pt x 523.9575pt>
+ [55 <./gambar/graph-recap.png>]
+<gambar/fajar-frame800-resnet50.png, id=1003, 910.40125pt x 523.9575pt>
 File: gambar/fajar-frame800-resnet50.png Graphic file (type png)
 <use gambar/fajar-frame800-resnet50.png>
 Package pdftex.def Info: gambar/fajar-frame800-resnet50.png  used on input line
@@ -1590,21 +1636,21 @@ Package pdftex.def Info: gambar/fajar-frame800-resnet50.png  used on input line
 
 Underfull \vbox (badness 6252) has occurred while \output is active []
 
- [54 <./gambar/fajar-frame800-resnet50.png>]
-<gambar/fajar-frame800-resnet101.png, id=946, 910.40125pt x 523.9575pt>
+ [56 <./gambar/fajar-frame800-resnet50.png>]
+<gambar/fajar-frame800-resnet101.png, id=1014, 910.40125pt x 523.9575pt>
 File: gambar/fajar-frame800-resnet101.png Graphic file (type png)
 <use gambar/fajar-frame800-resnet101.png>
 Package pdftex.def Info: gambar/fajar-frame800-resnet101.png  used on input lin
 e 420.
 (pdftex.def)             Requested size: 273.12248pt x 157.18846pt.
-<gambar/fajar-frame800-mobilenetv1.png, id=948, 910.40125pt x 523.9575pt>
+<gambar/fajar-frame800-mobilenetv1.png, id=1016, 910.40125pt x 523.9575pt>
 File: gambar/fajar-frame800-mobilenetv1.png Graphic file (type png)
 <use gambar/fajar-frame800-mobilenetv1.png>
 Package pdftex.def Info: gambar/fajar-frame800-mobilenetv1.png  used on input l
 ine 436.
 (pdftex.def)             Requested size: 273.12248pt x 157.18846pt.
- [55 <./gambar/fajar-frame800-resnet101.png>]
-[56 <./gambar/fajar-frame800-mobilenetv1.png>]
+ [57 <./gambar/fajar-frame800-resnet101.png>]
+[58 <./gambar/fajar-frame800-mobilenetv1.png>]
 File: gambar/fajar-frame800-resnet50.png Graphic file (type png)
 <use gambar/fajar-frame800-resnet50.png>
 Package pdftex.def Info: gambar/fajar-frame800-resnet50.png  used on input line
@@ -1620,36 +1666,35 @@ File: gambar/fajar-frame800-mobilenetv1.png Graphic file (type png)
 Package pdftex.def Info: gambar/fajar-frame800-mobilenetv1.png  used on input l
 ine 481.
 (pdftex.def)             Requested size: 87.9199pt x 50.59995pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
+ [59]
 
 Package caption Warning: \label without proper reference on input line 551.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `tab:video-morning' on page 57 undefined on input line
+LaTeX Warning: Reference `tab:video-morning' on page 60 undefined on input line
  536.
 
-[57]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[58]
-<gambar/siang-frame465-resnet50.png, id=980, 941.5175pt x 521.95pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [60]
+<gambar/siang-frame465-resnet50.png, id=1048, 941.5175pt x 521.95pt>
 File: gambar/siang-frame465-resnet50.png Graphic file (type png)
 <use gambar/siang-frame465-resnet50.png>
 Package pdftex.def Info: gambar/siang-frame465-resnet50.png  used on input line
  562.
 (pdftex.def)             Requested size: 87.9199pt x 48.73358pt.
-<gambar/siang-frame465-resnet101.png, id=981, 930.47626pt x 521.95pt>
+<gambar/siang-frame465-resnet101.png, id=1049, 930.47626pt x 521.95pt>
 File: gambar/siang-frame465-resnet101.png Graphic file (type png)
 <use gambar/siang-frame465-resnet101.png>
 Package pdftex.def Info: gambar/siang-frame465-resnet101.png  used on input lin
 e 567.
 (pdftex.def)             Requested size: 87.9199pt x 49.31497pt.
-<gambar/siang-frame465-mobilenetv1.png, id=982, 910.40125pt x 522.95375pt>
+<gambar/siang-frame465-mobilenetv1.png, id=1050, 910.40125pt x 522.95375pt>
 File: gambar/siang-frame465-mobilenetv1.png Graphic file (type png)
 <use gambar/siang-frame465-mobilenetv1.png>
 Package pdftex.def Info: gambar/siang-frame465-mobilenetv1.png  used on input l
@@ -1660,89 +1705,88 @@ ine 572.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (0.36958pt too wide) in paragraph at lines 625--626
-\OT1/lmr/m/n/10 ber-ha-sil di-de-tek-si ada-lah se-be-sar 62.5% dan \OT1/lmr/m/
-it/10 Ave-ra-ge Re-ca-ll \OT1/lmr/m/n/10 72.915%.
- []
-
-
 Package caption Warning: \label without proper reference on input line 640.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `tab:video-afternoon' on page 59 undefined on input li
+LaTeX Warning: Reference `tab:video-afternoon' on page 61 undefined on input li
 ne 627.
 
-[59 <./gambar/siang-frame465-resnet50.png> <./gambar/siang-frame465-resnet101.p
-ng> <./gambar/siang-frame465-mobilenetv1.png>] [60]
-<gambar/malam-frame180-resnet50.png, id=1000, 910.40125pt x 521.95pt>
+[61 <./gambar/siang-frame465-resnet50.png> <./gambar/siang-frame465-resnet101.p
+ng> <./gambar/siang-frame465-mobilenetv1.png>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[62]
+<gambar/malam-frame180-resnet50.png, id=1067, 910.40125pt x 521.95pt>
 File: gambar/malam-frame180-resnet50.png Graphic file (type png)
 <use gambar/malam-frame180-resnet50.png>
 Package pdftex.def Info: gambar/malam-frame180-resnet50.png  used on input line
  653.
 (pdftex.def)             Requested size: 87.9199pt x 50.40608pt.
-<gambar/malam-frame180-resnet101.png, id=1001, 910.40125pt x 521.95pt>
+<gambar/malam-frame180-resnet101.png, id=1068, 910.40125pt x 521.95pt>
 File: gambar/malam-frame180-resnet101.png Graphic file (type png)
 <use gambar/malam-frame180-resnet101.png>
 Package pdftex.def Info: gambar/malam-frame180-resnet101.png  used on input lin
 e 658.
 (pdftex.def)             Requested size: 87.9199pt x 50.40608pt.
-<gambar/malam-frame180-mobilnetv1.png, id=1002, 910.40125pt x 521.95pt>
+<gambar/malam-frame180-mobilnetv1.png, id=1069, 910.40125pt x 521.95pt>
 File: gambar/malam-frame180-mobilnetv1.png Graphic file (type png)
 <use gambar/malam-frame180-mobilnetv1.png>
 Package pdftex.def Info: gambar/malam-frame180-mobilnetv1.png  used on input li
 ne 663.
 (pdftex.def)             Requested size: 87.9199pt x 50.40608pt.
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
+ [63 <./gambar/malam-frame180-resnet50.png> <./gambar/malam-frame180-resnet101.
+png> <./gambar/malam-frame180-mobilnetv1.png>]
 
 Package caption Warning: \label without proper reference on input line 735.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `tab:video-night' on page 61 undefined on input line 7
+LaTeX Warning: Reference `tab:video-night' on page 64 undefined on input line 7
 22.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[61 <./gambar/malam-frame180-resnet50.png> <./gambar/malam-frame180-resnet101.p
-ng> <./gambar/malam-frame180-mobilnetv1.png>]
-Underfull \vbox (badness 1038) has occurred while \output is active []
-
- [62]
-<gambar/confmatrix/all-resnet50-blue.png, id=1018, 868.24374pt x 764.8575pt>
+[64]
+<gambar/confmatrix/all-resnet50-blue.png, id=1085, 868.24374pt x 764.8575pt>
 File: gambar/confmatrix/all-resnet50-blue.png Graphic file (type png)
 <use gambar/confmatrix/all-resnet50-blue.png>
 Package pdftex.def Info: gambar/confmatrix/all-resnet50-blue.png  used on input
  line 756.
 (pdftex.def)             Requested size: 260.47513pt x 229.45901pt.
 
-[63 <./gambar/confmatrix/all-resnet50-blue.png>]
-<gambar/confmatrix/all-resnet101-blue.png, id=1028, 850.17625pt x 764.8575pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [65]
+<gambar/confmatrix/all-resnet101-blue.png, id=1095, 850.17625pt x 764.8575pt>
 File: gambar/confmatrix/all-resnet101-blue.png Graphic file (type png)
 <use gambar/confmatrix/all-resnet101-blue.png>
 Package pdftex.def Info: gambar/confmatrix/all-resnet101-blue.png  used on inpu
 t line 773.
 (pdftex.def)             Requested size: 255.05484pt x 229.45901pt.
- [64 <./gambar/confmatrix/all-resnet101-blue.png>]
-<gambar/confmatrix/all-mobilenetv1-blue.png, id=1040, 850.17625pt x 764.8575pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [66 <./gambar/confmatrix/all-resnet50-blue.png>]
+<gambar/confmatrix/all-mobilenetv1-blue.png, id=1105, 850.17625pt x 764.8575pt>
 
 File: gambar/confmatrix/all-mobilenetv1-blue.png Graphic file (type png)
 <use gambar/confmatrix/all-mobilenetv1-blue.png>
 Package pdftex.def Info: gambar/confmatrix/all-mobilenetv1-blue.png  used on in
 put line 790.
 (pdftex.def)             Requested size: 255.05484pt x 229.45901pt.
-) [65 <./gambar/confmatrix/all-mobilenetv1-blue.png>]
-[66
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-] (./bab/5-penutup.tex
+ [67 <./gambar/confmatrix/all-resnet101-blue.png>] [68 <./gambar/confmatrix/all
+-mobilenetv1-blue.png>] (./bab/5-penutup.tex
 Bab 5.
-) [67
+) [69
 
-] [68
+
+] [70
 
 ] (./main.bbl (./main.brf)
 \tf@brf=\write7
@@ -1774,45 +1818,91 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--17
 OT1/lmr/m/n/10 .
  []
 
-[69
+[71
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 71--71
+Underfull \hbox (badness 4441) in paragraph at lines 87--87
+[]\OT1/lmr/m/n/10 More th-an 270 000 pe-des-tri-ans ki-lled on ro-a-ds ea-ch
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 87--87
+\OT1/lmr/m/n/10 ye-ar, 2013.  URL []$\OT1/lmtt/m/n/10 https : / / www . who . i
+nt / news / item /
+ []
+
+
+Overfull \hbox (82.76886pt too wide) in paragraph at lines 87--87
+\OT1/lmtt/m/n/10 02-[]05-[]2013-[]more-[]than-[]270-[]000-[]pedestrians-[]kille
+d-[]on-[]roads-[]each-[]year$[]\OT1/lmr/m/n/10 .
+ []
+
+
+Underfull \hbox (badness 2111) in paragraph at lines 91--91
+[]\OT1/lmr/m/n/10 Indonesia, in-do-ne-sia's ro-ad sa-fe-ty co-un-try pro-fi-le,
+ 2016.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--91
+\OT1/lmr/m/n/10 URL []$\OT1/lmtt/m/n/10 https : / / www . roadsafetyfacility . 
+org / country /
+ []
+
+[72]
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
 []\OT1/lmr/m/n/10 Artificial in-te-lli-gen-ce (ai), 2021.  URL
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--71
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
 []$\OT1/lmtt/m/n/10 https : / / www . investopedia . com / terms / a /
  []
 
 
-Underfull \hbox (badness 1472) in paragraph at lines 71--71
+Underfull \hbox (badness 1472) in paragraph at lines 125--125
 \OT1/lmtt/m/n/10 artificial-[]intelligence-[]ai . asp$[]\OT1/lmr/m/n/10 .   (Di
 -ku-tip pa-da ha-
  []
 
-[70]) [71] [72
+[73]
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+[]\OT1/lmr/m/n/10 Mobilenet: De-tek-si ob-jek pa-da pla-tform mo-bi-
+ []
 
-] (./lainnya/biografi-penulis.tex
-<gambar/agung.jpg, id=1097, 578.16pt x 867.24pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\OT1/lmr/m/n/10 le, 2018.  URL []$\OT1/lmtt/m/n/10 https : / / medium . com / n
+odeflux /
+ []
+
+
+Overfull \hbox (32.519pt too wide) in paragraph at lines 179--179
+\OT1/lmtt/m/n/10 mobilenet-[]deteksi-[]objek-[]pada-[]platform-[]mobile-[]bbbf3
+806e4b3$[]\OT1/lmr/m/n/10 .
+ []
+
+) [74] (./lainnya/biografi-penulis.tex
+<gambar/agung.jpg, id=1170, 578.16pt x 867.24pt>
 File: gambar/agung.jpg Graphic file (type jpg)
 <use gambar/agung.jpg>
 Package pdftex.def Info: gambar/agung.jpg  used on input line 14.
 (pdftex.def)             Requested size: 87.9199pt x 131.88007pt.
-) [73 <./gambar/agung.jpg>]
-[74
+) [75
+
+ <./gambar/agung.jpg>] [76
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 204.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 204.
- (./main.aux)
+
+(./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 204.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 204.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 41D59C9817077DD8D613627317550F82;3880.
+(rerunfilecheck)             Checksum: 4683D979F16BB5276F7EBC947A30033F;4376.
 Package rerunfilecheck Info: File `main.brf' has not changed.
-(rerunfilecheck)             Checksum: 5CBF086B9209B5CBC23C41B8F68CDD5D;1795.
+(rerunfilecheck)             Checksum: B4FF224D0E93BFBB76F40980611EE8C8;2223.
 
 
 LaTeX Warning: There were undefined references.
@@ -1820,10 +1910,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 204.
  ) 
 Here is how much of TeX's memory you used:
- 13083 strings out of 494342
- 191987 string characters out of 6168656
- 409540 words of memory out of 5000000
- 15948 multiletter control sequences out of 15000+600000
+ 13175 strings out of 494342
+ 193636 string characters out of 6168656
+ 410313 words of memory out of 5000000
+ 16020 multiletter control sequences out of 15000+600000
  74782 words of font info for 47 fonts, out of 8000000 for 9000
  309 hyphenation exceptions out of 8191
  41i,13n,49p,1555b,508s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1841,10 +1931,10 @@ c/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbo10.pfb></usr/shar
 e/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public
 /lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb></usr/share/te
 xmf/fonts/type1/public/lm/lmtt10.pfb>
-Output written on main.pdf (94 pages, 11531719 bytes).
+Output written on main.pdf (96 pages, 11616111 bytes).
 PDF statistics:
- 1231 PDF objects out of 1440 (max. 8388607)
- 1005 compressed objects within 11 object streams
- 294 named destinations out of 1000 (max. 500000)
- 686 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1307 PDF objects out of 1440 (max. 8388607)
+ 1073 compressed objects within 11 object streams
+ 312 named destinations out of 1000 (max. 500000)
+ 744 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -3,9 +3,34 @@
 
 % Ubah bagian-bagian berikut dengan isi dari tinjauan pustaka
 
-Demi mendukung penelitian ini, dibutuhkan beberapa teori penunjang sebagai bahan acuan dan refrensi. Dengan demikian penelitian ini menjadi lebih terarah.
+Demi mendukung penelitian ini, dibutuhkan beberapa \textit{state of the art} dan teori penunjang sebagai bahan acuan dan referensi. Dengan demikian penelitian ini menjadi lebih terarah.
 
-\section{Dasar Teori}
+\section{\textit{State of The Art}}
+\label{penelitianterkait}
+
+\subsection{Real-Time Pedestrian Detection With Deep Network Cascades}
+\label{realtime-pedestrian}
+
+Penelitian ini dilakukan oleh Anelia Angelova dan kawan-kawan pada tahun 2015 yang menyajikan pendekatan real-time baru untuk deteksi objek yang mengeksploitasi efisiensi \textit{cascade classifiers} dengan akurasi \textit{deep neural network} \citep{penelitianterkait1}. \textit{Deep network} telah terbukti unggul dalam tugas klasifikasi, dan kemampuannya untuk beroperasi pada \textit{raw pixel input} tanpa perlu merancang fitur khusus. Namun, \textit{deep network} terkenal lambat pada waktu inferensi. Dalam \textit{paper} tersebut, Anelia Angelova dan kawan-kawan mengusulkan pendekatan \textit{cascades deep network} dan \textit{fast features}, yang sangat cepat dan sangat akurat. Mereka menerapkannya pada permasalahan pada deteksi pejalan kaki. Algoritma mereka berjalan secara real-time pada 15 frame per detik. Pendekatan yang dihasilkan mencapai tingkat kesalahan rata-rata 26,2\% pada \textit{benchmark} deteksi Caltech Pedestrian.
+
+\subsection{Pedestrian Detection: The Elephant In The Room}
+\label{pedestrian-detection}
+
+Deteksi pejalan kaki digunakan di banyak aplikasi berbasis citra mulai dari pengawasan video hingga pengemudi otonom. Meskipun mencapai kinerja tinggi, sebagian besar masih belum diketahui seberapa baik detektor yang ada menggeneralisasi data yang tidak terlihat. Hal ini penting karena detektor yang praktis harus siap digunakan dalam berbagai skenario dalam aplikasi. Untuk tujuan tersebut, Irtiza Hasan dan kawan-kawan melakukan studi komprehensif dalam \textit{paper} ini, menggunakan prinsip umum evaluasi \textit{cross-dataset} langsung \citep{pedestrian-detection}. Melalui \textit{paper} ini, ditemukan bahwa detektor pejalan kaki terkini yang ada, meskipun berkinerja cukup baik ketika dilatih dan diuji pada kumpulan data yang sama, namun secara umum memiliki peforma yang cukup buruk dalam evaluasi \textit{cross-dataset}. 
+
+Dalam \textit{paper} ini ditunjukkan bahwa ada dua alasan untuk permasalahan ini. Pertama, desain yang dibuat (misalnya, \textit{anchor settings}) mungkin bias terhadap tolok ukur dalam \textit{training} dan \textit{test pipeline} data tunggal, tetapi akibatnya sebagian besar membatasi kemampuan generalisasi dari keduanya. Kedua, sumber pelatihan umumnya tidak terlalu padat pada pejalan kaki dan mempunyi beragam dalam skenario. Di dalam evaluasi \textit{cross-dataset} langsung, secara mengejutkan, ditemukan bahwa detektor objek dengan tujuan umum, tanpa adaptasi khusus untuk pejalan kaki dalam desain, digeneralisasi jauh lebih baik dibandingkan dengan detektor pejalan kaki terkini yang ada. Lebih lanjut, diilustrasikan bahwa kumpulan data yang beragam dan padat, yang dikumpulkan dengan \textit{crawling web} , berfungsi sebagai sumber pra-pelatihan yang efisien untuk deteksi pejalan kaki. Oleh karena itu, pada \textit{paper} mengusulkan \textit{training pipelin} progresif dan menemukan bahwa \textit{pipeline} tersebut berfungsi dengan baik untuk deteksi pejalan kaki yang berorientasi pada pengemudian otonom. Akibatnya, studi yang dilakukan dalam makalah ini menunjukkan bahwa lebih banyak penekanan harus diberikan pada evaluasi \textit{cross-datasset} untuk desain masa mendatang pada detektor pejalan kaki.
+
+\subsection{Fast Vehicle and Pedestrian Detection Using Improved Mask R-CNN}
+\label{fast-vehicle}
+
+Penelitian ini menyajikan algoritma Mask R-CNN yang sederhana dan efektif untuk deteksi kendaraan dan pejalan kaki yang lebih cepat \citep{fast-vehicle}. Metode ini memiliki nilai praktis untuk sistem peringatan anti-tabrakan dalam mengemudi cerdas. \textit{Deep Neural Network} dengan lebih banyak lapisan memiliki kapasitas yang lebih besar, tetapi juga harus melakukan perhitungan yang lebih rumit. Untuk mengatasi kelemahan ini, penelitian ini mengadopsi jaringan Resnet-86 sebagai \textit{backbone} yang berbeda dari struktur tulang punggung Resnet-101 dalam algoritma Mask R-CNN. Hasilnya menunjukkan bahwa jaringan Resnet-86 dapat mengurangi waktu operasi dan sangat meningkatkan akurasi. Kendaraan dan pejalan kaki yang terdeteksi juga disaring berdasarkan dataset Microsoft COCO. Dataset baru dibentuk dengan menyaring dan melengkapi COCO dataset, yang membuat pelatihan algoritma lebih efisien. Bagian terpenting dari penelitian ini adalah diusulkannya algoritma baru, \textit{Side Fusion FPN}. Parameter dalam algoritma tidak ada perubahan, jumlah perhitungan meningkat kurang dari 0,000001, dan rata-rata presisi (mAP) meningkat 2,00 poin. Hasilnya menunjukkan bahwa, dibandingkan dengan algoritma Mask R-CNN, algoritma pada penelitian ini menurunkan ukuran memori bobot sebesar 9,43\%, meningkatkan kecepatan pelatihan sebesar 26,98\%, meningkatkan kecepatan pengujian sebesar 7,94\%, menurunkan nilai \textit{error} sebesar 0,26, dan meningkatkan nilai mAP sebesar 17,53 poin.
+
+\subsection{MASK R-CNN for Pedestrian Crosswalk Detection and Instance Segmentation}
+\label{pedestrian-crosswalk}
+
+Pejalan kaki paling rentan mengalami kecelakaan mengingat mayoritas pengendara mengecualikan mereka sebagai pengguna jalan \citep{pedestrian-crosswalk}. Pada penelitian ini, pendeteksian objek menggunakan Mask Region-Based CNN dan segmentasi instance diterapkan pada penyeberangan pejalan kaki. Pelatihan dilakukan menggunakan Mask R-CNN untuk deteksi objek dengan backbone ResNet-101, dengan kecepatan pembelajaran 0,001 dan 2 gambar per GPU selama 30 epoch dari 100 batch. Berdasarkan penelitian ini, 500 gambar penyeberangan pejalan kaki dikumpulkan dan dipilih untuk validasi dan pelatihan. 80\% dari gambar adalah untuk set pelatihan dan untuk set validasi adalah 20\%. 30 gambar pengujian penyeberangan pejalan kaki lainnya dikumpulkan untuk evaluasi model guna memverifikasi stabilitas dan keandalan model yang terlatih. Semua 30 gambar pengujian telah terdeteksi dan akurasi deteksi lebih besar dari 97\%. Jika ada 2 atau lebih penyeberangan pejalan kaki dalam sebuah gambar, maka akan membuat warna MASK berbeda untuk setiap deteksi. Ringkasan hasil tes memverifikasi bahwa semua data yang dikumpulkan lebih tinggi dari 97\% untuk dapat mendeteksi pejalan kaki.
+
+\section{Teori Penunjang}
 \label{sec:dasarteori}
 
 \subsection{\textit{Artificial Intelligence}}
@@ -311,29 +336,52 @@ Mask R-CNN adalah Convolutional Neural Network (CNN) dan segmentasi citra termut
 
 Mask R-CNN mudah diterapkan dan dilatih karena \textit{Faster R-CNN framework}, yang memfasilitasi berbagai desain arsitektur yang fleksibel. Selain itu, cabang \textit{mask} hanya menambahkan \textit{overhead} komputasi kecil, memungkinkan sistem dan eksperimen yang cepat.
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.25]{gambar/arch-mask-rcnn.png}
 	\caption{Struktur dari Arsitektur \textit{Faster R-CNN} \citep{arch-mask-rcnn}}
 	\label{fig:mask-rcnn}
 \end{figure}
 
-\section{Penelitian Terkait}
-\label{penelitianterkait}
+\subsection{Pejalan Kaki}
+\label{subsec:pedestrian}
 
-\subsection{Real-Time Pedestrian Detection With Deep Network Cascades}
-\label{realtime-pedestrian}
+Definisi Pejalan kaki adalah orang yang melakukan aktifitas berjalan kaki dan merupakan salah satu unsur pengguna jalan. (Keputusan Direktur Jendral Perhubungan Darat : SK.43/AJ 007/DRJD/97). Pejalan kaki harus berjalan pada bagian jalan yang diperuntukan bagi pejalan kaki, atau pada bagian pejalan kaki, atau pada bagian jalan yang paling kiri apabila tidak terdapat bagian jalan yang diperuntukan bagi pejalan kaki (PP No. 43 , 1993)
 
-Penelitian ini dilakukan oleh Anelia Angelova dan kawan-kawan pada tahun 2015 yang menyajikan pendekatan real-time baru untuk deteksi objek yang mengeksploitasi efisiensi \textit{cascade classifiers} dengan akurasi \textit{deep neural network} \citep{penelitianterkait1}. \textit{Deep network} telah terbukti unggul dalam tugas klasifikasi, dan kemampuannya untuk beroperasi pada \textit{raw pixel input} tanpa perlu merancang fitur khusus. Namun, \textit{deep network} terkenal lambat pada waktu inferensi. Dalam \textit{paper} tersebut, Anelia Angelova dan kawan-kawan mengusulkan pendekatan \textit{cascades deep network} dan \textit{fast features}, yang sangat cepat dan sangat akurat. Mereka menerapkannya pada permasalahan pada deteksi pejalan kaki. Algoritma mereka berjalan secara real-time pada 15 frame per detik. Pendekatan yang dihasilkan mencapai tingkat kesalahan rata-rata 26,2\% pada \textit{benchmark} deteksi Caltech Pedestrian.
 
-\subsection{Pedestrian Detection: The Elephant In The Room}
-\label{pedestrian-detection}
+\subsection{\textit{Zebracross}}
+\label{subsec:zebracross}
 
-Deteksi pejalan kaki digunakan di banyak aplikasi berbasis citra mulai dari pengawasan video hingga pengemudi otonom. Meskipun mencapai kinerja tinggi, sebagian besar masih belum diketahui seberapa baik detektor yang ada menggeneralisasi data yang tidak terlihat. Hal ini penting karena detektor yang praktis harus siap digunakan dalam berbagai skenario dalam aplikasi. Untuk tujuan tersebut, Irtiza Hasan dan kawan-kawan melakukan studi komprehensif dalam \textit{paper} ini, menggunakan prinsip umum evaluasi \textit{cross-dataset} langsung \citep{pedestrian-detection}. Melalui \textit{paper} ini, ditemukan bahwa detektor pejalan kaki terkini yang ada, meskipun berkinerja cukup baik ketika dilatih dan diuji pada kumpulan data yang sama, namun secara umum memiliki peforma yang cukup buruk dalam evaluasi \textit{cross-dataset}. 
+\textit{Zebracross} merupakan  fasilitas penyeberangan bagi pejalan kaki sebidang yang dilengkapi marka untuk memberi ketegasan/batas dalam melakukan lintasan. \textit{Zebracross} dipasang dengan ketentuan sebagai berikut :
+\begin{enumerate}
+	\item \textit{Zebracross} harus dipasang pada arus lalu lintas, kecepatan lalu lintas, dan arus pejalan kaki yang relatif rendah.
+	\item Lokasi penempatan \textit{zebracross} harus memiliki jark pandang yang cukup, agar tundaan kendaranaan yang diakibatkan oleh penggunaan fasilitas penyebrangan masih dalam kondisi aman. 
+\end{enumerate}
 
-Dalam \textit{paper} ini ditunjukkan bahwa ada dua alasan untuk permasalahan ini. Pertama, desain yang dibuat (misalnya, \textit{anchor settings}) mungkin bias terhadap tolok ukur dalam \textit{training} dan \textit{test pipeline} data tunggal, tetapi akibatnya sebagian besar membatasi kemampuan generalisasi dari keduanya. Kedua, sumber pelatihan umumnya tidak terlalu padat pada pejalan kaki dan mempunyi beragam dalam skenario. Di dalam evaluasi \textit{cross-dataset} langsung, secara mengejutkan, ditemukan bahwa detektor objek dengan tujuan umum, tanpa adaptasi khusus untuk pejalan kaki dalam desain, digeneralisasi jauh lebih baik dibandingkan dengan detektor pejalan kaki terkini yang ada. Lebih lanjut, diilustrasikan bahwa kumpulan data yang beragam dan padat, yang dikumpulkan dengan \textit{crawling web} , berfungsi sebagai sumber pra-pelatihan yang efisien untuk deteksi pejalan kaki. Oleh karena itu, pada \textit{paper} mengusulkan \textit{training pipelin} progresif dan menemukan bahwa \textit{pipeline} tersebut berfungsi dengan baik untuk deteksi pejalan kaki yang berorientasi pada pengemudian otonom. Akibatnya, studi yang dilakukan dalam makalah ini menunjukkan bahwa lebih banyak penekanan harus diberikan pada evaluasi \textit{cross-datasset} untuk desain masa mendatang pada detektor pejalan kaki.
+\subsection{ResNet-50}
+\label{subsec:resnet50-definition}
 
-\subsection{Fast Vehicle and Pedestrian Detection Using Improved Mask R-CNN}
-\label{fast-vehicle}
+ResNet50 adalah varian dari model ResNet yang memiliki 48 \textit{convolution layer} bersama dengan 1 \textit{MaxPool layer} dan 1 \textit{AveragePool layer}. ResNet-50 memiliki 3,8 x 10\^{}9 Operasi \textit{floating point}. Gambar \ref{fig:resnet50-arch} merupakan diagram proses dari arsitektur ResNet-50.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.25]{gambar/resnet50-arch.png}
+	\caption{Arsitektur ResNet-50 \citep{resnet50-arch}}
+	\label{fig:resnet50-arch}
+\end{figure}
 
-Penelitian ini menyajikan algoritma Mask R-CNN yang sederhana dan efektif untuk deteksi kendaraan dan pejalan kaki yang lebih cepat \citep{fast-vehicle}. Metode ini memiliki nilai praktis untuk sistem peringatan anti-tabrakan dalam mengemudi cerdas. \textit{Deep Neural Network} dengan lebih banyak lapisan memiliki kapasitas yang lebih besar, tetapi juga harus melakukan perhitungan yang lebih rumit. Untuk mengatasi kelemahan ini, penelitian ini mengadopsi jaringan Resnet-86 sebagai \textit{backbone} yang berbeda dari struktur tulang punggung Resnet-101 dalam algoritma Mask R-CNN. Hasilnya menunjukkan bahwa jaringan Resnet-86 dapat mengurangi waktu operasi dan sangat meningkatkan akurasi. Kendaraan dan pejalan kaki yang terdeteksi juga disaring berdasarkan dataset Microsoft COCO. Dataset baru dibentuk dengan menyaring dan melengkapi COCO dataset, yang membuat pelatihan algoritma lebih efisien. Bagian terpenting dari penelitian ini adalah diusulkannya algoritma baru, \textit{Side Fusion FPN}. Parameter dalam algoritma tidak ada perubahan, jumlah perhitungan meningkat kurang dari 0,000001, dan rata-rata presisi (mAP) meningkat 2,00 poin. Hasilnya menunjukkan bahwa, dibandingkan dengan algoritma Mask R-CNN, algoritma pada penelitian ini menurunkan ukuran memori bobot sebesar 9,43\%, meningkatkan kecepatan pelatihan sebesar 26,98\%, meningkatkan kecepatan pengujian sebesar 7,94\%, menurunkan nilai \textit{error} sebesar 0,26, dan meningkatkan nilai mAP sebesar 17,53 poin.
+\subsection{ResNet-101}
+\label{subsec:resnet101-definition}
+
+ResNet101 adalah varian dari model ResNet yang memiliki 99 \textit{convolution layer} bersama dengan 1 \textit{MaxPool layer} dan 1 \textit{AveragePool layer}. ResNet-101 memiliki 7,6 x 10\^{}9 Operasi \textit{floating point}. Gambar \ref{fig:resnet101-arch} merupakan diagram proses dari arsitektur ResNet-101.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.25]{gambar/resnet101-arch.png}
+	\caption{Arsitektur ResNet-101 \citep{resnet101-arch}}
+	\label{fig:resnet101-arch}
+\end{figure}
+
+\subsection{MobileNet-v1}
+\label{subsec:mobilenetv1-definition}
+
+MobileNets, merupakan salah satu arsitektur \textit{convolutional neural network} (CNN) yang dapat digunakan untuk mengatasi kebutuhan akan \textit{computing resource} berlebih. Seperti namanya, \textit{Mobile}, para peneliti dari Google membuat arsitektur CNN yang dapat digunakan untuk \textit{mobile device} atau ponsel \citep{mobilnet-def}. Perbedaan mendasar antara arsitektur MobileNet dan arsitektur CNN pada umumnya adalah penggunaan lapisan atau layer konvolusi dengan ketebalan filter yang sesuai dengan ketebalan dari \textit{input image}. MobileNet membagi konvolusi menjadi \textit{depthwise convolution} dan \textit{pointwise convolution}.
+

@@ -1,4 +1,4 @@
-\begin{thebibliography}{22}
+\begin{thebibliography}{28}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -64,6 +64,60 @@ Lukasz Bienias, Juanjo n, Line Nielsen, and Tommy Alstrøm.
 \newblock pages 1--6, 10 2019.
 \newblock \doi{10.1109/MLSP.2019.8918753}.
 
+\bibitem[Mahmood et~al.(2020)Mahmood, Giraldo, Bennamoun, An, Sohel, Boussaid,
+  Hovey, Fisher, and Kendrick]{resnet50-arch}
+Ammar Mahmood, Ana Giraldo, Mohammed Bennamoun, Senjian An, Ferdous Sohel,
+  Farid Boussaid, Renae Hovey, Robert Fisher, and Gary Kendrick.
+\newblock Automatic hierarchical classification of kelps using deep residual
+  features.
+\newblock \emph{Sensors}, 20:\penalty0 447, 01 2020.
+\newblock \doi{10.3390/s20020447}.
+
+\bibitem[Chen et~al.(2021)Chen, Zhou, Zhang, Huang, and Zhang]{resnet101-arch}
+Jiayao Chen, Mingliang Zhou, Dongming Zhang, H.~Huang, and Fengshou Zhang.
+\newblock Quantification of water inflow in rock tunnel faces via convolutional
+  neural network approach.
+\newblock \emph{Automation in Construction}, 123:\penalty0 103526, 03 2021.
+\newblock \doi{10.1016/j.autcon.2020.103526}.
+
+\bibitem[who(2013)]{who}
+More than 270 000 pedestrians killed on roads each year, 2013.
+\newblock URL
+  \url{https://www.who.int/news/item/02-05-2013-more-than-270-000-pedestrians-killed-on-roads-each-year}.
+
+\bibitem[grs(2016)]{grsf}
+Indonesia, indonesia's road safety country profile, 2016.
+\newblock URL \url{https://www.roadsafetyfacility.org/country/indonesia}.
+
+\bibitem[Angelova et~al.(2015)Angelova, Krizhevsky, Vanhoucke, Ogale, and
+  Ferguson]{penelitianterkait1}
+Anelia Angelova, Alex Krizhevsky, Vincent Vanhoucke, Abhijit Ogale, and Dave
+  Ferguson.
+\newblock Real-time pedestrian detection with deep network cascades.
+\newblock 2015.
+
+\bibitem[Hasan et~al.(2020)Hasan, Liao, Li, Ullah~Akram, and
+  Shao]{pedestrian-detection}
+Irtiza Hasan, Shengcai Liao, Jinpeng Li, Saad Ullah~Akram, and Ling Shao.
+\newblock Pedestrian detection: The elephant in the room, 03 2020.
+
+\bibitem[Xu et~al.(2020)Xu, Wang, Yan, Yu, Zhang, Dai, Li, and
+  Xu]{fast-vehicle}
+Chenchen Xu, Guili Wang, Songsong Yan, Jianghua Yu, Baojun Zhang, Shu Dai,
+  Yu~Li, and Lin Xu.
+\newblock Fast vehicle and pedestrian detection using improved mask r-cnn.
+\newblock \emph{Mathematical Problems in Engineering}, 2020:\penalty0 1--15, 05
+  2020.
+\newblock \doi{10.1155/2020/5761414}.
+
+\bibitem[Malbog(2019)]{pedestrian-crosswalk}
+Mon~Arjay Malbog.
+\newblock Mask r-cnn for pedestrian crosswalk detection and instance
+  segmentation.
+\newblock In \emph{2019 IEEE 6th International Conference on Engineering
+  Technologies and Applied Sciences (ICETAS)}, pages 1--5, 2019.
+\newblock \doi{10.1109/ICETAS48360.2019.9117217}.
+
 \bibitem[art(2021)]{artificialintellingece}
 Artificial intelligence (ai), 2021.
 \newblock URL
@@ -118,26 +172,10 @@ Kaiming He, Georgia Gkioxari, Piotr Dollar, and Ross Girshick.
 \newblock In \emph{Proceedings of the IEEE International Conference on Computer
   Vision (ICCV)}, Oct 2017.
 
-\bibitem[Angelova et~al.(2015)Angelova, Krizhevsky, Vanhoucke, Ogale, and
-  Ferguson]{penelitianterkait1}
-Anelia Angelova, Alex Krizhevsky, Vincent Vanhoucke, Abhijit Ogale, and Dave
-  Ferguson.
-\newblock Real-time pedestrian detection with deep network cascades.
-\newblock 2015.
-
-\bibitem[Hasan et~al.(2020)Hasan, Liao, Li, Ullah~Akram, and
-  Shao]{pedestrian-detection}
-Irtiza Hasan, Shengcai Liao, Jinpeng Li, Saad Ullah~Akram, and Ling Shao.
-\newblock Pedestrian detection: The elephant in the room, 03 2020.
-
-\bibitem[Xu et~al.(2020)Xu, Wang, Yan, Yu, Zhang, Dai, Li, and
-  Xu]{fast-vehicle}
-Chenchen Xu, Guili Wang, Songsong Yan, Jianghua Yu, Baojun Zhang, Shu Dai,
-  Yu~Li, and Lin Xu.
-\newblock Fast vehicle and pedestrian detection using improved mask r-cnn.
-\newblock \emph{Mathematical Problems in Engineering}, 2020:\penalty0 1--15, 05
-  2020.
-\newblock \doi{10.1155/2020/5761414}.
+\bibitem[mob(2018)]{mobilnet-def}
+Mobilenet: Deteksi objek pada platform mobile, 2018.
+\newblock URL
+  \url{https://medium.com/nodeflux/mobilenet-deteksi-objek-pada-platform-mobile-bbbf3806e4b3}.
 
 \bibitem[tes(2020)]{test-siang}
 4k60 driving around downtown jakarta ~ from kota tua to blok m via thamrin \&

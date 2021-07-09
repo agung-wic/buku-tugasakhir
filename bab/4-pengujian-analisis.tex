@@ -487,7 +487,7 @@ Pada pengujian ini \textit{testing data} diambil dengan menggunakan kamera \text
 
 Untuk meguji performa model yang dihasilkan pada masing-masing \textit{backbone}, digunakan beberapa parameter nilai seperti \textit{precision, recall} dan \textit{F1-score} pada masing-masing kelas objek yang dideteksi. Perbandingan hasil evaluasi yang didapatkan masing-masing \textit{backbone} dapat dilihat pada Tabel \ref{tab:evaluate-morning}.
 
-Pada Resnet-50 \textit{Average Precision} untuk semua kelas yang berhasil dideteksi adalah sebesar 100\% dan \textit{Average Recall} 100\%. Sedangkan pada Resnet-101 memberikan hasil yang sama dengan Resnet-50 dengan \textit{AP} 100\% dan \textit{AR} 100\%. Namun pada Mobilenet-v1 objek yang berhasil dideteksi hanya \textit{zebracross} (ditambah dengan \textit{background}), sehingga pada objek pejalan kaki dan pengendara motor mempunyai \textit{precision} bernilai 0\% serta \textit{Recall} dan \textit{F1-score} bernilai tidak terdefinisi atau \textit{NaN}. Hal ini dikarenakan nilai \textit{True Positif} pada pejalan kaki dan pengendara motor bernilai 0 (angka 0 dibagi nilai berapun memiliki hasil tidak terdefinisi). Nilai \textit{AP} yang dihasilkan pada evaluasi Mobilenet-v1 sebesar 37.5\%.
+Pada Resnet-50 \textit{Average Precision} untuk semua kelas yang berhasil dideteksi adalah sebesar 100\% dan \textit{Average Recall} 100\% dengan \textit{testing time} selama 0,763 s. Sedangkan pada Resnet-101 memberikan hasil yang sama dengan Resnet-50 dengan \textit{AP} 100\% dan \textit{AR} 100\% dengan \textit{testing time} selama 0,961 s. Namun pada Mobilenet-v1 objek yang berhasil dideteksi hanya \textit{zebracross} (ditambah dengan \textit{background}), sehingga pada objek pejalan kaki dan pengendara motor mempunyai \textit{precision} bernilai 0\% serta \textit{Recall} dan \textit{F1-score} bernilai tidak terdefinisi atau \textit{NaN}. Hal ini dikarenakan nilai \textit{True Positif} pada pejalan kaki dan pengendara motor bernilai 0 (angka 0 dibagi nilai berapun memiliki hasil tidak terdefinisi). Nilai \textit{AP} yang dihasilkan pada evaluasi Mobilenet-v1 sebesar 37.5\% dengan \textit{testing time} selama 0.664 s.
 
 \begin{table}[!h]
 	\centering
@@ -622,7 +622,7 @@ Perbandingan hasil evaluasi yang didapatkan masing-masing \textit{backbone} deng
 	\label{tab:evaluate-afternoon}
 \end{table}
 
-Pada Resnet-50 \textit{Average Precision} untuk semua kelas yang berhasil dideteksi adalah sebesar 62.5\% dan \textit{Average Recall} 72.915\%. Sedangkan pada Resnet-101 memberikan hasil \textit{AP} sebesar 75\% dan \textit{AR} 81.5\%. Namun pada Mobilenet-v1 objek yang berhasil dideteksi hanya \textit{zebracross} (ditambah dengan \textit{background}) sama saat pengujian pada pagi hari. Nilai \textit{AP} yang dihasilkan pada evaluasi Mobilenet-v1 sebesar 25\%.
+Pada Resnet-50 \textit{Average Precision} untuk semua kelas yang berhasil dideteksi adalah sebesar 62.5\% dan \textit{Average Recall} 72.915\% dengan \textit{testing time} selama 1,253 s. Sedangkan pada Resnet-101 memberikan hasil \textit{AP} sebesar 75\% dan \textit{AR} 81.5\% dengan \textit{testing time} selama 1,549 s. Namun pada Mobilenet-v1 objek yang berhasil dideteksi hanya \textit{zebracross} (ditambah dengan \textit{background}) sama saat pengujian pada pagi hari. Nilai \textit{AP} yang dihasilkan pada evaluasi Mobilenet-v1 sebesar 25\% dengan \textit{testing time} selama 1,186 s.
 
 Selain menggunakan \textit{input data} berupa gambar, pada pengujian ini juga menggunakan \textit{input data} berupa \textit{file} video dengan format \textit{.mp4}. Proses \textit{testing} dibagi menjadi dua tahapan, tahap pertama memecah \textit{frame} video menjadi gambar dan melakukan prediksi serta tahap kedua menggabungkan kembali setiap \textit{frame} menjadi video. Tabel \ref{tab:video-afternoon} menunjukan waktu total yang dibutuhkan untuk melakukan semua tahap prediksi pada \textit{file input} berbentuk video pada ketiga \textit{backbone}.
 
@@ -647,7 +647,7 @@ Selain menggunakan \textit{input data} berupa gambar, pada pengujian ini juga me
 
 Pada pengujian ini \textit{testing data} diambil dari video \textit{streaming youtube} \citep{test-malam} yang memiliki resolusi 1920$\times$1080 px berdurasi 28.04 s. Video tersebut mempunyai banyak \textit{frame} per detik sebanyak 25 fps serta total \textit{frame} yang dihasilkan sejumlah 701 \textit{frame}. Gambar \ref{fig:comparasion-night} merupakan perbandingan hasis deteksi dan segementasi dari ketiga \textit{backbone} yang digunakan pada waktu siang hari.
 
-\begin{figure}[!h]
+\begin{figure}[H]
 	\centering
 	\begin{minipage}[b]{0.3\textwidth}
 		\includegraphics[width=\textwidth]{gambar/malam-frame180-resnet50.png}
@@ -669,7 +669,7 @@ Pada pengujian ini \textit{testing data} diambil dari video \textit{streaming yo
 
 Perbandingan hasil evaluasi yang didapatkan masing-masing \textit{backbone} dengan membandingkan nilai \textit{precision, recall} dan \textit{F1-score} dapat dilihat pada Tabel \ref{tab:evaluate-night}.
 
-\begin{table}[!h]
+\begin{table}[H]
 	\centering
 	\caption{{Perbandingan Hasil Evaluasi pada Malam Hari}}
 	\begin{minipage}[b]{\textwidth}
@@ -717,11 +717,11 @@ Perbandingan hasil evaluasi yang didapatkan masing-masing \textit{backbone} deng
 	\label{tab:evaluate-night}
 \end{table}
 
-Pada gambar yang diuji untuk malam hari hanya memiliki 3 kelas saja yaitu \textit{background}, pejalan kaki serta \textit{zebracross} tanpa adanya pengendara motor. Resnet-50 mempunyai nilai \textit{Average Precision} untuk semua kelas yang berhasil dideteksi adalah sebesar 80\% dan \textit{Average Recall} 75\%. Sedangkan pada Resnet-101 memberikan hasil \textit{AP} sebesar 86.67\% dan \textit{AR} 77.77\%. Namun pada Mobilenet-v1 objek yang berhasil dideteksi hanya \textit{zebracross} (ditambah dengan \textit{background}) sama saat pengujian pada pagi dan siang hari. Nilai \textit{AP} yang dihasilkan pada evaluasi Mobilenet-v1 sebesar 50\%.
+Pada gambar yang diuji untuk malam hari hanya memiliki 3 kelas saja yaitu \textit{background}, pejalan kaki serta \textit{zebracross} tanpa adanya pengendara motor. Resnet-50 mempunyai nilai \textit{Average Precision} untuk semua kelas yang berhasil dideteksi adalah sebesar 80\% dan \textit{Average Recall} 75\% dengan \textit{testing time} selama 1,069 s. Sedangkan pada Resnet-101 memberikan hasil \textit{AP} sebesar 86.67\% dan \textit{AR} 77.77\% dengan \textit{testing time} selama 1,215 s. Namun pada Mobilenet-v1 objek yang berhasil dideteksi hanya \textit{zebracross} (ditambah dengan \textit{background}) sama saat pengujian pada pagi dan siang hari. Nilai \textit{AP} yang dihasilkan pada evaluasi Mobilenet-v1 sebesar 50\% dengan \textit{testing time} selama 1,051 s.
 
 Selain menggunakan \textit{input data} berupa gambar, pada pengujian ini juga menggunakan \textit{input data} berupa \textit{file} video dengan format \textit{.mp4}. Proses \textit{testing} dibagi menjadi dua tahapan, tahap pertama memecah \textit{frame} video menjadi gambar dan melakukan prediksi serta tahap kedua menggabungkan kembali setiap \textit{frame} menjadi video. Tabel \ref{tab:video-night} menunjukan waktu yang dibutuhkan untuk melakukan semua tahap prediksi pada \textit{file input} berbentuk video pada ketiga \textit{backbone}.
 
-\begin{table}[!h]
+\begin{table}[H]
 	\centering{
 		\caption{Waktu Prediksi pada \textit{File Input} Video dalam \textit{MM:SS}}
 		\begin{tabular}{|l|c|c|c|l|}
@@ -751,7 +751,7 @@ Pada proses evaluasi model dengan menggunakan seluruh \textit{testing data} (pag
 \end{enumerate}
 Hasil tersebut didapatkan setelah dilakukan proses pencarian nilai \textit{Trur Positif, False Positif} dan \textit{False Negatif} seperti yang ditunjukkan pada \textit{confusion matrix} pada Gambar \ref{fig:confmatrix-resnet50}.
 
-\begin{figure}[!h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.3]{gambar/confmatrix/all-resnet50-blue.png}
 	\caption{\textit{Confusion Matrix} ResNet-50}
@@ -768,7 +768,7 @@ Pada proses evaluasi model dengan menggunakan seluruh \textit{testing data} (pag
 \end{enumerate}
 Hasil tersebut didapatkan setelah dilakukan proses pencarian nilai \textit{Trur Positif, False Positif} dan \textit{False Negatif} seperti yang ditunjukkan pada \textit{confusion matrix} pada Gambar \ref{fig:confmatrix-resnet101}.
 
-\begin{figure}[!h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.3]{gambar/confmatrix/all-resnet101-blue.png}
 	\caption{\textit{Confusion Matrix} ResNet-101}
@@ -785,7 +785,7 @@ Pada proses evaluasi model dengan menggunakan seluruh \textit{testing data} (pag
 \end{enumerate}
 Hasil tersebut didapatkan setelah dilakukan proses pencarian nilai \textit{Trur Positif, False Positif} dan \textit{False Negatif} seperti yang ditunjukkan pada \textit{confusion matrix} pada Gambar \ref{fig:confmatrix-mobilenetv1}.
 
-\begin{figure}[!h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.3]{gambar/confmatrix/all-mobilenetv1-blue.png}
 	\caption{\textit{Confusion Matrix} MobileNet-v1}

@@ -10,46 +10,52 @@
 \BOOKMARK [1][-]{section.1.4}{1.4 Batasan Masalah}{chapter.1}% 10
 \BOOKMARK [1][-]{section.1.5}{1.5 Sistematika Penulisan}{chapter.1}% 11
 \BOOKMARK [0][-]{chapter.2}{2 TINJAUAN PUSTAKA}{}% 12
-\BOOKMARK [1][-]{section.2.1}{2.1 Dasar Teori}{chapter.2}% 13
-\BOOKMARK [2][-]{subsection.2.1.1}{2.1.1 Artificial Intelligence}{section.2.1}% 14
-\BOOKMARK [2][-]{subsection.2.1.2}{2.1.2 Machine Learning}{section.2.1}% 15
-\BOOKMARK [2][-]{subsection.2.1.3}{2.1.3 Deep Learning}{section.2.1}% 16
-\BOOKMARK [2][-]{subsection.2.1.4}{2.1.4 Convolutional Neural Network}{section.2.1}% 17
-\BOOKMARK [2][-]{subsection.2.1.5}{2.1.5 Convolutional Layer}{section.2.1}% 18
-\BOOKMARK [2][-]{subsection.2.1.6}{2.1.6 Pooling Layer}{section.2.1}% 19
-\BOOKMARK [2][-]{subsection.2.1.7}{2.1.7 Fungsi Aktivasi \(Non-Linearity\)}{section.2.1}% 20
-\BOOKMARK [2][-]{subsection.2.1.8}{2.1.8 Fully Connected Layer}{section.2.1}% 21
-\BOOKMARK [2][-]{subsection.2.1.9}{2.1.9 Loss Function}{section.2.1}% 22
-\BOOKMARK [2][-]{subsection.2.1.10}{2.1.10 Regional-Based CNN}{section.2.1}% 23
-\BOOKMARK [2][-]{subsection.2.1.11}{2.1.11 Fast R-CNN}{section.2.1}% 24
-\BOOKMARK [2][-]{subsection.2.1.12}{2.1.12 Faster R-CNN}{section.2.1}% 25
-\BOOKMARK [2][-]{subsection.2.1.13}{2.1.13 Mask R-CNN}{section.2.1}% 26
-\BOOKMARK [1][-]{section.2.2}{2.2 Penelitian Terkait}{chapter.2}% 27
-\BOOKMARK [2][-]{subsection.2.2.1}{2.2.1 Real-Time Pedestrian Detection With Deep Network Cascades}{section.2.2}% 28
-\BOOKMARK [2][-]{subsection.2.2.2}{2.2.2 Pedestrian Detection: The Elephant In The Room}{section.2.2}% 29
-\BOOKMARK [2][-]{subsection.2.2.3}{2.2.3 Fast Vehicle and Pedestrian Detection Using Improved Mask R-CNN}{section.2.2}% 30
-\BOOKMARK [0][-]{chapter.3}{3 DESAIN DAN IMPLEMENTASI}{}% 31
-\BOOKMARK [1][-]{section.3.1}{3.1 Deskripsi Sistem}{chapter.3}% 32
-\BOOKMARK [1][-]{section.3.2}{3.2 Pengumpulan Dataset Gambar}{chapter.3}% 33
-\BOOKMARK [1][-]{section.3.3}{3.3 Pemisahan Data}{chapter.3}% 34
-\BOOKMARK [1][-]{section.3.4}{3.4 Pre-Processing}{chapter.3}% 35
-\BOOKMARK [1][-]{section.3.5}{3.5 Membangun Model Mask R-CNN }{chapter.3}% 36
-\BOOKMARK [1][-]{section.3.6}{3.6 Training Data }{chapter.3}% 37
-\BOOKMARK [1][-]{section.3.7}{3.7 Validating Data }{chapter.3}% 38
-\BOOKMARK [1][-]{section.3.8}{3.8 Testing Data }{chapter.3}% 39
-\BOOKMARK [0][-]{chapter.4}{4 PENGUJIAN DAN ANALISIS}{}% 40
-\BOOKMARK [1][-]{section.4.1}{4.1 Pengujian Jenis Backbone}{chapter.4}% 41
-\BOOKMARK [2][-]{subsection.4.1.1}{4.1.1 Resnet-50}{section.4.1}% 42
-\BOOKMARK [2][-]{subsection.4.1.2}{4.1.2 Resnet-101}{section.4.1}% 43
-\BOOKMARK [2][-]{subsection.4.1.3}{4.1.3 MobileNet-V1}{section.4.1}% 44
-\BOOKMARK [2][-]{subsection.4.1.4}{4.1.4 Perbandingan Hasil Prediksi}{section.4.1}% 45
-\BOOKMARK [1][-]{section.4.2}{4.2 Pengujian Perbedaan Waktu}{chapter.4}% 46
-\BOOKMARK [2][-]{subsection.4.2.1}{4.2.1 Pengujian di Pagi Hari}{section.4.2}% 47
-\BOOKMARK [2][-]{subsection.4.2.2}{4.2.2 Pengujian di Siang Hari}{section.4.2}% 48
-\BOOKMARK [2][-]{subsection.4.2.3}{4.2.3 Pengujian di Malam Hari}{section.4.2}% 49
-\BOOKMARK [2][-]{subsection.4.2.4}{4.2.4 Perbandingan Hasil Evaluasi pada Perbedaan Waktu}{section.4.2}% 50
-\BOOKMARK [0][-]{chapter.5}{5 PENUTUP}{}% 51
-\BOOKMARK [1][-]{section.5.1}{5.1 Kesimpulan}{chapter.5}% 52
-\BOOKMARK [1][-]{section.5.2}{5.2 Saran}{chapter.5}% 53
-\BOOKMARK [0][-]{Item.59}{DAFTAR PUSTAKA}{}% 54
-\BOOKMARK [0][-]{chapter*.58}{BIOGRAFI PENULIS}{}% 55
+\BOOKMARK [1][-]{section.2.1}{2.1 State of The Art}{chapter.2}% 13
+\BOOKMARK [2][-]{subsection.2.1.1}{2.1.1 Real-Time Pedestrian Detection With Deep Network Cascades}{section.2.1}% 14
+\BOOKMARK [2][-]{subsection.2.1.2}{2.1.2 Pedestrian Detection: The Elephant In The Room}{section.2.1}% 15
+\BOOKMARK [2][-]{subsection.2.1.3}{2.1.3 Fast Vehicle and Pedestrian Detection Using Improved Mask R-CNN}{section.2.1}% 16
+\BOOKMARK [2][-]{subsection.2.1.4}{2.1.4 MASK R-CNN for Pedestrian Crosswalk Detection and Instance Segmentation}{section.2.1}% 17
+\BOOKMARK [1][-]{section.2.2}{2.2 Teori Penunjang}{chapter.2}% 18
+\BOOKMARK [2][-]{subsection.2.2.1}{2.2.1 Artificial Intelligence}{section.2.2}% 19
+\BOOKMARK [2][-]{subsection.2.2.2}{2.2.2 Machine Learning}{section.2.2}% 20
+\BOOKMARK [2][-]{subsection.2.2.3}{2.2.3 Deep Learning}{section.2.2}% 21
+\BOOKMARK [2][-]{subsection.2.2.4}{2.2.4 Convolutional Neural Network}{section.2.2}% 22
+\BOOKMARK [2][-]{subsection.2.2.5}{2.2.5 Convolutional Layer}{section.2.2}% 23
+\BOOKMARK [2][-]{subsection.2.2.6}{2.2.6 Pooling Layer}{section.2.2}% 24
+\BOOKMARK [2][-]{subsection.2.2.7}{2.2.7 Fungsi Aktivasi \(Non-Linearity\)}{section.2.2}% 25
+\BOOKMARK [2][-]{subsection.2.2.8}{2.2.8 Fully Connected Layer}{section.2.2}% 26
+\BOOKMARK [2][-]{subsection.2.2.9}{2.2.9 Loss Function}{section.2.2}% 27
+\BOOKMARK [2][-]{subsection.2.2.10}{2.2.10 Regional-Based CNN}{section.2.2}% 28
+\BOOKMARK [2][-]{subsection.2.2.11}{2.2.11 Fast R-CNN}{section.2.2}% 29
+\BOOKMARK [2][-]{subsection.2.2.12}{2.2.12 Faster R-CNN}{section.2.2}% 30
+\BOOKMARK [2][-]{subsection.2.2.13}{2.2.13 Mask R-CNN}{section.2.2}% 31
+\BOOKMARK [2][-]{subsection.2.2.14}{2.2.14 Pejalan Kaki}{section.2.2}% 32
+\BOOKMARK [2][-]{subsection.2.2.15}{2.2.15 Zebracross}{section.2.2}% 33
+\BOOKMARK [2][-]{subsection.2.2.16}{2.2.16 ResNet-50}{section.2.2}% 34
+\BOOKMARK [2][-]{subsection.2.2.17}{2.2.17 ResNet-101}{section.2.2}% 35
+\BOOKMARK [2][-]{subsection.2.2.18}{2.2.18 MobileNet-v1}{section.2.2}% 36
+\BOOKMARK [0][-]{chapter.3}{3 DESAIN DAN IMPLEMENTASI}{}% 37
+\BOOKMARK [1][-]{section.3.1}{3.1 Deskripsi Sistem}{chapter.3}% 38
+\BOOKMARK [1][-]{section.3.2}{3.2 Pengumpulan Dataset Gambar}{chapter.3}% 39
+\BOOKMARK [1][-]{section.3.3}{3.3 Pemisahan Data}{chapter.3}% 40
+\BOOKMARK [1][-]{section.3.4}{3.4 Pre-Processing}{chapter.3}% 41
+\BOOKMARK [1][-]{section.3.5}{3.5 Membangun Model Mask R-CNN }{chapter.3}% 42
+\BOOKMARK [1][-]{section.3.6}{3.6 Training Data }{chapter.3}% 43
+\BOOKMARK [1][-]{section.3.7}{3.7 Validating Data }{chapter.3}% 44
+\BOOKMARK [1][-]{section.3.8}{3.8 Testing Data }{chapter.3}% 45
+\BOOKMARK [0][-]{chapter.4}{4 PENGUJIAN DAN ANALISIS}{}% 46
+\BOOKMARK [1][-]{section.4.1}{4.1 Pengujian Jenis Backbone}{chapter.4}% 47
+\BOOKMARK [2][-]{subsection.4.1.1}{4.1.1 Resnet-50}{section.4.1}% 48
+\BOOKMARK [2][-]{subsection.4.1.2}{4.1.2 Resnet-101}{section.4.1}% 49
+\BOOKMARK [2][-]{subsection.4.1.3}{4.1.3 MobileNet-V1}{section.4.1}% 50
+\BOOKMARK [2][-]{subsection.4.1.4}{4.1.4 Perbandingan Hasil Prediksi}{section.4.1}% 51
+\BOOKMARK [1][-]{section.4.2}{4.2 Pengujian Perbedaan Waktu}{chapter.4}% 52
+\BOOKMARK [2][-]{subsection.4.2.1}{4.2.1 Pengujian di Pagi Hari}{section.4.2}% 53
+\BOOKMARK [2][-]{subsection.4.2.2}{4.2.2 Pengujian di Siang Hari}{section.4.2}% 54
+\BOOKMARK [2][-]{subsection.4.2.3}{4.2.3 Pengujian di Malam Hari}{section.4.2}% 55
+\BOOKMARK [2][-]{subsection.4.2.4}{4.2.4 Perbandingan Hasil Evaluasi pada Perbedaan Waktu}{section.4.2}% 56
+\BOOKMARK [0][-]{chapter.5}{5 PENUTUP}{}% 57
+\BOOKMARK [1][-]{section.5.1}{5.1 Kesimpulan}{chapter.5}% 58
+\BOOKMARK [1][-]{section.5.2}{5.2 Saran}{chapter.5}% 59
+\BOOKMARK [0][-]{Item.61}{DAFTAR PUSTAKA}{}% 60
+\BOOKMARK [0][-]{chapter*.60}{BIOGRAFI PENULIS}{}% 61
