@@ -103,186 +103,6 @@ Arsitektur \textit{deep learning} berkinerja lebih baik daripada jaringan saraf 
 	\item Implementasi pada jaringan dengan ukuran yang besar akan lebih sulit dilakukan dengan menggunakan jenis jaringan saraf lain daripada menggunakan \textit{Convolutional Neural Network}
 \end{enumerate}
 
-\subsection{\textit{Convolutional Layer}}
-\label{subsec:convolutional-layer}
-
-\textit{Convolutional layer} adalah komponen terpenting dari arsitektur CNN mana pun. Ini berisi satu set kernel convolutional (juga disebut filter), yang dililitkan dengan gambar input (metrik N-dimensi) untuk menghasilkan peta fitur keluaran. Kernel dapat digambarkan sebagai kisi nilai atau angka diskrit, di mana setiap nilai dikenal sebagai bobot kernel. Selama awal proses pelatihan model CNN, semua bobot kernel ditetapkan dengan angka acak (pendekatan yang berbeda juga tersedia untuk inisialisasi bobot). Kemudian, dengan setiap periode \textit{learning}, bobot disetel dan kernel belajar mengekstrak fitur yang memberikan informasi mengenai data.
-
-Pada \textit{Convolutional layer} terdapat istilah kernel yang mempunyai peran penting dalam proses yang dinamakan \textit{convolutional operation}. Kernel dapat digambarkan sebagai kisi nilai atau angka diskrit, di mana setiap nilai dikenal sebagai bobot kernel ini. Selama awal proses pelatihan model CNN, semua bobot kernel ditetapkan dengan angka acak (pendekatan yang berbeda juga tersedia di sana untuk menginisialisasi bobot). Kemudian, dengan setiap periode pelatihan, bobot disetel dan kernel belajar mengekstrak fitur yang berarti.
-
-Sebelum kita mempelajari lebih jauh, mari kita pahami dulu format \textit{input} CNN. Berbeda dengan \textit{neural network} klasik lainnya dimana \textit{input}-nya dalam format vektor, di CNN \textit{input}-nya adalah gambar multi \textit{channel}. Misalnya untuk gambar RGB seperti pada Gambar \ref{fig:rgb-gray-image} mempunyai 3 \textit{channel} dan untuk gambar \textit{grayscale} hanya mempunyai satu \textit{channel}.
-
-\begin{figure}[ht]
-	\centering
-	\includegraphics[scale=0.3]{gambar/rgb-gray-image.png}
-	\caption{Contoh Gambar RGB dan Grayscale}
-	\label{fig:rgb-gray-image}
-\end{figure}
-
-Sekarang, dalam operasi konvolusi, sebagai contoh diambil kernel 2 $\times$ 2 lalu diimplementasikan ke semua gambar 4 $\times$ 4 secara horizontal maupun vertikal dan sepanjang proses berlangsung dilakukan \textit{dot product} antara kernel dan gambar \textit{input} dengan mengalikan nilai yang sesuai dari keduanya dan dijumlahkan semua nilai untuk menghasilkan satu nilai skalar di \textit{feature map output}.Proses ini berlanjut hingga kernel tidak dapat lagi digeser lebih jauh. Untuk memahaminya secara lebih jelas, mari kita lakukan beberapa perhitungan awal yang dilakukan pada setiap langkah secara grafis seperti yang ditunjukkan pada Gambar \ref{fig:conv-step}, di mana setiap nilai kernel 2 $\times$ 2 (ditunjukkan dengan warna merah) berada dikalikan dengan wilayah berukuran sama (ditunjukkan dengan warna jingga) dalam gambar input 4 $\times$ 4 dan nilai yang dihasilkan dijumlahkan untuk mendapatkan entri yang sesuai (ditunjukkan dengan warna biru) di \textit{feature map output} pada setiap langkah konvolusi.
-
-\begin{figure}[h!]
-	\centering
-	\includegraphics[scale=0.23]{gambar/langkah-konvolusi.png}
-	\caption{Gambaran Operasi Konvolusi pada \textit{Convolution Layer}}
-	\label{fig:conv-step}
-\end{figure}
-
-Dalam contoh di atas, diterapkan operasi konvolusi tanpa padding ke gambar masukan dan dengan \textit{stride} (yaitu ukuran langkah yang diambil sepanjang posisi horizontal atau vertikal ) sama dengan 1 ke kernel. Tapi bisa digunakan nilai \textit{stride} lain (bukan 1) dalam operasi konvolusi. Hal yang terlihat adalah jika kita meningkatkan langkah operasi konvolusi, itu menghasilkan \textit{feature map} berdimensi lebih rendah. \textit{Padding} penting untuk memberikan informasi ukuran batas dari input gambar jika tidak, tanpa menggunakan \textit{padding} apa pun, fitur sisi tepi akan terhapus terlalu cepat. \textit{Padding} juga digunakan untuk meningkatkan ukuran gambar \textit{input}, akibatnya ukuran \textit{feature map} \textit{output} juga meningkat. Gambar \ref{fig:conv-step-padd} memberikan contoh dengan menunjukkan operasi konvolusi dengan \textit{Zero-padding} dan 3 \textit{stride}. Rumus untuk mencari ukuran \textit{feature map} keluaran setelah operasi konvolusi adalah sebagai berikut:
-
-\begin{equation}
-	h'= \left[ \frac{h-f+p}{s} +1 \right]  
-\end{equation}
-
-\begin{equation}
-	w'= \left[ \frac{w-f+p}{s} +1 \right]
-\end{equation}
-
-Dimana $h'$ menunjukkan tinggi dari \textit{feature map output}, $w'$ menunjukkan lebar dari \textit{feature map output}, $h$ menunjukkan tinggi dari gambar \textit{input}, $w$ menunjukkan lebar dari gambar \textit{input}, $f$ adalah ukuran filter, $p$ menunjukkan \textit{padding} dari operasi konvolusi dan $s$ menunjukkan \textit{stride} operasi konvolusi.
-
-\begin{figure}[h!]
-	\centering
-	\includegraphics[scale=0.25]{gambar/conv-step-padd.png}
-	\caption{Gambaran Operasi Konvolusi pada \textit{Convolution Layer} menggunakan \textit{Zero Padding}}
-	\label{fig:conv-step-padd}
-\end{figure}
-
-Keuntungan utama dari lapisan konvolusi adalah:
-\begin{enumerate}
-	\item \textbf{\textit{Sparse Connectivity}}: Dalam jaringan saraf yang terhubung penuh, setiap \textit{neuron} dari satu lapisan terhubung dengan setiap \textit{neuron} dari lapisan berikutnya tetapi di CNN sejumlah kecil bobot terdapat di antara dua lapisan. Akibatnya, jumlah koneksi atau bobot yang kita butuhkan kecil, dan jumlah memori untuk menyimpan bobot itu juga kecil, sehingga hemat dalam penggunaan memori. Selain itu, operasi dot(.) secara komputasi lebih ringan daripada perkalian matriks.
-	\item \textbf{\textit{Weight Sharing}}: Di CNN, tidak ada bobot khusus yang ada di antara dua neuron dari lapisan yang berdekatan melainkan semua bobot bekerja dengan setiap piksel dari matriks \textit{input}.Selain mempelajari bobot baru untuk setiap neuron, kita dapat mempelajari satu set bobot untuk semua input dan hal ini secara drastis dapat mengurangi waktu pelatihan.
-\end{enumerate}
-
-\subsection{\textit{Pooling Layer}}
-\label{subsec:pooling-layer}
-
-\textit{Pooling layer} digunakan untuk membuat sub-sampel \textit{feature map} (dihasilkan setelah operasi konvolusi), yaitu mengambil \textit{feature map} berukuran lebih besar dan mengecilkannya menjadi \textit{feature map} berukuran lebih kecil. Saat menyusutkan \textit{feature map}, \textit{pooling layer} tetap mempertahankan fitur (atau informasi) yang paling dominan di setiap langkah \textit{pools}. Operasi \textit{pooling} dilakukan dengan menentukan ukuran \textit{pooled region} dan langkah operasi, mirip dengan operasi konvolusi. Ada berbagai jenis teknik \textit{pooling} yang digunakan dalam berbagai \textit{pooling layer} seperti \textit{max pooling, min pooling, average pooling, gated pooling, tree pooling}, dan lain-lain. \textit{Max Pooling} adalah teknik pooling yang paling populer dan banyak digunakan.
-
-Kelemahan utama dari \textit{pooling layer} adalah terkadang menurunkan kinerja CNN secara keseluruhan. Alasan di balik ini adalah bahwa lapisan penyatuan membantu CNN untuk menemukan apakah fitur tertentu ada dalam gambar masukan yang diberikan atau tidak tanpa memperhatikan posisi yang tepat dari fitur tersebut.
-
-Gambar \ref{fig:max-pooling} mengilustrasikan contoh yang menunjukkan beberapa langkah awal serta keluaran akhir dari operasi \textit{max-pooling}, di mana ukuran area \textit{pooling} adalah 2 $\times$ 2 (ditunjukkan dalam warna jingga, dalam \textit{feature map input}) dengan \textit{stride} sama dengan 1 dan yang sesuai dihitung nilai di \textit{feature map output}. Rumus untuk menemukan ukuran \textit{feature map output} setelah operasi \textit{pooling} seperti di bawah ini:
-
-\begin{figure}[h!]
-	\centering
-	\includegraphics[scale=0.25]{gambar/max-pooling.png}
-	\caption{Gambaran Proses \textit{Max Pooling}}
-	\label{fig:max-pooling}
-\end{figure}
-
-\begin{equation}
-	h'= \left[ \frac{h-f}{s} \right]
-\end{equation}
-
-\begin{equation}
-	w'= \left[ \frac{w-f}{s} \right]
-\end{equation}
-
-Dimana $h'$ menunjukkan tinggi dari \textit{feature map output}, $w'$ menunjukkan lebar dari \textit{feature map output}, $h$ menunjukkan tinggi dari gambar \textit{input}, $w$ menunjukkan lebar dari gambar \textit{input}, $f$ adalah ukuran area \textit{pooling}, $s$ menunjukkan \textit{stride} operasi \textit{pooling}.
-
-\subsection{Fungsi Aktivasi (\textit{Non-Linearity})}
-\label{subsec:fungsi-aktivasi}
-
-Tugas utama dari setiap fungsi aktivasi dalam setiap model berbasis jaringan saraf adalah untuk memetakan \textit{input output}, di mana nilai \textit{input} diperoleh dengan menghitung jumlah terbobot \textit{input neuron} dan selanjutnya menambahkan bias (jika ada bias). Dengan kata lain, fungsi aktivasi memutuskan apakah neuron akan aktif atau tidak untuk \textit{input} yang diberikan dengan menghasilkan \textit{output} yang sesuai. Terdapat beberapa fungsi aktivasi yang digunakan dalam CNN, antara lain :
-
-\begin{enumerate}
-	\item \textbf{Sigmoid}\\
-	Fungsi aktivasi sigmoid mengambil bilangan real sebagai inputnya dan mengikat outputnya dalam kisaran [0,1]. Kurva fungsi sigmoid berbentuk 'S' seperti pada Gambar \ref{fig:sigmoid}. Representasi tematik dari sigmoid adalah:
-	
-	\begin{equation}
-		f(x)_{sigm}=\frac{1}{1+e^{-x}}
-	\end{equation}
-	
-	\begin{figure}[h!]
-		\centering
-		\includegraphics[scale=0.15]{gambar/sigmoid.png}
-		\caption{Grafik Fungsi Aktivasi Sigmoid \citep{sigmoid}}
-		\label{fig:sigmoid}
-	\end{figure}
-	
-	\item \textbf{Tanh}\\
-	Fungsi aktivasi Tanh digunakan untuk mengikat nilai input (bilangan real) dalam kisaran [-1,1] seperti tertampil pada Gambar \ref{fig:tanh}. Representasi matematis dari Tanh adalah:
-	
-	\begin{equation}
-		f(x)_{tanh}=\frac{e^x-e^{-x}}{e^x+e^{-x}}
-	\end{equation}
-	
-	
-	\begin{figure}[h!]
-		\centering
-		\includegraphics[scale=0.25]{gambar/tanh.jpg}
-		\caption{Grafik Fungsi Aktivasi Tanh \citep{sigmoid}}
-		\label{fig:tanh}
-	\end{figure}
-	
-	\item \textbf{ReLU} \\
-	Rectifier Linear Unit (ReLU) adalah fungsi aktivasi yang paling umum digunakan dalam Convolutional Neural Networks. Ini digunakan untuk mengubah semua nilai input menjadi bilangan positif. Keuntungan dari ReLU adalah membutuhkan beban komputasi yang sangat minimal dibandingkan dengan yang lain. Representasi matematis dari ReLU adalah:
-	\begin{equation}
-		f(x)_{ReLU}=\textbf{max}(0,x)
-	\end{equation}
-	
-	Namun terkadang ada beberapa masalah besar dalam menggunakan fungsi aktivasi ReLU. Misalnya, jika terdapat gradient yang besar pada saat pencarian \textit{error} dengan menggunakan algortima \textit{back propagation}. Gradien yang besar ini apabila dilewatkan melalui fungsi ReLU, dapat menyebabkan bobot akan diperbarui sedemikian rupa sehingga neuron tidak pernah diaktifkan lagi. Masalah ini dikenal sebagai masalah \textit{"Dying ReLU"}. Untuk mengatasi masalah ini ada beberapa varian ReLU yang tersedia, diantaranya adalah Leaky ReLU dan Noisy ReLU. Tidak seperti ReLU, fungsi aktivasi Leaky ReLU tidak mengabaikan input negatif sepenuhnya, melainkan menurunkan skala input negatif tersebut. Leaky ReLU digunakan untuk menyelesaikan masalah \textit{Dying ReLU}. Representasi matematis dari Leaky ReLU adalah
-	
-	\begin{equation}
-		f(x)_{LeakyReLU} =
-		\begin{cases}
-			x, & \text{if x$>$0}\\
-			mx, & \text{if x$\leq$0}\\
-		\end{cases}       
-	\end{equation}  
-	Di mana $m$ adalah konstanta, yang disebut faktor kebocoran dan umumnya disetel ke nilai kecil (seperti 0,001). Sedangkan Noisy ReLU digunakan distribusi Gaussian untuk membuat ReLU \textit{noisy}. Representasi matematis dari Noise ReLU adalah
-	
-	\begin{equation}
-		f(x)_{NoisyReLU} = \textbf{max}(x + Y) , \textit{with} Y \sim N(0,\sigma(x))
-	\end{equation}
-	
-\end{enumerate}
-
-\subsection{Fully Connected Layer}
-\label{subsec:fcn}
-
-Biasanya bagian terakhir (atau lapisan) dari setiap arsitektur CNN (digunakan untuk klasifikasi) terdiri dari \textit{fully-connected layers}, di mana setiap neuron di dalam lapisan terhubung dengan setiap neuron dari lapisan sebelumnya. Lapisan terakhir dari lapisan \textit{Fully-Connected} digunakan sebagai lapisan keluaran (\textit{classifier}) dari arsitektur CNN. Lapisan \textit{Fully-Connected} adalah jenis jaringan saraf tiruan \textit{feed-forward} (ANN) dan mengikuti prinsip tradisional \textit{Multi-Layer Perceptron neural network} (MLP). Layer FC mengambil \textit{input} dari c\textit{onvolutional} atau \textit{pooling layer} akhir, yang berupa sekumpulan metrik (\textit{feature map}) dan matrik tersebut diratakan (\textit{flatten}) untuk membuat vektor dan vektor ini kemudian dimasukan ke dalam layer FC untuk menghasilkan hasil akhir \textit{output} CNN.
-
-\subsection{\textit{Loss Function}}
-\label{subsec:lossfunction}
-
-Pada \textit{output layer}, dilakukan perhitungan kesalahan prediksi yang dihasilkan oleh model CNN atas sampel \textit{learning} menggunakan beberapa \textit{Loss Function}. \textit{Error} prediksi ini memberitahu jaringan bagaimana prediksinya dari \textit{output} aktual, dan kemudian \textit{error} ini akan dioptimalkan selama proses \textit{learning} model CNN. \textit{Loss function} menggunakan dua parameter untuk menghitung \textit{error}, parameter pertama adalah \textit{output} estimasi dari model CNN (juga disebut prediksi) dan yang kedua adalah \textit{output} aktual (juga dikenal sebagai label). Berikut adalah beberapa contoh \textit{loss function} yang banyak digunakan dalam algoritma \textit{deep learning}:
-
-
-\begin{enumerate}
-	\item \textit{\textbf{Cross-Entropy Loss Function}}\\
-	\textit{Cross-entropy loss}, juga disebut fungsi \textit{log loss} banyak digunakan untuk mengukur kinerja model CNN, yang outputnya adalah probabilitas $p \in \{0,1\}$. \textit{Loss Function} ini banyak digunakan sebagai alternatif dari \textit{squared error loss function} dalam masalah klasifikasi multi-kelas. \textit{Cross-entropy loss} menggunakan aktivasi softmax di lapisan \textit{output} untuk menghasilkan \textit{output} dalam distribusi probabilitas, yaitu $p, y \in R^N$, di mana $p$ adalah probabilitas untuk setiap kategori \textit{output} dan $y$ menunjukkan \textit{output} yang diinginkan dan probabilitas setiap kelas \textit{output} dapat diperoleh dengan : 
-	
-	\begin{equation}
-		p_i = \frac{e^{a_i}}{\sum_{k=1}^{N} e^{a_k}}
-	\end{equation}
-	
-	Di mana $N$ adalah jumlah neuron di lapisan \textit{output} dan $e^{a_i}$ menunjukkan setiap \textit{output} yang tidak dinormalisasi dari lapisan sebelumnya dalam jaringan. Lalu, \textit{cross-entropy loss} dapat didefinisikan sebagai:
-	
-	\begin{equation}
-		H(p,y) =-\sum_{i} y_i\log(p_i)
-	\end{equation}
-	\begin{center}
-		dimana $i \in \left[1,N\right]$
-	\end{center}
-	
-	\item \textbf{\textit{Euclidean Loss Function}}\\
-	\textit{Euclidean Loss} juga disebut \textit{mean squared loss }banyak digunakan dalam masalah regresi. \textit{Mean squared loss} antara \textit{output} yang diprediksi $p \in R^N$ dan output aktual $y \in R^N$ di setiap neuron dari lapisan \textit{output} CNN didefinisikan sebagai :
-	
-	\begin{equation}
-		H(p,y)=\frac{1}{2N} \sum_{i=1}^{N} (p_i-y_i)^2
-	\end{equation}
-	
-	\item \textit{\textbf{Hinge Loss Function}}\\
-	\textit{Hinge Loss} banyak digunakan dalam masalah klasifikasi biner. Ini digunakan dalam masalah klasifikasi berbasis "margin maksimum", terutama untuk \textit{support vector machine} (SVM). Di sini, \textit{optimizer} mencoba memaksimalkan margin antara dua kelas target. Hinge Loss Function didefinisikan sebagai:
-	
-	\begin{equation}
-		H(p,y) = \sum_{i=1}^{N} \textbf{max}(0, m-(2y_i - 1)p_i)
-	\end{equation}
-
-	Dimana $m$ adalah margin yang biasanya bernilai sama dengan 1, dan $p_i$ menunjukkan prediksi \textit{output} dan $y_i$ menunjukkan output yang diinginkan
-		
-\end{enumerate}
-
 \subsection{\textit{Regional-Based CNN}}
 \label{subsec:rcnn}
 
@@ -342,6 +162,17 @@ Mask R-CNN mudah diterapkan dan dilatih karena \textit{Faster R-CNN framework}, 
 	\caption{Struktur dari Arsitektur \textit{Faster R-CNN} \citep{arch-mask-rcnn}}
 	\label{fig:mask-rcnn}
 \end{figure}
+
+\subsection{\textit{Regional Proposal Network (RPN)}}
+\label{subsec:rpn}
+
+\textit{Regional Proposal} bermanfaat untuk mengetahui kemungkinan lokasi target pada gambar ke tingkat lebih akurat, yang dapat memastikan bahwa tingkat penarikan yang lebih tinggi dipertahankan ketika lebih sedikit jendela yang dipilih. Selanjutya jendela kandidat yang diperoleh dari proses tersebut, memiliki kualitas yang lebih tinggi dibandingkan dengan algoritma \textit{Sliding Window} pada umumnya. Algoritma \textit{Region Proposal} yang lebih umum digunakan adalah \textit{Selective Search} dan \textit{Bounding Box} \citep{rpn}.
+
+\textit{Anchor boxes} merupakan satu kumpulan \textit{bounding box} dengan memiliki ukuran dan rasio aspek berbeda yang membentang di seluruh gambar \textit{input} untuk melatih \textit{region proposal network}. Pertama, akan digunakan beberapa lapisan awal dari jaringan yang telah dilatih sebelumnya untuk mengidentifikasi fitur yang menjanjikan dari gambar \textit{input}. Beberapa lapisan awal dari jaringan, akan belajar mendeteksi fitur umum, seperti tepi dan bintik warna pada gambar.
+
+\textit{RPN} menggunakan klasifikasi dua kelas, yang hanya membedakan latar belakang dari objek, tetapi tidak memprediksi kelas objek. Misalkan setelah gambar dimasukkan dan mengalami serangkaian konvolusi dan \textit{pooling} di \textit{backbone network}, peta fitur ukuran M $\times$ N diperoleh, yang sesuai dengan membagi gambar asli menjadi area M $\times$ N. Pusat setiap area gambar asli diwakili oleh koordinat piksel pada peta fitur ini. 
+
+\textit{RPN} digunakan untuk menentukan apakah \textit{anchor boxes} yang sesuai dengan setiap piksel, berisi target objek. Lapisan RPN harus belajar mengklasifikasikan \textit{anchor boxes} sebagai latar belakang atau latar depan, dan menghitung koefisien regresi untuk mengubah posisi, lebar, dan tinggi \textit{anchor boxes} latar depan.
 
 \subsection{Pejalan Kaki}
 \label{subsec:pedestrian}

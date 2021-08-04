@@ -33,10 +33,6 @@ N.~Ferracuti, Claudia Norscini, Emanuele Frontoni, P.~Gabellini, Marina
   184--194, 03 2019.
 \newblock \doi{10.1016/j.jretconser.2018.11.005}.
 
-\bibitem[sig(2021)]{sigmoid}
-Sigmoid function, 2021.
-\newblock URL \url{https://en.wikipedia.org/wiki/Sigmoid_function}.
-
 \bibitem[arc(2020)]{arch-rcnn}
 R-cnn | region based cnns, 2020.
 \newblock URL \url{https://www.geeksforgeeks.org/r-cnn-region-based-cnns/}.
@@ -171,6 +167,11 @@ Kaiming He, Georgia Gkioxari, Piotr Dollar, and Ross Girshick.
 \newblock Mask r-cnn.
 \newblock In \emph{Proceedings of the IEEE International Conference on Computer
   Vision (ICCV)}, Oct 2017.
+
+\bibitem[rpn(2020)]{rpn}
+Demystifying region proposal network (rpn), 2020.
+\newblock URL
+  \url{https://medium.com/@nabil.madali/demystifying-region-proposal-network-rpn-faa5a8fb8fce}.
 
 \bibitem[mob(2018)]{mobilnet-def}
 Mobilenet: Deteksi objek pada platform mobile, 2018.

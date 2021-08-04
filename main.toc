@@ -21,48 +21,44 @@
 \contentsline {subsection}{\numberline {2.2.2}\textit {Machine Learning}}{8}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}\textit {Deep Learning}}{10}{subsection.2.2.3}
 \contentsline {subsection}{\numberline {2.2.4}\textit {Convolutional Neural Network}}{11}{subsection.2.2.4}
-\contentsline {subsection}{\numberline {2.2.5}\textit {Convolutional Layer}}{12}{subsection.2.2.5}
-\contentsline {subsection}{\numberline {2.2.6}\textit {Pooling Layer}}{16}{subsection.2.2.6}
-\contentsline {subsection}{\numberline {2.2.7}Fungsi Aktivasi (\textit {Non-Linearity})}{17}{subsection.2.2.7}
-\contentsline {subsection}{\numberline {2.2.8}Fully Connected Layer}{20}{subsection.2.2.8}
-\contentsline {subsection}{\numberline {2.2.9}\textit {Loss Function}}{20}{subsection.2.2.9}
-\contentsline {subsection}{\numberline {2.2.10}\textit {Regional-Based CNN}}{22}{subsection.2.2.10}
-\contentsline {subsection}{\numberline {2.2.11}\textit {Fast R-CNN}}{22}{subsection.2.2.11}
-\contentsline {subsection}{\numberline {2.2.12}\textit {Faster R-CNN}}{24}{subsection.2.2.12}
-\contentsline {subsection}{\numberline {2.2.13}\textit {Mask R-CNN}}{25}{subsection.2.2.13}
-\contentsline {subsection}{\numberline {2.2.14}Pejalan Kaki}{26}{subsection.2.2.14}
-\contentsline {subsection}{\numberline {2.2.15}\textit {Zebracross}}{26}{subsection.2.2.15}
-\contentsline {subsection}{\numberline {2.2.16}ResNet-50}{27}{subsection.2.2.16}
-\contentsline {subsection}{\numberline {2.2.17}ResNet-101}{27}{subsection.2.2.17}
-\contentsline {subsection}{\numberline {2.2.18}MobileNet-v1}{27}{subsection.2.2.18}
-\contentsline {chapter}{\numberline {3}DESAIN DAN IMPLEMENTASI}{29}{chapter.3}
-\contentsline {section}{\numberline {3.1}Deskripsi Sistem}{29}{section.3.1}
-\contentsline {section}{\numberline {3.2}Pengumpulan \textit {Dataset} Gambar}{30}{section.3.2}
-\contentsline {section}{\numberline {3.3}Pemisahan Data}{31}{section.3.3}
-\contentsline {section}{\numberline {3.4}\textit {Pre-Processing}}{32}{section.3.4}
-\contentsline {section}{\numberline {3.5}Membangun Model Mask R-CNN }{34}{section.3.5}
-\contentsline {section}{\numberline {3.6}\textit {Training Data} }{36}{section.3.6}
-\contentsline {section}{\numberline {3.7}\textit {Validating Data} }{37}{section.3.7}
-\contentsline {section}{\numberline {3.8}\textit {Testing Data} }{38}{section.3.8}
-\contentsline {chapter}{\numberline {4}PENGUJIAN DAN ANALISIS}{41}{chapter.4}
-\contentsline {section}{\numberline {4.1}Pengujian Jenis \textit {Backbone}}{41}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Resnet-50}{42}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Resnet-101}{46}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}MobileNet-V1}{50}{subsection.4.1.3}
-\contentsline {subsection}{\numberline {4.1.4}Perbandingan Hasil Prediksi}{55}{subsection.4.1.4}
-\contentsline {subsubsection}{Hasil Pengujian dengan \textit {Backbone Resnet-50}}{56}{subsection.4.1.4}
-\contentsline {subsubsection}{Hasil Pengujian dengan \textit {Backbone Resnet-101}}{57}{figure.caption.43}
-\contentsline {subsubsection}{Hasil Pengujian dengan \textit {Backbone Mobilenet-V1}}{57}{figure.caption.44}
-\contentsline {section}{\numberline {4.2}Pengujian Perbedaan Waktu}{58}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Pengujian di Pagi Hari}{59}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Pengujian di Siang Hari}{61}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Pengujian di Malam Hari}{63}{subsection.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}Perbandingan Hasil Evaluasi pada Perbedaan Waktu}{65}{subsection.4.2.4}
-\contentsline {subsubsection}{ResNet-50}{65}{subsection.4.2.4}
-\contentsline {subsubsection}{ResNet-101}{66}{figure.caption.56}
-\contentsline {subsubsection}{MobileNet-v1}{67}{figure.caption.57}
-\contentsline {chapter}{\numberline {5}PENUTUP}{69}{chapter.5}
-\contentsline {section}{\numberline {5.1}Kesimpulan}{69}{section.5.1}
-\contentsline {section}{\numberline {5.2}Saran}{69}{section.5.2}
-\contentsline {chapter}{DAFTAR PUSTAKA}{71}{Item.61}
-\contentsline {chapter}{BIOGRAFI PENULIS}{75}{chapter*.59}
+\contentsline {subsection}{\numberline {2.2.5}\textit {Regional-Based CNN}}{12}{subsection.2.2.5}
+\contentsline {subsection}{\numberline {2.2.6}\textit {Fast R-CNN}}{13}{subsection.2.2.6}
+\contentsline {subsection}{\numberline {2.2.7}\textit {Faster R-CNN}}{14}{subsection.2.2.7}
+\contentsline {subsection}{\numberline {2.2.8}\textit {Mask R-CNN}}{14}{subsection.2.2.8}
+\contentsline {subsection}{\numberline {2.2.9}\textit {Regional Proposal Network (RPN)}}{16}{subsection.2.2.9}
+\contentsline {subsection}{\numberline {2.2.10}Pejalan Kaki}{17}{subsection.2.2.10}
+\contentsline {subsection}{\numberline {2.2.11}\textit {Zebracross}}{17}{subsection.2.2.11}
+\contentsline {subsection}{\numberline {2.2.12}ResNet-50}{18}{subsection.2.2.12}
+\contentsline {subsection}{\numberline {2.2.13}ResNet-101}{18}{subsection.2.2.13}
+\contentsline {subsection}{\numberline {2.2.14}MobileNet-v1}{18}{subsection.2.2.14}
+\contentsline {chapter}{\numberline {3}DESAIN DAN IMPLEMENTASI}{21}{chapter.3}
+\contentsline {section}{\numberline {3.1}Deskripsi Sistem}{21}{section.3.1}
+\contentsline {section}{\numberline {3.2}Pengumpulan \textit {Dataset} Gambar}{22}{section.3.2}
+\contentsline {section}{\numberline {3.3}Pemisahan Data}{23}{section.3.3}
+\contentsline {section}{\numberline {3.4}\textit {Pre-Processing}}{24}{section.3.4}
+\contentsline {section}{\numberline {3.5}Membangun Model Mask R-CNN }{26}{section.3.5}
+\contentsline {section}{\numberline {3.6}\textit {Training Data} }{28}{section.3.6}
+\contentsline {section}{\numberline {3.7}\textit {Validating Data} }{29}{section.3.7}
+\contentsline {section}{\numberline {3.8}\textit {Testing Data} }{30}{section.3.8}
+\contentsline {chapter}{\numberline {4}PENGUJIAN DAN ANALISIS}{33}{chapter.4}
+\contentsline {section}{\numberline {4.1}Pengujian Jenis \textit {Backbone}}{33}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Resnet-50}{34}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Resnet-101}{38}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}MobileNet-V1}{42}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.4}Perbandingan Hasil Prediksi}{47}{subsection.4.1.4}
+\contentsline {subsubsection}{Hasil Pengujian dengan \textit {Backbone Resnet-50}}{48}{subsection.4.1.4}
+\contentsline {subsubsection}{Hasil Pengujian dengan \textit {Backbone Resnet-101}}{49}{figure.caption.37}
+\contentsline {subsubsection}{Hasil Pengujian dengan \textit {Backbone Mobilenet-V1}}{49}{figure.caption.38}
+\contentsline {section}{\numberline {4.2}Pengujian Perbedaan Waktu}{50}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Pengujian di Pagi Hari}{51}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Pengujian di Siang Hari}{53}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Pengujian di Malam Hari}{55}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Perbandingan Hasil Evaluasi pada Perbedaan Waktu}{57}{subsection.4.2.4}
+\contentsline {subsubsection}{ResNet-50}{57}{subsection.4.2.4}
+\contentsline {subsubsection}{ResNet-101}{58}{figure.caption.50}
+\contentsline {subsubsection}{MobileNet-v1}{59}{figure.caption.51}
+\contentsline {chapter}{\numberline {5}PENUTUP}{61}{chapter.5}
+\contentsline {section}{\numberline {5.1}Kesimpulan}{61}{section.5.1}
+\contentsline {section}{\numberline {5.2}Saran}{61}{section.5.2}
+\contentsline {chapter}{DAFTAR PUSTAKA}{63}{Item.53}
+\contentsline {chapter}{BIOGRAFI PENULIS}{67}{chapter*.53}
