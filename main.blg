@@ -1,10 +1,10 @@
-This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
-Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 The style file: unsrtnat.bst
-Database file #1: pustaka/pustaka.bib.bib
+Database file #1: pustaka/pustaka.bib
 Warning--entry type for "pedestrian-detection" isn't style-file defined
---line 88 of file pustaka/pustaka.bib.bib
+--line 88 of file pustaka/pustaka.bib
 Warning--empty booktitle in arch-faster-rcnn
 Warning--empty booktitle in arch-mask-rcnn
 Warning--empty journal in penelitianterkait1

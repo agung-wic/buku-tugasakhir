@@ -121,19 +121,55 @@ Tabel \ref{tab:conf-resnet50} merupakan parameter-parameter yang digunakan untuk
 
 Setelah dilakukan serangkaian proses training yang memakan waktu sekitar 3 jam 40 menit 24 detik didapatkan \textit{output} berupa \textit{model file}  dengan format \textit{h5} yang mempunyai ukuran 170.9 MB. \textit{Training loss} terendah yang berhasil dicapai dengan menggunakan \textit{backbone} Resnet-50 (pada \textit{epoch} ke 242) adalah 0.4061 dengan rincian \textit{training bounding box loss} sebesar 0.04083, \textit{training classification loss} sebesar 0.02268 serta \textit{training mask loss} sebesar 0.139 (dimana $L=L_{bbox}+L_{cls}+L_{mask}$). Gambar \ref{fig:resnet50-training} merupakan grafik yang menunjukkan perubahan \textit{training loss, training bounding box loss, training classification loss,} serta \textit{training mask loss} dari \textit{epoch} 1 sampai 300.
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.36]{gambar/resnet50-training.png}
-	\caption{Grafik Perubahan \textit{Training Loss} pada Resnet-50}
+	\begin{minipage}{0.45\textwidth}
+		\includegraphics[width=\textwidth]{gambar/training_resnet50/tugas-akhir-Page-12.png}
+		\caption*{(a) \textit{Training Loss}}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}
+		\includegraphics[width=\textwidth]{gambar/training_resnet50/tugas-akhir-Page-12-(1).png}
+		\caption*{(b) \textit{Training Bounding Box Loss}}
+	\end{minipage}
+	\vfill
+	\begin{minipage}{0.45\textwidth}
+		\includegraphics[width=\textwidth]{gambar/training_resnet50/tugas-akhir-Page-12-(2).png}
+		\caption*{(c) \textit{Training Classification Loss}}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}
+		\includegraphics[width=\textwidth]{gambar/training_resnet50/tugas-akhir-Page-12-(3).png}
+		\caption*{(d) \textit{Training Mask Loss}}
+	\end{minipage}
+	\caption{Grafik Perubahan \textit{Training Loss} pada \textit{Resnet-50}}
 	\label{fig:resnet50-training}
 \end{figure}
 
 Sedangkan pada saat proses \textit{validation} sendiri \textit{Loss} terendah yang berhasil dicapai pada \textit{epoch} ke 266 dengan nilai sebesar 0.3653 dengan rincian \textit{validation bounding box loss} sebesar 0.4556, \textit{validation classification loss} sebesar 0.01912 serta \textit{validation mask loss} sebesar 0.1519. Namun untuk \textit{validation bounding box loss} terendah berada pada \textit{epoch} ke 260 dengan nilai sebesar 0.4203 sedangkan \textit{validation classification loss} terendah pada \textit{epoch} ke 210 dengan nilai 0.01525 serta \textit{validation mask loss} terendah pada \textit{epoch} ke 201 dengan nilai 0.1439. Gambar \ref{fig:resnet50-val} merupakan grafik yang menunjukkan perubahan \textit{validation loss, validation bounding box loss, validation classification loss,} serta \textit{validation mask loss} dari \textit{epoch} 1 sampai 300.
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.36]{gambar/resnet50-val.png}
-	\caption{Grafik Perubahan \textit{Validation Loss} pada Resnet-50}
+	\begin{minipage}{0.45\textwidth}
+		\includegraphics[width=\textwidth]{gambar/training_resnet50/tugas-akhir-Page-13.png}
+		\caption*{(a) \textit{Validation Loss}}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}
+		\includegraphics[width=\textwidth]{gambar/training_resnet50/tugas-akhir-Page-13 (1).png}
+		\caption*{(b) \textit{Validation Bounding Box Loss}}
+	\end{minipage}
+	\vfill
+	\begin{minipage}{0.45\textwidth}
+		\includegraphics[width=\textwidth]{gambar/training_resnet50/tugas-akhir-Page-13 (2).png}
+		\caption*{(c) \textit{Validation Classification Loss}}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}
+		\includegraphics[width=\textwidth]{gambar/training_resnet50/tugas-akhir-Page-13 (3).png}
+		\caption*{(d) \textit{Validation Mask Loss}}
+	\end{minipage}
+	\caption{Grafik Perubahan \textit{Validation Loss} pada \textit{Resnet-50}}
 	\label{fig:resnet50-val}
 \end{figure}
 
@@ -228,19 +264,55 @@ Tabel \ref{tab:conf-resnet101} merupakan parameter-parameter yang digunakan untu
 
 Setelah dilakukan serangkaian proses training yang memakan waktu sekitar 4 jam 9 menit 16 detik didapatkan \textit{output} berupa \textit{model file}  dengan format \textit{h5} yang mempunyai ukuran 244 MB. \textit{Training loss} terendah yang berhasil dicapai dengan menggunakan \textit{backbone} Resnet-101 (pada \textit{epoch} ke 244) adalah 0.3933 dengan rincian \textit{training bounding box loss} sebesar 0.04164, \textit{training classification loss} sebesar 0.0247 serta \textit{training mask loss} sebesar 0.1403. Namun untuk \textit{training bounding box loss} terendah terdapat pada \textit{epoch} ke 246 dengan nilai sebesar 0.04083, \textit{training classification loss} terendah pada \textit{epoch} ke 234 dengan nilai 0.01957. Gambar \ref{fig:resnet101-training} merupakan grafik yang menunjukkan perubahan \textit{training loss, training bounding box loss, training classification loss,} serta \textit{training mask loss} dari \textit{epoch} 1 sampai 300. 
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.36]{gambar/resnet101-training.png}
-	\caption{Grafik Perubahan \textit{Training Loss} pada Resnet-101}
+	\begin{minipage}{0.45\textwidth}
+		\includegraphics[width=\textwidth]{gambar/training_resnet50/tugas-akhir-Page-15.png}
+		\caption*{(a) \textit{Training Loss}}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}
+		\includegraphics[width=\textwidth]{gambar/training_resnet50/tugas-akhir-Page-15 (1).png}
+		\caption*{(b) \textit{Training Bounding Box Loss}}
+	\end{minipage}
+	\vfill
+	\begin{minipage}{0.45\textwidth}
+		\includegraphics[width=\textwidth]{gambar/training_resnet50/tugas-akhir-Page-15 (2).png}
+		\caption*{(c) \textit{Training Classification Loss}}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}
+		\includegraphics[width=\textwidth]{gambar/training_resnet50/tugas-akhir-Page-15 (3).png}
+		\caption*{(d) \textit{Training Mask Loss}}
+	\end{minipage}
+	\caption{Grafik Perubahan \textit{Training Loss} pada \textit{Resnet-101}}
 	\label{fig:resnet101-training}
 \end{figure}
 
 Sedangkan pada saat proses \textit{validation} sendiri \textit{Loss} terendah yang berhasil dicapai pada \textit{epoch} ke 266 dengan nilai sebesar 0.299 dengan rincian \textit{validation bounding box loss} sebesar 0.03867, \textit{validation classification loss} sebesar 0.01246 serta \textit{validation mask loss} sebesar 0.1461. Gambar \ref{fig:resnet101-val} merupakan grafik yang menunjukkan perubahan \textit{validation loss, validation bounding box loss, validation classification loss,} serta \textit{validation mask loss} dari \textit{epoch} 1 sampai 300.
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.36]{gambar/resnet101-val.png}
-	\caption{Grafik Perubahan \textit{Validation Loss} pada Resnet-101}
+	\begin{minipage}{0.45\textwidth}
+		\includegraphics[width=\textwidth]{gambar/training_resnet50/tugas-akhir-Page-16.png}
+		\caption*{(a) \textit{Validation Loss}}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}
+		\includegraphics[width=\textwidth]{gambar/training_resnet50/tugas-akhir-Page-16 (1).png}
+		\caption*{(b) \textit{Validation Bounding Box Loss}}
+	\end{minipage}
+	\vfill
+	\begin{minipage}{0.45\textwidth}
+		\includegraphics[width=\textwidth]{gambar/training_resnet50/tugas-akhir-Page-16 (2).png}
+		\caption*{(c) \textit{Validation Classification Loss}}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}
+		\includegraphics[width=\textwidth]{gambar/training_resnet50/tugas-akhir-Page-16 (3).png}
+		\caption*{(d) \textit{Validation Mask Loss}}
+	\end{minipage}
+	\caption{Grafik Perubahan \textit{Validation Loss} pada \textit{Resnet-101}}
 	\label{fig:resnet101-val}
 \end{figure}
 
@@ -249,7 +321,7 @@ Nilai \textit{mAP} tertinggi didapatkan pada \textit{epoch} ke 215 sebesar 96.21
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.4]{gambar/resnet101-map.png}
-	\caption{Grafik Perubahan \textit{Validation mAP} pada Resnet-101}
+	\caption{Grafik Perubahan \textit{Validation mAP} pada \textit{Resnet-101}}
 	\label{fig:resnet101-map}
 \end{figure} 
 
@@ -331,20 +403,56 @@ Tabel \ref{tab:conf-mobilenet-v1} merupakan parameter-parameter yang digunakan u
 
 Setelah dilakukan serangkaian proses training yang memakan waktu sekitar 3 jam 18 menit 44 detik didapatkan \textit{output} berupa \textit{model file}  dengan format \textit{h5} yang mempunyai ukuran 83.3 MB. \textit{Training loss} terendah yang berhasil dicapai dengan menggunakan \textit{backbone} Mobilenet-V1 (pada \textit{epoch} ke 46) adalah 1.604 dengan rincian \textit{training bounding box loss} sebesar 0.2322, \textit{training classification loss} sebesar 0.07858 serta \textit{training mask loss} sebesar 0.6729. Namun untuk \textit{training bounding box loss} terendah terdapat pada \textit{epoch} ke 48 dengan nilai sebesar 0.2239, \textit{training classification loss} terendah pada \textit{epoch} ke 61 dengan nilai 0.06219 serta \textit{training mask loss} terendah pada \textit{epoch} ke 61 sebesar 0.5701. Gambar \ref{fig:mobilenet-training} merupakan grafik yang menunjukkan perubahan \textit{training loss, training bounding box loss, training classification loss,} serta \textit{training mask loss} dari \textit{epoch} 1 sampai 300. 
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.36]{gambar/mobilenetv1-train.png}
-	\caption{Grafik Perubahan \textit{Training Loss} pada Mobilenet-V1}
+	\begin{minipage}{0.45\textwidth}
+		\includegraphics[width=\textwidth]{gambar/training_resnet50/tugas-akhir-Page 18.png}
+		\caption*{(a) \textit{Training Loss}}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}
+		\includegraphics[width=\textwidth]{gambar/training_resnet50/tugas-akhir-Page 18 (1).png}
+		\caption*{(b) \textit{Training Bounding Box Loss}}
+	\end{minipage}
+	\vfill
+	\begin{minipage}{0.45\textwidth}
+		\includegraphics[width=\textwidth]{gambar/training_resnet50/tugas-akhir-Page 18 (2).png}
+		\caption*{(c) \textit{Training Classification Loss}}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}
+		\includegraphics[width=\textwidth]{gambar/training_resnet50/tugas-akhir-Page 18 (3).png}
+		\caption*{(d) \textit{Training Mask Loss}}
+	\end{minipage}
+	\caption{Grafik Perubahan \textit{Training Loss} pada \textit{MobileNet-V1}}
 	\label{fig:mobilenetv1-training}
 \end{figure}
 
 
 Sedangkan pada saat proses \textit{validation} sendiri \textit{Loss} terendah yang berhasil dicapai pada \textit{epoch} ke 281 dengan nilai sebesar 1.624 dengan rincian \textit{validation bounding box loss} sebesar 0.2088, \textit{validation classification loss} sebesar 0.04799 serta \textit{validation mask loss} sebesar 0.6001. Namun untuk \textit{validation bounding box loss} terendah berada pada \textit{epoch} ke 300 dengan nilai sebesar 0.1927 sedangkan \textit{validation classification loss} terendah pada \textit{epoch} ke 70 dengan nilai 0.02607 serta \textit{validation mask loss} terendah pada \textit{epoch} ke 295 dengan nilai 0.5625. Gambar \ref{fig:mobilenetv1-val} merupakan grafik yang menunjukkan perubahan \textit{validation loss, validation bounding box loss, validation classification loss,} serta \textit{validation mask loss} dari \textit{epoch} 1 sampai 300.
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.36]{gambar/mobilenetv1-val.png}
-	\caption{Grafik Perubahan \textit{Validation Loss} pada Mobilenet-V1}
+	\begin{minipage}{0.45\textwidth}
+		\includegraphics[width=\textwidth]{gambar/training_resnet50/tugas-akhir-Page 19.png}
+		\caption*{(a) \textit{Validation Loss}}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}
+		\includegraphics[width=\textwidth]{gambar/training_resnet50/tugas-akhir-Page 19 (1).png}
+		\caption*{(b) \textit{Validation Bounding Box Loss}}
+	\end{minipage}
+	\vfill
+	\begin{minipage}{0.45\textwidth}
+		\includegraphics[width=\textwidth]{gambar/training_resnet50/tugas-akhir-Page 19 (2).png}
+		\caption*{(c) \textit{Validation Classification Loss}}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}
+		\includegraphics[width=\textwidth]{gambar/training_resnet50/tugas-akhir-Page 19 (3).png}
+		\caption*{(d) \textit{Validation Mask Loss}}
+	\end{minipage}
+	\caption{Grafik Perubahan \textit{Validation Loss} pada \textit{MobileNet-V1}}
 	\label{fig:mobilenetv1-val}
 \end{figure}
 
@@ -355,7 +463,7 @@ Nilai \textit{mAP} tertinggi didapatkan pada \textit{epoch} ke 210 sebesar 26.04
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.4]{gambar/mobilenetv1-map.png}
-	\caption{Grafik Perubahan \textit{Validation mAP} pada Mobilenet-V1}
+	\caption{Grafik Perubahan \textit{Validation mAP} pada \textit{MobileNet-V1}}
 	\label{fig:mobilenetv1-map}
 \end{figure} 
 

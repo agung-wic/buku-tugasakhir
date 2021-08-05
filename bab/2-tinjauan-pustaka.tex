@@ -33,12 +33,6 @@ Pejalan kaki paling rentan mengalami kecelakaan mengingat mayoritas pengendara m
 \section{Teori Penunjang}
 \label{sec:dasarteori}
 
-\subsection{\textit{Artificial Intelligence}}
-\label{subsec:artificial-itelligence}
-
-\textit{Artificial Intelligence} mengacu pada simulasi kecerdasan manusia dalam mesin yang diprogram untuk berpikir seperti manusia dan meniru tindakan mereka.\citep{artificialintellingece} Istilah ini juga dapat diterapkan pada mesin apa pun yang menunjukkan ciri-ciri yang terkait dengan pikiran manusia seperti pembelajaran dan pemecahan masalah.
-
-Karakteristik ideal dari \textit{artificial intellingence} adalah kemampuannya untuk merasionalisasi dan mengambil tindakan yang memiliki peluang terbaik untuk mencapai tujuan tertentu. Bagian dari \textit{artificial intellingece} adalah \textit{machine learning}, yang mengacu pada konsep bahwa program komputer dapat secara otomatis belajar dari dan beradaptasi dengan data baru tanpa dibantu oleh manusia. Teknik\textit{deep learning} memungkinkan pembelajaran otomatis ini melalui penyerapan sejumlah besar data tidak terstruktur seperti teks, gambar, atau video.
 
 \subsection{\textit{Machine Learning}}
 \label{subsec:machine-learning}
@@ -173,6 +167,11 @@ Mask R-CNN mudah diterapkan dan dilatih karena \textit{Faster R-CNN framework}, 
 \textit{RPN} menggunakan klasifikasi dua kelas, yang hanya membedakan latar belakang dari objek, tetapi tidak memprediksi kelas objek. Misalkan setelah gambar dimasukkan dan mengalami serangkaian konvolusi dan \textit{pooling} di \textit{backbone network}, peta fitur ukuran M $\times$ N diperoleh, yang sesuai dengan membagi gambar asli menjadi area M $\times$ N. Pusat setiap area gambar asli diwakili oleh koordinat piksel pada peta fitur ini. 
 
 \textit{RPN} digunakan untuk menentukan apakah \textit{anchor boxes} yang sesuai dengan setiap piksel, berisi target objek. Lapisan RPN harus belajar mengklasifikasikan \textit{anchor boxes} sebagai latar belakang atau latar depan, dan menghitung koefisien regresi untuk mengubah posisi, lebar, dan tinggi \textit{anchor boxes} latar depan.
+
+\subsection{\textit{Region of Interest Align}}
+\label{roialign}
+
+\textit{Region of Interest Align}, atau \textit{RoIAlign}, adalah operasi untuk mengekstraksi peta fitur berukuran kecil dari setiap \textit{RoI} untuk deteksi dan segmentasi. Hal ini menghilangkan kuantisasi pada \textit{RoI Pool} serta menyelaraskan fitur yang diekstraksi dengan \textit{input} \citep{mask-rcnn}.
 
 \subsection{Pejalan Kaki}
 \label{subsec:pedestrian}
