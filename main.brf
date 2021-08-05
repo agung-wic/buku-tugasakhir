@@ -31,8 +31,8 @@
 \backcite {arch-mask-rcnn}{{15}{2.8}{figure.caption.12}}
 \backcite {rpn}{{16}{2.2.8}{subsection.2.2.8}}
 \backcite {mask-rcnn}{{16}{2.2.9}{subsection.2.2.9}}
-\backcite {resnet50-arch}{{17}{2.9}{figure.caption.13}}
+\backcite {resnet50-arch}{{18}{2.9}{figure.caption.13}}
 \backcite {resnet101-arch}{{18}{2.10}{figure.caption.14}}
-\backcite {mobilnet-def}{{18}{2.2.14}{subsection.2.2.14}}
-\backcite {test-siang}{{53}{4.2.2}{subsection.4.2.2}}
-\backcite {test-malam}{{55}{4.2.3}{subsection.4.2.3}}
+\backcite {mobilnet-def}{{19}{2.2.14}{subsection.2.2.14}}
+\backcite {test-siang}{{55}{4.2.2}{subsection.4.2.2}}
+\backcite {test-malam}{{57}{4.2.3}{subsection.4.2.3}}

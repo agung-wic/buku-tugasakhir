@@ -11,7 +11,7 @@ Demi mendukung penelitian ini, dibutuhkan beberapa \textit{state of the art} dan
 \subsection{Real-Time Pedestrian Detection With Deep Network Cascades}
 \label{realtime-pedestrian}
 
-Penelitian ini dilakukan oleh Anelia Angelova dan kawan-kawan pada tahun 2015 yang menyajikan pendekatan real-time baru untuk deteksi objek yang mengeksploitasi efisiensi \textit{cascade classifiers} dengan akurasi \textit{deep neural network} \citep{penelitianterkait1}. \textit{Deep network} telah terbukti unggul dalam tugas klasifikasi, dan kemampuannya untuk beroperasi pada \textit{raw pixel input} tanpa perlu merancang fitur khusus. Namun, \textit{deep network} terkenal lambat pada waktu inferensi. Dalam \textit{paper} tersebut, Anelia Angelova dan kawan-kawan mengusulkan pendekatan \textit{cascades deep network} dan \textit{fast features}, yang sangat cepat dan sangat akurat. Mereka menerapkannya pada permasalahan pada deteksi pejalan kaki. Algoritma mereka berjalan secara real-time pada 15 frame per detik. Pendekatan yang dihasilkan mencapai tingkat kesalahan rata-rata 26,2\% pada \textit{benchmark} deteksi Caltech Pedestrian.
+Penelitian ini dilakukan oleh Anelia Angelova dan kawan-kawan pada tahun 2015 yang menyajikan pendekatan \textit{real-time} baru untuk deteksi objek yang mengeksploitasi efisiensi \textit{cascade classifiers} dengan akurasi \textit{deep neural network} \citep{penelitianterkait1}. \textit{Deep network} telah terbukti unggul dalam tugas klasifikasi, dan kemampuannya untuk beroperasi pada \textit{raw pixel input} tanpa perlu merancang fitur khusus. Namun, \textit{deep network} terkenal lambat pada waktu inferensi. Dalam \textit{paper} tersebut, Anelia Angelova dan kawan-kawan mengusulkan pendekatan \textit{cascades deep network} dan \textit{fast features}, yang sangat cepat dan sangat akurat. Mereka menerapkannya pada permasalahan pada deteksi pejalan kaki. Algoritma mereka berjalan secara \textit{real-time} pada 15 \textit{frame} per detik. Pendekatan yang dihasilkan mencapai tingkat kesalahan rata-rata 26,2\% pada \textit{benchmark} deteksi Caltech Pedestrian.
 
 \subsection{Pedestrian Detection: The Elephant In The Room}
 \label{pedestrian-detection}
@@ -171,7 +171,9 @@ Mask R-CNN mudah diterapkan dan dilatih karena \textit{Faster R-CNN framework}, 
 \subsection{\textit{Region of Interest Align}}
 \label{roialign}
 
-\textit{Region of Interest Align}, atau \textit{RoIAlign}, adalah operasi untuk mengekstraksi peta fitur berukuran kecil dari setiap \textit{RoI} untuk deteksi dan segmentasi. Hal ini menghilangkan kuantisasi pada \textit{RoI Pool} serta menyelaraskan fitur yang diekstraksi dengan \textit{input} \citep{mask-rcnn}.
+\textit{Region of Interest Align}, atau \textit{RoIAlign}, adalah operasi untuk mengekstraksi peta fitur berukuran kecil dari setiap \textit{RoI} untuk deteksi dan segmentasi. Hal ini menghilangkan kuantisasi pada \textit{RoI Pool} serta menyelaraskan fitur yang diekstraksi dengan \textit{input} \citep{mask-rcnn}. Untuk menghindari kuantisasi batasan pada \textit{RoI}, \textit{RoIAlign} menggunakan interpolasi bilinear untuk menghitung nilai yang tepat dari fitur \textit{input} di empat lokasi sampel reguler di setiap \textit{bin RoI}, dan hasilnya kemudian dikumpulkan berdasarkan ninail maksimum atau rata-rata. 
+
+Ide \textit{ROI Align} sangat sederhana yaitu dengan menghapus operasi kuantisasi, dan menggantinya dengan menggunakan metode interpolasi bilinear untuk mendapatkan nilai gambar pada piksel dengan koordinat \textit{floating point}, sehingga mengubah seluruh proses agregasi fitur menjadi operasi berkelanjutan. Perlu dicatat bahwa dalam operasi algoritma tertentu, \textit{ROI Align} tidak hanya melengkapi titik koordinat pada batas area kandidat, dan kemudian menggabungkan titik koordinat ini, tetapi mendesain ulang serangkaian proses yang lebih baik.
 
 \subsection{Pejalan Kaki}
 \label{subsec:pedestrian}
@@ -183,7 +185,7 @@ Definisi Pejalan kaki adalah orang yang melakukan aktifitas berjalan kaki dan me
 \label{subsec:zebracross}
 
 \textit{Zebracross} merupakan  fasilitas penyeberangan bagi pejalan kaki sebidang yang dilengkapi marka untuk memberi ketegasan/batas dalam melakukan lintasan. \textit{Zebracross} dipasang dengan ketentuan sebagai berikut :
-\begin{enumerate}
+\begin{enumerate}[nolistsep]
 	\item \textit{Zebracross} harus dipasang pada arus lalu lintas, kecepatan lalu lintas, dan arus pejalan kaki yang relatif rendah.
 	\item Lokasi penempatan \textit{zebracross} harus memiliki jark pandang yang cukup, agar tundaan kendaranaan yang diakibatkan oleh penggunaan fasilitas penyebrangan masih dalam kondisi aman. 
 \end{enumerate}
