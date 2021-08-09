@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.5.20)  8 AUG 2021 19:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.5.20)  9 AUG 2021 09:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -788,6 +788,11 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 Package hyperref Warning: No destination for bookmark of \addcontentsline,
 (hyperref)                destination is added on input line 5.
 
+
+Underfull \hbox (badness 1231) in paragraph at lines 24--24
+[]|\OT1/lmr/m/n/10 Deteksi Pe-jal-an Ka-ki pa-da \OT1/lmr/m/it/10 Ze-bra Cross
+ []
+
 ) [1
 
 ] [2
@@ -1493,21 +1498,21 @@ Package pdftex.def Info: gambar/graph-recap.png  used on input line 489.
 Underfull \vbox (badness 3407) has occurred while \output is active []
 
  [49 <./gambar/graph-recap.png>]
-<gambar/fajar-frame800-resnet50.png, id=928, 910.40125pt x 523.9575pt>
-File: gambar/fajar-frame800-resnet50.png Graphic file (type png)
-<use gambar/fajar-frame800-resnet50.png>
-Package pdftex.def Info: gambar/fajar-frame800-resnet50.png  used on input line
- 512.
+<gambar/hasil/resnet-50_fajar_800.png, id=928, 910.40125pt x 523.9575pt>
+File: gambar/hasil/resnet-50_fajar_800.png Graphic file (type png)
+<use gambar/hasil/resnet-50_fajar_800.png>
+Package pdftex.def Info: gambar/hasil/resnet-50_fajar_800.png  used on input li
+ne 512.
 (pdftex.def)             Requested size: 273.12248pt x 157.18846pt.
 
 Underfull \vbox (badness 6252) has occurred while \output is active []
 
- [50 <./gambar/fajar-frame800-resnet50.png>]
-<gambar/fajar-frame800-resnet101.png, id=938, 910.40125pt x 523.9575pt>
-File: gambar/fajar-frame800-resnet101.png Graphic file (type png)
-<use gambar/fajar-frame800-resnet101.png>
-Package pdftex.def Info: gambar/fajar-frame800-resnet101.png  used on input lin
-e 528.
+ [50 <./gambar/hasil/resnet-50_fajar_800.png>]
+<gambar/hasil/resnet-101_fajar_800.png, id=938, 910.40125pt x 523.9575pt>
+File: gambar/hasil/resnet-101_fajar_800.png Graphic file (type png)
+<use gambar/hasil/resnet-101_fajar_800.png>
+Package pdftex.def Info: gambar/hasil/resnet-101_fajar_800.png  used on input l
+ine 528.
 (pdftex.def)             Requested size: 273.12248pt x 157.18846pt.
 <gambar/fajar-frame800-mobilenetv1.png, id=940, 910.40125pt x 523.9575pt>
 File: gambar/fajar-frame800-mobilenetv1.png Graphic file (type png)
@@ -1515,17 +1520,17 @@ File: gambar/fajar-frame800-mobilenetv1.png Graphic file (type png)
 Package pdftex.def Info: gambar/fajar-frame800-mobilenetv1.png  used on input l
 ine 544.
 (pdftex.def)             Requested size: 273.12248pt x 157.18846pt.
- [51 <./gambar/fajar-frame800-resnet101.png>]
-[52 <./gambar/fajar-frame800-mobilenetv1.png>]
-File: gambar/fajar-frame800-resnet50.png Graphic file (type png)
-<use gambar/fajar-frame800-resnet50.png>
-Package pdftex.def Info: gambar/fajar-frame800-resnet50.png  used on input line
- 579.
+ [51 <./gambar/hasil/resnet-101_fajar_800.png>] [52 <./gambar/fajar-frame800-mo
+bilenetv1.png>]
+File: gambar/hasil/resnet-50_fajar_800.png Graphic file (type png)
+<use gambar/hasil/resnet-50_fajar_800.png>
+Package pdftex.def Info: gambar/hasil/resnet-50_fajar_800.png  used on input li
+ne 579.
 (pdftex.def)             Requested size: 87.9199pt x 50.59995pt.
-File: gambar/fajar-frame800-resnet101.png Graphic file (type png)
-<use gambar/fajar-frame800-resnet101.png>
-Package pdftex.def Info: gambar/fajar-frame800-resnet101.png  used on input lin
-e 584.
+File: gambar/hasil/resnet-101_fajar_800.png Graphic file (type png)
+<use gambar/hasil/resnet-101_fajar_800.png>
+Package pdftex.def Info: gambar/hasil/resnet-101_fajar_800.png  used on input l
+ine 584.
 (pdftex.def)             Requested size: 87.9199pt x 50.59995pt.
 File: gambar/fajar-frame800-mobilenetv1.png Graphic file (type png)
 <use gambar/fajar-frame800-mobilenetv1.png>
@@ -1548,18 +1553,18 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [54]
-<gambar/siang-frame465-resnet50.png, id=972, 941.5175pt x 521.95pt>
-File: gambar/siang-frame465-resnet50.png Graphic file (type png)
-<use gambar/siang-frame465-resnet50.png>
-Package pdftex.def Info: gambar/siang-frame465-resnet50.png  used on input line
- 670.
+<gambar/hasil/resnet-50_siang_465.png, id=972, 941.5175pt x 521.95pt>
+File: gambar/hasil/resnet-50_siang_465.png Graphic file (type png)
+<use gambar/hasil/resnet-50_siang_465.png>
+Package pdftex.def Info: gambar/hasil/resnet-50_siang_465.png  used on input li
+ne 670.
 (pdftex.def)             Requested size: 87.9199pt x 48.73358pt.
-<gambar/siang-frame465-resnet101.png, id=973, 930.47626pt x 521.95pt>
-File: gambar/siang-frame465-resnet101.png Graphic file (type png)
-<use gambar/siang-frame465-resnet101.png>
-Package pdftex.def Info: gambar/siang-frame465-resnet101.png  used on input lin
-e 675.
-(pdftex.def)             Requested size: 87.9199pt x 49.31497pt.
+<gambar/hasil/resnet-101_siang_465.png, id=973, 910.40125pt x 521.95pt>
+File: gambar/hasil/resnet-101_siang_465.png Graphic file (type png)
+<use gambar/hasil/resnet-101_siang_465.png>
+Package pdftex.def Info: gambar/hasil/resnet-101_siang_465.png  used on input l
+ine 675.
+(pdftex.def)             Requested size: 87.9199pt x 50.40608pt.
 <gambar/siang-frame465-mobilenetv1.png, id=974, 910.40125pt x 522.95375pt>
 File: gambar/siang-frame465-mobilenetv1.png Graphic file (type png)
 <use gambar/siang-frame465-mobilenetv1.png>
@@ -1578,23 +1583,23 @@ See the caption package documentation for explanation.
 LaTeX Warning: Reference `tab:video-afternoon' on page 55 undefined on input li
 ne 735.
 
-[55 <./gambar/siang-frame465-resnet50.png> <./gambar/siang-frame465-resnet101.p
-ng> <./gambar/siang-frame465-mobilenetv1.png>]
+[55 <./gambar/hasil/resnet-50_siang_465.png> <./gambar/hasil/resnet-101_siang_4
+65.png> <./gambar/siang-frame465-mobilenetv1.png>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [56]
-<gambar/malam-frame180-resnet50.png, id=991, 910.40125pt x 521.95pt>
-File: gambar/malam-frame180-resnet50.png Graphic file (type png)
-<use gambar/malam-frame180-resnet50.png>
-Package pdftex.def Info: gambar/malam-frame180-resnet50.png  used on input line
- 761.
+<gambar/hasil/resnet-50_malam_180.png.png, id=991, 910.40125pt x 521.95pt>
+File: gambar/hasil/resnet-50_malam_180.png.png Graphic file (type png)
+<use gambar/hasil/resnet-50_malam_180.png.png>
+Package pdftex.def Info: gambar/hasil/resnet-50_malam_180.png.png  used on inpu
+t line 761.
 (pdftex.def)             Requested size: 87.9199pt x 50.40608pt.
-<gambar/malam-frame180-resnet101.png, id=992, 910.40125pt x 521.95pt>
-File: gambar/malam-frame180-resnet101.png Graphic file (type png)
-<use gambar/malam-frame180-resnet101.png>
-Package pdftex.def Info: gambar/malam-frame180-resnet101.png  used on input lin
-e 766.
+<gambar/hasil/resnet-101_malam_180.png, id=992, 910.40125pt x 521.95pt>
+File: gambar/hasil/resnet-101_malam_180.png Graphic file (type png)
+<use gambar/hasil/resnet-101_malam_180.png>
+Package pdftex.def Info: gambar/hasil/resnet-101_malam_180.png  used on input l
+ine 766.
 (pdftex.def)             Requested size: 87.9199pt x 50.40608pt.
 <gambar/malam-frame180-mobilnetv1.png, id=993, 910.40125pt x 521.95pt>
 File: gambar/malam-frame180-mobilnetv1.png Graphic file (type png)
@@ -1605,8 +1610,8 @@ ne 771.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [57 <./gambar/malam-frame180-resnet50.png> <./gambar/malam-frame180-resnet101.
-png> <./gambar/malam-frame180-mobilnetv1.png>]
+ [57 <./gambar/hasil/resnet-50_malam_180.png.png> <./gambar/hasil/resnet-101_ma
+lam_180.png> <./gambar/malam-frame180-mobilnetv1.png>]
 
 Package caption Warning: \label without proper reference on input line 843.
 See the caption package documentation for explanation.
@@ -1777,10 +1782,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 204.
  ) 
 Here is how much of TeX's memory you used:
- 13753 strings out of 481239
- 220310 string characters out of 5920377
+ 13757 strings out of 481239
+ 220478 string characters out of 5920377
  620962 words of memory out of 5000000
- 28367 multiletter control sequences out of 15000+600000
+ 28369 multiletter control sequences out of 15000+600000
  589161 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,13n,51p,1555b,511s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1795,7 +1800,7 @@ onts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb
 e1/public/lm/lmssbo10.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb>
 </usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type
 1/public/lm/lmtt10.pfb>
-Output written on main.pdf (90 pages, 8913070 bytes).
+Output written on main.pdf (90 pages, 8891476 bytes).
 PDF statistics:
  1209 PDF objects out of 1440 (max. 8388607)
  965 compressed objects within 10 object streams

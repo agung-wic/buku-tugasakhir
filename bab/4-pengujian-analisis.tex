@@ -509,7 +509,7 @@ Pada hasil pengujian dengan menggunakan satu gambar jalan raya pada pada saat pa
 Dari hasil tersebut, \textit{Backbone Resnet-50} dapat memprediksi gambar dengan benar, serta \textit{evaluation time} dari \textit{backbone} ini sebesar 0,76 detik
 \begin{figure}[h] 
 	\centering
-	\includegraphics[scale=0.3]{gambar/fajar-frame800-resnet50.png}
+	\includegraphics[scale=0.3]{gambar/hasil/resnet-50_fajar_800.png}
 	\caption{Hasil Uji dari \textit{Backbone Resnet-50}}
 	\label{fig:hasil-resnet50}
 \end{figure}
@@ -525,7 +525,7 @@ Pada hasil pengujian dengan menggunakan satu gambar jalan raya pada pada saat pa
 Dari hasil tersebut, \textit{Backbone Resnet-101} dapat memprediksi gambar dengan benar, serta \textit{evaluation time} dari \textit{backbone} ini sebesar 0.961 detik
 \begin{figure}[h] 
 	\centering
-	\includegraphics[scale=0.3]{gambar/fajar-frame800-resnet101.png}
+	\includegraphics[scale=0.3]{gambar/hasil/resnet-101_fajar_800.png}
 	\caption{Hasil Uji dari \textit{Backbone Resnet-101}}
 	\label{fig:hasil-resnet101}
 \end{figure}
@@ -576,12 +576,12 @@ Pada pengujian ini \textit{testing data} diambil dengan menggunakan kamera \text
 \begin{figure}[h]
 	\centering
 	\begin{minipage}[b]{0.3\textwidth}
-		\includegraphics[width=\textwidth]{gambar/fajar-frame800-resnet50.png}
+		\includegraphics[width=\textwidth]{gambar/hasil/resnet-50_fajar_800.png}
 		\caption*{(a) ResNet-50}
 	\end{minipage}
 	\hfill
 	\begin{minipage}[b]{0.3\textwidth}
-		\includegraphics[width=\textwidth]{gambar/fajar-frame800-resnet101.png}
+		\includegraphics[width=\textwidth]{gambar/hasil/resnet-101_fajar_800.png}
 		\caption*{(b) ResNet-101}
 	\end{minipage}
 	\hfill
@@ -667,12 +667,12 @@ Pada pengujian ini \textit{testing data} diambil dari video streaming \textit{yo
 \begin{figure}[!h]
 	\centering
 	\begin{minipage}[b]{0.3\textwidth}
-		\includegraphics[width=\textwidth]{gambar/siang-frame465-resnet50.png}
+		\includegraphics[width=\textwidth]{gambar/hasil/resnet-50_siang_465.png}
 		\caption*{(a) ResNet-50}
 	\end{minipage}
 	\hfill
 	\begin{minipage}[b]{0.3\textwidth}
-		\includegraphics[width=\textwidth]{gambar/siang-frame465-resnet101.png}
+		\includegraphics[width=\textwidth]{gambar/hasil/resnet-101_siang_465.png}
 		\caption*{(b) ResNet-101}
 	\end{minipage}
 	\hfill
@@ -730,7 +730,7 @@ Perbandingan hasil evaluasi yang didapatkan masing-masing \textit{backbone} deng
 	\label{tab:evaluate-afternoon}
 \end{table}
 
-Pada Resnet-50 \textit{Average Precision} untuk semua kelas yang berhasil dideteksi adalah sebesar 62.5\% dan \textit{Average Recall} 72.915\% dengan \textit{testing time} selama 1,253 s. Sedangkan pada Resnet-101 memberikan hasil \textit{AP} sebesar 75\% dan \textit{AR} 81.5\% dengan \textit{testing time} selama 1,549 s. Namun pada Mobilenet-v1 objek yang berhasil dideteksi hanya \textit{zebracross} (ditambah dengan \textit{background}) sama saat pengujian pada pagi hari. Nilai \textit{AP} yang dihasilkan pada evaluasi Mobilenet-v1 sebesar 25\% dengan \textit{testing time} selama 1,186 s.
+Pada Resnet-50 \textit{Average Precision} untuk semua kelas yang berhasil dideteksi adalah sebesar 62.5\% dan \textit{Average Recall} 72.915\% dengan \textit{testing time} selama 1,253 s. Sedangkan pada Resnet-101 memberikan hasil \textit{AP} sebesar 75\% dan \textit{AR} 81.5\% dengan \textit{testing time} selama 1,549 s. Namun pada Mobilenet-v1 objek yang berhasil dideteksi hanya \textit{zebra cross} (ditambah dengan \textit{background}) sama saat pengujian pada pagi hari. Nilai \textit{AP} yang dihasilkan pada evaluasi Mobilenet-v1 sebesar 25\% dengan \textit{testing time} selama 1,186 s.
 
 Selain menggunakan \textit{input data} berupa gambar, pada pengujian ini juga menggunakan \textit{input data} berupa \textit{file} video dengan format \textit{.mp4}. Proses \textit{testing} dibagi menjadi dua tahapan, tahap pertama memecah \textit{frame} video menjadi gambar dan melakukan prediksi serta tahap kedua menggabungkan kembali setiap \textit{frame} menjadi video. Tabel \ref{tab:video-afternoon} menunjukan waktu total yang dibutuhkan untuk melakukan semua tahap prediksi pada \textit{file input} berbentuk video pada ketiga \textit{backbone}.
 
@@ -758,12 +758,12 @@ Pada pengujian ini \textit{testing data} diambil dari video \textit{streaming yo
 \begin{figure}[H]
 	\centering
 	\begin{minipage}[b]{0.3\textwidth}
-		\includegraphics[width=\textwidth]{gambar/malam-frame180-resnet50.png}
+		\includegraphics[width=\textwidth]{gambar/hasil/resnet-50_malam_180.png}
 		\caption*{(a) ResNet-50}
 	\end{minipage}
 	\hfill
 	\begin{minipage}[b]{0.3\textwidth}
-		\includegraphics[width=\textwidth]{gambar/malam-frame180-resnet101.png}
+		\includegraphics[width=\textwidth]{gambar/hasil/resnet-101_malam_180.png}
 		\caption*{(b) ResNet-101}
 	\end{minipage}
 	\hfill
