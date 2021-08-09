@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.5.20)  5 AUG 2021 14:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.5.20)  8 AUG 2021 19:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1715,52 +1715,42 @@ Underfull \hbox (badness 10000) in paragraph at lines 87--87
 org / country /
  []
 
-[66]
-Underfull \hbox (badness 10000) in paragraph at lines 121--121
-[]\OT1/lmr/m/n/10 Artificial in-te-lli-gen-ce (ai), 2021.  URL
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 121--121
-[]$\OT1/lmtt/m/n/10 https : / / www . investopedia . com / terms / a /
- []
-
-[67]
-Underfull \hbox (badness 10000) in paragraph at lines 175--175
+[66] [67]
+Underfull \hbox (badness 10000) in paragraph at lines 170--170
 []\OT1/lmr/m/n/10 Demystifying re-gion pro-po-sal ne-twork (rpn),
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 175--175
+Underfull \hbox (badness 10000) in paragraph at lines 170--170
 \OT1/lmr/m/n/10 2020.  URL []$\OT1/lmtt/m/n/10 https : / / medium . com / @nabi
 l . madali /
  []
 
 
-Overfull \hbox (11.01906pt too wide) in paragraph at lines 175--175
+Overfull \hbox (11.01906pt too wide) in paragraph at lines 170--170
 \OT1/lmtt/m/n/10 demystifying-[]region-[]proposal-[]network-[]rpn-[]faa5a8fb8fc
 e$[]\OT1/lmr/m/n/10 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
 []\OT1/lmr/m/n/10 Mobilenet: De-tek-si ob-jek pa-da pla-tform mo-bi-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
 \OT1/lmr/m/n/10 le, 2018.  URL []$\OT1/lmtt/m/n/10 https : / / medium . com / n
 odeflux /
  []
 
 
-Overfull \hbox (32.519pt too wide) in paragraph at lines 180--180
+Overfull \hbox (32.519pt too wide) in paragraph at lines 175--175
 \OT1/lmtt/m/n/10 mobilenet-[]deteksi-[]objek-[]pada-[]platform-[]mobile-[]bbbf3
 806e4b3$[]\OT1/lmr/m/n/10 .
  []
 
 ) [68] (./lainnya/biografi-penulis.tex
-<gambar/agung.jpg, id=1095, 578.16pt x 867.24pt>
+<gambar/agung.jpg, id=1092, 578.16pt x 867.24pt>
 File: gambar/agung.jpg Graphic file (type jpg)
 <use gambar/agung.jpg>
 Package pdftex.def Info: gambar/agung.jpg  used on input line 14.
@@ -1787,10 +1777,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 204.
  ) 
 Here is how much of TeX's memory you used:
- 13761 strings out of 481239
- 220533 string characters out of 5920377
+ 13753 strings out of 481239
+ 220310 string characters out of 5920377
  620962 words of memory out of 5000000
- 28374 multiletter control sequences out of 15000+600000
+ 28367 multiletter control sequences out of 15000+600000
  589161 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,13n,51p,1555b,511s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1805,10 +1795,10 @@ onts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb
 e1/public/lm/lmssbo10.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb>
 </usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type
 1/public/lm/lmtt10.pfb>
-Output written on main.pdf (90 pages, 8913371 bytes).
+Output written on main.pdf (90 pages, 8913070 bytes).
 PDF statistics:
- 1212 PDF objects out of 1440 (max. 8388607)
- 968 compressed objects within 10 object streams
- 274 named destinations out of 1000 (max. 500000)
+ 1209 PDF objects out of 1440 (max. 8388607)
+ 965 compressed objects within 10 object streams
+ 273 named destinations out of 1000 (max. 500000)
  767 words of extra memory for PDF output out of 10000 (max. 10000000)
 

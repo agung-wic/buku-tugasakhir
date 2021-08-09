@@ -11,45 +11,45 @@ Warning--empty journal in penelitianterkait1
 Warning--empty journal in machinelearning1
 Warning--empty publisher in dl
 Warning--empty publisher in cnn
-You've used 28 entries,
+You've used 27 entries,
             2481 wiz_defined-function locations,
-            695 strings with 9371 characters,
-and the built_in function-call counts, 10028 in all, are:
-= -- 793
+            692 strings with 9254 characters,
+and the built_in function-call counts, 9813 in all, are:
+= -- 773
 > -- 508
 < -- 9
-+ -- 210
++ -- 208
 - -- 154
-* -- 788
-:= -- 1504
-add.period$ -- 89
-call.type$ -- 28
-change.case$ -- 54
-chr.to.int$ -- 28
-cite$ -- 44
-duplicate$ -- 522
-empty$ -- 993
+* -- 776
+:= -- 1483
+add.period$ -- 87
+call.type$ -- 27
+change.case$ -- 52
+chr.to.int$ -- 27
+cite$ -- 42
+duplicate$ -- 508
+empty$ -- 961
 format.name$ -- 172
-if$ -- 2194
+if$ -- 2141
 int.to.chr$ -- 1
-int.to.str$ -- 29
+int.to.str$ -- 28
 missing$ -- 19
-newline$ -- 153
+newline$ -- 149
 num.names$ -- 54
-pop$ -- 299
+pop$ -- 286
 preamble$ -- 1
-purify$ -- 28
+purify$ -- 27
 quote$ -- 0
-skip$ -- 333
+skip$ -- 321
 stack$ -- 0
-substring$ -- 302
-swap$ -- 105
+substring$ -- 299
+swap$ -- 103
 text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 190
+type$ -- 183
 warning$ -- 6
 while$ -- 53
 width$ -- 0
-write$ -- 360
+write$ -- 350
 (There were 7 warnings)
