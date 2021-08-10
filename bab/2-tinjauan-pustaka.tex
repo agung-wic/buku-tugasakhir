@@ -132,7 +132,7 @@ Alasan \textit{Fast R-CNN} lebih cepat daripada R-CNN adalah karena kita tidak p
 
 Pad kedua algoritma \textit{R-CNN} dan \textit{Fast R-CNN} menggunakan \textit{selective search} untuk mengetahui \textit{region proposal}. \textit{Selective search} sendiri memerlukan waktu yang cukup lama dalam penyelesain prosesnya sehingga mempengaruhi kinerja dari jaringan \citep{faster-rcnn}. Oleh karena itu, dibuatlah algoritma deteksi objek baru dengan menghilangkan algoritma \textit{selective search} dan memungkinkan jaringan mempelajari \textit{region proposal}.
 
-Mirip dengan \textit{Fast R-CNN}, gambar dijadikann sebagai input ke jaringan konvolusi yang menyediakan \textit{convolusional feature map}. Disebabkan waktu eksekusi yang lama saat menggunakan algoritma \textit{selective search} pada \textit{feature map} untuk mengidentifikasi \textit{region proposal}, \textit{Faster R-CNN} menggunakan jaringan terpisah untuk memprediksi \textit{region proposal}. Jaringan terpisah ini dinamakan dengan \textit{Region Proposal Network (RPN)}, dimana \textit{RPN} berbagi \textit{full-image convolutional features} dengan jaringan deteksi yaitu \textit{Fast R-CNN}. \textit{Region proposal} yang diprediksi kemudian dibentuk kembali menggunakan \textit{ROI pooling layer} yang kemudian digunakan untuk mengklasifikasikan gambar di dalam \textit{region proposal} dan memprediksi nilai offset untuk \textit{bounding box}. Gambar \ref{fig:arch-faster-rcnn} merupakan visualisasi dari proses deteksi objek menggunakan \textit{Faster R-CNN}. 
+Mirip dengan \textit{Fast R-CNN}, gambar dijadikann sebagai input ke jaringan konvolusi yang menyediakan \textit{convolusional feature map}. Disebabkan waktu eksekusi yang lama saat menggunakan algoritma \textit{selective search} pada \textit{feature map} untuk mengidentifikasi \textit{region proposal}, \textit{Faster R-CNN} menggunakan jaringan terpisah untuk memprediksi \textit{region proposal}. Jaringan terpisah ini dinamakan dengan \textit{Region Proposal Network (RPN)}, dimana \textit{RPN} berbagi \textit{full-image convolutional features} dengan jaringan deteksi yaitu \textit{Fast R-CNN}. \textit{Region proposal} yang diprediksi kemudian dibentuk kembali menggunakan \textit{ROI pooling layer} yang kemudian digunakan untuk mengklasifikasikan gambar di dalam \textit{region proposal} dan memprediksi nilai offset untuk \textit{bounding box}. Gambar \ref{fig:faster-rcnn} merupakan visualisasi dari proses deteksi objek menggunakan \textit{Faster R-CNN}. 
 
 \begin{figure}[h]
 	\centering
@@ -153,8 +153,8 @@ Mask R-CNN mudah diterapkan dan dilatih karena \textit{Faster R-CNN framework}, 
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.25]{gambar/arch-mask-rcnn.png}
-	\caption{Struktur dari Arsitektur \textit{Faster R-CNN} \citep{arch-mask-rcnn}}
-	\label{fig:mask-rcnn}
+	\caption{Struktur dari Arsitektur \textit{Mask R-CNN} \citep{arch-mask-rcnn}}
+	\label{fig:arch-mask-rcnn}
 \end{figure}
 
 \subsection{\textit{Regional Proposal Network (RPN)}}
@@ -181,13 +181,13 @@ Ide \textit{ROI Align} sangat sederhana yaitu dengan menghapus operasi kuantisas
 Definisi Pejalan kaki adalah orang yang melakukan aktifitas berjalan kaki dan merupakan salah satu unsur pengguna jalan. (Keputusan Direktur Jendral Perhubungan Darat : SK.43/AJ 007/DRJD/97). Pejalan kaki harus berjalan pada bagian jalan yang diperuntukan bagi pejalan kaki, atau pada bagian pejalan kaki, atau pada bagian jalan yang paling kiri apabila tidak terdapat bagian jalan yang diperuntukan bagi pejalan kaki (PP No. 43 , 1993)
 
 
-\subsection{\textit{Zebracross}}
+\subsection{\textit{Zebra Cross}}
 \label{subsec:zebracross}
 
-\textit{Zebracross} merupakan  fasilitas penyeberangan bagi pejalan kaki sebidang yang dilengkapi marka untuk memberi ketegasan/batas dalam melakukan lintasan. \textit{Zebracross} dipasang dengan ketentuan sebagai berikut :
+\textit{Zebra cross} merupakan  fasilitas penyeberangan bagi pejalan kaki sebidang yang dilengkapi marka untuk memberi ketegasan/batas dalam melakukan lintasan. \textit{Zebra cross} dipasang dengan ketentuan sebagai berikut :
 \begin{enumerate}[nolistsep]
-	\item \textit{Zebracross} harus dipasang pada arus lalu lintas, kecepatan lalu lintas, dan arus pejalan kaki yang relatif rendah.
-	\item Lokasi penempatan \textit{zebracross} harus memiliki jark pandang yang cukup, agar tundaan kendaranaan yang diakibatkan oleh penggunaan fasilitas penyebrangan masih dalam kondisi aman. 
+	\item \textit{Zebra cross} harus dipasang pada arus lalu lintas, kecepatan lalu lintas, dan arus pejalan kaki yang relatif rendah.
+	\item Lokasi penempatan \textit{zebra cross} harus memiliki jark pandang yang cukup, agar tundaan kendaranaan yang diakibatkan oleh penggunaan fasilitas penyebrangan masih dalam kondisi aman. 
 \end{enumerate}
 
 \subsection{ResNet-50}

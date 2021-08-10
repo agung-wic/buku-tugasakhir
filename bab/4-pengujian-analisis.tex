@@ -180,14 +180,12 @@ Selain menggunakan \textit{Loss Function} untuk mengukur peforma hasil \textit{t
 
 Perhitungan \textit{mAP} pada penelitian ini dilakukan setiap 5 \textit{epoch} sekali, karena jika dilakukan setiap \textit{epoch} akan memerlukan \textit{training time} yang lebih lama serta \textit{resource hardware} yang diperlukan lebih besar. Nilai \textit{mAP} tertinggi didapatkan pada \textit{epoch} ke 220 sebesar 94.92. Gambar \ref{fig:resnet50-map} merupakan grafik yang menunjukan perubahan \textit{validation mean Average Precision} dari \textit{epoch} 1 sampai 300. 
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.4]{gambar/resnet50-map.png}
 	\caption{Grafik Perubahan \textit{Validation mAP} pada Resnet-50}
 	\label{fig:resnet50-map}
 \end{figure}
-
-\newpage
 
 \subsection{Resnet-101}
 \label{subsec:resnet101}
@@ -264,6 +262,8 @@ Tabel \ref{tab:conf-resnet101} merupakan parameter-parameter yang digunakan untu
 
 Setelah dilakukan serangkaian proses training yang memakan waktu sekitar 4 jam 9 menit 16 detik didapatkan \textit{output} berupa \textit{model file}  dengan format \textit{h5} yang mempunyai ukuran 244 MB. \textit{Training loss} terendah yang berhasil dicapai dengan menggunakan \textit{backbone} Resnet-101 (pada \textit{epoch} ke 244) adalah 0.3933 dengan rincian \textit{training bounding box loss} sebesar 0.04164, \textit{training classification loss} sebesar 0.0247 serta \textit{training mask loss} sebesar 0.1403. Namun untuk \textit{training bounding box loss} terendah terdapat pada \textit{epoch} ke 246 dengan nilai sebesar 0.04083, \textit{training classification loss} terendah pada \textit{epoch} ke 234 dengan nilai 0.01957. Gambar \ref{fig:resnet101-training} merupakan grafik yang menunjukkan perubahan \textit{training loss, training bounding box loss, training classification loss,} serta \textit{training mask loss} dari \textit{epoch} 1 sampai 300. 
 
+\newpage
+
 \begin{figure}[H]
 	\centering
 	\begin{minipage}{0.45\textwidth}
@@ -290,6 +290,8 @@ Setelah dilakukan serangkaian proses training yang memakan waktu sekitar 4 jam 9
 \end{figure}
 
 Sedangkan pada saat proses \textit{validation} sendiri \textit{Loss} terendah yang berhasil dicapai pada \textit{epoch} ke 266 dengan nilai sebesar 0.299 dengan rincian \textit{validation bounding box loss} sebesar 0.03867, \textit{validation classification loss} sebesar 0.01246 serta \textit{validation mask loss} sebesar 0.1461. Gambar \ref{fig:resnet101-val} merupakan grafik yang menunjukkan perubahan \textit{validation loss, validation bounding box loss, validation classification loss,} serta \textit{validation mask loss} dari \textit{epoch} 1 sampai 300.
+
+\newpage
 
 \begin{figure}[H]
 	\centering
@@ -324,8 +326,6 @@ Nilai \textit{mAP} tertinggi didapatkan pada \textit{epoch} ke 215 sebesar 96.21
 	\caption{Grafik Perubahan \textit{Validation mAP} pada \textit{Resnet-101}}
 	\label{fig:resnet101-map}
 \end{figure} 
-
-\newpage
 
 \subsection{MobileNet-V1}
 \label{subsec:mobilenetv1}
@@ -401,7 +401,7 @@ Tabel \ref{tab:conf-mobilenet-v1} merupakan parameter-parameter yang digunakan u
 	WEIGHT\_DECAY                   & 0.0001                                                                                                                                                                                 \\ \hline
 \end{longtable}
 
-Setelah dilakukan serangkaian proses training yang memakan waktu sekitar 3 jam 18 menit 44 detik didapatkan \textit{output} berupa \textit{model file}  dengan format \textit{h5} yang mempunyai ukuran 83.3 MB. \textit{Training loss} terendah yang berhasil dicapai dengan menggunakan \textit{backbone} Mobilenet-V1 (pada \textit{epoch} ke 46) adalah 1.604 dengan rincian \textit{training bounding box loss} sebesar 0.2322, \textit{training classification loss} sebesar 0.07858 serta \textit{training mask loss} sebesar 0.6729. Namun untuk \textit{training bounding box loss} terendah terdapat pada \textit{epoch} ke 48 dengan nilai sebesar 0.2239, \textit{training classification loss} terendah pada \textit{epoch} ke 61 dengan nilai 0.06219 serta \textit{training mask loss} terendah pada \textit{epoch} ke 61 sebesar 0.5701. Gambar \ref{fig:mobilenet-training} merupakan grafik yang menunjukkan perubahan \textit{training loss, training bounding box loss, training classification loss,} serta \textit{training mask loss} dari \textit{epoch} 1 sampai 300. 
+Setelah dilakukan serangkaian proses training yang memakan waktu sekitar 3 jam 18 menit 44 detik didapatkan \textit{output} berupa \textit{model file}  dengan format \textit{h5} yang mempunyai ukuran 83.3 MB. \textit{Training loss} terendah yang berhasil dicapai dengan menggunakan \textit{backbone} Mobilenet-V1 (pada \textit{epoch} ke 46) adalah 1.604 dengan rincian \textit{training bounding box loss} sebesar 0.2322, \textit{training classification loss} sebesar 0.07858 serta \textit{training mask loss} sebesar 0.6729. Namun untuk \textit{training bounding box loss} terendah terdapat pada \textit{epoch} ke 48 dengan nilai sebesar 0.2239, \textit{training classification loss} terendah pada \textit{epoch} ke 61 dengan nilai 0.06219 serta \textit{training mask loss} terendah pada \textit{epoch} ke 61 sebesar 0.5701. Gambar \ref{fig:mobilenetv1-training} merupakan grafik yang menunjukkan perubahan \textit{training loss, training bounding box loss, training classification loss,} serta \textit{training mask loss} dari \textit{epoch} 1 sampai 300. 
 
 \begin{figure}[H]
 	\centering
@@ -458,9 +458,8 @@ Sedangkan pada saat proses \textit{validation} sendiri \textit{Loss} terendah ya
 
 Nilai \textit{mAP} tertinggi didapatkan pada \textit{epoch} ke 210 sebesar 26.04. Gambar \ref{fig:mobilenetv1-map} merupakan grafik yang menunjukan perubahan \textit{validation mean Average Precision} dari \textit{epoch} 1 sampai 300.
 
-\newpage
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.4]{gambar/mobilenetv1-map.png}
 	\caption{Grafik Perubahan \textit{Validation mAP} pada \textit{MobileNet-V1}}
@@ -469,7 +468,7 @@ Nilai \textit{mAP} tertinggi didapatkan pada \textit{epoch} ke 210 sebesar 26.04
 
 Tabel \ref{tab:train-recap} adalah tabel perbandingan dari \textit{output file size} dan \textit{mAP} dari total 3 model dengan \textit{backbone} berbeda yang diuji. Tahap ini masih merupakan hasil tahap \textit{training}. Sedangkan Gambar \ref{fig:graph-recap} merupakan grafik perbandingan \textit{mAP} dengan \textit{file size}. Proses selanjutnya setelah mendapatkan hasil yang ditunjukkan pada setiap model adalah melakukan proses prediksi atau melakukan \textit{testing data}.
 
-\begin{table}[h]
+\begin{table}[H]
 	\centering
 	\caption{Tabel Perbandingan Model dengan \textit{backbone} yang berbeda}
 	\begin{tabular}{|c|l|l|l|}
@@ -484,7 +483,7 @@ Tabel \ref{tab:train-recap} adalah tabel perbandingan dari \textit{output file s
 
 \newpage
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.75]{gambar/graph-recap.png}
 	\caption{Grafik Perbandingan Model dengan \textit{backbone} yang berbeda}
@@ -504,10 +503,9 @@ Pada hasil pengujian dengan menggunakan satu gambar jalan raya pada pada saat pa
 \begin{enumerate}[nolistsep]
 	\item Pejalan kaki (\textit{score} : 0,984)
 	\item \textit{Zebracross} (\textit{score} : 0,983)
-	\item Pengendara motor (\textit{score} : 1,00)
 \end{enumerate}
 Dari hasil tersebut, \textit{Backbone Resnet-50} dapat memprediksi gambar dengan benar, serta \textit{evaluation time} dari \textit{backbone} ini sebesar 0,76 detik
-\begin{figure}[h] 
+\begin{figure}[H] 
 	\centering
 	\includegraphics[scale=0.3]{gambar/hasil/resnet-50_fajar_800.png}
 	\caption{Hasil Uji dari \textit{Backbone Resnet-50}}
@@ -520,10 +518,9 @@ Pada hasil pengujian dengan menggunakan satu gambar jalan raya pada pada saat pa
 \begin{enumerate}[nolistsep]
 	\item Pejalan kaki (\textit{score} : 0,986)
 	\item \textit{Zebracross} (\textit{score} : 0,995)
-	\item Pengendara motor (\textit{score} : 0,999)
 \end{enumerate}
 Dari hasil tersebut, \textit{Backbone Resnet-101} dapat memprediksi gambar dengan benar, serta \textit{evaluation time} dari \textit{backbone} ini sebesar 0.961 detik
-\begin{figure}[h] 
+\begin{figure}[H] 
 	\centering
 	\includegraphics[scale=0.3]{gambar/hasil/resnet-101_fajar_800.png}
 	\caption{Hasil Uji dari \textit{Backbone Resnet-101}}
@@ -536,10 +533,9 @@ Pada hasil pengujian dengan menggunakan satu gambar jalan raya pada pada saat pa
 \begin{enumerate}[nolistsep]
 	\item Pejalan kaki (tidak terdeteksi)
 	\item \textit{Zebracross} (terdeteksi 2  dengan \textit{score} : 0,942 dan 0.888)
-	\item Pengendara motor (tidak terdeteksi)
 \end{enumerate}
 Dari hasil tersebut, \textit{Backbone Mobilenet-V1} tidak dapat memprediksi gambar dengan benar, serta \textit{evaluation time} dari \textit{backbone} ini sebesar 0.664 detik
-\begin{figure}[h] 
+\begin{figure}[H] 
 	\centering
 	\includegraphics[scale=0.3]{gambar/fajar-frame800-mobilenetv1.png}
 	\caption{Hasil Uji dari \textit{Backbone Mobilenet-V1}}
@@ -548,7 +544,7 @@ Dari hasil tersebut, \textit{Backbone Mobilenet-V1} tidak dapat memprediksi gamb
 
 Setelah melakukan \textit{testing} dengan menggunakan gambar pada \textit{testing set} pada keseluruhan model, maka tabel \ref{tab:result-comparasion} menunjukkan ringkasan dari perbandingan hasil \textit{testing} yang telah dilakukan. Parameter yang akan dibandingkan yaitu \textit{evaluation time} dan besar \textit{mean Average Precision}.
 
-\begin{table}[h]
+\begin{table}[H]
 	\centering
 	\caption{tabel Perbandingan Hasil \textit{Testing}}
 	\resizebox{\textwidth}{!}{%
@@ -573,7 +569,7 @@ Pengujian pada perbedaan waktu bertujuan untuk mengetahui performa dan akurasi d
 
 Pada pengujian ini \textit{testing data} diambil dengan menggunakan kamera \textit{smartphone} yang menghasilkan video beresolusi 1280$\times$720 px berdurasi 63.43 s. Video tersebut mempunyai banyak \textit{frame} per detik sebanyak 30 fps serta total \textit{frame} yang dihasilkan sejumlah 1903 \textit{frame}. Gambar \ref{fig:comparasion-morning} merupakan perbandingan hasis deteksi dan segementasi dari ketiga \textit{backbone} yang digunakan pada waktu pagi hari.
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\begin{minipage}[b]{0.3\textwidth}
 		\includegraphics[width=\textwidth]{gambar/hasil/resnet-50_fajar_800.png}
@@ -595,7 +591,7 @@ Pada pengujian ini \textit{testing data} diambil dengan menggunakan kamera \text
 
 Untuk meguji performa model yang dihasilkan pada masing-masing \textit{backbone}, digunakan beberapa parameter nilai seperti \textit{precision, recall} dan \textit{F1-score} pada masing-masing kelas objek yang dideteksi. Perbandingan hasil evaluasi yang didapatkan masing-masing \textit{backbone} dapat dilihat pada Tabel \ref{tab:evaluate-morning}.
 
-Pada Resnet-50 \textit{Average Precision} untuk semua kelas yang berhasil dideteksi adalah sebesar 100\% dan \textit{Average Recall} 100\% dengan \textit{testing time} selama 0,763 s. Sedangkan pada Resnet-101 memberikan hasil yang sama dengan Resnet-50 dengan \textit{AP} 100\% dan \textit{AR} 100\% dengan \textit{testing time} selama 0,961 s. Namun pada Mobilenet-v1 objek yang berhasil dideteksi hanya \textit{zebracross} (ditambah dengan \textit{background}), sehingga pada objek pejalan kaki dan pengendara motor mempunyai \textit{precision} bernilai 0\% serta \textit{Recall} dan \textit{F1-score} bernilai tidak terdefinisi atau \textit{NaN}. Hal ini dikarenakan nilai \textit{True Positif} pada pejalan kaki dan pengendara motor bernilai 0 (angka 0 dibagi nilai berapun memiliki hasil tidak terdefinisi). Nilai \textit{AP} yang dihasilkan pada evaluasi Mobilenet-v1 sebesar 37.5\% dengan \textit{testing time} selama 0.664 s.
+Pada Resnet-50 \textit{Average Precision} untuk semua kelas yang berhasil dideteksi adalah sebesar 100\% dan \textit{Average Recall} 100\% dengan \textit{testing time} selama 0,763 s. Sedangkan pada Resnet-101 memberikan hasil yang sama dengan Resnet-50 dengan \textit{AP} 100\% dan \textit{AR} 100\% dengan \textit{testing time} selama 0,961 s. Namun pada Mobilenet-v1 objek yang berhasil dideteksi hanya \textit{zebracross} (ditambah dengan \textit{background}), sehingga pada objek pejalan kaki mempunyai \textit{Average Precision} bernilai 50\% serta \textit{Average Recall} dan \textit{F1-score} bernilai tidak terdefinisi atau \textit{NaN}. Hal ini dikarenakan nilai \textit{True Positif} pada pejalan kaki bernilai 0 (angka 0 dibagi nilai berapun memiliki hasil tidak terdefinisi) dengan \textit{testing time} selama 0.664 s.
 
 \begin{table}[!h]
 	\centering
@@ -609,7 +605,6 @@ Pada Resnet-50 \textit{Average Precision} untuk semua kelas yang berhasil didete
 			Background                           & 100                              & 100                           & 100                              \\ \hline
 			Pedestrian                           & 100                              & 100                           & 100                              \\ \hline
 			Zebracross                           & 100                              & 100                           & 100                              \\ \hline
-			Motorbiker                           & 100                              & 100                           & 100                              \\ \hline
 		\end{tabular}
 	\end{minipage}
 	\vfill
@@ -622,7 +617,7 @@ Pada Resnet-50 \textit{Average Precision} untuk semua kelas yang berhasil didete
 			Background                           & 100                              & 100                           & 100                              \\ \hline
 			Pedestrian                           & 100                              & 100                           & 100                              \\ \hline
 			Zebracross                           & 100                              & 100                           & 100                              \\ \hline
-			Motorbiker                           & 100                              & 100                           & 100                              \\ \hline
+			
 		\end{tabular}
 	\end{minipage}
 	\vfill
@@ -632,16 +627,16 @@ Pada Resnet-50 \textit{Average Precision} untuk semua kelas yang berhasil didete
 		\begin{tabular}{|l|c|c|c|}
 			\hline
 			\multicolumn{1}{|c|}{\textbf{Kelas}} & \textit{\textbf{Precision (\%)}} & \textit{\textbf{Recall (\%)}} & \textit{\textbf{F1\_Score (\%)}} \\ \hline
-			Background                           & 50                               & 33.33                         & 40                               \\ \hline
+			Background                           & 50                               & 50                         & 50                               \\ \hline
 			Pedestrian                           & 0                                & NaN                           & NaN                              \\ \hline
-			Zebracross                           & 100                              & 50                            & 66.66                            \\ \hline
-			Motorbiker                           & 0                                & NaN                           & NaN                              \\ \hline
+			Zebracross                           & 100                              & 50                            & 66,67                            \\ \hline
+			
 		\end{tabular}
 	\end{minipage}
 	\label{tab:evaluate-morning}
 \end{table}
 
-Selain menggunakan \textit{input data} berupa gambar, pada pengujian ini juga menggunakan \textit{input data} berupa \textit{file} video dengan format \textit{.mp4}. Proses \textit{testing} dibagi menjadi dua tahapan, tahap pertama memecah \textit{frame} video menjadi gambar dan melakukan prediksi serta tahap kedua menggabungkan kembali setiap \textit{frame} menjadi video. Tabel \ref{tab:video-morning} menunjukan waktu yang dibutuhkan untuk melakukan semua tahap prediksi pada \textit{file input} berbentuk video pada ketiga \textit{backbone}.
+Selain menggunakan \textit{input data} berupa gambar, pada pengujian ini juga menggunakan \textit{input data} berupa \textit{file} video dengan format \textit{.mp4}. Proses \textit{testing} dibagi menjadi dua tahapan, tahap pertama memecah \textit{frame} video menjadi gambar dan melakukan prediksi serta tahap kedua menggabungkan kembali setiap \textit{frame} menjadi video. Tabel \ref{tab:video_morning} menunjukan waktu yang dibutuhkan untuk melakukan semua tahap prediksi pada \textit{file input} berbentuk video pada ketiga \textit{backbone}.
 
 \begin{table}[!h]
 	\centering{
@@ -656,7 +651,7 @@ Selain menggunakan \textit{input data} berupa gambar, pada pengujian ini juga me
 			\textit{MobileNet-v1}                            & 06:50                     & 00:40                     & 07:31                   & 89.7 MB                                            \\ \hline
 		\end{tabular}
 	}
-	\label{tab:video-morning}
+	\label{tab:video_morning}
 \end{table}
 
 \subsection{Pengujian di Siang Hari}
@@ -695,10 +690,10 @@ Perbandingan hasil evaluasi yang didapatkan masing-masing \textit{backbone} deng
 		\begin{tabular}{|l|c|c|c|}
 			\hline
 			\multicolumn{1}{|c|}{\textbf{Kelas}} & \textit{\textbf{Precision (\%)}} & \textit{\textbf{Recall (\%)}} & \textit{\textbf{F1\_Score (\%)}} \\ \hline
-			Background                           & 50                               & 25                            & 33.33                            \\ \hline
-			Pedestrian                           & 100                              & 100                           & 100                              \\ \hline
-			Zebracross                           & 50                               & 100                           & 66.66                            \\ \hline
-			Motorbiker                           & 50                               & 66.66                         & 57.14                            \\ \hline
+			Background                           & 50                               & 100                            & 66,67                            \\ \hline
+			Pedestrian                           & 100                              & 50                           & 66,67                              \\ \hline
+			Zebracross                           & 100                               & 100                           & 100                            \\ \hline
+			
 		\end{tabular}
 	\end{minipage}
 	\vfill
@@ -708,10 +703,10 @@ Perbandingan hasil evaluasi yang didapatkan masing-masing \textit{backbone} deng
 		\begin{tabular}{|l|c|c|c|}
 			\hline
 			\multicolumn{1}{|c|}{\textbf{Kelas}} & \textit{\textbf{Precision (\%)}} & \textit{\textbf{Recall (\%)}} & \textit{\textbf{F1\_Score (\%)}} \\ \hline
-			Background                           & 100                              & 25                            & 40                               \\ \hline
+			Background                           & 100                              & 100                            & 100                               \\ \hline
 			Pedestrian                           & 100                              & 100                           & 100                              \\ \hline
-			Zebracross                           & 50                               & 100                           & 66.66                            \\ \hline
-			Motorbiker                           & 50                               & 100                           & 66.66                            \\ \hline
+			Zebracross                           & 100                               & 100                           & 100                            \\ \hline
+			
 		\end{tabular}
 	\end{minipage}
 	\vfill
@@ -721,16 +716,16 @@ Perbandingan hasil evaluasi yang didapatkan masing-masing \textit{backbone} deng
 		\begin{tabular}{|l|c|c|c|}
 			\hline
 			\multicolumn{1}{|c|}{\textbf{Kelas}} & \textit{\textbf{Precision (\%)}} & \textit{\textbf{Recall (\%)}} & \textit{\textbf{F1\_Score (\%)}} \\ \hline
-			Background                           & 50                               & 14.28                         & 22.22                            \\ \hline
+			Background                           & 50                               & 66.67                         & 57,14                            \\ \hline
 			Pedestrian                           & 0                                & NaN                           & NaN                              \\ \hline
-			Zebracross                           & 50                               & 50                            & 50                               \\ \hline
-			Motorbiker                           & 0                                & NaN                           & NaN                              \\ \hline
+			Zebracross                           & 100                               & 33,33                            & 50                               \\ \hline
+			
 		\end{tabular}
 	\end{minipage}
 	\label{tab:evaluate-afternoon}
 \end{table}
 
-Pada Resnet-50 \textit{Average Precision} untuk semua kelas yang berhasil dideteksi adalah sebesar 62.5\% dan \textit{Average Recall} 72.915\% dengan \textit{testing time} selama 1,253 s. Sedangkan pada Resnet-101 memberikan hasil \textit{AP} sebesar 75\% dan \textit{AR} 81.5\% dengan \textit{testing time} selama 1,549 s. Namun pada Mobilenet-v1 objek yang berhasil dideteksi hanya \textit{zebra cross} (ditambah dengan \textit{background}) sama saat pengujian pada pagi hari. Nilai \textit{AP} yang dihasilkan pada evaluasi Mobilenet-v1 sebesar 25\% dengan \textit{testing time} selama 1,186 s.
+Pada Resnet-50 \textit{Average Precision} untuk semua kelas yang berhasil dideteksi adalah sebesar 83.334\% dan \textit{Average Recall} 83.334\% dengan \textit{testing time} selama 1,253 s. Sedangkan pada Resnet-101 memberikan hasil \textit{AP} sebesar 100\% dan \textit{AR} 100\% dengan \textit{testing time} selama 1,549 s. Namun pada Mobilenet-v1 objek yang berhasil dideteksi hanya \textit{zebra cross} (ditambah dengan \textit{background}) sama saat pengujian pada pagi hari. Nilai \textit{AP} yang dihasilkan pada evaluasi Mobilenet-v1 sebesar 50\% dengan \textit{testing time} selama 1,186 s.
 
 Selain menggunakan \textit{input data} berupa gambar, pada pengujian ini juga menggunakan \textit{input data} berupa \textit{file} video dengan format \textit{.mp4}. Proses \textit{testing} dibagi menjadi dua tahapan, tahap pertama memecah \textit{frame} video menjadi gambar dan melakukan prediksi serta tahap kedua menggabungkan kembali setiap \textit{frame} menjadi video. Tabel \ref{tab:video-afternoon} menunjukan waktu total yang dibutuhkan untuk melakukan semua tahap prediksi pada \textit{file input} berbentuk video pada ketiga \textit{backbone}.
 
@@ -747,8 +742,6 @@ Selain menggunakan \textit{input data} berupa gambar, pada pengujian ini juga me
 	}
 	\label{tab:video-afternoon}
 \end{table}
-
-\newpage
 
 \subsection{Pengujian di Malam Hari}
 \label{subsec:malam}
@@ -789,7 +782,7 @@ Perbandingan hasil evaluasi yang didapatkan masing-masing \textit{backbone} deng
 			Background                           & 100                              & 25                            & 40                               \\ \hline
 			Pedestrian                           & 40                               & 100                           & 57.14                            \\ \hline
 			Zebracross                           & 100                              & 100                           & 100                              \\ \hline
-			Motorbiker                           & -                                & -                             & -                                \\ \hline
+			
 		\end{tabular}	
 		
 	\end{minipage}
@@ -803,7 +796,7 @@ Perbandingan hasil evaluasi yang didapatkan masing-masing \textit{backbone} deng
 			Background                           & 100                              & 33.33                         & 50                               \\ \hline
 			Pedestrian                           & 60                               & 100                           & 74.9                             \\ \hline
 			Zebracross                           & 100                              & 100                           & 100                              \\ \hline
-			Motorbiker                           & -                                & -                             & -                                \\ \hline
+			
 		\end{tabular}
 		
 	\end{minipage}
@@ -814,10 +807,10 @@ Perbandingan hasil evaluasi yang didapatkan masing-masing \textit{backbone} deng
 		\begin{tabular}{|l|c|c|c|}
 			\hline
 			\multicolumn{1}{|c|}{\textbf{Kelas}} & \textit{\textbf{Precision (\%)}} & \textit{\textbf{Recall (\%)}} & \textit{\textbf{F1\_Score (\%)}} \\ \hline
-			Background                           & 50                               & 16.66                         & 25                               \\ \hline
+			Background                           & 50                               & 16,64                         & 28,57                               \\ \hline
 			Pedestrian                           & 0                                & NaN                           & NaN                              \\ \hline
-			Zebracross                           & 100                              & 50                            & 66.66                            \\ \hline
-			Motorbiker                           & -                                & -                             & -                                \\ \hline
+			Zebracross                           & 100                              & 100                            & 100                            \\ \hline
+			
 		\end{tabular}
 		
 	\end{minipage}
@@ -825,7 +818,7 @@ Perbandingan hasil evaluasi yang didapatkan masing-masing \textit{backbone} deng
 	\label{tab:evaluate-night}
 \end{table}
 
-Pada gambar yang diuji untuk malam hari hanya memiliki 3 kelas saja yaitu \textit{background}, pejalan kaki serta \textit{zebracross} tanpa adanya pengendara motor. Resnet-50 mempunyai nilai \textit{Average Precision} untuk semua kelas yang berhasil dideteksi adalah sebesar 80\% dan \textit{Average Recall} 75\% dengan \textit{testing time} selama 1,069 s. Sedangkan pada Resnet-101 memberikan hasil \textit{AP} sebesar 86.67\% dan \textit{AR} 77.77\% dengan \textit{testing time} selama 1,215 s. Namun pada Mobilenet-v1 objek yang berhasil dideteksi hanya \textit{zebracross} (ditambah dengan \textit{background}) sama saat pengujian pada pagi dan siang hari. Nilai \textit{AP} yang dihasilkan pada evaluasi Mobilenet-v1 sebesar 50\% dengan \textit{testing time} selama 1,051 s.
+Pada gambar yang diuji untuk malam hari hanya memiliki 2 kelas saja yaitu \textit{background}, pejalan kaki serta \textit{zebracross}. Resnet-50 mempunyai nilai \textit{Average Precision} untuk semua kelas yang berhasil dideteksi adalah sebesar 80\% dan \textit{Average Recall} 75\% dengan \textit{testing time} selama 1,069 s. Sedangkan pada Resnet-101 memberikan hasil \textit{AP} sebesar 86.67\% dan \textit{AR} 77.77\% dengan \textit{testing time} selama 1,215 s. Namun pada Mobilenet-v1 objek yang berhasil dideteksi hanya \textit{zebracross} (ditambah dengan \textit{background}) sama saat pengujian pada pagi dan siang hari. Nilai \textit{AP} yang dihasilkan pada evaluasi Mobilenet-v1 sebesar 66,67\% dengan \textit{testing time} selama 1,051 s.
 
 Selain menggunakan \textit{input data} berupa gambar, pada pengujian ini juga menggunakan \textit{input data} berupa \textit{file} video dengan format \textit{.mp4}. Proses \textit{testing} dibagi menjadi dua tahapan, tahap pertama memecah \textit{frame} video menjadi gambar dan melakukan prediksi serta tahap kedua menggabungkan kembali setiap \textit{frame} menjadi video. Tabel \ref{tab:video-night} menunjukan waktu yang dibutuhkan untuk melakukan semua tahap prediksi pada \textit{file input} berbentuk video pada ketiga \textit{backbone}.
 
@@ -853,15 +846,15 @@ Setelah membandingkan hasil evaluasi model setiap perbedaan waktu, pada bagian i
 
 Pada proses evaluasi model dengan menggunakan seluruh \textit{testing data} (pagi, siang dan malam hari) didapatkan beberapa hasil skor yaitu :
 \begin{enumerate}[nolistsep]
-	\item \textit{mean Average Precision(mAP)} : 66.785\%
-	\item \textit{mean Average Recall(mAR)} : 77\%
-	\item \textit{F1-score} : 71.529\%
+	\item \textit{mean Average Precision(mAP)} : 77.381\%
+	\item \textit{mean Average Recall(mAR)} : 76.667\%
+	\item \textit{F1-score} : 75.555\%
 \end{enumerate}
 Hasil tersebut didapatkan setelah dilakukan proses pencarian nilai \textit{Trur Positif, False Positif} dan \textit{False Negatif} seperti yang ditunjukkan pada \textit{confusion matrix} pada Gambar \ref{fig:confmatrix-resnet50}.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.3]{gambar/confmatrix/all-resnet50-blue.png}
+	\includegraphics[scale=0.3]{gambar/confmatrix/resnet50_confmat.png}
 	\caption{\textit{Confusion Matrix} ResNet-50}
 	\label{fig:confmatrix-resnet50}
 \end{figure}
@@ -870,15 +863,15 @@ Hasil tersebut didapatkan setelah dilakukan proses pencarian nilai \textit{Trur 
 
 Pada proses evaluasi model dengan menggunakan seluruh \textit{testing data} (pagi, siang dan malam hari) didapatkan beberapa hasil skor yaitu :
 \begin{enumerate}[nolistsep]
-	\item \textit{mean Average Precision(mAP)} : 76.605\%
-	\item \textit{mean Average Recall(mAR)} : 85.375\%
-	\item \textit{F1-score} : 80.302\%
+	\item \textit{mean Average Precision(mAP)} : 90.476\%
+	\item \textit{mean Average Recall(mAR)} : 88.889\%
+	\item \textit{F1-score} : 87.777\%
 \end{enumerate}
 Hasil tersebut didapatkan setelah dilakukan proses pencarian nilai \textit{Trur Positif, False Positif} dan \textit{False Negatif} seperti yang ditunjukkan pada \textit{confusion matrix} pada Gambar \ref{fig:confmatrix-resnet101}.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.3]{gambar/confmatrix/all-resnet101-blue.png}
+	\includegraphics[scale=0.3]{gambar/confmatrix/resnet-101_confmat.png}
 	\caption{\textit{Confusion Matrix} ResNet-101}
 	\label{fig:confmatrix-resnet101}
 \end{figure}
@@ -887,7 +880,7 @@ Hasil tersebut didapatkan setelah dilakukan proses pencarian nilai \textit{Trur 
 
 Pada proses evaluasi model dengan menggunakan seluruh \textit{testing data} (pagi, siang dan malam hari) didapatkan beberapa hasil skor yaitu :
 \begin{enumerate}[nolistsep]
-	\item \textit{mean Average Precision(mAP)} : 25\%
+	\item \textit{mean Average Precision(mAP)} : 52.381\%
 	\item \textit{mean Average Recall(mAR)} : \textit{NaN}
 	\item \textit{F1-score} : \textit{NaN}
 \end{enumerate}
@@ -895,7 +888,7 @@ Hasil tersebut didapatkan setelah dilakukan proses pencarian nilai \textit{Trur 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.3]{gambar/confmatrix/all-mobilenetv1-blue.png}
+	\includegraphics[scale=0.3]{gambar/confmatrix/mobilenetv1_confmat.png}
 	\caption{\textit{Confusion Matrix} MobileNet-v1}
 	\label{fig:confmatrix-mobilenetv1}
 \end{figure}
