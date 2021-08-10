@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.5.20)  10 AUG 2021 12:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.5.20)  10 AUG 2021 13:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -783,7 +783,9 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 ] [4
 
 ]
-(./lainnya/lembar-pengesahan.tex [5]) [6] (./abstrak/abstrak-id.tex
+(./lainnya/lembar-pengesahan.tex) [5] [6
+
+] (./abstrak/abstrak-id.tex
 
 Package hyperref Warning: No destination for bookmark of \addcontentsline,
 (hyperref)                destination is added on input line 5.
@@ -793,9 +795,7 @@ Underfull \hbox (badness 1231) in paragraph at lines 24--24
 []|\OT1/lmr/m/n/10 Deteksi Pe-jal-an Ka-ki pa-da \OT1/lmr/m/it/10 Ze-bra Cross
  []
 
-) [1
-
-] [2
+) [1] [2
 
 ] (./abstrak/abstrak-en.tex) [3] [4
 
@@ -1769,7 +1769,7 @@ onts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb
 e1/public/lm/lmssbo10.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb>
 </usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type
 1/public/lm/lmtt10.pfb>
-Output written on main.pdf (88 pages, 8896580 bytes).
+Output written on main.pdf (88 pages, 8896674 bytes).
 PDF statistics:
  1200 PDF objects out of 1200 (max. 8388607)
  958 compressed objects within 10 object streams
