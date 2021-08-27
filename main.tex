@@ -43,6 +43,7 @@
 \usepackage{caption}
 \usepackage{float}
 \usepackage[pageref]{backref}
+\usepackage{pdfpages}
 
 % Definisi untuk "Hati ini sengaja dikosongkan"
 \patchcmd{\cleardoublepage}{\hbox{}}{
@@ -131,7 +132,7 @@
   \cleardoublepage
 
   % Lembar pengesahan
-  \input{lainnya/lembar-pengesahan.tex}
+  \includepdf[pages=1, offset=0 0]{dokumen/Lembar-Pengesahan-1.pdf}
   \cleardoublepage
 
   % Nomor halaman pembuka dimulai dari sini
